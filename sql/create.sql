@@ -1,7 +1,7 @@
 /**
   Creation script for qibdip-tpv
   Marc@demomentsomtres.com
-  version 1.0
+  version 1.0.1
 **/
 drop table if exists users;
 create table users (
@@ -15,204 +15,207 @@ create table users (
 drop table if exists towns;
 create table towns (
     id int(10) unsigned auto_increment primary key,
-    townname varchar(50) not null,
+    town_name varchar(50) not null,
     created datetime default null,
     modified datetime default null
 );
-drop table if exists clients;
-create table clients (
+drop table if exists customers;
+create table customers (
     id int(10) unsigned auto_increment primary key,
-    name varchar(100) not null,
-    address varchar(100) not null,
-    town_id int(10),
-    idcard varchar(12),
-    phone1 varchar(15),
-    phone2 varchar(15),
-    email varchar(100),
+    customer_name varchar(100) not null,
+    customer_address varchar(100) not null,
+    customer_town_id int(10),
+    customer_vat_number varchar(12),
+    customer_phone1 varchar(15),
+    customer_phone2 varchar(15),
+    customer_email varchar(100),
     created datetime default null,
     modified datetime default null,
-    foreign key (town_id) references towns(id) on delete restrict
+    foreign key (customer_town_id) references towns(id) on delete restrict
 );
-drop table if exists proveidors;
-create table proveidors (
+drop table if exists suppliers;
+create table suppliers (
     id int(10) unsigned auto_increment primary key,
-    name varchar(100) not null,
-    address varchar(100) not null,
-    town_id int(10),
-    cif varchar(12),
-    phone1 varchar(15),
-    phone2 varchar(15),
+    supplier_name varchar(100) not null,
+    supplier_address varchar(100) not null,
+    supplier_town_id int(10),
+    supplier_vat_number varchar(12),
+    supplier_phone1 varchar(15),
+    supplier_phone2 varchar(15),
     created datetime default null,
     modified datetime default null,
-    foreign key (town_id) references towns(id) on delete restrict
+    foreign key (supplier_town_id) references towns(id) on delete restrict
 );
-drop table if exists estats_factures_proveidors;
-create table estats_factures_proveidors (
+drop table if exists supplier_invoice_status;
+create table supplier_invoice_status (
     id int(10) unsigned auto_increment primary key,
-    name varchar(25),
-    estat_final boolean not null default false,
+    sup_inv_status_name varchar(25),
+    sup_inv_is_final_status boolean not null default false,
     created datetime default null,
     modified datetime default null
 );
-drop table if exists factures_proveidors;
-create table factures_proveidors (
+drop table if exists supplier_invoices;
+create table supplier_invoices (
     id int(10) unsigned auto_increment primary key,
-    num varchar(15) not null,
-    proveidor_id int(10) not null,
-    date datetime default null,
-    amount decimal(10,2) not null default 0,
-    iva decimal(10,2) not null default 0,
-    recarrec_equivalencia decimal(10,2) default 0,
-    estat_id int(10) not null,
+    supplier_invoice_number varchar(15) not null,
+    supplier_invoice_supplier_id int(10) not null,
+    supplier_invoice_date date default null,
+    supplier_invoice_amount decimal(10,2) not null default 0,
+    supplier_invoice_vat decimal(10,2) not null default 0,
+    supplier_invoice_vat_re decimal(10,2) default 0,
+    supplier_invoice_status_id int(10) not null,
     created datetime default null,
     modified datetime default null,
-    foreign key (proveidor_id) references proveidors(id) on delete restrict,
-    foreign key (estat_id) references estats_factures_proveidors(id) on delete restrict
+    foreign key (supplier_invoice_supplier_id) references suppliers(id) on delete restrict,
+    foreign key (supplier_invoice_status_id) references supplier_invoice_status(id) on delete restrict
 );
-drop table if exists albarans;
-create table albarans (
+drop table if exists supplier_slips;
+create table supplier_slips (
     id int(10) unsigned auto_increment primary key,
-    num varchar(15) not null,
-    proveidor_id int(10) not null,
-    date datetime default null,
+    supplier_slip_num varchar(15) not null,
+    supplier_slip_supplier_id int(10) not null,
+    supplier_slip_date date default null,
     created datetime default null,
     modified datetime default null,
-    foreign key (proveidor_id) references proveidors(id) on delete restrict
+    foreign key (supplier_slip_supplier_id) references suppliers(id) on delete restrict
 );
-drop table if exists tipus_materies_primeres;
-create table tipus_materies_primeres(
+drop table if exists raw_material_types;
+create table raw_material_types(
     id int(10) unsigned auto_increment primary key,
-    text varchar(25) not null,
-    consum_parcial float default true, /* Indica si es consumeix totalment o per unitats */
-    unitat_mesura varchar(25)
+    raw_mat_type_name varchar(25) not null,
+    raw_mat_type_is_partial_consume boolean default true, /* Indica si es consumeix totalment o per unitats */
+    raw_mat_measuring_unit varchar(25)
 );
-drop table if exists inventaris;
-create table inventaris (
+drop table if exists stocks;
+create table stocks (
     id int(10) unsigned auto_increment primary key,
-    tipus varchar(1) not null default 'A', /* A - Article, M - Materia primera */
+    stock_type varchar(1) not null default 'A', /* A - Final Article, R - Raw Material */
     /* Articles */
-    referencia varchar(50) not null,
-    model varchar(250) not null,
-    talla varchar(10),
-    /* Materia primera */
-    tipus_materia_id int(10),
-    unitats decimal(10,2),
-    casc varchar(50),
-    preu_unitat decimal(10,2),
-    /* Comu */
-    comentari varchar(250) default '',
-    pell varchar(10),
-    acabat varchar(10),
-    color varchar(10),
-    preu_compra decimal(10,2) default 0,
-    iva decimal(10,2) default 0,
-    recarrec_equivalencia decimal(10,2) default 0,
-    pvp decimal(10,2) default 0,
+    article_reference varchar(50) not null,
+    article_model varchar(250) not null,
+    article_size varchar(10),
+    /* Raw Material */
+    raw_material_type_id int(10),
+    raw_mat_units decimal(10,2),
+    raw_mat_userfield01 varchar(50), /* casc */
+    raw_mat_unit_price decimal(10,2),
+    /* Common */
+    stock_comment varchar(250) default '',
+    stock_userfield01 varchar(10), /* pell */
+    stock_userfield02 varchar(10), /* acabat */
+    stock_userfield03 varchar(10), /* color */
+    stock_buy_price decimal(10,2) default 0,
+    stock_vat decimal(10,2) default 0,
+    stock_vat_re decimal(10,2) default 0,
+    stock_sale_price decimal(10,2) default 0,
     created datetime default null,
     modified datetime default null,
-    factura_id int(10) not null,
-    foreign key (factura_id) references factures_proveidors(id),
-    foreign key (tipus_materia_id) references tipus_materies_primeres(id)
+    stock_supplier_invoice_id int(10) not null,
+    foreign key (stock_supplier_invoice_id) references supplier_invoices(id),
+    foreign key (raw_material_type_id) references raw_material_types(id)
 );
-drop table if exists consums;
-create table consums (
+drop table if exists consumptions;
+create table consumptions (
     id int(10) unsigned auto_increment primary key,
-    article_id int(10) not null,
-    materia_id int(10),
-    unitats_consumides decimal(10,2) not null,
-    tallar decimal(10,2) not null default 0,
-    cosir decimal(10,2) not null default 0,
-    complements decimal(10,2) not null default 0,
-    altres decimal(10,2) not null default 0,
-    foreign key (article_id) references inventaris(id),
-    foreign key (materia_id) references inventaris(id)
+    consumption_article_id int(10) not null,
+    consumption_raw_material_id int(10),
+    consumption_raw_mat_consumed_units decimal(10,2) not null,
+    consumption_cost_01 decimal(10,2) not null default 0, /* tallar */
+    consumption_cost_02 decimal(10,2) not null default 0, /* cosir */
+    consumption_cost_03 decimal(10,2) not null default 0, /* complements */
+    consumption_cost_04 decimal(10,2) not null default 0, /* altes costos */
+    foreign key (consumption_article_id) references stocks(id),
+    foreign key (consumption_raw_material_id) references stocks(id)
 );
-drop table if exists estats_encarrecs;
-create table estats_encarrecs(
+drop table if exists order_status;
+create table order_status(
     id int(10) unsigned auto_increment primary key,
-    name varchar(25),
-    estat_final boolean not null default false,
+    order_status_name varchar(25),
+    order_status_is_final boolean not null default false,
     created datetime default null,
     modified datetime default null
 );
-drop table if exists encarrecs;
-create table encarrecs (
+drop table if exists customer_orders;
+create table customer_orders (
     id int(10) unsigned auto_increment primary key,
-    client_id int(10) not null,
-    estat_id int(10) not null,
-    observacions varchar(255),
+    order_customer_id int(10) not null,
+    order_status_id int(10) not null,
+    order_comments varchar(255),
     created datetime default null,
     modified datetime default null,
-    foreign key (client_id) references clients(id) on delete restrict,
-    foreign key (estat_id) references estats_encarrecs(id) on delete restrict
+    foreign key (order_customer_id) references customers(id) on delete restrict,
+    foreign key (order_status_id) references order_status(id) on delete restrict
 );
-drop table if exists pagaments;
-create table pagaments (
+drop table if exists customer_payments;
+create table customer_payments (
     id int(10) unsigned auto_increment primary key,
-    date datetime not null,
-    import decimal(10,2) not null default 0,
-    observacions varchar(255),
-    paga_i_senyal boolean default false,
-    encarrec_id int(10) not null,
+    payment_date date not null,
+    payment_amount decimal(10,2) not null default 0,
+    payment_comments varchar(255),
+    payment_is_down_payment boolean default false, /* paga i senyal */
+    payment_order_id int(10) not null,
     created datetime default null,
     modified datetime default null,
-    foreign key (encarrec_id) references encarrecs(id)    
+    foreign key (payment_order_id) references customer_orders(id)    
 );
-drop table if exists factures_clients;
-create table factures_clients (
+drop table if exists customer_invoices;
+create table customer_invoices (
     id int(10) unsigned auto_increment primary key,
-    encarrec_id int(10) not null,
-    date datetime not null,
-    num int(10) not null,
-    observacions varchar(255),
+    customer_invoice_customer_id int(10) not null,
+    customer_invoice_date date not null,
+    customer_invoice_number varchar(15) not null,
+    customer_invoice_comments varchar(255),
     created datetime default null,
     modified datetime default null,
-    foreign key (encarrec_id) references encarrecs(id)
+    foreign key (customer_invoice_customer_id) references customers(id)
 );
-drop table if exists linies;
-create table linies (
+drop table if exists customer_order_lines;
+create table customer_order_lines (
     id int(10) unsigned auto_increment primary key,
-    encarrec_id int(10) not null,
-    estat_id int(10) not null,
-    tipus varchar(1) not null default 'S', /* legend S-Servei, V-Venda */
-    article_id int(10) default null,
-    en_diposit boolean default false, 
-    en_diposit_descripcio varchar(250),
-    data_prevista datetime default null,
+    order_line_order_id int(10) not null,
+    order_line_number int(10) not null,
+    order_line_status_id int(10) not null,
+    order_line_type varchar(1) not null default 'E', /* legend E-Service, A-Sale */
+    order_line_article_id int(10) default null,
+    order_line_description varchar(50) default null, /* Description of the line if it is a service */
+    order_line_is_left_article boolean default false, 
+    order_line_left_article_description varchar(250),
+    order_line_due_date datetime default null,
     created datetime default null,
     modified datetime default null,
-    factura_id int(10) not null,
-    import decimal(10,2) not null,
-    iva decimal(10,2) not null,
-    observacions varchar(255) default null,
-    foreign key (encarrec_id) references encarrecs(id) on delete restrict,
-    foreign key (estat_id) references estats_encarrecs(id) on delete restrict,
-    foreign key (article_id) references articles(id) on delete restrict,
-    foreign key (factura_id) references factures_clients(id) on delete restrict
+    order_line_invoice_id int(10) default null,
+    order_line_invoice_line_number int(10) default null,
+    order_line_amout decimal(10,2) not null,
+    order_line_vat decimal(10,2) not null,
+    order_line_comments varchar(255) default null,
+    foreign key (order_line_order_id) references customer_orders(id) on delete restrict,
+    foreign key (order_line_status_id) references order_status(id) on delete restrict,
+    foreign key (order_line_article_id) references articles(id) on delete restrict,
+    foreign key (order_line_invoice_id) references customer_invoices(id) on delete restrict
 );
 /* Conversio a InnoDB */
 ALTER TABLE users ENGINE = INNODB;
 ALTER TABLE towns ENGINE = INNODB;
-ALTER TABLE clients ENGINE = INNODB;
-ALTER TABLE proveidors ENGINE = INNODB;
-ALTER TABLE estats_factures_proveidors ENGINE = INNODB;
-ALTER TABLE factures_proveidors ENGINE = INNODB;
-ALTER TABLE albarans ENGINE = INNODB;
-ALTER TABLE tipus_materies_primeres ENGINE = INNODB;
-ALTER TABLE inventaris ENGINE = INNODB;
-ALTER TABLE consums ENGINE = INNODB;
-ALTER TABLE estats_encarrecs ENGINE = INNODB;
-ALTER TABLE encarrecs ENGINE = INNODB;
-ALTER TABLE pagaments ENGINE = INNODB;
-ALTER TABLE factures_clients ENGINE = INNODB;
-ALTER TABLE linies ENGINE = INNODB;
+ALTER TABLE customers ENGINE = INNODB;
+ALTER TABLE suppliers ENGINE = INNODB;
+ALTER TABLE supplier_invoice_status ENGINE = INNODB;
+ALTER TABLE supplier_invoices ENGINE = INNODB;
+ALTER TABLE supplier_slips ENGINE = INNODB;
+ALTER TABLE raw_material_types ENGINE = INNODB;
+ALTER TABLE stocks ENGINE = INNODB;
+ALTER TABLE consumptions ENGINE = INNODB;
+ALTER TABLE order_status ENGINE = INNODB;
+ALTER TABLE customer_orders ENGINE = INNODB;
+ALTER TABLE customer_payments ENGINE = INNODB;
+ALTER TABLE customer_invoices ENGINE = INNODB;
+ALTER TABLE customer_order_lines ENGINE = INNODB;
 /* Valors per defecte */
 insert into users(username,password,role) values ('admin',md5('R2D2!C3PO'),'admin');
-insert into estats_encarrecs(id,name,estat_final,created,modified) values
+insert into order_status (id,order_status_name,order_status_is_final,created,modified) values
     (1,'pressupost',false,now(),now()),
     (2,'comanda',false,now(),now()),
     (3,'descartat',true,now(),now()),
-    (4,'per recollir',true,now(),now()),
+    (4,'per recollir',false,now(),now()),
     (5,'lliurat',true,now(),now()),
     (6,'cancel·lat',true,now(),now()
 );
