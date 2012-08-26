@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Supplier Model
  *
- * @property SupplierTown $SupplierTown
+ * @property Town $Town
  */
 class Supplier extends AppModel {
 
@@ -40,9 +40,9 @@ class Supplier extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'SupplierTown' => array(
-			'className' => 'SupplierTown',
-			'foreignKey' => 'supplier_town_id',
+		'Town' => array(
+			'className' => 'Town',
+			'foreignKey' => 'town_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

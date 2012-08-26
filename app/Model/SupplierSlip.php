@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * SupplierSlip Model
  *
- * @property SupplierSlipSupplier $SupplierSlipSupplier
+ * @property Supplier $Supplier
  */
 class SupplierSlip extends AppModel {
 
@@ -30,7 +30,7 @@ class SupplierSlip extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'supplier_slip_supplier_id' => array(
+		'supplier_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -60,9 +60,9 @@ class SupplierSlip extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'SupplierSlipSupplier' => array(
-			'className' => 'SupplierSlipSupplier',
-			'foreignKey' => 'supplier_slip_supplier_id',
+		'Supplier' => array(
+			'className' => 'Supplier',
+			'foreignKey' => 'supplier_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

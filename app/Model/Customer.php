@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Customer Model
  *
- * @property CustomerTown $CustomerTown
+ * @property Town $Town
  */
 class Customer extends AppModel {
 
@@ -40,9 +40,9 @@ class Customer extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'CustomerTown' => array(
-			'className' => 'CustomerTown',
-			'foreignKey' => 'customer_town_id',
+		'Town' => array(
+			'className' => 'Town',
+			'foreignKey' => 'town_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

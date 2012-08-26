@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * CustomerPayment Model
  *
- * @property PaymentOrder $PaymentOrder
+ * @property CustomerOrder $CustomerOrder
  */
 class CustomerPayment extends AppModel {
 
@@ -22,7 +22,7 @@ class CustomerPayment extends AppModel {
 	public $validate = array(
 		'payment_date' => array(
 			'date' => array(
-				'rule' => array('date','dmy'),
+				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -50,7 +50,7 @@ class CustomerPayment extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'payment_order_id' => array(
+		'customer_order_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -70,9 +70,9 @@ class CustomerPayment extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'PaymentOrder' => array(
-			'className' => 'PaymentOrder',
-			'foreignKey' => 'payment_order_id',
+		'CustomerOrder' => array(
+			'className' => 'CustomerOrder',
+			'foreignKey' => 'customer_order_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

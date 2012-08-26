@@ -3,10 +3,10 @@ App::uses('AppModel', 'Model');
 /**
  * CustomerOrderLine Model
  *
- * @property OrderLineOrder $OrderLineOrder
- * @property OrderLineStatus $OrderLineStatus
- * @property OrderLineArticle $OrderLineArticle
- * @property OrderLineInvoice $OrderLineInvoice
+ * @property CustomerOrder $CustomerOrder
+ * @property OrderStatus $OrderStatus
+ * @property Stock $Stock
+ * @property CustomerInvoice $CustomerInvoice
  */
 class CustomerOrderLine extends AppModel {
 
@@ -23,7 +23,7 @@ class CustomerOrderLine extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'order_line_order_id' => array(
+		'customer_order_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -34,8 +34,8 @@ class CustomerOrderLine extends AppModel {
 			),
 		),
 		'order_line_number' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'naturalnumber' => array(
+				'rule' => array('naturalnumber'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -43,7 +43,7 @@ class CustomerOrderLine extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'order_line_status_id' => array(
+		'order_status_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -55,7 +55,7 @@ class CustomerOrderLine extends AppModel {
 		),
 		'order_line_type' => array(
 			'inlist' => array(
-				'rule' => array('inlist',array('A','E')),
+				'rule' => array('inlist'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -75,7 +75,7 @@ class CustomerOrderLine extends AppModel {
 		),
 		'order_line_due_date' => array(
 			'date' => array(
-				'rule' => array('date','dmy'),
+				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -113,30 +113,30 @@ class CustomerOrderLine extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'OrderLineOrder' => array(
-			'className' => 'OrderLineOrder',
-			'foreignKey' => 'order_line_order_id',
+		'CustomerOrder' => array(
+			'className' => 'CustomerOrder',
+			'foreignKey' => 'customer_order_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'OrderLineStatus' => array(
-			'className' => 'OrderLineStatus',
-			'foreignKey' => 'order_line_status_id',
+		'OrderStatus' => array(
+			'className' => 'OrderStatus',
+			'foreignKey' => 'order_status_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'OrderLineArticle' => array(
-			'className' => 'OrderLineArticle',
-			'foreignKey' => 'order_line_article_id',
+		'Stock' => array(
+			'className' => 'Stock',
+			'foreignKey' => 'stock_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'OrderLineInvoice' => array(
-			'className' => 'OrderLineInvoice',
-			'foreignKey' => 'order_line_invoice_id',
+		'CustomerInvoice' => array(
+			'className' => 'CustomerInvoice',
+			'foreignKey' => 'customer_invoice_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

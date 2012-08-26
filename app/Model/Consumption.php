@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Consumption Model
  *
- * @property ConsumptionArticle $ConsumptionArticle
- * @property ConsumptionRawMaterial $ConsumptionRawMaterial
+ * @property Article $Article
+ * @property RawMaterial $RawMaterial
  */
 class Consumption extends AppModel {
 
@@ -21,17 +21,7 @@ class Consumption extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'consumption_article_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'consumption_raw_mat_consumed_units' => array(
+		'article_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -91,16 +81,16 @@ class Consumption extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'ConsumptionArticle' => array(
-			'className' => 'ConsumptionArticle',
-			'foreignKey' => 'consumption_article_id',
+		'Article' => array(
+			'className' => 'Article',
+			'foreignKey' => 'article_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'ConsumptionRawMaterial' => array(
-			'className' => 'ConsumptionRawMaterial',
-			'foreignKey' => 'consumption_raw_material_id',
+		'RawMaterial' => array(
+			'className' => 'RawMaterial',
+			'foreignKey' => 'raw_material_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

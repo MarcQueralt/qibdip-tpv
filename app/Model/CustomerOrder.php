@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * CustomerOrder Model
  *
- * @property OrderCustomer $OrderCustomer
+ * @property Customer $Customer
  * @property OrderStatus $OrderStatus
  */
 class CustomerOrder extends AppModel {
@@ -21,7 +21,7 @@ class CustomerOrder extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'order_customer_id' => array(
+		'customer_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -43,7 +43,7 @@ class CustomerOrder extends AppModel {
 		),
 		'order_date' => array(
 			'date' => array(
-				'rule' => array('date','dmy'),
+				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -61,9 +61,9 @@ class CustomerOrder extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'OrderCustomer' => array(
-			'className' => 'OrderCustomer',
-			'foreignKey' => 'order_customer_id',
+		'Customer' => array(
+			'className' => 'Customer',
+			'foreignKey' => 'customer_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

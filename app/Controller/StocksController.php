@@ -7,5 +7,101 @@ App::uses('AppController', 'Controller');
  */
 class StocksController extends AppController {
 
+/**
+ * index method
+ *
+ * @return void
+ */
+	public function index() {
+		$this->Stock->recursive = 0;
+		$this->set('stocks', $this->paginate());
+	}
 
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function view($id = null) {
+		$this->Stock->id = $id;
+		if (!$this->Stock->exists()) {
+			throw new NotFoundException(__('Invalid stock'));
+		}
+		$this->set('stock', $this->Stock->read(null, $id));
+	}
+
+/**
+ * add method
+ *
+ * @return void
+ */
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->Stock->create();
+			if ($this->Stock->save($this->request->data)) {
+				$this->Session->setFlash(__('The stock has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The stock could not be saved. Please, try again.'));
+			}
+		}
+		$rawMaterialTypes = $this->Stock->RawMaterialType->find('list');
+		$supplierSlips = $this->Stock->SupplierSlip->find('list');
+		$supplierInvoices = $this->Stock->SupplierInvoice->find('list');
+		$this->set(compact('rawMaterialTypes', 'supplierSlips', 'supplierInvoices'));
+	}
+
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function edit($id = null) {
+		$this->Stock->id = $id;
+		if (!$this->Stock->exists()) {
+			throw new NotFoundException(__('Invalid stock'));
+		}
+		if ($this->request->is('post') || $this->request->is('put')) {
+			if ($this->Stock->save($this->request->data)) {
+				$this->Session->setFlash(__('The stock has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The stock could not be saved. Please, try again.'));
+			}
+		} else {
+			$this->request->data = $this->Stock->read(null, $id);
+		}
+		$rawMaterialTypes = $this->Stock->RawMaterialType->find('list');
+		$supplierSlips = $this->Stock->SupplierSlip->find('list');
+		$supplierInvoices = $this->Stock->SupplierInvoice->find('list');
+		$this->set(compact('rawMaterialTypes', 'supplierSlips', 'supplierInvoices'));
+	}
+
+/**
+ * delete method
+ *
+ * @throws MethodNotAllowedException
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function delete($id = null) {
+		if (!$this->request->is('post')) {
+			throw new MethodNotAllowedException();
+		}
+		$this->Stock->id = $id;
+		if (!$this->Stock->exists()) {
+			throw new NotFoundException(__('Invalid stock'));
+		}
+		if ($this->Stock->delete()) {
+			$this->Session->setFlash(__('Stock deleted'));
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->Session->setFlash(__('Stock was not deleted'));
+		$this->redirect(array('action' => 'index'));
+	}
 }

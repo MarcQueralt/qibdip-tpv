@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * SupplierInvoice Model
  *
- * @property SupplierInvoiceSupplier $SupplierInvoiceSupplier
+ * @property Supplier $Supplier
  * @property SupplierInvoiceStatus $SupplierInvoiceStatus
  */
 class SupplierInvoice extends AppModel {
@@ -31,7 +31,7 @@ class SupplierInvoice extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'supplier_invoice_supplier_id' => array(
+		'supplier_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -44,36 +44,6 @@ class SupplierInvoice extends AppModel {
 		'supplier_invoice_date' => array(
 			'date' => array(
 				'rule' => array('date','dmy'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'supplier_invoice_amount' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'supplier_invoice_vat' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'supplier_invoice_vat_re' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -101,9 +71,9 @@ class SupplierInvoice extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'SupplierInvoiceSupplier' => array(
-			'className' => 'SupplierInvoiceSupplier',
-			'foreignKey' => 'supplier_invoice_supplier_id',
+		'Supplier' => array(
+			'className' => 'Supplier',
+			'foreignKey' => 'supplier_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

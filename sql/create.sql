@@ -24,27 +24,27 @@ create table customers (
     id int(10) unsigned auto_increment primary key,
     customer_name varchar(100) not null,
     customer_address varchar(100),
-    customer_town_id int(10),
+    town_id int(10),
     customer_vat_number varchar(12),
     customer_phone1 varchar(15),
     customer_phone2 varchar(15),
     customer_email varchar(100),
     created datetime default null,
     modified datetime default null,
-    foreign key (customer_town_id) references towns(id) on delete restrict
+    foreign key (town_id) references towns(id) on delete restrict
 );
 drop table if exists suppliers;
 create table suppliers (
     id int(10) unsigned auto_increment primary key,
     supplier_name varchar(100) not null,
     supplier_address varchar(100),
-    supplier_town_id int(10),
+    town_id int(10),
     supplier_vat_number varchar(12),
     supplier_phone1 varchar(15),
     supplier_phone2 varchar(15),
     created datetime default null,
     modified datetime default null,
-    foreign key (supplier_town_id) references towns(id) on delete restrict
+    foreign key (town_id) references towns(id) on delete restrict
 );
 drop table if exists supplier_invoice_status;
 create table supplier_invoice_status (
@@ -58,7 +58,7 @@ drop table if exists supplier_invoices;
 create table supplier_invoices (
     id int(10) unsigned auto_increment primary key,
     supplier_invoice_number varchar(15) not null,
-    supplier_invoice_supplier_id int(10) not null,
+    supplier_id int(10) not null,
     supplier_invoice_date date not null,
     supplier_invoice_amount decimal(10,2) not null default 0,
     supplier_invoice_vat decimal(10,2) not null default 0,
@@ -66,18 +66,18 @@ create table supplier_invoices (
     supplier_invoice_status_id int(10) not null,
     created datetime default null,
     modified datetime default null,
-    foreign key (supplier_invoice_supplier_id) references suppliers(id) on delete restrict,
+    foreign key (supplier_id) references suppliers(id) on delete restrict,
     foreign key (supplier_invoice_status_id) references supplier_invoice_status(id) on delete restrict
 );
 drop table if exists supplier_slips;
 create table supplier_slips (
     id int(10) unsigned auto_increment primary key,
     supplier_slip_num varchar(15) not null,
-    supplier_slip_supplier_id int(10) not null,
+    supplier_id int(10) not null,
     supplier_slip_date date not null,
     created datetime default null,
     modified datetime default null,
-    foreign key (supplier_slip_supplier_id) references suppliers(id) on delete restrict
+    foreign key (supplier_id) references suppliers(id) on delete restrict
 );
 drop table if exists raw_material_types;
 create table raw_material_types(
@@ -110,24 +110,25 @@ create table stocks (
     stock_sale_price decimal(10,2) default 0,
     created datetime default null,
     modified datetime default null,
-    stock_supplier_slip_id int(10) not null,
-    stock_supplier_slip_line int(10) not null default 1,
-    stock_supplier_invoice_id int(10),
-    foreign key (stock_supplier_invoice_id) references supplier_invoices(id),
-    foreign key (raw_material_type_id) references raw_material_types(id)
+    supplier_slip_id int(10) not null,
+    supplier_slip_line int(10) not null default 1,
+    supplier_invoice_id int(10),
+    foreign key (supplier_invoice_id) references supplier_invoices(id),
+    foreign key (raw_material_type_id) references raw_material_types(id),
+    foreign key (supplier_slip_id) references supplier_slips(id)
 );
 drop table if exists consumptions;
 create table consumptions (
     id int(10) unsigned auto_increment primary key,
-    consumption_article_id int(10) not null,
-    consumption_raw_material_id int(10),
+    article_id int(10) not null,
+    raw_material_id int(10),
     consumption_raw_mat_consumed_units decimal(10,2) not null,
     consumption_cost_01 decimal(10,2) not null default 0, /* tallar */
     consumption_cost_02 decimal(10,2) not null default 0, /* cosir */
     consumption_cost_03 decimal(10,2) not null default 0, /* complements */
     consumption_cost_04 decimal(10,2) not null default 0, /* altes costos */
-    foreign key (consumption_article_id) references stocks(id),
-    foreign key (consumption_raw_material_id) references stocks(id)
+    foreign key (article_id) references stocks(id),
+    foreign key (raw_material_id) references stocks(id)
 );
 drop table if exists order_status;
 create table order_status(
@@ -140,13 +141,13 @@ create table order_status(
 drop table if exists customer_orders;
 create table customer_orders (
     id int(10) unsigned auto_increment primary key,
-    order_customer_id int(10) not null,
+    customer_id int(10) not null,
     order_status_id int(10) not null,
     order_date date not null,
     order_comments varchar(255),
     created datetime default null,
     modified datetime default null,
-    foreign key (order_customer_id) references customers(id) on delete restrict,
+    foreign key (customer_id) references customers(id) on delete restrict,
     foreign key (order_status_id) references order_status(id) on delete restrict
 );
 drop table if exists customer_payments;
@@ -156,45 +157,45 @@ create table customer_payments (
     payment_amount decimal(10,2) not null default 0,
     payment_comments varchar(255),
     payment_is_down_payment boolean default false, /* paga i senyal */
-    payment_order_id int(10) not null,
+    customer_order_id int(10) not null,
     created datetime default null,
     modified datetime default null,
-    foreign key (payment_order_id) references customer_orders(id)    
+    foreign key (customer_order_id) references customer_orders(id)    
 );
 drop table if exists customer_invoices;
 create table customer_invoices (
     id int(10) unsigned auto_increment primary key,
-    customer_invoice_customer_id int(10) not null,
+    customer_id int(10) not null,
     customer_invoice_date date not null,
     customer_invoice_number varchar(15) not null,
     customer_invoice_comments varchar(255),
     created datetime default null,
     modified datetime default null,
-    foreign key (customer_invoice_customer_id) references customers(id)
+    foreign key (customer_id) references customers(id)
 );
 drop table if exists customer_order_lines;
 create table customer_order_lines (
     id int(10) unsigned auto_increment primary key,
-    order_line_order_id int(10) not null,
+    customer_order_id int(10) not null,
     order_line_number int(10) not null,
-    order_line_status_id int(10) not null,
+    order_status_id int(10) not null,
     order_line_type varchar(1) not null default 'E', /* legend E-Service, A-Sale */
-    order_line_article_id int(10) default null,
+    stock_id int(10) default null,
     order_line_description varchar(50) default null, /* Description of the line if it is a service */
     order_line_is_left_article boolean default false, 
     order_line_left_article_description varchar(250),
     order_line_due_date date default null,
     created datetime default null,
     modified datetime default null,
-    order_line_invoice_id int(10) default null,
-    order_line_invoice_line_number int(10) default null,
+    customer_invoice_id int(10) default null,
+    customer_invoice_line_number int(10) default null,
     order_line_amout decimal(10,2) not null,
     order_line_vat decimal(10,2) not null,
     order_line_comments varchar(255) default null,
-    foreign key (order_line_order_id) references customer_orders(id) on delete restrict,
-    foreign key (order_line_status_id) references order_status(id) on delete restrict,
-    foreign key (order_line_article_id) references articles(id) on delete restrict,
-    foreign key (order_line_invoice_id) references customer_invoices(id) on delete restrict
+    foreign key (customer_order_id) references customer_orders(id) on delete restrict,
+    foreign key (order_status_id) references order_status(id) on delete restrict,
+    foreign key (stock_id) references stocks(id) on delete restrict,
+    foreign key (customer_invoice_id) references customer_invoices(id) on delete restrict
 );
 /* Conversio a InnoDB */
 ALTER TABLE users ENGINE = INNODB;
@@ -222,3 +223,64 @@ insert into order_status (id,order_status_name,order_status_is_final,created,mod
     (5,'lliurat',true,now(),now()),
     (6,'cancel·lat',true,now(),now()
 );
+drop view if exists articles;
+create view articles as select 
+    id,
+    stock_type,
+    article_reference,
+    article_model,
+    article_size,
+    stock_comment,
+    stock_userfield01,
+    stock_userfield02,
+    stock_userfield03,
+    stock_buy_price,
+    stock_vat,
+    stock_vat_re,
+    stock_sale_price,
+    created,
+    modified,
+    supplier_slip_id,
+    supplier_slip_line,
+    supplier_invoice_id
+    from stocks
+    where stock_type='A';
+drop view if exists raw_materials;
+create view raw_materials as select 
+    id,
+    stock_type,
+    raw_material_type_id,
+    raw_mat_units,
+    raw_mat_userfield01, /* casc */
+    raw_mat_unit_price,
+    stock_comment,
+    stock_userfield01,
+    stock_userfield02,
+    stock_userfield03,
+    stock_buy_price,
+    stock_vat,
+    stock_vat_re,
+    stock_sale_price,
+    created,
+    modified,
+    supplier_slip_id,
+    supplier_slip_line,
+    supplier_invoice_id
+    from stocks
+    where stock_type='M';
+drop view if exists customer_invoice_lines;
+create view customer_invoice_lines as select 
+    id,
+    customer_invoice_id,
+    customer_invoice_line_number,
+    customer_order_id,
+    order_line_number,
+    order_line_type as customer_invoice_line_type,
+    stock_id,
+    order_line_description as customer_invoice_line_description,
+    created,
+    modified,
+    order_line_amout as customer_invoice_line_amount,
+    order_line_vat as customer_invoice_line_vat
+    from customer_order_lines
+    where customer_invoice_id is not null;

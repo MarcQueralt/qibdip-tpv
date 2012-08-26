@@ -4,8 +4,8 @@ App::uses('AppModel', 'Model');
  * Stock Model
  *
  * @property RawMaterialType $RawMaterialType
- * @property StockSupplierSlip $StockSupplierSlip
- * @property StockSupplierInvoice $StockSupplierInvoice
+ * @property SupplierSlip $SupplierSlip
+ * @property SupplierInvoice $SupplierInvoice
  */
 class Stock extends AppModel {
 
@@ -14,7 +14,7 @@ class Stock extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'article_reference';
+	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -24,7 +24,17 @@ class Stock extends AppModel {
 	public $validate = array(
 		'stock_type' => array(
 			'inlist' => array(
-				'rule' => array('inlist',array('A','R')),
+				'rule' => array('inlist'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'raw_mat_unit_price' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -72,7 +82,7 @@ class Stock extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'stock_supplier_slip_id' => array(
+		'supplier_slip_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -82,7 +92,7 @@ class Stock extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'stock_supplier_slip_line' => array(
+		'supplier_slip_line' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -109,16 +119,16 @@ class Stock extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'StockSupplierSlip' => array(
-			'className' => 'StockSupplierSlip',
-			'foreignKey' => 'stock_supplier_slip_id',
+		'SupplierSlip' => array(
+			'className' => 'SupplierSlip',
+			'foreignKey' => 'supplier_slip_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'StockSupplierInvoice' => array(
-			'className' => 'StockSupplierInvoice',
-			'foreignKey' => 'stock_supplier_invoice_id',
+		'SupplierInvoice' => array(
+			'className' => 'SupplierInvoice',
+			'foreignKey' => 'supplier_invoice_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
