@@ -23,7 +23,7 @@ drop table if exists customers;
 create table customers (
     id int(10) unsigned auto_increment primary key,
     customer_name varchar(100) not null,
-    customer_address varchar(100) not null,
+    customer_address varchar(100),
     customer_town_id int(10),
     customer_vat_number varchar(12),
     customer_phone1 varchar(15),
@@ -37,7 +37,7 @@ drop table if exists suppliers;
 create table suppliers (
     id int(10) unsigned auto_increment primary key,
     supplier_name varchar(100) not null,
-    supplier_address varchar(100) not null,
+    supplier_address varchar(100),
     supplier_town_id int(10),
     supplier_vat_number varchar(12),
     supplier_phone1 varchar(15),
@@ -49,7 +49,7 @@ create table suppliers (
 drop table if exists supplier_invoice_status;
 create table supplier_invoice_status (
     id int(10) unsigned auto_increment primary key,
-    sup_inv_status_name varchar(25),
+    sup_inv_status_name varchar(25) not null,
     sup_inv_is_final_status boolean not null default false,
     created datetime default null,
     modified datetime default null
@@ -59,10 +59,10 @@ create table supplier_invoices (
     id int(10) unsigned auto_increment primary key,
     supplier_invoice_number varchar(15) not null,
     supplier_invoice_supplier_id int(10) not null,
-    supplier_invoice_date date default null,
+    supplier_invoice_date date not null,
     supplier_invoice_amount decimal(10,2) not null default 0,
     supplier_invoice_vat decimal(10,2) not null default 0,
-    supplier_invoice_vat_re decimal(10,2) default 0,
+    supplier_invoice_vat_re decimal(10,2) not null default 0,
     supplier_invoice_status_id int(10) not null,
     created datetime default null,
     modified datetime default null,
@@ -74,7 +74,7 @@ create table supplier_slips (
     id int(10) unsigned auto_increment primary key,
     supplier_slip_num varchar(15) not null,
     supplier_slip_supplier_id int(10) not null,
-    supplier_slip_date date default null,
+    supplier_slip_date date not null,
     created datetime default null,
     modified datetime default null,
     foreign key (supplier_slip_supplier_id) references suppliers(id) on delete restrict
@@ -84,15 +84,15 @@ create table raw_material_types(
     id int(10) unsigned auto_increment primary key,
     raw_mat_type_name varchar(25) not null,
     raw_mat_type_is_partial_consume boolean default true, /* Indica si es consumeix totalment o per unitats */
-    raw_mat_measuring_unit varchar(25)
+    raw_mat_measuring_unit varchar(25) not null
 );
 drop table if exists stocks;
 create table stocks (
     id int(10) unsigned auto_increment primary key,
     stock_type varchar(1) not null default 'A', /* A - Final Article, R - Raw Material */
     /* Articles */
-    article_reference varchar(50) not null,
-    article_model varchar(250) not null,
+    article_reference varchar(50),
+    article_model varchar(250),
     article_size varchar(10),
     /* Raw Material */
     raw_material_type_id int(10),
@@ -110,7 +110,9 @@ create table stocks (
     stock_sale_price decimal(10,2) default 0,
     created datetime default null,
     modified datetime default null,
-    stock_supplier_invoice_id int(10) not null,
+    stock_supplier_slip_id int(10) not null,
+    stock_supplier_slip_line int(10) not null default 1,
+    stock_supplier_invoice_id int(10),
     foreign key (stock_supplier_invoice_id) references supplier_invoices(id),
     foreign key (raw_material_type_id) references raw_material_types(id)
 );
@@ -130,7 +132,7 @@ create table consumptions (
 drop table if exists order_status;
 create table order_status(
     id int(10) unsigned auto_increment primary key,
-    order_status_name varchar(25),
+    order_status_name varchar(25) not null,
     order_status_is_final boolean not null default false,
     created datetime default null,
     modified datetime default null
@@ -140,6 +142,7 @@ create table customer_orders (
     id int(10) unsigned auto_increment primary key,
     order_customer_id int(10) not null,
     order_status_id int(10) not null,
+    order_date date not null,
     order_comments varchar(255),
     created datetime default null,
     modified datetime default null,
@@ -180,7 +183,7 @@ create table customer_order_lines (
     order_line_description varchar(50) default null, /* Description of the line if it is a service */
     order_line_is_left_article boolean default false, 
     order_line_left_article_description varchar(250),
-    order_line_due_date datetime default null,
+    order_line_due_date date default null,
     created datetime default null,
     modified datetime default null,
     order_line_invoice_id int(10) default null,
