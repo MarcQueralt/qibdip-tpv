@@ -1,24 +1,26 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Albaran Model
+ * SupplierSlip Model
  *
- * @property Proveidor $Proveidor
+ * @property SupplierSlipSupplier $SupplierSlipSupplier
  */
-class Albaran extends AppModel {
+class SupplierSlip extends AppModel {
+
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'num';
+	public $displayField = 'supplier_slip_num';
+
 /**
  * Validation rules
  *
  * @var array
  */
 	public $validate = array(
-		'num' => array(
+		'supplier_slip_num' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -28,7 +30,7 @@ class Albaran extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'proveidor_id' => array(
+		'supplier_slip_supplier_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -38,9 +40,9 @@ class Albaran extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'date' => array(
+		'supplier_slip_date' => array(
 			'date' => array(
-				'rule' => array('date'),
+				'rule' => array('date','dmy'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -58,9 +60,9 @@ class Albaran extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Proveidor' => array(
-			'className' => 'Proveidor',
-			'foreignKey' => 'proveidor_id',
+		'SupplierSlipSupplier' => array(
+			'className' => 'SupplierSlipSupplier',
+			'foreignKey' => 'supplier_slip_supplier_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

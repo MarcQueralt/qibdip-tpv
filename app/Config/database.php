@@ -66,7 +66,7 @@ class DATABASE_CONFIG {
 		'login' => 'dmst_test',
 		'password' => 'Novembre2011!',
 		'database' => 'dmst_test_tpv',
-		//'prefix' => '',
+		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
 }
