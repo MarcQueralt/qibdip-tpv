@@ -32,4 +32,20 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+        public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'copies', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'loggedout'),
+            'authorize' => array('Controller') // Added this line
+        )
+    );
+
+    public function isAuthorized($user) {
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true; //Admin can access every action
+        }
+        return false; // The rest don't
+    }
+
 }

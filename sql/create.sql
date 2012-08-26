@@ -214,7 +214,8 @@ ALTER TABLE customer_payments ENGINE = INNODB;
 ALTER TABLE customer_invoices ENGINE = INNODB;
 ALTER TABLE customer_order_lines ENGINE = INNODB;
 /* Valors per defecte */
-insert into users(username,password,role) values ('admin',md5('R2D2!C3PO'),'admin');
+insert into users(username,password,role) values ('admin','5c46418cf7ac76fdb0264b333de494ddfdb4465f','admin');
+/* Per trobar el valor de la contrasenya, convé mirar els resultats de debug de la pantalla de login */
 insert into order_status (id,order_status_name,order_status_is_final,created,modified) values
     (1,'pressupost',false,now(),now()),
     (2,'comanda',false,now(),now()),
