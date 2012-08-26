@@ -37,15 +37,15 @@ class AppController extends Controller {
         'Auth' => array(
             'loginRedirect' => array('controller' => 'copies', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'users', 'action' => 'loggedout'),
-            'authorize' => array('Controller') // Added this line
+            'authorize' => array('Controller')
         )
     );
 
     public function isAuthorized($user) {
         if (isset($user['role']) && $user['role'] === 'admin') {
-            return true; //Admin can access every action
+            return true;
         }
-        return false; // The rest don't
+        return false;
     }
 
 }
