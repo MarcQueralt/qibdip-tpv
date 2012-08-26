@@ -1,0 +1,2141 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-08-26 19:51+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ArticlesController.php:30;65;96
+msgid "Invalid article"
+msgstr ""
+
+#: Controller/ArticlesController.php:44;69
+msgid "The article has been saved"
+msgstr ""
+
+#: Controller/ArticlesController.php:47;72
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ArticlesController.php:99
+msgid "Article deleted"
+msgstr ""
+
+#: Controller/ArticlesController.php:102
+msgid "Article was not deleted"
+msgstr ""
+
+#: Controller/ConsumptionsController.php:30;65;96
+msgid "Invalid consumption"
+msgstr ""
+
+#: Controller/ConsumptionsController.php:44;69
+msgid "The consumption has been saved"
+msgstr ""
+
+#: Controller/ConsumptionsController.php:47;72
+msgid "The consumption could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ConsumptionsController.php:99
+msgid "Consumption deleted"
+msgstr ""
+
+#: Controller/ConsumptionsController.php:102
+msgid "Consumption was not deleted"
+msgstr ""
+
+#: Controller/CustomerInvoiceLinesController.php:30;66;98
+msgid "Invalid customer invoice line"
+msgstr ""
+
+#: Controller/CustomerInvoiceLinesController.php:44;70
+msgid "The customer invoice line has been saved"
+msgstr ""
+
+#: Controller/CustomerInvoiceLinesController.php:47;73
+msgid "The customer invoice line could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomerInvoiceLinesController.php:101
+msgid "Customer invoice line deleted"
+msgstr ""
+
+#: Controller/CustomerInvoiceLinesController.php:104
+msgid "Customer invoice line was not deleted"
+msgstr ""
+
+#: Controller/CustomerInvoicesController.php:30;64;94
+msgid "Invalid customer invoice"
+msgstr ""
+
+#: Controller/CustomerInvoicesController.php:44;68
+msgid "The customer invoice has been saved"
+msgstr ""
+
+#: Controller/CustomerInvoicesController.php:47;71
+msgid "The customer invoice could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomerInvoicesController.php:97
+msgid "Customer invoice deleted"
+msgstr ""
+
+#: Controller/CustomerInvoicesController.php:100
+msgid "Customer invoice was not deleted"
+msgstr ""
+
+#: Controller/CustomerOrderLinesController.php:30;67;100
+msgid "Invalid customer order line"
+msgstr ""
+
+#: Controller/CustomerOrderLinesController.php:44;71
+msgid "The customer order line has been saved"
+msgstr ""
+
+#: Controller/CustomerOrderLinesController.php:47;74
+msgid "The customer order line could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomerOrderLinesController.php:103
+msgid "Customer order line deleted"
+msgstr ""
+
+#: Controller/CustomerOrderLinesController.php:106
+msgid "Customer order line was not deleted"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:30;65;96
+msgid "Invalid customer order"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:44;69
+msgid "The customer order has been saved"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:47;72
+msgid "The customer order could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:99
+msgid "Customer order deleted"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:102
+msgid "Customer order was not deleted"
+msgstr ""
+
+#: Controller/CustomerPaymentsController.php:30;64;94
+msgid "Invalid customer payment"
+msgstr ""
+
+#: Controller/CustomerPaymentsController.php:44;68
+msgid "The customer payment has been saved"
+msgstr ""
+
+#: Controller/CustomerPaymentsController.php:47;71
+msgid "The customer payment could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomerPaymentsController.php:97
+msgid "Customer payment deleted"
+msgstr ""
+
+#: Controller/CustomerPaymentsController.php:100
+msgid "Customer payment was not deleted"
+msgstr ""
+
+#: Controller/CustomersController.php:30;64;94
+msgid "Invalid customer"
+msgstr ""
+
+#: Controller/CustomersController.php:44;68
+msgid "The customer has been saved"
+msgstr ""
+
+#: Controller/CustomersController.php:47;71
+msgid "The customer could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CustomersController.php:97
+msgid "Customer deleted"
+msgstr ""
+
+#: Controller/CustomersController.php:100
+msgid "Customer was not deleted"
+msgstr ""
+
+#: Controller/OrderStatusesController.php:30;62;90
+msgid "Invalid order status"
+msgstr ""
+
+#: Controller/OrderStatusesController.php:44;66
+msgid "The order status has been saved"
+msgstr ""
+
+#: Controller/OrderStatusesController.php:47;69
+msgid "The order status could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OrderStatusesController.php:93
+msgid "Order status deleted"
+msgstr ""
+
+#: Controller/OrderStatusesController.php:96
+msgid "Order status was not deleted"
+msgstr ""
+
+#: Controller/RawMaterialTypesController.php:30;62;90
+msgid "Invalid raw material type"
+msgstr ""
+
+#: Controller/RawMaterialTypesController.php:44;66
+msgid "The raw material type has been saved"
+msgstr ""
+
+#: Controller/RawMaterialTypesController.php:47;69
+msgid "The raw material type could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RawMaterialTypesController.php:93
+msgid "Raw material type deleted"
+msgstr ""
+
+#: Controller/RawMaterialTypesController.php:96
+msgid "Raw material type was not deleted"
+msgstr ""
+
+#: Controller/RawMaterialsController.php:30;66;98
+msgid "Invalid raw material"
+msgstr ""
+
+#: Controller/RawMaterialsController.php:44;70
+msgid "The raw material has been saved"
+msgstr ""
+
+#: Controller/RawMaterialsController.php:47;73
+msgid "The raw material could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RawMaterialsController.php:101
+msgid "Raw material deleted"
+msgstr ""
+
+#: Controller/RawMaterialsController.php:104
+msgid "Raw material was not deleted"
+msgstr ""
+
+#: Controller/StocksController.php:30;66;98
+msgid "Invalid stock"
+msgstr ""
+
+#: Controller/StocksController.php:44;70
+msgid "The stock has been saved"
+msgstr ""
+
+#: Controller/StocksController.php:47;73
+msgid "The stock could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StocksController.php:101
+msgid "Stock deleted"
+msgstr ""
+
+#: Controller/StocksController.php:104
+msgid "Stock was not deleted"
+msgstr ""
+
+#: Controller/SupplierInvoiceStatusesController.php:30;62;90
+msgid "Invalid supplier invoice status"
+msgstr ""
+
+#: Controller/SupplierInvoiceStatusesController.php:44;66
+msgid "The supplier invoice status has been saved"
+msgstr ""
+
+#: Controller/SupplierInvoiceStatusesController.php:47;69
+msgid "The supplier invoice status could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SupplierInvoiceStatusesController.php:93
+msgid "Supplier invoice status deleted"
+msgstr ""
+
+#: Controller/SupplierInvoiceStatusesController.php:96
+msgid "Supplier invoice status was not deleted"
+msgstr ""
+
+#: Controller/SupplierInvoicesController.php:30;65;96
+msgid "Invalid supplier invoice"
+msgstr ""
+
+#: Controller/SupplierInvoicesController.php:44;69
+msgid "The supplier invoice has been saved"
+msgstr ""
+
+#: Controller/SupplierInvoicesController.php:47;72
+msgid "The supplier invoice could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SupplierInvoicesController.php:99
+msgid "Supplier invoice deleted"
+msgstr ""
+
+#: Controller/SupplierInvoicesController.php:102
+msgid "Supplier invoice was not deleted"
+msgstr ""
+
+#: Controller/SupplierSlipsController.php:30;64;94
+msgid "Invalid supplier slip"
+msgstr ""
+
+#: Controller/SupplierSlipsController.php:44;68
+msgid "The supplier slip has been saved"
+msgstr ""
+
+#: Controller/SupplierSlipsController.php:47;71
+msgid "The supplier slip could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SupplierSlipsController.php:97
+msgid "Supplier slip deleted"
+msgstr ""
+
+#: Controller/SupplierSlipsController.php:100
+msgid "Supplier slip was not deleted"
+msgstr ""
+
+#: Controller/SuppliersController.php:30;64;94
+msgid "Invalid supplier"
+msgstr ""
+
+#: Controller/SuppliersController.php:44;68
+msgid "The supplier has been saved"
+msgstr ""
+
+#: Controller/SuppliersController.php:47;71
+msgid "The supplier could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SuppliersController.php:97
+msgid "Supplier deleted"
+msgstr ""
+
+#: Controller/SuppliersController.php:100
+msgid "Supplier was not deleted"
+msgstr ""
+
+#: Controller/TownsController.php:30;62;90
+msgid "Invalid town"
+msgstr ""
+
+#: Controller/TownsController.php:44;66
+msgid "The town has been saved"
+msgstr ""
+
+#: Controller/TownsController.php:47;69
+msgid "The town could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TownsController.php:93
+msgid "Town deleted"
+msgstr ""
+
+#: Controller/TownsController.php:96
+msgid "Town was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:30;62;90
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:44;66
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:47;69
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:93
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:96
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Articles/add.ctp:4
+msgid "Add Article"
+msgstr ""
+
+#: View/Articles/add.ctp:23
+#: View/Articles/edit.ctp:24
+#: View/Consumptions/add.ctp:15
+#: View/Consumptions/edit.ctp:16
+#: View/CustomerInvoiceLines/add.ctp:17
+#: View/CustomerInvoiceLines/edit.ctp:18
+#: View/CustomerInvoices/add.ctp:12
+#: View/CustomerInvoices/edit.ctp:13
+#: View/CustomerOrderLines/add.ctp:22
+#: View/CustomerOrderLines/edit.ctp:23
+#: View/CustomerOrders/add.ctp:12
+#: View/CustomerOrders/edit.ctp:13
+#: View/CustomerPayments/add.ctp:13
+#: View/CustomerPayments/edit.ctp:14
+#: View/Customers/add.ctp:15
+#: View/Customers/edit.ctp:16
+#: View/OrderStatuses/add.ctp:10
+#: View/OrderStatuses/edit.ctp:11
+#: View/RawMaterialTypes/add.ctp:11
+#: View/RawMaterialTypes/edit.ctp:12
+#: View/RawMaterials/add.ctp:24
+#: View/RawMaterials/edit.ctp:25
+#: View/Stocks/add.ctp:27
+#: View/Stocks/edit.ctp:28
+#: View/SupplierInvoiceStatuses/add.ctp:10
+#: View/SupplierInvoiceStatuses/edit.ctp:11
+#: View/SupplierInvoices/add.ctp:15
+#: View/SupplierInvoices/edit.ctp:16
+#: View/SupplierSlips/add.ctp:11
+#: View/SupplierSlips/edit.ctp:12
+#: View/Suppliers/add.ctp:14
+#: View/Suppliers/edit.ctp:15
+#: View/Towns/add.ctp:9
+#: View/Towns/edit.ctp:10
+#: View/Users/add.ctp:11
+#: View/Users/edit.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: View/Articles/add.ctp:26
+#: View/Articles/edit.ctp:27
+#: View/Articles/index.ctp:23;74
+#: View/Articles/view.ctp:97;124
+#: View/Consumptions/add.ctp:18
+#: View/Consumptions/edit.ctp:19
+#: View/Consumptions/index.ctp:13;54
+#: View/Consumptions/view.ctp:47
+#: View/CustomerInvoiceLines/add.ctp:20
+#: View/CustomerInvoiceLines/edit.ctp:21
+#: View/CustomerInvoiceLines/index.ctp:17;64
+#: View/CustomerInvoiceLines/view.ctp:67
+#: View/CustomerInvoices/add.ctp:15
+#: View/CustomerInvoices/edit.ctp:16
+#: View/CustomerInvoices/index.ctp:12;50
+#: View/CustomerInvoices/view.ctp:42;73;129
+#: View/CustomerOrderLines/add.ctp:25
+#: View/CustomerOrderLines/edit.ctp:26
+#: View/CustomerOrderLines/index.ctp:22;76
+#: View/CustomerOrderLines/view.ctp:92
+#: View/CustomerOrders/add.ctp:15
+#: View/CustomerOrders/edit.ctp:16
+#: View/CustomerOrders/index.ctp:12;52
+#: View/CustomerOrders/view.ctp:42
+#: View/CustomerPayments/add.ctp:16
+#: View/CustomerPayments/edit.ctp:17
+#: View/CustomerPayments/index.ctp:13;52
+#: View/CustomerPayments/view.ctp:47
+#: View/Customers/add.ctp:18
+#: View/Customers/edit.ctp:19
+#: View/Customers/index.ctp:15;56
+#: View/Customers/view.ctp:57
+#: View/OrderStatuses/add.ctp:13
+#: View/OrderStatuses/edit.ctp:14
+#: View/OrderStatuses/index.ctp:10;44
+#: View/OrderStatuses/view.ctp:32;54
+#: View/RawMaterialTypes/add.ctp:14
+#: View/RawMaterialTypes/edit.ctp:15
+#: View/RawMaterialTypes/index.ctp:9;42
+#: View/RawMaterialTypes/view.ctp:27;64
+#: View/RawMaterials/add.ctp:27
+#: View/RawMaterials/edit.ctp:28
+#: View/RawMaterials/index.ctp:24;78
+#: View/RawMaterials/view.ctp:102;131
+#: View/Stocks/add.ctp:30
+#: View/Stocks/edit.ctp:31
+#: View/Stocks/index.ctp:27;84
+#: View/Stocks/view.ctp:117
+#: View/SupplierInvoiceStatuses/add.ctp:13
+#: View/SupplierInvoiceStatuses/edit.ctp:14
+#: View/SupplierInvoiceStatuses/index.ctp:10;44
+#: View/SupplierInvoiceStatuses/view.ctp:32;57
+#: View/SupplierInvoices/add.ctp:18
+#: View/SupplierInvoices/edit.ctp:19
+#: View/SupplierInvoices/index.ctp:15;58
+#: View/SupplierInvoices/view.ctp:57
+#: View/SupplierSlips/add.ctp:14
+#: View/SupplierSlips/edit.ctp:15
+#: View/SupplierSlips/index.ctp:11;48
+#: View/SupplierSlips/view.ctp:37
+#: View/Suppliers/add.ctp:17
+#: View/Suppliers/edit.ctp:18
+#: View/Suppliers/index.ctp:14;54
+#: View/Suppliers/view.ctp:52
+#: View/Towns/add.ctp:12
+#: View/Towns/edit.ctp:13
+#: View/Towns/index.ctp:9;42
+#: View/Towns/view.ctp:27
+#: View/Users/add.ctp:14
+#: View/Users/edit.ctp:15
+#: View/Users/index.ctp:11;46
+#: View/Users/view.ctp:37
+msgid "Actions"
+msgstr ""
+
+#: View/Articles/add.ctp:29
+#: View/Articles/edit.ctp:31
+#: View/Articles/view.ctp:101
+#: View/Consumptions/add.ctp:22
+#: View/Consumptions/edit.ctp:24
+#: View/Consumptions/index.ctp:57
+#: View/Consumptions/view.ctp:53
+msgid "List Articles"
+msgstr ""
+
+#: View/Articles/add.ctp:30
+#: View/Articles/edit.ctp:32
+#: View/Articles/index.ctp:77
+#: View/Articles/view.ctp:103
+#: View/RawMaterials/add.ctp:33
+#: View/RawMaterials/edit.ctp:35
+#: View/RawMaterials/index.ctp:83
+#: View/RawMaterials/view.ctp:110
+#: View/Stocks/add.ctp:36
+#: View/Stocks/edit.ctp:38
+#: View/Stocks/index.ctp:89
+#: View/Stocks/view.ctp:125
+#: View/SupplierSlips/add.ctp:17
+#: View/SupplierSlips/edit.ctp:19
+#: View/SupplierSlips/view.ctp:41
+msgid "List Supplier Slips"
+msgstr ""
+
+#: View/Articles/add.ctp:31
+#: View/Articles/edit.ctp:33
+#: View/Articles/index.ctp:78
+#: View/Articles/view.ctp:104
+#: View/RawMaterials/add.ctp:34
+#: View/RawMaterials/edit.ctp:36
+#: View/RawMaterials/index.ctp:84
+#: View/RawMaterials/view.ctp:111
+#: View/Stocks/add.ctp:37
+#: View/Stocks/edit.ctp:39
+#: View/Stocks/index.ctp:90
+#: View/Stocks/view.ctp:126
+#: View/SupplierSlips/index.ctp:50
+#: View/SupplierSlips/view.ctp:42
+msgid "New Supplier Slip"
+msgstr ""
+
+#: View/Articles/add.ctp:32
+#: View/Articles/edit.ctp:34
+#: View/Articles/index.ctp:79
+#: View/Articles/view.ctp:105
+#: View/RawMaterials/add.ctp:35
+#: View/RawMaterials/edit.ctp:37
+#: View/RawMaterials/index.ctp:85
+#: View/RawMaterials/view.ctp:112
+#: View/Stocks/add.ctp:38
+#: View/Stocks/edit.ctp:40
+#: View/Stocks/index.ctp:91
+#: View/Stocks/view.ctp:127
+#: View/SupplierInvoiceStatuses/add.ctp:17
+#: View/SupplierInvoiceStatuses/edit.ctp:19
+#: View/SupplierInvoiceStatuses/index.ctp:47
+#: View/SupplierInvoiceStatuses/view.ctp:38
+#: View/SupplierInvoices/add.ctp:21
+#: View/SupplierInvoices/edit.ctp:23
+#: View/SupplierInvoices/view.ctp:61
+msgid "List Supplier Invoices"
+msgstr ""
+
+#: View/Articles/add.ctp:33
+#: View/Articles/edit.ctp:35
+#: View/Articles/index.ctp:80
+#: View/Articles/view.ctp:106
+#: View/RawMaterials/add.ctp:36
+#: View/RawMaterials/edit.ctp:38
+#: View/RawMaterials/index.ctp:86
+#: View/RawMaterials/view.ctp:113
+#: View/Stocks/add.ctp:39
+#: View/Stocks/edit.ctp:41
+#: View/Stocks/index.ctp:92
+#: View/Stocks/view.ctp:128
+#: View/SupplierInvoiceStatuses/add.ctp:18
+#: View/SupplierInvoiceStatuses/edit.ctp:20
+#: View/SupplierInvoiceStatuses/index.ctp:48
+#: View/SupplierInvoiceStatuses/view.ctp:39;85
+#: View/SupplierInvoices/index.ctp:60
+#: View/SupplierInvoices/view.ctp:62
+msgid "New Supplier Invoice"
+msgstr ""
+
+#: View/Articles/add.ctp:34
+#: View/Articles/edit.ctp:36
+#: View/Articles/index.ctp:81
+#: View/Articles/view.ctp:107
+#: View/Consumptions/add.ctp:21
+#: View/Consumptions/edit.ctp:23
+#: View/Consumptions/view.ctp:51
+#: View/RawMaterials/add.ctp:37
+#: View/RawMaterials/edit.ctp:39
+#: View/RawMaterials/index.ctp:87
+#: View/RawMaterials/view.ctp:114
+msgid "List Consumptions"
+msgstr ""
+
+#: View/Articles/add.ctp:35
+#: View/Articles/edit.ctp:37
+#: View/Articles/index.ctp:82
+#: View/Articles/view.ctp:108;150
+#: View/Consumptions/index.ctp:56
+#: View/Consumptions/view.ctp:52
+#: View/RawMaterials/add.ctp:38
+#: View/RawMaterials/edit.ctp:40
+#: View/RawMaterials/index.ctp:88
+#: View/RawMaterials/view.ctp:115;157
+msgid "New Consumption"
+msgstr ""
+
+#: View/Articles/edit.ctp:4
+#: View/Articles/view.ctp:99
+msgid "Edit Article"
+msgstr ""
+
+#: View/Articles/edit.ctp:30
+#: View/Articles/index.ctp:53
+#: View/Articles/view.ctp:141
+#: View/Consumptions/edit.ctp:22
+#: View/Consumptions/index.ctp:33
+#: View/CustomerInvoiceLines/edit.ctp:24
+#: View/CustomerInvoiceLines/index.ctp:43
+#: View/CustomerInvoices/edit.ctp:19
+#: View/CustomerInvoices/index.ctp:29
+#: View/CustomerInvoices/view.ctp:94;155
+#: View/CustomerOrderLines/edit.ctp:29
+#: View/CustomerOrderLines/index.ctp:55
+#: View/CustomerOrders/edit.ctp:19
+#: View/CustomerOrders/index.ctp:31
+#: View/CustomerPayments/edit.ctp:20
+#: View/CustomerPayments/index.ctp:31
+#: View/Customers/edit.ctp:22
+#: View/Customers/index.ctp:35
+#: View/OrderStatuses/edit.ctp:17
+#: View/OrderStatuses/index.ctp:23
+#: View/OrderStatuses/view.ctp:70
+#: View/RawMaterialTypes/edit.ctp:18
+#: View/RawMaterialTypes/index.ctp:21
+#: View/RawMaterialTypes/view.ctp:95
+#: View/RawMaterials/edit.ctp:31
+#: View/RawMaterials/index.ctp:57
+#: View/RawMaterials/view.ctp:148
+#: View/Stocks/edit.ctp:34
+#: View/Stocks/index.ctp:63
+#: View/SupplierInvoiceStatuses/edit.ctp:17
+#: View/SupplierInvoiceStatuses/index.ctp:23
+#: View/SupplierInvoiceStatuses/view.ctp:76
+#: View/SupplierInvoices/edit.ctp:22
+#: View/SupplierInvoices/index.ctp:37
+#: View/SupplierSlips/edit.ctp:18
+#: View/SupplierSlips/index.ctp:27
+#: View/Suppliers/edit.ctp:21
+#: View/Suppliers/index.ctp:33
+#: View/Towns/edit.ctp:16
+#: View/Towns/index.ctp:21
+#: View/Users/edit.ctp:18
+#: View/Users/index.ctp:25
+msgid "Delete"
+msgstr ""
+
+#: View/Articles/edit.ctp:30
+#: View/Articles/index.ctp:53
+#: View/Articles/view.ctp:100;141
+#: View/Consumptions/edit.ctp:22
+#: View/Consumptions/index.ctp:33
+#: View/Consumptions/view.ctp:50
+#: View/CustomerInvoiceLines/edit.ctp:24
+#: View/CustomerInvoiceLines/index.ctp:43
+#: View/CustomerInvoiceLines/view.ctp:70
+#: View/CustomerInvoices/edit.ctp:19
+#: View/CustomerInvoices/index.ctp:29
+#: View/CustomerInvoices/view.ctp:45;94;155
+#: View/CustomerOrderLines/edit.ctp:29
+#: View/CustomerOrderLines/index.ctp:55
+#: View/CustomerOrderLines/view.ctp:95
+#: View/CustomerOrders/edit.ctp:19
+#: View/CustomerOrders/index.ctp:31
+#: View/CustomerOrders/view.ctp:45
+#: View/CustomerPayments/edit.ctp:20
+#: View/CustomerPayments/index.ctp:31
+#: View/CustomerPayments/view.ctp:50
+#: View/Customers/edit.ctp:22
+#: View/Customers/index.ctp:35
+#: View/Customers/view.ctp:60
+#: View/OrderStatuses/edit.ctp:17
+#: View/OrderStatuses/index.ctp:23
+#: View/OrderStatuses/view.ctp:35;70
+#: View/RawMaterialTypes/edit.ctp:18
+#: View/RawMaterialTypes/index.ctp:21
+#: View/RawMaterialTypes/view.ctp:30;95
+#: View/RawMaterials/edit.ctp:31
+#: View/RawMaterials/index.ctp:57
+#: View/RawMaterials/view.ctp:105;148
+#: View/Stocks/edit.ctp:34
+#: View/Stocks/index.ctp:63
+#: View/Stocks/view.ctp:120
+#: View/SupplierInvoiceStatuses/edit.ctp:17
+#: View/SupplierInvoiceStatuses/index.ctp:23
+#: View/SupplierInvoiceStatuses/view.ctp:35;76
+#: View/SupplierInvoices/edit.ctp:22
+#: View/SupplierInvoices/index.ctp:37
+#: View/SupplierInvoices/view.ctp:60
+#: View/SupplierSlips/edit.ctp:18
+#: View/SupplierSlips/index.ctp:27
+#: View/SupplierSlips/view.ctp:40
+#: View/Suppliers/edit.ctp:21
+#: View/Suppliers/index.ctp:33
+#: View/Suppliers/view.ctp:55
+#: View/Towns/edit.ctp:16
+#: View/Towns/index.ctp:21
+#: View/Towns/view.ctp:30
+#: View/Users/edit.ctp:18
+#: View/Users/index.ctp:25
+#: View/Users/view.ctp:40
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Articles/index.ctp:2
+msgid "Articles"
+msgstr ""
+
+#: View/Articles/index.ctp:51
+#: View/Articles/view.ctp:139
+#: View/Consumptions/index.ctp:31
+#: View/CustomerInvoiceLines/index.ctp:41
+#: View/CustomerInvoices/index.ctp:27
+#: View/CustomerInvoices/view.ctp:92;153
+#: View/CustomerOrderLines/index.ctp:53
+#: View/CustomerOrders/index.ctp:29
+#: View/CustomerPayments/index.ctp:29
+#: View/Customers/index.ctp:33
+#: View/OrderStatuses/index.ctp:21
+#: View/OrderStatuses/view.ctp:68
+#: View/RawMaterialTypes/index.ctp:19
+#: View/RawMaterialTypes/view.ctp:93
+#: View/RawMaterials/index.ctp:55
+#: View/RawMaterials/view.ctp:146
+#: View/Stocks/index.ctp:61
+#: View/SupplierInvoiceStatuses/index.ctp:21
+#: View/SupplierInvoiceStatuses/view.ctp:74
+#: View/SupplierInvoices/index.ctp:35
+#: View/SupplierSlips/index.ctp:25
+#: View/Suppliers/index.ctp:31
+#: View/Towns/index.ctp:19
+#: View/Users/index.ctp:23
+msgid "View"
+msgstr ""
+
+#: View/Articles/index.ctp:52
+#: View/Articles/view.ctp:140
+#: View/Consumptions/index.ctp:32
+#: View/CustomerInvoiceLines/index.ctp:42
+#: View/CustomerInvoices/index.ctp:28
+#: View/CustomerInvoices/view.ctp:93;154
+#: View/CustomerOrderLines/index.ctp:54
+#: View/CustomerOrders/index.ctp:30
+#: View/CustomerPayments/index.ctp:30
+#: View/Customers/index.ctp:34
+#: View/OrderStatuses/index.ctp:22
+#: View/OrderStatuses/view.ctp:69
+#: View/RawMaterialTypes/index.ctp:20
+#: View/RawMaterialTypes/view.ctp:94
+#: View/RawMaterials/index.ctp:56
+#: View/RawMaterials/view.ctp:147
+#: View/Stocks/index.ctp:62
+#: View/SupplierInvoiceStatuses/index.ctp:22
+#: View/SupplierInvoiceStatuses/view.ctp:75
+#: View/SupplierInvoices/index.ctp:36
+#: View/SupplierSlips/index.ctp:26
+#: View/Suppliers/index.ctp:32
+#: View/Towns/index.ctp:20
+#: View/Users/index.ctp:24
+msgid "Edit"
+msgstr ""
+
+#: View/Articles/index.ctp:61
+#: View/Consumptions/index.ctp:41
+#: View/CustomerInvoiceLines/index.ctp:51
+#: View/CustomerInvoices/index.ctp:37
+#: View/CustomerOrderLines/index.ctp:63
+#: View/CustomerOrders/index.ctp:39
+#: View/CustomerPayments/index.ctp:39
+#: View/Customers/index.ctp:43
+#: View/OrderStatuses/index.ctp:31
+#: View/RawMaterialTypes/index.ctp:29
+#: View/RawMaterials/index.ctp:65
+#: View/Stocks/index.ctp:71
+#: View/SupplierInvoiceStatuses/index.ctp:31
+#: View/SupplierInvoices/index.ctp:45
+#: View/SupplierSlips/index.ctp:35
+#: View/Suppliers/index.ctp:41
+#: View/Towns/index.ctp:29
+#: View/Users/index.ctp:33
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Articles/index.ctp:67
+#: View/Consumptions/index.ctp:47
+#: View/CustomerInvoiceLines/index.ctp:57
+#: View/CustomerInvoices/index.ctp:43
+#: View/CustomerOrderLines/index.ctp:69
+#: View/CustomerOrders/index.ctp:45
+#: View/CustomerPayments/index.ctp:45
+#: View/Customers/index.ctp:49
+#: View/OrderStatuses/index.ctp:37
+#: View/RawMaterialTypes/index.ctp:35
+#: View/RawMaterials/index.ctp:71
+#: View/Stocks/index.ctp:77
+#: View/SupplierInvoiceStatuses/index.ctp:37
+#: View/SupplierInvoices/index.ctp:51
+#: View/SupplierSlips/index.ctp:41
+#: View/Suppliers/index.ctp:47
+#: View/Towns/index.ctp:35
+#: View/Users/index.ctp:39
+msgid "previous"
+msgstr ""
+
+#: View/Articles/index.ctp:69
+#: View/Consumptions/index.ctp:49
+#: View/CustomerInvoiceLines/index.ctp:59
+#: View/CustomerInvoices/index.ctp:45
+#: View/CustomerOrderLines/index.ctp:71
+#: View/CustomerOrders/index.ctp:47
+#: View/CustomerPayments/index.ctp:47
+#: View/Customers/index.ctp:51
+#: View/OrderStatuses/index.ctp:39
+#: View/RawMaterialTypes/index.ctp:37
+#: View/RawMaterials/index.ctp:73
+#: View/Stocks/index.ctp:79
+#: View/SupplierInvoiceStatuses/index.ctp:39
+#: View/SupplierInvoices/index.ctp:53
+#: View/SupplierSlips/index.ctp:43
+#: View/Suppliers/index.ctp:49
+#: View/Towns/index.ctp:37
+#: View/Users/index.ctp:41
+msgid "next"
+msgstr ""
+
+#: View/Articles/index.ctp:76
+#: View/Articles/view.ctp:102
+#: View/Consumptions/add.ctp:23
+#: View/Consumptions/edit.ctp:25
+#: View/Consumptions/index.ctp:58
+#: View/Consumptions/view.ctp:54
+msgid "New Article"
+msgstr ""
+
+#: View/Articles/view.ctp:2
+#: View/Consumptions/view.ctp:9
+msgid "Article"
+msgstr ""
+
+#: View/Articles/view.ctp:4;116
+#: View/Consumptions/view.ctp:4
+#: View/CustomerInvoiceLines/view.ctp:4
+#: View/CustomerInvoices/view.ctp:4;61;112
+#: View/CustomerOrderLines/view.ctp:4
+#: View/CustomerOrders/view.ctp:4
+#: View/CustomerPayments/view.ctp:4
+#: View/Customers/view.ctp:4
+#: View/OrderStatuses/view.ctp:4;47
+#: View/RawMaterialTypes/view.ctp:4;42
+#: View/RawMaterials/view.ctp:4;123
+#: View/Stocks/view.ctp:4
+#: View/SupplierInvoiceStatuses/view.ctp:4;47
+#: View/SupplierInvoices/view.ctp:4
+#: View/SupplierSlips/view.ctp:4
+#: View/Suppliers/view.ctp:4
+#: View/Towns/view.ctp:4
+#: View/Users/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/Articles/view.ctp:9
+#: View/RawMaterialTypes/view.ctp:43
+#: View/RawMaterials/view.ctp:9
+#: View/Stocks/view.ctp:9
+msgid "Stock Type"
+msgstr ""
+
+#: View/Articles/view.ctp:14
+#: View/RawMaterialTypes/view.ctp:44
+#: View/Stocks/view.ctp:14
+msgid "Article Reference"
+msgstr ""
+
+#: View/Articles/view.ctp:19
+#: View/RawMaterialTypes/view.ctp:45
+#: View/Stocks/view.ctp:19
+msgid "Article Model"
+msgstr ""
+
+#: View/Articles/view.ctp:24
+#: View/RawMaterialTypes/view.ctp:46
+#: View/Stocks/view.ctp:24
+msgid "Article Size"
+msgstr ""
+
+#: View/Articles/view.ctp:29
+#: View/RawMaterialTypes/view.ctp:51
+#: View/RawMaterials/view.ctp:34
+#: View/Stocks/view.ctp:49
+msgid "Stock Comment"
+msgstr ""
+
+#: View/Articles/view.ctp:34
+#: View/RawMaterialTypes/view.ctp:52
+#: View/RawMaterials/view.ctp:39
+#: View/Stocks/view.ctp:54
+msgid "Stock Userfield01"
+msgstr ""
+
+#: View/Articles/view.ctp:39
+#: View/RawMaterialTypes/view.ctp:53
+#: View/RawMaterials/view.ctp:44
+#: View/Stocks/view.ctp:59
+msgid "Stock Userfield02"
+msgstr ""
+
+#: View/Articles/view.ctp:44
+#: View/RawMaterialTypes/view.ctp:54
+#: View/RawMaterials/view.ctp:49
+#: View/Stocks/view.ctp:64
+msgid "Stock Userfield03"
+msgstr ""
+
+#: View/Articles/view.ctp:49
+#: View/RawMaterialTypes/view.ctp:55
+#: View/RawMaterials/view.ctp:54
+#: View/Stocks/view.ctp:69
+msgid "Stock Buy Price"
+msgstr ""
+
+#: View/Articles/view.ctp:54
+#: View/RawMaterialTypes/view.ctp:56
+#: View/RawMaterials/view.ctp:59
+#: View/Stocks/view.ctp:74
+msgid "Stock Vat"
+msgstr ""
+
+#: View/Articles/view.ctp:59
+#: View/RawMaterialTypes/view.ctp:57
+#: View/RawMaterials/view.ctp:64
+#: View/Stocks/view.ctp:79
+msgid "Stock Vat Re"
+msgstr ""
+
+#: View/Articles/view.ctp:64
+#: View/RawMaterialTypes/view.ctp:58
+#: View/RawMaterials/view.ctp:69
+#: View/Stocks/view.ctp:84
+msgid "Stock Sale Price"
+msgstr ""
+
+#: View/Articles/view.ctp:69
+#: View/CustomerInvoiceLines/view.ctp:44
+#: View/CustomerInvoices/view.ctp:29;69;122
+#: View/CustomerOrderLines/view.ctp:54
+#: View/CustomerOrders/view.ctp:29
+#: View/CustomerPayments/view.ctp:34
+#: View/Customers/view.ctp:44
+#: View/OrderStatuses/view.ctp:19;52
+#: View/RawMaterialTypes/view.ctp:59
+#: View/RawMaterials/view.ctp:74
+#: View/Stocks/view.ctp:89
+#: View/SupplierInvoiceStatuses/view.ctp:19;55
+#: View/SupplierInvoices/view.ctp:44
+#: View/SupplierSlips/view.ctp:24
+#: View/Suppliers/view.ctp:39
+#: View/Towns/view.ctp:14
+#: View/Users/view.ctp:24
+msgid "Created"
+msgstr ""
+
+#: View/Articles/view.ctp:74
+#: View/CustomerInvoiceLines/view.ctp:49
+#: View/CustomerInvoices/view.ctp:34;70;123
+#: View/CustomerOrderLines/view.ctp:59
+#: View/CustomerOrders/view.ctp:34
+#: View/CustomerPayments/view.ctp:39
+#: View/Customers/view.ctp:49
+#: View/OrderStatuses/view.ctp:24;53
+#: View/RawMaterialTypes/view.ctp:60
+#: View/RawMaterials/view.ctp:79
+#: View/Stocks/view.ctp:94
+#: View/SupplierInvoiceStatuses/view.ctp:24;56
+#: View/SupplierInvoices/view.ctp:49
+#: View/SupplierSlips/view.ctp:29
+#: View/Suppliers/view.ctp:44
+#: View/Towns/view.ctp:19
+#: View/Users/view.ctp:29
+msgid "Modified"
+msgstr ""
+
+#: View/Articles/view.ctp:79
+#: View/RawMaterials/view.ctp:84
+#: View/Stocks/view.ctp:99
+#: View/SupplierSlips/view.ctp:2
+msgid "Supplier Slip"
+msgstr ""
+
+#: View/Articles/view.ctp:84
+#: View/RawMaterials/view.ctp:89
+#: View/Stocks/view.ctp:104
+msgid "Supplier Slip Line"
+msgstr ""
+
+#: View/Articles/view.ctp:89
+#: View/RawMaterials/view.ctp:94
+#: View/Stocks/view.ctp:109
+#: View/SupplierInvoices/view.ctp:2
+msgid "Supplier Invoice"
+msgstr ""
+
+#: View/Articles/view.ctp:100
+msgid "Delete Article"
+msgstr ""
+
+#: View/Articles/view.ctp:112
+#: View/RawMaterials/view.ctp:119
+msgid "Related Consumptions"
+msgstr ""
+
+#: View/Articles/view.ctp:117
+#: View/RawMaterials/view.ctp:124
+msgid "Article Id"
+msgstr ""
+
+#: View/Articles/view.ctp:118
+#: View/RawMaterials/view.ctp:125
+msgid "Raw Material Id"
+msgstr ""
+
+#: View/Articles/view.ctp:119
+#: View/Consumptions/view.ctp:19
+#: View/RawMaterials/view.ctp:126
+msgid "Consumption Raw Mat Consumed Units"
+msgstr ""
+
+#: View/Articles/view.ctp:120
+#: View/Consumptions/view.ctp:24
+#: View/RawMaterials/view.ctp:127
+msgid "Consumption Cost 01"
+msgstr ""
+
+#: View/Articles/view.ctp:121
+#: View/Consumptions/view.ctp:29
+#: View/RawMaterials/view.ctp:128
+msgid "Consumption Cost 02"
+msgstr ""
+
+#: View/Articles/view.ctp:122
+#: View/Consumptions/view.ctp:34
+#: View/RawMaterials/view.ctp:129
+msgid "Consumption Cost 03"
+msgstr ""
+
+#: View/Articles/view.ctp:123
+#: View/Consumptions/view.ctp:39
+#: View/RawMaterials/view.ctp:130
+msgid "Consumption Cost 04"
+msgstr ""
+
+#: View/Consumptions/add.ctp:4
+msgid "Add Consumption"
+msgstr ""
+
+#: View/Consumptions/add.ctp:24
+#: View/Consumptions/edit.ctp:26
+#: View/Consumptions/index.ctp:59
+#: View/Consumptions/view.ctp:55
+#: View/RawMaterials/add.ctp:30
+#: View/RawMaterials/edit.ctp:32
+#: View/RawMaterials/view.ctp:106
+msgid "List Raw Materials"
+msgstr ""
+
+#: View/Consumptions/add.ctp:25
+#: View/Consumptions/edit.ctp:27
+#: View/Consumptions/index.ctp:60
+#: View/Consumptions/view.ctp:56
+#: View/RawMaterials/index.ctp:80
+#: View/RawMaterials/view.ctp:107
+msgid "New Raw Material"
+msgstr ""
+
+#: View/Consumptions/edit.ctp:4
+#: View/Consumptions/view.ctp:49
+msgid "Edit Consumption"
+msgstr ""
+
+#: View/Consumptions/index.ctp:2
+msgid "Consumptions"
+msgstr ""
+
+#: View/Consumptions/view.ctp:2
+msgid "Consumption"
+msgstr ""
+
+#: View/Consumptions/view.ctp:14
+#: View/RawMaterials/view.ctp:2
+msgid "Raw Material"
+msgstr ""
+
+#: View/Consumptions/view.ctp:50
+msgid "Delete Consumption"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:4
+msgid "Add Customer Invoice Line"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:23
+#: View/CustomerInvoiceLines/edit.ctp:25
+#: View/CustomerInvoiceLines/view.ctp:71
+#: View/CustomerInvoices/add.ctp:21
+#: View/CustomerInvoices/edit.ctp:23
+#: View/CustomerInvoices/index.ctp:55
+#: View/CustomerInvoices/view.ctp:50
+msgid "List Customer Invoice Lines"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:24
+#: View/CustomerInvoiceLines/edit.ctp:26
+#: View/CustomerInvoiceLines/index.ctp:67
+#: View/CustomerInvoiceLines/view.ctp:73
+#: View/CustomerInvoices/add.ctp:18
+#: View/CustomerInvoices/edit.ctp:20
+#: View/CustomerInvoices/view.ctp:46
+#: View/CustomerOrderLines/add.ctp:35
+#: View/CustomerOrderLines/edit.ctp:37
+#: View/CustomerOrderLines/index.ctp:85
+#: View/CustomerOrderLines/view.ctp:104
+msgid "List Customer Invoices"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:25
+#: View/CustomerInvoiceLines/edit.ctp:27
+#: View/CustomerInvoiceLines/index.ctp:68
+#: View/CustomerInvoiceLines/view.ctp:74
+#: View/CustomerInvoices/index.ctp:52
+#: View/CustomerInvoices/view.ctp:47
+#: View/CustomerOrderLines/add.ctp:36
+#: View/CustomerOrderLines/edit.ctp:38
+#: View/CustomerOrderLines/index.ctp:86
+#: View/CustomerOrderLines/view.ctp:105
+msgid "New Customer Invoice"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:26
+#: View/CustomerInvoiceLines/edit.ctp:28
+#: View/CustomerInvoiceLines/index.ctp:69
+#: View/CustomerInvoiceLines/view.ctp:75
+#: View/CustomerOrderLines/add.ctp:29
+#: View/CustomerOrderLines/edit.ctp:31
+#: View/CustomerOrderLines/index.ctp:79
+#: View/CustomerOrderLines/view.ctp:98
+#: View/CustomerOrders/add.ctp:18
+#: View/CustomerOrders/edit.ctp:20
+#: View/CustomerOrders/view.ctp:46
+#: View/CustomerPayments/add.ctp:20
+#: View/CustomerPayments/edit.ctp:22
+#: View/CustomerPayments/index.ctp:55
+#: View/CustomerPayments/view.ctp:53
+#: View/OrderStatuses/add.ctp:17
+#: View/OrderStatuses/edit.ctp:19
+#: View/OrderStatuses/index.ctp:47
+#: View/OrderStatuses/view.ctp:38
+msgid "List Customer Orders"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:27
+#: View/CustomerInvoiceLines/edit.ctp:29
+#: View/CustomerInvoiceLines/index.ctp:70
+#: View/CustomerInvoiceLines/view.ctp:76
+#: View/CustomerOrderLines/add.ctp:30
+#: View/CustomerOrderLines/edit.ctp:32
+#: View/CustomerOrderLines/index.ctp:80
+#: View/CustomerOrderLines/view.ctp:99
+#: View/CustomerOrders/index.ctp:54
+#: View/CustomerOrders/view.ctp:47
+#: View/CustomerPayments/add.ctp:21
+#: View/CustomerPayments/edit.ctp:23
+#: View/CustomerPayments/index.ctp:56
+#: View/CustomerPayments/view.ctp:54
+#: View/OrderStatuses/add.ctp:18
+#: View/OrderStatuses/edit.ctp:20
+#: View/OrderStatuses/index.ctp:48
+#: View/OrderStatuses/view.ctp:39;79
+msgid "New Customer Order"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:28
+#: View/CustomerInvoiceLines/edit.ctp:30
+#: View/CustomerInvoiceLines/index.ctp:71
+#: View/CustomerInvoiceLines/view.ctp:77
+#: View/CustomerOrderLines/add.ctp:33
+#: View/CustomerOrderLines/edit.ctp:35
+#: View/CustomerOrderLines/index.ctp:83
+#: View/CustomerOrderLines/view.ctp:102
+#: View/RawMaterialTypes/add.ctp:18
+#: View/RawMaterialTypes/edit.ctp:20
+#: View/RawMaterialTypes/index.ctp:45
+#: View/RawMaterialTypes/view.ctp:33
+#: View/Stocks/add.ctp:33
+#: View/Stocks/edit.ctp:35
+#: View/Stocks/view.ctp:121
+msgid "List Stocks"
+msgstr ""
+
+#: View/CustomerInvoiceLines/add.ctp:29
+#: View/CustomerInvoiceLines/edit.ctp:31
+#: View/CustomerInvoiceLines/index.ctp:72
+#: View/CustomerInvoiceLines/view.ctp:78
+#: View/CustomerOrderLines/add.ctp:34
+#: View/CustomerOrderLines/edit.ctp:36
+#: View/CustomerOrderLines/index.ctp:84
+#: View/CustomerOrderLines/view.ctp:103
+#: View/RawMaterialTypes/add.ctp:19
+#: View/RawMaterialTypes/edit.ctp:21
+#: View/RawMaterialTypes/index.ctp:46
+#: View/RawMaterialTypes/view.ctp:34;104
+#: View/Stocks/index.ctp:86
+#: View/Stocks/view.ctp:122
+msgid "New Stock"
+msgstr ""
+
+#: View/CustomerInvoiceLines/edit.ctp:4
+#: View/CustomerInvoiceLines/view.ctp:69
+msgid "Edit Customer Invoice Line"
+msgstr ""
+
+#: View/CustomerInvoiceLines/index.ctp:2
+msgid "Customer Invoice Lines"
+msgstr ""
+
+#: View/CustomerInvoiceLines/index.ctp:66
+#: View/CustomerInvoiceLines/view.ctp:72
+#: View/CustomerInvoices/add.ctp:22
+#: View/CustomerInvoices/edit.ctp:24
+#: View/CustomerInvoices/index.ctp:56
+#: View/CustomerInvoices/view.ctp:51;103
+msgid "New Customer Invoice Line"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:2
+msgid "Customer Invoice Line"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:9
+#: View/CustomerInvoices/view.ctp:2
+#: View/CustomerOrderLines/view.ctp:64
+msgid "Customer Invoice"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:14
+#: View/CustomerInvoices/view.ctp:63;125
+#: View/CustomerOrderLines/view.ctp:69
+msgid "Customer Invoice Line Number"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:19
+#: View/CustomerOrderLines/view.ctp:9
+#: View/CustomerOrders/view.ctp:2
+#: View/CustomerPayments/view.ctp:29
+msgid "Customer Order"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:24
+#: View/CustomerInvoices/view.ctp:65;114
+#: View/CustomerOrderLines/view.ctp:14
+msgid "Order Line Number"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:29
+#: View/CustomerInvoices/view.ctp:66
+msgid "Customer Invoice Line Type"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:34
+#: View/CustomerOrderLines/view.ctp:29
+#: View/Stocks/view.ctp:2
+msgid "Stock"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:39
+#: View/CustomerInvoices/view.ctp:68
+msgid "Customer Invoice Line Description"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:54
+#: View/CustomerInvoices/view.ctp:71
+msgid "Customer Invoice Line Amount"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:59
+#: View/CustomerInvoices/view.ctp:72
+msgid "Customer Invoice Line Vat"
+msgstr ""
+
+#: View/CustomerInvoiceLines/view.ctp:70
+msgid "Delete Customer Invoice Line"
+msgstr ""
+
+#: View/CustomerInvoices/add.ctp:4
+msgid "Add Customer Invoice"
+msgstr ""
+
+#: View/CustomerInvoices/add.ctp:19
+#: View/CustomerInvoices/edit.ctp:21
+#: View/CustomerInvoices/index.ctp:53
+#: View/CustomerInvoices/view.ctp:48
+#: View/CustomerOrders/add.ctp:19
+#: View/CustomerOrders/edit.ctp:21
+#: View/CustomerOrders/index.ctp:55
+#: View/CustomerOrders/view.ctp:48
+#: View/Customers/add.ctp:21
+#: View/Customers/edit.ctp:23
+#: View/Customers/view.ctp:61
+msgid "List Customers"
+msgstr ""
+
+#: View/CustomerInvoices/add.ctp:20
+#: View/CustomerInvoices/edit.ctp:22
+#: View/CustomerInvoices/index.ctp:54
+#: View/CustomerInvoices/view.ctp:49
+#: View/CustomerOrders/add.ctp:20
+#: View/CustomerOrders/edit.ctp:22
+#: View/CustomerOrders/index.ctp:56
+#: View/CustomerOrders/view.ctp:49
+#: View/Customers/index.ctp:58
+#: View/Customers/view.ctp:62
+msgid "New Customer"
+msgstr ""
+
+#: View/CustomerInvoices/add.ctp:23
+#: View/CustomerInvoices/edit.ctp:25
+#: View/CustomerInvoices/index.ctp:57
+#: View/CustomerInvoices/view.ctp:52
+#: View/CustomerOrderLines/add.ctp:28
+#: View/CustomerOrderLines/edit.ctp:30
+#: View/CustomerOrderLines/view.ctp:96
+msgid "List Customer Order Lines"
+msgstr ""
+
+#: View/CustomerInvoices/add.ctp:24
+#: View/CustomerInvoices/edit.ctp:26
+#: View/CustomerInvoices/index.ctp:58
+#: View/CustomerInvoices/view.ctp:53;164
+#: View/CustomerOrderLines/index.ctp:78
+#: View/CustomerOrderLines/view.ctp:97
+msgid "New Customer Order Line"
+msgstr ""
+
+#: View/CustomerInvoices/edit.ctp:4
+#: View/CustomerInvoices/view.ctp:44
+msgid "Edit Customer Invoice"
+msgstr ""
+
+#: View/CustomerInvoices/index.ctp:2
+msgid "Customer Invoices"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:9
+#: View/CustomerOrders/view.ctp:9
+#: View/Customers/view.ctp:2
+msgid "Customer"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:14
+msgid "Customer Invoice Date"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:19
+msgid "Customer Invoice Number"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:24
+msgid "Customer Invoice Comments"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:45
+msgid "Delete Customer Invoice"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:57
+msgid "Related Customer Invoice Lines"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:62;124
+msgid "Customer Invoice Id"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:64;113
+msgid "Customer Order Id"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:67;117
+msgid "Stock Id"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:108
+msgid "Related Customer Order Lines"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:115
+#: View/OrderStatuses/view.ctp:49
+msgid "Order Status Id"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:116
+#: View/CustomerOrderLines/view.ctp:24
+msgid "Order Line Type"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:118
+#: View/CustomerOrderLines/view.ctp:34
+msgid "Order Line Description"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:119
+#: View/CustomerOrderLines/view.ctp:39
+msgid "Order Line Is Left Article"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:120
+#: View/CustomerOrderLines/view.ctp:44
+msgid "Order Line Left Article Description"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:121
+#: View/CustomerOrderLines/view.ctp:49
+msgid "Order Line Due Date"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:126
+#: View/CustomerOrderLines/view.ctp:74
+msgid "Order Line Amout"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:127
+#: View/CustomerOrderLines/view.ctp:79
+msgid "Order Line Vat"
+msgstr ""
+
+#: View/CustomerInvoices/view.ctp:128
+#: View/CustomerOrderLines/view.ctp:84
+msgid "Order Line Comments"
+msgstr ""
+
+#: View/CustomerOrderLines/add.ctp:4
+msgid "Add Customer Order Line"
+msgstr ""
+
+#: View/CustomerOrderLines/add.ctp:31
+#: View/CustomerOrderLines/edit.ctp:33
+#: View/CustomerOrderLines/index.ctp:81
+#: View/CustomerOrderLines/view.ctp:100
+#: View/CustomerOrders/add.ctp:21
+#: View/CustomerOrders/edit.ctp:23
+#: View/CustomerOrders/index.ctp:57
+#: View/CustomerOrders/view.ctp:50
+#: View/OrderStatuses/add.ctp:16
+#: View/OrderStatuses/edit.ctp:18
+#: View/OrderStatuses/view.ctp:36
+msgid "List Order Statuses"
+msgstr ""
+
+#: View/CustomerOrderLines/add.ctp:32
+#: View/CustomerOrderLines/edit.ctp:34
+#: View/CustomerOrderLines/index.ctp:82
+#: View/CustomerOrderLines/view.ctp:101
+#: View/CustomerOrders/add.ctp:22
+#: View/CustomerOrders/edit.ctp:24
+#: View/CustomerOrders/index.ctp:58
+#: View/CustomerOrders/view.ctp:51
+#: View/OrderStatuses/index.ctp:46
+#: View/OrderStatuses/view.ctp:37
+msgid "New Order Status"
+msgstr ""
+
+#: View/CustomerOrderLines/edit.ctp:4
+#: View/CustomerOrderLines/view.ctp:94
+msgid "Edit Customer Order Line"
+msgstr ""
+
+#: View/CustomerOrderLines/index.ctp:2
+msgid "Customer Order Lines"
+msgstr ""
+
+#: View/CustomerOrderLines/view.ctp:2
+msgid "Customer Order Line"
+msgstr ""
+
+#: View/CustomerOrderLines/view.ctp:19
+#: View/CustomerOrders/view.ctp:14
+#: View/OrderStatuses/view.ctp:2
+msgid "Order Status"
+msgstr ""
+
+#: View/CustomerOrderLines/view.ctp:95
+msgid "Delete Customer Order Line"
+msgstr ""
+
+#: View/CustomerOrders/add.ctp:4
+msgid "Add Customer Order"
+msgstr ""
+
+#: View/CustomerOrders/edit.ctp:4
+#: View/CustomerOrders/view.ctp:44
+msgid "Edit Customer Order"
+msgstr ""
+
+#: View/CustomerOrders/index.ctp:2
+msgid "Customer Orders"
+msgstr ""
+
+#: View/CustomerOrders/view.ctp:19
+#: View/OrderStatuses/view.ctp:50
+msgid "Order Date"
+msgstr ""
+
+#: View/CustomerOrders/view.ctp:24
+#: View/OrderStatuses/view.ctp:51
+msgid "Order Comments"
+msgstr ""
+
+#: View/CustomerOrders/view.ctp:45
+msgid "Delete Customer Order"
+msgstr ""
+
+#: View/CustomerPayments/add.ctp:4
+msgid "Add Customer Payment"
+msgstr ""
+
+#: View/CustomerPayments/add.ctp:19
+#: View/CustomerPayments/edit.ctp:21
+#: View/CustomerPayments/view.ctp:51
+msgid "List Customer Payments"
+msgstr ""
+
+#: View/CustomerPayments/edit.ctp:4
+#: View/CustomerPayments/view.ctp:49
+msgid "Edit Customer Payment"
+msgstr ""
+
+#: View/CustomerPayments/index.ctp:2
+msgid "Customer Payments"
+msgstr ""
+
+#: View/CustomerPayments/index.ctp:54
+#: View/CustomerPayments/view.ctp:52
+msgid "New Customer Payment"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:2
+msgid "Customer Payment"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:9
+msgid "Payment Date"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:14
+msgid "Payment Amount"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:19
+msgid "Payment Comments"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:24
+msgid "Payment Is Down Payment"
+msgstr ""
+
+#: View/CustomerPayments/view.ctp:50
+msgid "Delete Customer Payment"
+msgstr ""
+
+#: View/Customers/add.ctp:4
+msgid "Add Customer"
+msgstr ""
+
+#: View/Customers/add.ctp:22
+#: View/Customers/edit.ctp:24
+#: View/Customers/index.ctp:59
+#: View/Customers/view.ctp:63
+#: View/Suppliers/add.ctp:21
+#: View/Suppliers/edit.ctp:23
+#: View/Suppliers/index.ctp:57
+#: View/Suppliers/view.ctp:58
+#: View/Towns/add.ctp:15
+#: View/Towns/edit.ctp:17
+#: View/Towns/view.ctp:31
+msgid "List Towns"
+msgstr ""
+
+#: View/Customers/add.ctp:23
+#: View/Customers/edit.ctp:25
+#: View/Customers/index.ctp:60
+#: View/Customers/view.ctp:64
+#: View/Suppliers/add.ctp:22
+#: View/Suppliers/edit.ctp:24
+#: View/Suppliers/index.ctp:58
+#: View/Suppliers/view.ctp:59
+#: View/Towns/index.ctp:44
+#: View/Towns/view.ctp:32
+msgid "New Town"
+msgstr ""
+
+#: View/Customers/edit.ctp:4
+#: View/Customers/view.ctp:59
+msgid "Edit Customer"
+msgstr ""
+
+#: View/Customers/index.ctp:2
+msgid "Customers"
+msgstr ""
+
+#: View/Customers/view.ctp:9
+msgid "Customer Name"
+msgstr ""
+
+#: View/Customers/view.ctp:14
+msgid "Customer Address"
+msgstr ""
+
+#: View/Customers/view.ctp:19
+#: View/Suppliers/view.ctp:19
+#: View/Towns/view.ctp:2
+msgid "Town"
+msgstr ""
+
+#: View/Customers/view.ctp:24
+msgid "Customer Vat Number"
+msgstr ""
+
+#: View/Customers/view.ctp:29
+msgid "Customer Phone1"
+msgstr ""
+
+#: View/Customers/view.ctp:34
+msgid "Customer Phone2"
+msgstr ""
+
+#: View/Customers/view.ctp:39
+msgid "Customer Email"
+msgstr ""
+
+#: View/Customers/view.ctp:60
+msgid "Delete Customer"
+msgstr ""
+
+#: View/OrderStatuses/add.ctp:4
+msgid "Add Order Status"
+msgstr ""
+
+#: View/OrderStatuses/edit.ctp:4
+#: View/OrderStatuses/view.ctp:34
+msgid "Edit Order Status"
+msgstr ""
+
+#: View/OrderStatuses/index.ctp:2
+msgid "Order Statuses"
+msgstr ""
+
+#: View/OrderStatuses/view.ctp:9
+msgid "Order Status Name"
+msgstr ""
+
+#: View/OrderStatuses/view.ctp:14
+msgid "Order Status Is Final"
+msgstr ""
+
+#: View/OrderStatuses/view.ctp:35
+msgid "Delete Order Status"
+msgstr ""
+
+#: View/OrderStatuses/view.ctp:43
+msgid "Related Customer Orders"
+msgstr ""
+
+#: View/OrderStatuses/view.ctp:48
+msgid "Order Customer Id"
+msgstr ""
+
+#: View/RawMaterialTypes/add.ctp:4
+msgid "Add Raw Material Type"
+msgstr ""
+
+#: View/RawMaterialTypes/add.ctp:17
+#: View/RawMaterialTypes/edit.ctp:19
+#: View/RawMaterialTypes/view.ctp:31
+#: View/RawMaterials/add.ctp:31
+#: View/RawMaterials/edit.ctp:33
+#: View/RawMaterials/index.ctp:81
+#: View/RawMaterials/view.ctp:108
+#: View/Stocks/add.ctp:34
+#: View/Stocks/edit.ctp:36
+#: View/Stocks/index.ctp:87
+#: View/Stocks/view.ctp:123
+msgid "List Raw Material Types"
+msgstr ""
+
+#: View/RawMaterialTypes/edit.ctp:4
+#: View/RawMaterialTypes/view.ctp:29
+msgid "Edit Raw Material Type"
+msgstr ""
+
+#: View/RawMaterialTypes/index.ctp:2
+msgid "Raw Material Types"
+msgstr ""
+
+#: View/RawMaterialTypes/index.ctp:44
+#: View/RawMaterialTypes/view.ctp:32
+#: View/RawMaterials/add.ctp:32
+#: View/RawMaterials/edit.ctp:34
+#: View/RawMaterials/index.ctp:82
+#: View/RawMaterials/view.ctp:109
+#: View/Stocks/add.ctp:35
+#: View/Stocks/edit.ctp:37
+#: View/Stocks/index.ctp:88
+#: View/Stocks/view.ctp:124
+msgid "New Raw Material Type"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:2
+#: View/RawMaterials/view.ctp:14
+#: View/Stocks/view.ctp:29
+msgid "Raw Material Type"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:9
+msgid "Raw Mat Type Name"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:14
+msgid "Raw Mat Type Is Partial Consume"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:19
+msgid "Raw Mat Measuring Unit"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:30
+msgid "Delete Raw Material Type"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:38
+msgid "Related Stocks"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:47
+msgid "Raw Material Type Id"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:48
+#: View/RawMaterials/view.ctp:19
+#: View/Stocks/view.ctp:34
+msgid "Raw Mat Units"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:49
+#: View/RawMaterials/view.ctp:24
+#: View/Stocks/view.ctp:39
+msgid "Raw Mat Userfield01"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:50
+#: View/RawMaterials/view.ctp:29
+#: View/Stocks/view.ctp:44
+msgid "Raw Mat Unit Price"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:61
+msgid "Stock Supplier Slip Id"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:62
+msgid "Stock Supplier Slip Line"
+msgstr ""
+
+#: View/RawMaterialTypes/view.ctp:63
+msgid "Stock Supplier Invoice Id"
+msgstr ""
+
+#: View/RawMaterials/add.ctp:4
+msgid "Add Raw Material"
+msgstr ""
+
+#: View/RawMaterials/edit.ctp:4
+#: View/RawMaterials/view.ctp:104
+msgid "Edit Raw Material"
+msgstr ""
+
+#: View/RawMaterials/index.ctp:2
+msgid "Raw Materials"
+msgstr ""
+
+#: View/RawMaterials/view.ctp:105
+msgid "Delete Raw Material"
+msgstr ""
+
+#: View/Stocks/add.ctp:4
+msgid "Add Stock"
+msgstr ""
+
+#: View/Stocks/edit.ctp:4
+#: View/Stocks/view.ctp:119
+msgid "Edit Stock"
+msgstr ""
+
+#: View/Stocks/index.ctp:2
+msgid "Stocks"
+msgstr ""
+
+#: View/Stocks/view.ctp:120
+msgid "Delete Stock"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/add.ctp:4
+msgid "Add Supplier Invoice Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/add.ctp:16
+#: View/SupplierInvoiceStatuses/edit.ctp:18
+#: View/SupplierInvoiceStatuses/view.ctp:36
+#: View/SupplierInvoices/add.ctp:24
+#: View/SupplierInvoices/edit.ctp:26
+#: View/SupplierInvoices/index.ctp:63
+#: View/SupplierInvoices/view.ctp:65
+msgid "List Supplier Invoice Statuses"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/edit.ctp:4
+#: View/SupplierInvoiceStatuses/view.ctp:34
+msgid "Edit Supplier Invoice Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/index.ctp:2
+msgid "Supplier Invoice Statuses"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/index.ctp:46
+#: View/SupplierInvoiceStatuses/view.ctp:37
+#: View/SupplierInvoices/add.ctp:25
+#: View/SupplierInvoices/edit.ctp:27
+#: View/SupplierInvoices/index.ctp:64
+#: View/SupplierInvoices/view.ctp:66
+msgid "New Supplier Invoice Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:2
+#: View/SupplierInvoices/view.ctp:39
+msgid "Supplier Invoice Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:9
+msgid "Sup Inv Status Name"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:14
+msgid "Sup Inv Is Final Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:35
+msgid "Delete Supplier Invoice Status"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:43
+msgid "Related Supplier Invoices"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:48
+#: View/SupplierInvoices/view.ctp:9
+msgid "Supplier Invoice Number"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:49
+msgid "Supplier Invoice Supplier Id"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:50
+#: View/SupplierInvoices/view.ctp:19
+msgid "Supplier Invoice Date"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:51
+#: View/SupplierInvoices/view.ctp:24
+msgid "Supplier Invoice Amount"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:52
+#: View/SupplierInvoices/view.ctp:29
+msgid "Supplier Invoice Vat"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:53
+#: View/SupplierInvoices/view.ctp:34
+msgid "Supplier Invoice Vat Re"
+msgstr ""
+
+#: View/SupplierInvoiceStatuses/view.ctp:54
+msgid "Supplier Invoice Status Id"
+msgstr ""
+
+#: View/SupplierInvoices/add.ctp:4
+msgid "Add Supplier Invoice"
+msgstr ""
+
+#: View/SupplierInvoices/add.ctp:22
+#: View/SupplierInvoices/edit.ctp:24
+#: View/SupplierInvoices/index.ctp:61
+#: View/SupplierInvoices/view.ctp:63
+#: View/SupplierSlips/add.ctp:18
+#: View/SupplierSlips/edit.ctp:20
+#: View/SupplierSlips/index.ctp:51
+#: View/SupplierSlips/view.ctp:43
+#: View/Suppliers/add.ctp:20
+#: View/Suppliers/edit.ctp:22
+#: View/Suppliers/view.ctp:56
+msgid "List Suppliers"
+msgstr ""
+
+#: View/SupplierInvoices/add.ctp:23
+#: View/SupplierInvoices/edit.ctp:25
+#: View/SupplierInvoices/index.ctp:62
+#: View/SupplierInvoices/view.ctp:64
+#: View/SupplierSlips/add.ctp:19
+#: View/SupplierSlips/edit.ctp:21
+#: View/SupplierSlips/index.ctp:52
+#: View/SupplierSlips/view.ctp:44
+#: View/Suppliers/index.ctp:56
+#: View/Suppliers/view.ctp:57
+msgid "New Supplier"
+msgstr ""
+
+#: View/SupplierInvoices/edit.ctp:4
+#: View/SupplierInvoices/view.ctp:59
+msgid "Edit Supplier Invoice"
+msgstr ""
+
+#: View/SupplierInvoices/index.ctp:2
+msgid "Supplier Invoices"
+msgstr ""
+
+#: View/SupplierInvoices/view.ctp:14
+#: View/SupplierSlips/view.ctp:14
+#: View/Suppliers/view.ctp:2
+msgid "Supplier"
+msgstr ""
+
+#: View/SupplierInvoices/view.ctp:60
+msgid "Delete Supplier Invoice"
+msgstr ""
+
+#: View/SupplierSlips/add.ctp:4
+msgid "Add Supplier Slip"
+msgstr ""
+
+#: View/SupplierSlips/edit.ctp:4
+#: View/SupplierSlips/view.ctp:39
+msgid "Edit Supplier Slip"
+msgstr ""
+
+#: View/SupplierSlips/index.ctp:2
+msgid "Supplier Slips"
+msgstr ""
+
+#: View/SupplierSlips/view.ctp:9
+msgid "Supplier Slip Num"
+msgstr ""
+
+#: View/SupplierSlips/view.ctp:19
+msgid "Supplier Slip Date"
+msgstr ""
+
+#: View/SupplierSlips/view.ctp:40
+msgid "Delete Supplier Slip"
+msgstr ""
+
+#: View/Suppliers/add.ctp:4
+msgid "Add Supplier"
+msgstr ""
+
+#: View/Suppliers/edit.ctp:4
+#: View/Suppliers/view.ctp:54
+msgid "Edit Supplier"
+msgstr ""
+
+#: View/Suppliers/index.ctp:2
+msgid "Suppliers"
+msgstr ""
+
+#: View/Suppliers/view.ctp:9
+msgid "Supplier Name"
+msgstr ""
+
+#: View/Suppliers/view.ctp:14
+msgid "Supplier Address"
+msgstr ""
+
+#: View/Suppliers/view.ctp:24
+msgid "Supplier Vat Number"
+msgstr ""
+
+#: View/Suppliers/view.ctp:29
+msgid "Supplier Phone1"
+msgstr ""
+
+#: View/Suppliers/view.ctp:34
+msgid "Supplier Phone2"
+msgstr ""
+
+#: View/Suppliers/view.ctp:55
+msgid "Delete Supplier"
+msgstr ""
+
+#: View/Towns/add.ctp:4
+msgid "Add Town"
+msgstr ""
+
+#: View/Towns/edit.ctp:4
+#: View/Towns/view.ctp:29
+msgid "Edit Town"
+msgstr ""
+
+#: View/Towns/index.ctp:2
+msgid "Towns"
+msgstr ""
+
+#: View/Towns/view.ctp:9
+msgid "Town Name"
+msgstr ""
+
+#: View/Towns/view.ctp:30
+msgid "Delete Town"
+msgstr ""
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/add.ctp:17
+#: View/Users/edit.ctp:19
+#: View/Users/view.ctp:41
+msgid "List Users"
+msgstr ""
+
+#: View/Users/edit.ctp:4
+#: View/Users/view.ctp:39
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: View/Users/index.ctp:48
+#: View/Users/view.ctp:42
+msgid "New User"
+msgstr ""
+
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr ""
+
+#: View/Users/view.ctp:9
+msgid "Username"
+msgstr ""
+
+#: View/Users/view.ctp:14
+msgid "Password"
+msgstr ""
+
+#: View/Users/view.ctp:19
+msgid "Role"
+msgstr ""
+
+#: View/Users/view.ctp:40
+msgid "Delete User"
+msgstr ""
+
+#: Model/Article.php:validation for field stock_type
+#: Model/CustomerOrderLine.php:validation for field order_line_type
+#: Model/RawMaterial.php:validation for field stock_type
+#: Model/Stock.php:validation for field stock_type
+msgid "inlist"
+msgstr ""
+
+#: Model/Article.php:validation for field article_reference;validation for field article_model;validation for field article_size
+#: Model/Customer.php:validation for field customer_name
+#: Model/CustomerInvoice.php:validation for field customer_invoice_number
+#: Model/CustomerInvoiceLine.php:validation for field customer_invoice_line_type
+#: Model/OrderStatus.php:validation for field order_status_name
+#: Model/RawMaterial.php:validation for field raw_mat_userfield01;validation for field stock_userfield01;validation for field stock_userfield02;validation for field stock_userfield03
+#: Model/RawMaterialType.php:validation for field raw_mat_type_name;validation for field raw_mat_measuring_unit
+#: Model/Supplier.php:validation for field supplier_name
+#: Model/SupplierInvoice.php:validation for field supplier_invoice_number
+#: Model/SupplierInvoiceStatus.php:validation for field sup_inv_status_name
+#: Model/SupplierSlip.php:validation for field supplier_slip_num
+#: Model/Town.php:validation for field town_name
+#: Model/User.php:validation for field username;validation for field password
+msgid "notempty"
+msgstr ""
+
+#: Model/Article.php:validation for field stock_userfield01;validation for field stock_userfield02;validation for field stock_userfield03;validation for field stock_buy_price;validation for field stock_vat;validation for field stock_vat_re;validation for field stock_sale_price;validation for field supplier_slip_id;validation for field supplier_slip_line
+#: Model/Consumption.php:validation for field article_id;validation for field consumption_cost_01;validation for field consumption_cost_02;validation for field consumption_cost_03;validation for field consumption_cost_04
+#: Model/CustomerInvoice.php:validation for field customer_id
+#: Model/CustomerInvoiceLine.php:validation for field customer_invoice_id;validation for field customer_order_id;validation for field customer_invoice_line_amount;validation for field customer_invoice_line_vat
+#: Model/CustomerOrder.php:validation for field customer_id;validation for field order_status_id
+#: Model/CustomerOrderLine.php:validation for field customer_order_id;validation for field order_status_id;validation for field order_line_amout;validation for field order_line_vat
+#: Model/CustomerPayment.php:validation for field payment_amount;validation for field customer_order_id
+#: Model/RawMaterial.php:validation for field raw_material_type_id;validation for field raw_mat_units;validation for field raw_mat_unit_price;validation for field stock_buy_price;validation for field stock_vat;validation for field stock_vat_re;validation for field stock_sale_price;validation for field supplier_slip_id;validation for field supplier_slip_line
+#: Model/Stock.php:validation for field raw_mat_unit_price;validation for field stock_buy_price;validation for field stock_vat;validation for field stock_vat_re;validation for field stock_sale_price;validation for field supplier_slip_id;validation for field supplier_slip_line
+#: Model/SupplierInvoice.php:validation for field supplier_id;validation for field supplier_invoice_status_id
+#: Model/SupplierSlip.php:validation for field supplier_id
+msgid "numeric"
+msgstr ""
+
+#: Model/CustomerInvoice.php:validation for field customer_invoice_date
+#: Model/CustomerOrder.php:validation for field order_date
+#: Model/CustomerOrderLine.php:validation for field order_line_due_date
+#: Model/CustomerPayment.php:validation for field payment_date
+#: Model/SupplierInvoice.php:validation for field supplier_invoice_date
+#: Model/SupplierSlip.php:validation for field supplier_slip_date
+msgid "date"
+msgstr ""
+
+#: Model/CustomerInvoiceLine.php:validation for field customer_invoice_line_number;validation for field order_line_number
+#: Model/CustomerOrderLine.php:validation for field order_line_number
+msgid "naturalnumber"
+msgstr ""
+
+#: Model/CustomerOrderLine.php:validation for field order_line_is_left_article
+#: Model/CustomerPayment.php:validation for field payment_is_down_payment
+#: Model/OrderStatus.php:validation for field order_status_is_final
+#: Model/RawMaterialType.php:validation for field raw_mat_type_is_partial_consume
+#: Model/SupplierInvoiceStatus.php:validation for field sup_inv_is_final_status
+msgid "boolean"
+msgstr ""
+
