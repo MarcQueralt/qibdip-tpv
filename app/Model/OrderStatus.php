@@ -3,6 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * OrderStatus Model
  *
+ * @property CustomerOrderLine $CustomerOrderLine
  * @property CustomerOrder $CustomerOrder
  */
 class OrderStatus extends AppModel {
@@ -13,13 +14,6 @@ class OrderStatus extends AppModel {
  * @var mixed False or table name
  */
 	public $useTable = 'order_status';
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'order_status_name';
 
 /**
  * Validation rules
@@ -57,6 +51,19 @@ class OrderStatus extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		'CustomerOrderLine' => array(
+			'className' => 'CustomerOrderLine',
+			'foreignKey' => 'order_status_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'CustomerOrder' => array(
 			'className' => 'CustomerOrder',
 			'foreignKey' => 'order_status_id',

@@ -54,6 +54,14 @@ create table supplier_invoice_status (
     created datetime default null,
     modified datetime default null
 );
+drop table if exists customer_invoice_status;
+create table customer_invoice_status (
+    id int(10) unsigned auto_increment primary key,
+    cus_inv_status_name varchar(25) not null,
+    cus_inv_is_final_status boolean not null default false,
+    created datetime default null,
+    modified datetime default null
+);
 drop table if exists supplier_invoices;
 create table supplier_invoices (
     id int(10) unsigned auto_increment primary key,
@@ -153,14 +161,18 @@ create table customer_orders (
 drop table if exists customer_payments;
 create table customer_payments (
     id int(10) unsigned auto_increment primary key,
+    customer_id int(10),
     payment_date date not null,
     payment_amount decimal(10,2) not null default 0,
     payment_comments varchar(255),
     payment_is_down_payment boolean default false, /* paga i senyal */
     customer_order_id int(10) not null,
+    customer_invoice_id int(10),
     created datetime default null,
     modified datetime default null,
-    foreign key (customer_order_id) references customer_orders(id)    
+    foreign key (customer_order_id) references customer_orders(id),
+    foreign key (customer_id) references customers(id),
+    foreign key (customer_invoice_id) references customer_invoices(id)
 );
 drop table if exists customer_invoices;
 create table customer_invoices (
@@ -168,6 +180,7 @@ create table customer_invoices (
     customer_id int(10) not null,
     customer_invoice_date date not null,
     customer_invoice_number varchar(15) not null,
+    customer_invoice_status int(10) not null,
     customer_invoice_comments varchar(255),
     created datetime default null,
     modified datetime default null,
@@ -285,3 +298,10 @@ create view customer_invoice_lines as select
     order_line_vat as customer_invoice_line_vat
     from customer_order_lines
     where customer_invoice_id is not null;
+drop table if exists options;
+create table options (
+    id int(10) not null default 1,
+    vat decimal(10,2) not null default 0.21,
+    vat_re decimal(10,2) not null default 0.04
+);
+insert into options(id,vat,vat_re) values (1,0.21,0.05);

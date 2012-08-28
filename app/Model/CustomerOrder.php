@@ -5,15 +5,11 @@ App::uses('AppModel', 'Model');
  *
  * @property Customer $Customer
  * @property OrderStatus $OrderStatus
+ * @property CustomerInvoiceLine $CustomerInvoiceLine
+ * @property CustomerOrderLine $CustomerOrderLine
+ * @property CustomerPayment $CustomerPayment
  */
 class CustomerOrder extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -76,4 +72,52 @@ class CustomerOrder extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'CustomerInvoiceLine' => array(
+			'className' => 'CustomerInvoiceLine',
+			'foreignKey' => 'customer_order_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'CustomerOrderLine' => array(
+			'className' => 'CustomerOrderLine',
+			'foreignKey' => 'customer_order_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'CustomerPayment' => array(
+			'className' => 'CustomerPayment',
+			'foreignKey' => 'customer_order_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

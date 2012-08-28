@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Customer'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customerInvoice['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
+			<?php echo $this->Html->link($customerInvoice['Customer']['id'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Date'); ?></dt>
@@ -19,6 +19,11 @@
 		<dt><?php echo __('Customer Invoice Number'); ?></dt>
 		<dd>
 			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_number']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Customer Invoice Status'); ?></dt>
+		<dd>
+			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_status']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Comments'); ?></dt>
@@ -51,6 +56,8 @@
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Payments'), array('controller' => 'customer_payments', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Payment'), array('controller' => 'customer_payments', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -162,6 +169,51 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Customer Payments'); ?></h3>
+	<?php if (!empty($customerInvoice['CustomerPayment'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Payment Date'); ?></th>
+		<th><?php echo __('Payment Amount'); ?></th>
+		<th><?php echo __('Payment Comments'); ?></th>
+		<th><?php echo __('Payment Is Down Payment'); ?></th>
+		<th><?php echo __('Customer Order Id'); ?></th>
+		<th><?php echo __('Customer Invoice Id'); ?></th>
+		<th><?php echo __('Created'); ?></th>
+		<th><?php echo __('Modified'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($customerInvoice['CustomerPayment'] as $customerPayment): ?>
+		<tr>
+			<td><?php echo $customerPayment['id']; ?></td>
+			<td><?php echo $customerPayment['payment_date']; ?></td>
+			<td><?php echo $customerPayment['payment_amount']; ?></td>
+			<td><?php echo $customerPayment['payment_comments']; ?></td>
+			<td><?php echo $customerPayment['payment_is_down_payment']; ?></td>
+			<td><?php echo $customerPayment['customer_order_id']; ?></td>
+			<td><?php echo $customerPayment['customer_invoice_id']; ?></td>
+			<td><?php echo $customerPayment['created']; ?></td>
+			<td><?php echo $customerPayment['modified']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'customer_payments', 'action' => 'view', $customerPayment['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_payments', 'action' => 'edit', $customerPayment['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_payments', 'action' => 'delete', $customerPayment['id']), null, __('Are you sure you want to delete # %s?', $customerPayment['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Customer Payment'), array('controller' => 'customer_payments', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

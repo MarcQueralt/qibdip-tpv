@@ -20,14 +20,14 @@
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['id']); ?>&nbsp;</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['supplier_invoice_number']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($supplierInvoice['Supplier']['supplier_name'], array('controller' => 'suppliers', 'action' => 'view', $supplierInvoice['Supplier']['id'])); ?>
+			<?php echo $this->Html->link($supplierInvoice['Supplier']['id'], array('controller' => 'suppliers', 'action' => 'view', $supplierInvoice['Supplier']['id'])); ?>
 		</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['supplier_invoice_date']); ?>&nbsp;</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['supplier_invoice_amount']); ?>&nbsp;</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['supplier_invoice_vat']); ?>&nbsp;</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['supplier_invoice_vat_re']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($supplierInvoice['SupplierInvoiceStatus']['sup_inv_status_name'], array('controller' => 'supplier_invoice_statuses', 'action' => 'view', $supplierInvoice['SupplierInvoiceStatus']['id'])); ?>
+			<?php echo $this->Html->link($supplierInvoice['SupplierInvoiceStatus']['id'], array('controller' => 'supplier_invoice_statuses', 'action' => 'view', $supplierInvoice['SupplierInvoiceStatus']['id'])); ?>
 		</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['created']); ?>&nbsp;</td>
 		<td><?php echo h($supplierInvoice['SupplierInvoice']['modified']); ?>&nbsp;</td>
@@ -62,5 +62,11 @@
 		<li><?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Invoice Statuses'), array('controller' => 'supplier_invoice_statuses', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier Invoice Status'), array('controller' => 'supplier_invoice_statuses', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Articles'), array('controller' => 'articles', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Article'), array('controller' => 'articles', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Raw Materials'), array('controller' => 'raw_materials', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Raw Material'), array('controller' => 'raw_materials', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

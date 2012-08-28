@@ -4,15 +4,10 @@ App::uses('AppModel', 'Model');
  * Supplier Model
  *
  * @property Town $Town
+ * @property SupplierInvoice $SupplierInvoice
+ * @property SupplierSlip $SupplierSlip
  */
 class Supplier extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'supplier_name';
 
 /**
  * Validation rules
@@ -48,4 +43,39 @@ class Supplier extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'SupplierInvoice' => array(
+			'className' => 'SupplierInvoice',
+			'foreignKey' => 'supplier_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'SupplierSlip' => array(
+			'className' => 'SupplierSlip',
+			'foreignKey' => 'supplier_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

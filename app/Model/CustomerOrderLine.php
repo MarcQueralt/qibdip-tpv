@@ -11,13 +11,6 @@ App::uses('AppModel', 'Model');
 class CustomerOrderLine extends AppModel {
 
 /**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'order_line_number';
-
-/**
  * Validation rules
  *
  * @var array
@@ -34,8 +27,8 @@ class CustomerOrderLine extends AppModel {
 			),
 		),
 		'order_line_number' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -54,48 +47,8 @@ class CustomerOrderLine extends AppModel {
 			),
 		),
 		'order_line_type' => array(
-			'inlist' => array(
-				'rule' => array('inlist'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'order_line_is_left_article' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'order_line_due_date' => array(
-			'date' => array(
-				'rule' => array('date'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'order_line_amout' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'order_line_vat' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'notempty' => array(
+				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

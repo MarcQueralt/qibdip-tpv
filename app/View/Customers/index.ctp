@@ -21,7 +21,7 @@
 		<td><?php echo h($customer['Customer']['customer_name']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['customer_address']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Town']['town_name'], array('controller' => 'towns', 'action' => 'view', $customer['Town']['id'])); ?>
+			<?php echo $this->Html->link($customer['Town']['id'], array('controller' => 'towns', 'action' => 'view', $customer['Town']['id'])); ?>
 		</td>
 		<td><?php echo h($customer['Customer']['customer_vat_number']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['customer_phone1']); ?>&nbsp;</td>
@@ -58,5 +58,9 @@
 		<li><?php echo $this->Html->link(__('New Customer'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Towns'), array('controller' => 'towns', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Town'), array('controller' => 'towns', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('controller' => 'customer_invoices', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Orders'), array('controller' => 'customer_orders', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

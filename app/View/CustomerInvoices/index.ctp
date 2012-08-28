@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('customer_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_date'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_number'); ?></th>
+			<th><?php echo $this->Paginator->sort('customer_invoice_status'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_comments'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
@@ -16,10 +17,11 @@
 	<tr>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customerInvoice['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
+			<?php echo $this->Html->link($customerInvoice['Customer']['id'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
 		</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_date']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_number']); ?>&nbsp;</td>
+		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_status']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_comments']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['modified']); ?>&nbsp;</td>
@@ -56,5 +58,7 @@
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Payments'), array('controller' => 'customer_payments', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Payment'), array('controller' => 'customer_payments', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

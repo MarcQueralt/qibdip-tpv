@@ -7,6 +7,7 @@
 		echo $this->Form->input('customer_id');
 		echo $this->Form->input('customer_invoice_date');
 		echo $this->Form->input('customer_invoice_number');
+		echo $this->Form->input('customer_invoice_status');
 		echo $this->Form->input('customer_invoice_comments');
 	?>
 	</fieldset>
@@ -24,5 +25,7 @@
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Payments'), array('controller' => 'customer_payments', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Payment'), array('controller' => 'customer_payments', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

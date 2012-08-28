@@ -35,7 +35,7 @@
 		<td><?php echo h($stock['Stock']['article_model']); ?>&nbsp;</td>
 		<td><?php echo h($stock['Stock']['article_size']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($stock['RawMaterialType']['raw_mat_type_name'], array('controller' => 'raw_material_types', 'action' => 'view', $stock['RawMaterialType']['id'])); ?>
+			<?php echo $this->Html->link($stock['RawMaterialType']['id'], array('controller' => 'raw_material_types', 'action' => 'view', $stock['RawMaterialType']['id'])); ?>
 		</td>
 		<td><?php echo h($stock['Stock']['raw_mat_units']); ?>&nbsp;</td>
 		<td><?php echo h($stock['Stock']['raw_mat_userfield01']); ?>&nbsp;</td>
@@ -51,11 +51,11 @@
 		<td><?php echo h($stock['Stock']['created']); ?>&nbsp;</td>
 		<td><?php echo h($stock['Stock']['modified']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($stock['SupplierSlip']['supplier_slip_num'], array('controller' => 'supplier_slips', 'action' => 'view', $stock['SupplierSlip']['id'])); ?>
+			<?php echo $this->Html->link($stock['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $stock['SupplierSlip']['id'])); ?>
 		</td>
 		<td><?php echo h($stock['Stock']['supplier_slip_line']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($stock['SupplierInvoice']['supplier_invoice_number'], array('controller' => 'supplier_invoices', 'action' => 'view', $stock['SupplierInvoice']['id'])); ?>
+			<?php echo $this->Html->link($stock['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $stock['SupplierInvoice']['id'])); ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $stock['Stock']['id'])); ?>
@@ -90,5 +90,9 @@
 		<li><?php echo $this->Html->link(__('New Supplier Slip'), array('controller' => 'supplier_slips', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Invoice Lines'), array('controller' => 'customer_invoice_lines', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

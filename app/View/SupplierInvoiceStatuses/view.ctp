@@ -46,7 +46,7 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Supplier Invoice Number'); ?></th>
-		<th><?php echo __('Supplier Invoice Supplier Id'); ?></th>
+		<th><?php echo __('Supplier Id'); ?></th>
 		<th><?php echo __('Supplier Invoice Date'); ?></th>
 		<th><?php echo __('Supplier Invoice Amount'); ?></th>
 		<th><?php echo __('Supplier Invoice Vat'); ?></th>
@@ -62,7 +62,7 @@
 		<tr>
 			<td><?php echo $supplierInvoice['id']; ?></td>
 			<td><?php echo $supplierInvoice['supplier_invoice_number']; ?></td>
-			<td><?php echo $supplierInvoice['supplier_invoice_supplier_id']; ?></td>
+			<td><?php echo $supplierInvoice['supplier_id']; ?></td>
 			<td><?php echo $supplierInvoice['supplier_invoice_date']; ?></td>
 			<td><?php echo $supplierInvoice['supplier_invoice_amount']; ?></td>
 			<td><?php echo $supplierInvoice['supplier_invoice_vat']; ?></td>

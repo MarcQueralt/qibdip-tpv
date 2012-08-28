@@ -8,6 +8,7 @@
 			<th><?php echo $this->Paginator->sort('payment_comments'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment_is_down_payment'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_order_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('customer_invoice_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -22,6 +23,9 @@
 		<td><?php echo h($customerPayment['CustomerPayment']['payment_is_down_payment']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($customerPayment['CustomerOrder']['id'], array('controller' => 'customer_orders', 'action' => 'view', $customerPayment['CustomerOrder']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($customerPayment['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerPayment['CustomerInvoice']['id'])); ?>
 		</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['modified']); ?>&nbsp;</td>
@@ -54,5 +58,7 @@
 		<li><?php echo $this->Html->link(__('New Customer Payment'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Customer Orders'), array('controller' => 'customer_orders', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('controller' => 'customer_invoices', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

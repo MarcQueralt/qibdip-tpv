@@ -4,15 +4,11 @@ App::uses('AppModel', 'Model');
  * SupplierSlip Model
  *
  * @property Supplier $Supplier
+ * @property Article $Article
+ * @property RawMaterial $RawMaterial
+ * @property Stock $Stock
  */
 class SupplierSlip extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'supplier_slip_num';
 
 /**
  * Validation rules
@@ -42,7 +38,7 @@ class SupplierSlip extends AppModel {
 		),
 		'supplier_slip_date' => array(
 			'date' => array(
-				'rule' => array('date','dmy'),
+				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -68,4 +64,52 @@ class SupplierSlip extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Article' => array(
+			'className' => 'Article',
+			'foreignKey' => 'supplier_slip_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'RawMaterial' => array(
+			'className' => 'RawMaterial',
+			'foreignKey' => 'supplier_slip_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Stock' => array(
+			'className' => 'Stock',
+			'foreignKey' => 'supplier_slip_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

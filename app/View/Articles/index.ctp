@@ -41,11 +41,11 @@
 		<td><?php echo h($article['Article']['created']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['modified']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($article['SupplierSlip']['supplier_slip_num'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
+			<?php echo $this->Html->link($article['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
 		</td>
 		<td><?php echo h($article['Article']['supplier_slip_line']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($article['SupplierInvoice']['supplier_invoice_number'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
+			<?php echo $this->Html->link($article['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $article['Article']['id'])); ?>

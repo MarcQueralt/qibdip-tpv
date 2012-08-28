@@ -18,7 +18,7 @@
 		</dd>
 		<dt><?php echo __('Order Status'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customerOrderLine['OrderStatus']['order_status_name'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrderLine['OrderStatus']['id'])); ?>
+			<?php echo $this->Html->link($customerOrderLine['OrderStatus']['id'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrderLine['OrderStatus']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Order Line Type'); ?></dt>
@@ -63,7 +63,7 @@
 		</dd>
 		<dt><?php echo __('Customer Invoice'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customerOrderLine['CustomerInvoice']['customer_invoice_number'], array('controller' => 'customer_invoices', 'action' => 'view', $customerOrderLine['CustomerInvoice']['id'])); ?>
+			<?php echo $this->Html->link($customerOrderLine['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerOrderLine['CustomerInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Line Number'); ?></dt>

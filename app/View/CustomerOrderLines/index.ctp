@@ -30,7 +30,7 @@
 		</td>
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['order_line_number']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customerOrderLine['OrderStatus']['order_status_name'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrderLine['OrderStatus']['id'])); ?>
+			<?php echo $this->Html->link($customerOrderLine['OrderStatus']['id'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrderLine['OrderStatus']['id'])); ?>
 		</td>
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['order_line_type']); ?>&nbsp;</td>
 		<td>
@@ -43,7 +43,7 @@
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['modified']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customerOrderLine['CustomerInvoice']['customer_invoice_number'], array('controller' => 'customer_invoices', 'action' => 'view', $customerOrderLine['CustomerInvoice']['id'])); ?>
+			<?php echo $this->Html->link($customerOrderLine['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerOrderLine['CustomerInvoice']['id'])); ?>
 		</td>
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['customer_invoice_line_number']); ?>&nbsp;</td>
 		<td><?php echo h($customerOrderLine['CustomerOrderLine']['order_line_amout']); ?>&nbsp;</td>

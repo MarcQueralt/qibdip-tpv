@@ -5,15 +5,11 @@ App::uses('AppModel', 'Model');
  *
  * @property Supplier $Supplier
  * @property SupplierInvoiceStatus $SupplierInvoiceStatus
+ * @property Article $Article
+ * @property RawMaterial $RawMaterial
+ * @property Stock $Stock
  */
 class SupplierInvoice extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'supplier_invoice_number';
 
 /**
  * Validation rules
@@ -43,7 +39,7 @@ class SupplierInvoice extends AppModel {
 		),
 		'supplier_invoice_date' => array(
 			'date' => array(
-				'rule' => array('date','dmy'),
+				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -86,4 +82,52 @@ class SupplierInvoice extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Article' => array(
+			'className' => 'Article',
+			'foreignKey' => 'supplier_invoice_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'RawMaterial' => array(
+			'className' => 'RawMaterial',
+			'foreignKey' => 'supplier_invoice_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Stock' => array(
+			'className' => 'Stock',
+			'foreignKey' => 'supplier_invoice_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

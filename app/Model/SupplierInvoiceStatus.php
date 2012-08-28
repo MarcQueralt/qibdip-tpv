@@ -15,13 +15,6 @@ class SupplierInvoiceStatus extends AppModel {
 	public $useTable = 'supplier_invoice_status';
 
 /**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'sup_inv_status_name';
-
-/**
  * Validation rules
  *
  * @var array

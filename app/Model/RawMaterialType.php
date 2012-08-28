@@ -3,16 +3,10 @@ App::uses('AppModel', 'Model');
 /**
  * RawMaterialType Model
  *
+ * @property RawMaterial $RawMaterial
  * @property Stock $Stock
  */
 class RawMaterialType extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'raw_mat_type_name';
 
 /**
  * Validation rules
@@ -23,16 +17,6 @@ class RawMaterialType extends AppModel {
 		'raw_mat_type_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'raw_mat_type_is_partial_consume' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -60,6 +44,19 @@ class RawMaterialType extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		'RawMaterial' => array(
+			'className' => 'RawMaterial',
+			'foreignKey' => 'raw_material_type_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Stock' => array(
 			'className' => 'Stock',
 			'foreignKey' => 'raw_material_type_id',

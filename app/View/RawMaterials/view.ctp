@@ -13,7 +13,7 @@
 		</dd>
 		<dt><?php echo __('Raw Material Type'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['raw_mat_type_name'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['id'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Raw Mat Units'); ?></dt>
@@ -83,7 +83,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Slip'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['SupplierSlip']['supplier_slip_num'], array('controller' => 'supplier_slips', 'action' => 'view', $rawMaterial['SupplierSlip']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $rawMaterial['SupplierSlip']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier Slip Line'); ?></dt>
@@ -93,7 +93,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Invoice'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['SupplierInvoice']['supplier_invoice_number'], array('controller' => 'supplier_invoices', 'action' => 'view', $rawMaterial['SupplierInvoice']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $rawMaterial['SupplierInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
 	</dl>

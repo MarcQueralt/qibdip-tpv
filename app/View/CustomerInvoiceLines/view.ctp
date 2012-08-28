@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Customer Invoice'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customerInvoiceLine['CustomerInvoice']['customer_invoice_number'], array('controller' => 'customer_invoices', 'action' => 'view', $customerInvoiceLine['CustomerInvoice']['id'])); ?>
+			<?php echo $this->Html->link($customerInvoiceLine['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerInvoiceLine['CustomerInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Line Number'); ?></dt>

@@ -78,7 +78,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Slip'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($article['SupplierSlip']['supplier_slip_num'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
+			<?php echo $this->Html->link($article['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier Slip Line'); ?></dt>
@@ -88,7 +88,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Invoice'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($article['SupplierInvoice']['supplier_invoice_number'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
+			<?php echo $this->Html->link($article['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
 	</dl>

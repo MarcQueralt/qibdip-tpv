@@ -48,21 +48,87 @@ endif;
             </div>
             <div id="menu">
                 <ul>                        
-                    <?php
-                    echo '<li>' . $this->Html->link(__('Home'), array('controller' => 'pages', 'action' => 'display', 'home')) . '</li>';
-                    echo '<li>' . $this->Html->link(__('Sales'), '') . '<ul>';
-                    echo '<li>' . $this->Html->link(__('Customers'),array('controller'=>'customers')).'</li>';
-                    echo '</ul></li>';
-                    echo '<li>' . $this->Html->link(__('Suppliers'), '') . '</li><ul>';
-                    echo '</ul>';
-                    echo '<li>' . $this->Html->link(__('Stocks'), '') . '</li><ul>';
-                    echo '</ul>';
-                    echo '<li>' . $this->Html->link(__('Analysis'), '') . '</li><ul>';
-                    echo '</ul>';
-                    echo '<li>' . $this->Html->link(__('Administration'), '') . '</li><ul>';
-                    echo '<li>' . $this->Html->link(__('Users'), array('controller' => 'users')) . '</li>';
-                    echo '</ul>';
-                    ?>
+                    <li>
+                        <?php echo $this->Html->link(__('Home'), array('controller' => 'pages', 'action' => 'display', 'home')) ?>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__('Sales'), ''); ?>
+                        <ul>
+                            <li>
+                                <?php echo $this->Html->link(__('Orders'), array('controller' => 'customerOrders')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Invoices'), array('controller' => 'customerInvoices')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Payments'), array('controller' => 'customerPayments')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Customers'), array('controller' => 'customers')); ?>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__('Purchases'), ''); ?>
+                        <ul>
+                            <li>
+                                <?php echo $this->Html->link(__('Supplier Slips'), array('controller' => 'supplierSlips')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Supplier Invoices'), array('controller' => 'supplierInvoices')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Suppliers'), array('controller' => 'suppliers')); ?>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__('Stocks'), ''); ?>
+                        <ul>
+                            <li>
+                                <?php echo $this->Html->link(__('Articles'), array('controller' => 'articles')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Raw materials'), array('controller' => 'rawMaterials')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('All materials'), array('controller' => 'stocks')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Consumptions'), array('controller' => 'consumptions')); ?>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__('Analysis'), ''); ?>
+                        <ul></ul>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__('Administration'), ''); ?>
+                        <ul>
+                            <li>
+                                <?php echo $this->Html->link(__('Users'), array('controller' => 'users')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Towns'), array('controller' => 'towns')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialsTypes')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'customerOrderStatus')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Customer Invoice Status'), array('controller' => 'customerInvoiceStatus')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Supplier Invoice Status'), array('controller' => 'supplierInvoiceStatus')); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link(__('Options'), array('controller' => 'options')); ?>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?>
                     </li>

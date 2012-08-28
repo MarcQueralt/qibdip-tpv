@@ -31,6 +31,11 @@
 			<?php echo $this->Html->link($customerPayment['CustomerOrder']['id'], array('controller' => 'customer_orders', 'action' => 'view', $customerPayment['CustomerOrder']['id'])); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Customer Invoice'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($customerPayment['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerPayment['CustomerInvoice']['id'])); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($customerPayment['CustomerPayment']['created']); ?>
@@ -52,5 +57,7 @@
 		<li><?php echo $this->Html->link(__('New Customer Payment'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Orders'), array('controller' => 'customer_orders', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('controller' => 'customer_invoices', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

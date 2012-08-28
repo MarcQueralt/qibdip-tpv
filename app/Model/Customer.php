@@ -4,15 +4,10 @@ App::uses('AppModel', 'Model');
  * Customer Model
  *
  * @property Town $Town
+ * @property CustomerInvoice $CustomerInvoice
+ * @property CustomerOrder $CustomerOrder
  */
 class Customer extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'customer_name';
 
 /**
  * Validation rules
@@ -48,4 +43,39 @@ class Customer extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'CustomerInvoice' => array(
+			'className' => 'CustomerInvoice',
+			'foreignKey' => 'customer_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'CustomerOrder' => array(
+			'className' => 'CustomerOrder',
+			'foreignKey' => 'customer_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

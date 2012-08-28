@@ -10,38 +10,11 @@ App::uses('AppModel', 'Model');
 class CustomerInvoiceLine extends AppModel {
 
 /**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'customer_invoice_line_number';
-
-/**
  * Validation rules
  *
  * @var array
  */
 	public $validate = array(
-		'customer_invoice_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'customer_invoice_line_number' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'customer_order_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -53,8 +26,8 @@ class CustomerInvoiceLine extends AppModel {
 			),
 		),
 		'order_line_number' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -65,26 +38,6 @@ class CustomerInvoiceLine extends AppModel {
 		'customer_invoice_line_type' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'customer_invoice_line_amount' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'customer_invoice_line_vat' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

@@ -6,15 +6,9 @@ App::uses('AppModel', 'Model');
  * @property Customer $Customer
  * @property CustomerInvoiceLine $CustomerInvoiceLine
  * @property CustomerOrderLine $CustomerOrderLine
+ * @property CustomerPayment $CustomerPayment
  */
 class CustomerInvoice extends AppModel {
-
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'customer_invoice_number';
 
 /**
  * Validation rules
@@ -45,6 +39,16 @@ class CustomerInvoice extends AppModel {
 		'customer_invoice_number' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'customer_invoice_status' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -92,6 +96,19 @@ class CustomerInvoice extends AppModel {
 		),
 		'CustomerOrderLine' => array(
 			'className' => 'CustomerOrderLine',
+			'foreignKey' => 'customer_invoice_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'CustomerPayment' => array(
+			'className' => 'CustomerPayment',
 			'foreignKey' => 'customer_invoice_id',
 			'dependent' => false,
 			'conditions' => '',

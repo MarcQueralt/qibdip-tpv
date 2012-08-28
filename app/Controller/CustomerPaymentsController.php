@@ -48,7 +48,8 @@ class CustomerPaymentsController extends AppController {
 			}
 		}
 		$customerOrders = $this->CustomerPayment->CustomerOrder->find('list');
-		$this->set(compact('customerOrders'));
+		$customerInvoices = $this->CustomerPayment->CustomerInvoice->find('list');
+		$this->set(compact('customerOrders', 'customerInvoices'));
 	}
 
 /**
@@ -74,7 +75,8 @@ class CustomerPaymentsController extends AppController {
 			$this->request->data = $this->CustomerPayment->read(null, $id);
 		}
 		$customerOrders = $this->CustomerPayment->CustomerOrder->find('list');
-		$this->set(compact('customerOrders'));
+		$customerInvoices = $this->CustomerPayment->CustomerInvoice->find('list');
+		$this->set(compact('customerOrders', 'customerInvoices'));
 	}
 
 /**
