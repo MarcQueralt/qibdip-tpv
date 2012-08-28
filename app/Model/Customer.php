@@ -9,6 +9,7 @@ App::uses('AppModel', 'Model');
  */
 class Customer extends AppModel {
 
+    public $displayField = 'customer_name';
 /**
  * Validation rules
  *
@@ -75,7 +76,20 @@ class Customer extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
-		)
+		),
+            		'CustomerPayment' => array(
+			'className' => 'CustomerPayment',
+			'foreignKey' => 'customer_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 	);
 
 }
