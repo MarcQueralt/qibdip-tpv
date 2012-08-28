@@ -5,3 +5,5 @@ app/config/database.php
 !empty
 /nbproject/private/
 /app/webroot/error_log
+/app/Vendor/mpdf/examples/
+/app/Config/local-config.php

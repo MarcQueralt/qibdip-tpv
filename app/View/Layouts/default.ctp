@@ -113,7 +113,7 @@ endif;
                                 <?php echo $this->Html->link(__('Towns'), array('controller' => 'towns')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialsTypes')); ?>
+                                <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialTypes')); ?>
                             </li>
                             <li>
                                 <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'customerOrderStatus')); ?>

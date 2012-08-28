@@ -1,0 +1,50 @@
+body {
+    background: #fff;
+    color: #333;
+    font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+    font-size:12px;
+    margin: 0;
+}
+#document-company {
+    width:98%;
+}
+#document-company td {
+    vertical-align:top;
+}
+#company-info {
+    text-align:right;
+    font-size:75%;
+}
+#content {
+    clear:both;
+}
+#document-header td:first-child {
+    font-size:75%;
+}
+#document-body {
+    margin-top:25px;
+    border: 1px solid grey;
+}
+#document-body th, #document-body tr.total {
+    border-bottom: 1px solid grey;
+    background-color: grey;
+    color:white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#document-body td {
+    border-bottom: 1px solid grey;
+}
+#document-body tr.subtotal td {
+    font-weight: bold;
+}
+#document-body tr.total td {
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#document-body .comentari {
+    font-size:75%;
+}

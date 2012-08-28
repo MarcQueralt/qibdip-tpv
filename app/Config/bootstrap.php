@@ -142,7 +142,7 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
-
+CakePlugin::load('Mpdf');
 
 /**
  * You can attach event listeners to the request lifecyle as Dispatcher Filter . By Default CakePHP bundles two filters:
@@ -179,3 +179,13 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+/**
+ * Loads local config if exists
+ */
+if(file_exists(dirname(__FILE__).DS.'local-config.php')):
+    include dirname(__FILE__).DS.'local-config.php';
+endif;
+
+require_once(APP.'Vendor'.DS.'qibdipTPV.php'); 

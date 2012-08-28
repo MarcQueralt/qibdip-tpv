@@ -1,0 +1,9 @@
+<?php
+    Configure::write('Company','Company Name');
+    Configure::write('Company-Address','Street number');
+    Configure::write('Company-Address2','Zip Town (Region)');
+    Configure::write('Company-Phone','93446789');
+    Configure::write('Company-Email','name@mail.com');
+    Configure::write('Company-Web','http://web.com');
+    Configure::write('Company-Logo-File','logo.png');
+?>
