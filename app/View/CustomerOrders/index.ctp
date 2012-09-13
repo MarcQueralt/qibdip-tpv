@@ -16,10 +16,10 @@
 	<tr>
 		<td><?php echo h($customerOrder['CustomerOrder']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customerOrder['Customer']['id'], array('controller' => 'customers', 'action' => 'view', $customerOrder['Customer']['id'])); ?>
+			<?php echo $this->Html->link($customerOrder['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerOrder['Customer']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($customerOrder['OrderStatus']['id'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrder['OrderStatus']['id'])); ?>
+			<?php echo $this->Html->link($customerOrder['OrderStatus']['order_status_name'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrder['OrderStatus']['id'])); ?>
 		</td>
 		<td><?php echo h($customerOrder['CustomerOrder']['order_date']); ?>&nbsp;</td>
 		<td><?php echo h($customerOrder['CustomerOrder']['order_comments']); ?>&nbsp;</td>

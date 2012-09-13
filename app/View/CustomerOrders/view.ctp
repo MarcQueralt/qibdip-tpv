@@ -55,8 +55,6 @@
 	<?php if (!empty($customerOrder['CustomerOrderLine'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Customer Order Id'); ?></th>
 		<th><?php echo __('Order Line Number'); ?></th>
 		<th><?php echo __('Order Status Id'); ?></th>
 		<th><?php echo __('Order Line Type'); ?></th>
@@ -65,8 +63,6 @@
 		<th><?php echo __('Order Line Is Left Article'); ?></th>
 		<th><?php echo __('Order Line Left Article Description'); ?></th>
 		<th><?php echo __('Order Line Due Date'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
 		<th><?php echo __('Customer Invoice Id'); ?></th>
 		<th><?php echo __('Customer Invoice Line Number'); ?></th>
 		<th><?php echo __('Order Line Amout'); ?></th>
@@ -78,18 +74,14 @@
 		$i = 0;
 		foreach ($customerOrder['CustomerOrderLine'] as $customerOrderLine): ?>
 		<tr>
-			<td><?php echo $customerOrderLine['id']; ?></td>
-			<td><?php echo $customerOrderLine['customer_order_id']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_number']; ?></td>
 			<td><?php echo $customerOrderLine['order_status_id']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_type']; ?></td>
+                        <td><?php echo qibdipTPV_prettyOrderLineType($customerOrderLine['order_line_type']); ?></td>
 			<td><?php echo $customerOrderLine['stock_id']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_description']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_is_left_article']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_left_article_description']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_due_date']; ?></td>
-			<td><?php echo $customerOrderLine['created']; ?></td>
-			<td><?php echo $customerOrderLine['modified']; ?></td>
 			<td><?php echo $customerOrderLine['customer_invoice_id']; ?></td>
 			<td><?php echo $customerOrderLine['customer_invoice_line_number']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_amout']; ?></td>
