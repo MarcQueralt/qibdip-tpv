@@ -1,5 +1,15 @@
 <div class="customers index">
     <h2><?php echo __('Customers'); ?></h2>
+    <div class="filter">
+        <?php echo $this->Form->create('Customer', array('action' => 'search')); ?>
+        <fieldset>
+            <legend><?php echo __('Filter'); ?></legend>
+            <?php echo $this->Form->input('Search.customer_name', array('div' => false, 'default' => ((isset($this->passedArgs['Search.customer_name'])) ? $this->passedArgs['Search.customer_name'] : ''))); ?>
+            <?php echo $this->Form->submit(__('Search', true), array('div' => false)); ?>
+        </fieldset>
+        <?php echo $this->Form->end(); ?>
+    </div>
+
     <table cellpadding="0" cellspacing="0">
         <tr>
             <th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -15,7 +25,7 @@
         <?php foreach ($customers as $customer): ?>
             <tr>
                 <td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
-                <td><?php echo $this->Html->link(h($customer['Customer']['customer_name']), array('action' => 'edit', $customer['Customer']['id'])); ?><?php //echo h($customer['Customer']['customer_name']); ?>&nbsp;</td>
+                <td><?php echo $this->Html->link(h($customer['Customer']['customer_name']), array('action' => 'view', $customer['Customer']['id'])); ?><?php //echo h($customer['Customer']['customer_name']);  ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_address']); ?>&nbsp;</td>
                 <td><?php echo h($customer['Town']['town_name']); ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_vat_number']); ?>&nbsp;</td>

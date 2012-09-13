@@ -63,3 +63,11 @@ body {
     color: #0032;
 }
 /* @end menu */
+
+/* @group filter */
+div.filter {
+    border: #373737 1px solid;
+    font-size: 0.8em;
+    padding: 10px;
+}
+/* @end filter */
