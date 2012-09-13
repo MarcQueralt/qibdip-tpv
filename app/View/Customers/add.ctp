@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('customer_name');
 		echo $this->Form->input('customer_address');
-		echo $this->Form->input('town_id');
+		echo $this->Form->input('town_id',array('empty'=>'---'));
 		echo $this->Form->input('customer_vat_number');
 		echo $this->Form->input('customer_phone1');
 		echo $this->Form->input('customer_phone2');
@@ -19,11 +19,6 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Customers'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Towns'), array('controller' => 'towns', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Town'), array('controller' => 'towns', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('controller' => 'customer_invoices', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Orders'), array('controller' => 'customer_orders', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

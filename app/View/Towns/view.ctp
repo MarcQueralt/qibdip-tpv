@@ -30,10 +30,6 @@
 		<li><?php echo $this->Form->postLink(__('Delete Town'), array('action' => 'delete', $town['Town']['id']), null, __('Are you sure you want to delete # %s?', $town['Town']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Towns'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Town'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -44,13 +40,10 @@
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Customer Name'); ?></th>
 		<th><?php echo __('Customer Address'); ?></th>
-		<th><?php echo __('Town Id'); ?></th>
 		<th><?php echo __('Customer Vat Number'); ?></th>
 		<th><?php echo __('Customer Phone1'); ?></th>
 		<th><?php echo __('Customer Phone2'); ?></th>
 		<th><?php echo __('Customer Email'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -60,13 +53,10 @@
 			<td><?php echo $customer['id']; ?></td>
 			<td><?php echo $customer['customer_name']; ?></td>
 			<td><?php echo $customer['customer_address']; ?></td>
-			<td><?php echo $customer['town_id']; ?></td>
 			<td><?php echo $customer['customer_vat_number']; ?></td>
 			<td><?php echo $customer['customer_phone1']; ?></td>
 			<td><?php echo $customer['customer_phone2']; ?></td>
 			<td><?php echo $customer['customer_email']; ?></td>
-			<td><?php echo $customer['created']; ?></td>
-			<td><?php echo $customer['modified']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'customers', 'action' => 'view', $customer['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customers', 'action' => 'edit', $customer['id'])); ?>
@@ -77,11 +67,6 @@
 	</table>
 <?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Suppliers'); ?></h3>
@@ -91,12 +76,9 @@
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Supplier Name'); ?></th>
 		<th><?php echo __('Supplier Address'); ?></th>
-		<th><?php echo __('Town Id'); ?></th>
 		<th><?php echo __('Supplier Vat Number'); ?></th>
 		<th><?php echo __('Supplier Phone1'); ?></th>
 		<th><?php echo __('Supplier Phone2'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -106,12 +88,9 @@
 			<td><?php echo $supplier['id']; ?></td>
 			<td><?php echo $supplier['supplier_name']; ?></td>
 			<td><?php echo $supplier['supplier_address']; ?></td>
-			<td><?php echo $supplier['town_id']; ?></td>
 			<td><?php echo $supplier['supplier_vat_number']; ?></td>
 			<td><?php echo $supplier['supplier_phone1']; ?></td>
 			<td><?php echo $supplier['supplier_phone2']; ?></td>
-			<td><?php echo $supplier['created']; ?></td>
-			<td><?php echo $supplier['modified']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'suppliers', 'action' => 'view', $supplier['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'suppliers', 'action' => 'edit', $supplier['id'])); ?>
@@ -122,9 +101,4 @@
 	</table>
 <?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
