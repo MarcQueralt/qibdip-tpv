@@ -14,6 +14,8 @@ class OrderStatus extends AppModel {
  * @var mixed False or table name
  */
 	public $useTable = 'order_status';
+        
+        public $displayField = 'order_status_name';
 
 /**
  * Validation rules

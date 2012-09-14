@@ -95,7 +95,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add', $customer['Customer']['id'])); ?> </li>
 		</ul>
 	</div>
 </div>
@@ -115,7 +115,7 @@
 		foreach ($customer['CustomerOrder'] as $customerOrder): ?>
 		<tr>
 			<td><?php echo $customerOrder['id']; ?></td>
-			<td><?php echo $customerOrder['order_status_id']; ?></td>
+			<td><?php echo $customerOrder['OrderStatus']['order_status_name']; ?></td>
 			<td><?php echo $customerOrder['order_date']; ?></td>
 			<td><?php echo $customerOrder['order_comments']; ?></td>
 			<td class="actions">
@@ -130,7 +130,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add',$customer['Customer']['id'] )); ?> </li>
 		</ul>
 	</div>
 </div>

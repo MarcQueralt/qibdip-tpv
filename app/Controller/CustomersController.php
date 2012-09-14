@@ -51,6 +51,7 @@ class CustomersController extends AppController {
      */
     public function view($id = null) {
         $this->Customer->id = $id;
+        $this->Customer->recursive = 2;
         if (!$this->Customer->exists()) {
             throw new NotFoundException(__('Invalid customer'));
         }
