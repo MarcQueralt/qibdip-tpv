@@ -1,3 +1,10 @@
+<?php $this->Number->addFormat('QBD',array(
+    'before'=>'',
+    'after'=>'',
+    'zero'=>'',
+    'thousands'=>'.',
+    'decimals'=>',',
+));?>
 <div class="customerOrders view">
 <h2><?php  echo __('Customer Order'); ?></h2>
 	<dl>

@@ -9,6 +9,11 @@ App::uses('AppModel', 'Model');
  * @property CustomerInvoice $CustomerInvoice
  */
 class CustomerOrderLine extends AppModel {
+    
+    public $virtualFields = array(
+        'order_line_total' => 'order_line_amount + order_line_vat',
+        'current_vat' => '(select vat from options where options.id=1)'
+    );
 
 /**
  * Validation rules

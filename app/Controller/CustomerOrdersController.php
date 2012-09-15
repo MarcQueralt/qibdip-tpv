@@ -9,7 +9,10 @@ App::uses('AppController', 'Controller');
  */
 class CustomerOrdersController extends AppController {
 
+//    public $helpers = array('Js' => array('Jquery'));
+//    public $components = array('Mpdf.Mpdf','RequestHandler');
     public $components = array('Mpdf.Mpdf');
+    public $helpers = array('Number');
 
     /**
      * index method
@@ -46,7 +49,7 @@ class CustomerOrdersController extends AppController {
             $this->CustomerOrder->create();
             if ($this->CustomerOrder->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer order has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'view', $this->CustomerOrder->id));
             } else {
                 $this->Session->setFlash(__('The customer order could not be saved. Please, try again.'));
             }
@@ -71,7 +74,7 @@ class CustomerOrdersController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->CustomerOrder->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer order has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'view',$this->CustomerOrder->id));
             } else {
                 $this->Session->setFlash(__('The customer order could not be saved. Please, try again.'));
             }

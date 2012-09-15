@@ -8,7 +8,10 @@ App::uses('AppController', 'Controller');
  * @property Customer $Customer
  */
 class CustomersController extends AppController {
+
     public $paginate = array();
+    public $helpers = array('Number');
+
     /**
      *  search method 
      */
@@ -35,7 +38,7 @@ class CustomersController extends AppController {
      */
     public function index() {
         $this->Customer->recursive = 0;
-        if(isset($this->passedArgs['Search.customer_name'])):
+        if (isset($this->passedArgs['Search.customer_name'])):
             $searchedName = $this->passedArgs['Search.customer_name'];
             $this->paginate['conditions'][]['Customer.customer_name LIKE'] = "%$searchedName%";
         endif;
@@ -68,7 +71,7 @@ class CustomersController extends AppController {
             $this->Customer->create();
             if ($this->Customer->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'view',$this->Customer->id));
             } else {
                 $this->Session->setFlash(__('The customer could not be saved. Please, try again.'));
             }

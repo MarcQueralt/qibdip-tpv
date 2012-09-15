@@ -1,7 +1,7 @@
 /**
   Creation script for qibdip-tpv
   Marc@demomentsomtres.com
-  version 1.0.1
+  version 1.0.2
 **/
 drop table if exists users;
 create table users (
@@ -179,6 +179,7 @@ create table customer_invoices (
     id int(10) unsigned auto_increment primary key,
     customer_id int(10) not null,
     customer_invoice_date date not null,
+    serie_id int(10) not null,
     customer_invoice_number varchar(15) not null,
     customer_invoice_status int(10) not null,
     customer_invoice_comments varchar(255),
@@ -202,7 +203,7 @@ create table customer_order_lines (
     modified datetime default null,
     customer_invoice_id int(10) default null,
     customer_invoice_line_number int(10) default null,
-    order_line_amout decimal(10,2) not null,
+    order_line_amount decimal(10,2) not null,
     order_line_vat decimal(10,2) not null,
     order_line_comments varchar(255) default null,
     foreign key (customer_order_id) references customer_orders(id) on delete restrict,
@@ -294,7 +295,7 @@ create view customer_invoice_lines as select
     order_line_description as customer_invoice_line_description,
     created,
     modified,
-    order_line_amout as customer_invoice_line_amount,
+    order_line_amount as customer_invoice_line_amount,
     order_line_vat as customer_invoice_line_vat
     from customer_order_lines
     where customer_invoice_id is not null;
@@ -304,4 +305,13 @@ create table options (
     vat decimal(10,2) not null default 0.21,
     vat_re decimal(10,2) not null default 0.04
 );
+ALTER TABLE options ENGINE = INNODB;
 insert into options(id,vat,vat_re) values (1,0.21,0.05);
+drop table if exists series;
+create table series (
+    id int(10) unsigned auto_increment primary key,
+    serie_code varchar(5) not null,
+    serie_description varchar(255) not null,
+    active boolean not null default true
+);
+ALTER TABLE series ENGINE = INNODB;
