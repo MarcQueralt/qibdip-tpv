@@ -5,7 +5,8 @@
 	<?php
 		echo $this->Form->input('customer_name');
 		echo $this->Form->input('customer_address');
-		echo $this->Form->input('town_id',array('empty'=>'---'));
+		echo $this->Form->input('town');
+                echo $this->Form->input('zip');
 		echo $this->Form->input('customer_vat_number');
 		echo $this->Form->input('customer_phone1');
 		echo $this->Form->input('customer_phone2');

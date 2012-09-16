@@ -47,8 +47,6 @@ class SuppliersController extends AppController {
 				$this->Session->setFlash(__('The supplier could not be saved. Please, try again.'));
 			}
 		}
-		$towns = $this->Supplier->Town->find('list');
-		$this->set(compact('towns'));
 	}
 
 /**
@@ -73,8 +71,6 @@ class SuppliersController extends AppController {
 		} else {
 			$this->request->data = $this->Supplier->read(null, $id);
 		}
-		$towns = $this->Supplier->Town->find('list');
-		$this->set(compact('towns'));
 	}
 
 /**

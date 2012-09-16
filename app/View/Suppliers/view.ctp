@@ -16,9 +16,9 @@
 			<?php echo h($supplier['Supplier']['supplier_address']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Town'); ?></dt>
+		<dt><?php echo __('Town Id'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($supplier['Town']['id'], array('controller' => 'towns', 'action' => 'view', $supplier['Town']['id'])); ?>
+			<?php echo h($supplier['Supplier']['town_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier Vat Number'); ?></dt>
@@ -55,8 +55,6 @@
 		<li><?php echo $this->Form->postLink(__('Delete Supplier'), array('action' => 'delete', $supplier['Supplier']['id']), null, __('Are you sure you want to delete # %s?', $supplier['Supplier']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Suppliers'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Towns'), array('controller' => 'towns', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Town'), array('controller' => 'towns', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>

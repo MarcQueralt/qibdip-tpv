@@ -15,7 +15,8 @@
             <th><?php echo $this->Paginator->sort('id'); ?></th>
             <th><?php echo $this->Paginator->sort('customer_name'); ?></th>
             <th><?php echo $this->Paginator->sort('customer_address'); ?></th>
-            <th><?php echo $this->Paginator->sort('town_name'); ?></th>
+            <th><?php echo $this->Paginator->sort('town'); ?></th>
+            <th><?php echo $this->Paginator->sort('zip'); ?></th>
             <th><?php echo $this->Paginator->sort('customer_vat_number'); ?></th>
             <th><?php echo $this->Paginator->sort('customer_phone1'); ?></th>
             <th><?php echo $this->Paginator->sort('customer_phone2'); ?></th>
@@ -25,9 +26,10 @@
         <?php foreach ($customers as $customer): ?>
             <tr>
                 <td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
-                <td><?php echo $this->Html->link(h($customer['Customer']['customer_name']), array('action' => 'view', $customer['Customer']['id'])); ?><?php //echo h($customer['Customer']['customer_name']);  ?>&nbsp;</td>
+                <td><?php echo $this->Html->link(h($customer['Customer']['customer_name']), array('action' => 'view', $customer['Customer']['id'])); ?><?php //echo h($customer['Customer']['customer_name']);   ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_address']); ?>&nbsp;</td>
-                <td><?php echo h($customer['Town']['town_name']); ?>&nbsp;</td>
+                <td><?php echo h($customer['Customer']['town']); ?>&nbsp;</td>
+                <td><?php echo h($customer['Customer']['zip']); ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_vat_number']); ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_phone1']); ?>&nbsp;</td>
                 <td><?php echo h($customer['Customer']['customer_phone2']); ?>&nbsp;</td>

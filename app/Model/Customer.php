@@ -35,15 +35,7 @@ class Customer extends AppModel {
  *
  * @var array
  */
-	public $belongsTo = array(
-		'Town' => array(
-			'className' => 'Town',
-			'foreignKey' => 'town_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
-	);
+	public $belongsTo = array();
 
 /**
  * hasMany associations

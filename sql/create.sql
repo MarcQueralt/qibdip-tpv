@@ -12,39 +12,32 @@ create table users (
     created datetime default null,
     modified datetime default null
 );
-drop table if exists towns;
-create table towns (
-    id int(10) unsigned auto_increment primary key,
-    town_name varchar(50) not null,
-    created datetime default null,
-    modified datetime default null
-);
 drop table if exists customers;
 create table customers (
     id int(10) unsigned auto_increment primary key,
     customer_name varchar(100) not null,
     customer_address varchar(100),
-    town_id int(10),
+    town varchar(100),
+    zip varchar(10),
     customer_vat_number varchar(12),
     customer_phone1 varchar(15),
     customer_phone2 varchar(15),
     customer_email varchar(100),
     created datetime default null,
-    modified datetime default null,
-    foreign key (town_id) references towns(id) on delete restrict
+    modified datetime default null
 );
 drop table if exists suppliers;
 create table suppliers (
     id int(10) unsigned auto_increment primary key,
     supplier_name varchar(100) not null,
     supplier_address varchar(100),
-    town_id int(10),
+    town varchar(100),
+    zip varchar(10),
     supplier_vat_number varchar(12),
     supplier_phone1 varchar(15),
     supplier_phone2 varchar(15),
     created datetime default null,
-    modified datetime default null,
-    foreign key (town_id) references towns(id) on delete restrict
+    modified datetime default null
 );
 drop table if exists supplier_invoice_status;
 create table supplier_invoice_status (
@@ -212,7 +205,6 @@ create table customer_order_lines (
 );
 /* Conversio a InnoDB */
 ALTER TABLE users ENGINE = INNODB;
-ALTER TABLE towns ENGINE = INNODB;
 ALTER TABLE customers ENGINE = INNODB;
 ALTER TABLE suppliers ENGINE = INNODB;
 ALTER TABLE supplier_invoice_status ENGINE = INNODB;

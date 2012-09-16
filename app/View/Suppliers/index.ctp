@@ -19,9 +19,7 @@
 		<td><?php echo h($supplier['Supplier']['id']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_name']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_address']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($supplier['Town']['id'], array('controller' => 'towns', 'action' => 'view', $supplier['Town']['id'])); ?>
-		</td>
+		<td><?php echo h($supplier['Supplier']['town_id']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_vat_number']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_phone1']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_phone2']); ?>&nbsp;</td>
@@ -54,8 +52,6 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Supplier'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Towns'), array('controller' => 'towns', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Town'), array('controller' => 'towns', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>

@@ -76,8 +76,6 @@ class CustomersController extends AppController {
                 $this->Session->setFlash(__('The customer could not be saved. Please, try again.'));
             }
         }
-        $towns = $this->Customer->Town->find('list');
-        $this->set(compact('towns'));
     }
 
     /**
@@ -102,8 +100,6 @@ class CustomersController extends AppController {
         } else {
             $this->request->data = $this->Customer->read(null, $id);
         }
-        $towns = $this->Customer->Town->find('list');
-        $this->set(compact('towns'));
     }
 
     /**

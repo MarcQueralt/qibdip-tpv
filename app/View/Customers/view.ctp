@@ -25,7 +25,12 @@
         </dd>
         <dt><?php echo __('Town'); ?></dt>
         <dd>
-            <?php echo h($customer['Town']['town_name']); ?>
+            <?php echo h($customer['Customer']['town']); ?>
+            &nbsp;
+        </dd>
+        <dt><?php echo __('Zip'); ?></dt>
+        <dd>
+            <?php echo h($customer['Customer']['zip']); ?>
             &nbsp;
         </dd>
         <dt><?php echo __('Customer Vat Number'); ?></dt>
