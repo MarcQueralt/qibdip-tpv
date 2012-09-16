@@ -184,11 +184,9 @@ create table customer_order_lines (
     id int(10) unsigned auto_increment primary key,
     customer_order_id int(10) not null,
     order_line_number int(10) not null,
-    order_status_id int(10) not null,
     order_line_type varchar(1) not null default 'E', /* legend E-Service, A-Sale */
     stock_id int(10) default null,
     order_line_description varchar(50) default null, /* Description of the line if it is a service */
-    order_line_is_left_article boolean default false, 
     order_line_left_article_description varchar(250),
     order_line_due_date date default null,
     created datetime default null,
@@ -198,8 +196,8 @@ create table customer_order_lines (
     order_line_amount decimal(10,2) not null,
     order_line_vat decimal(10,2) not null,
     order_line_comments varchar(255) default null,
+    order_line_ready boolean default false,
     foreign key (customer_order_id) references customer_orders(id) on delete restrict,
-    foreign key (order_status_id) references order_status(id) on delete restrict,
     foreign key (stock_id) references stocks(id) on delete restrict,
     foreign key (customer_invoice_id) references customer_invoices(id) on delete restrict
 );

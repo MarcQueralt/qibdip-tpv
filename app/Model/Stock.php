@@ -10,6 +10,13 @@ App::uses('AppModel', 'Model');
  * @property CustomerOrderLine $CustomerOrderLine
  */
 class Stock extends AppModel {
+    
+    public $virtualFields = array(
+        'available'=>'true',
+        'stock_description'=>'IF(Stock.stock_type="A",Stock.article_reference,(Select raw_mat_type_name from raw_material_types where raw_material_type_id=Stock.raw_material_type_id))',
+    );
+    
+    public $displayField = 'stock_description';
 
 /**
  * Validation rules

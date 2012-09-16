@@ -20,7 +20,9 @@ class CustomerOrder extends AppModel {
         'total_amount' => '@ta+@tv',
         'due_amount' => '@ta+@tv-@tp',
         'count_lines' => '(SELECT count(*) FROM customer_order_lines WHERE customer_order_lines.customer_order_id = CustomerOrder.id)',
-        'count_left_articles' => '(SELECT count(*) FROM customer_order_lines WHERE order_line_is_left_article AND customer_order_lines.customer_order_id = CustomerOrder.id)',
+        'count_left_articles' => '(SELECT count(*) FROM customer_order_lines WHERE trim(order_line_left_article_description)<>"" AND customer_order_lines.customer_order_id = CustomerOrder.id)',
+        'next_line' => 'SELECT COALESCE(MAX(customer_order_lines.order_line_number) DIV 10*10,0)+10 FROM customer_order_lines WHERE customer_order_lines.customer_order_id = CustomerOrder.id',
+        'expected_vat'=> 'SELECT vat FROM options WHERE options.id=1'
     );
 
     /**
@@ -110,7 +112,7 @@ class CustomerOrder extends AppModel {
             'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
+            'order' => 'order_line_number',
             'limit' => '',
             'offset' => '',
             'exclusive' => '',
@@ -123,7 +125,7 @@ class CustomerOrder extends AppModel {
             'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
+            'order' => 'payment_date',
             'limit' => '',
             'offset' => '',
             'exclusive' => '',
