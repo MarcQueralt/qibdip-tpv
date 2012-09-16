@@ -3,12 +3,12 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('customer_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment_date'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment_amount'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment_comments'); ?></th>
 			<th><?php echo $this->Paginator->sort('payment_is_down_payment'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_order_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('customer_invoice_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -17,15 +17,15 @@
 	foreach ($customerPayments as $customerPayment): ?>
 	<tr>
 		<td><?php echo h($customerPayment['CustomerPayment']['id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($customerPayment['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerPayment['Customer']['id'])); ?>
+		</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['payment_date']); ?>&nbsp;</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['payment_amount']); ?>&nbsp;</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['payment_comments']); ?>&nbsp;</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['payment_is_down_payment']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($customerPayment['CustomerOrder']['id'], array('controller' => 'customer_orders', 'action' => 'view', $customerPayment['CustomerOrder']['id'])); ?>
-		</td>
-		<td>
-			<?php echo $this->Html->link($customerPayment['CustomerInvoice']['id'], array('controller' => 'customer_invoices', 'action' => 'view', $customerPayment['CustomerInvoice']['id'])); ?>
 		</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customerPayment['CustomerPayment']['modified']); ?>&nbsp;</td>
@@ -56,9 +56,9 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Customer Payment'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Orders'), array('controller' => 'customer_orders', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('controller' => 'customer_invoices', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

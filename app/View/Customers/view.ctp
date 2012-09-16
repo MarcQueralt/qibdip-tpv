@@ -130,7 +130,7 @@
                     <td></pre><?php echo $customerOrder['id']; ?></td>
                     <td><?php echo $customerOrder['OrderStatus']['order_status_name']; ?></td>
                     <td><?php echo $customerOrder['order_date']; ?></td>
-<td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount']+1,'QBD'); ?></td>
+<td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount'],'QBD'); ?></td>
 <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['due_amount'],'QBD'); ?></td>
 <td style="text-align: right;"><?php echo $customerOrder['count_left_articles']; ?></td>
 <td style="text-align: right;"><?php echo $customerOrder['count_lines']; ?></td>

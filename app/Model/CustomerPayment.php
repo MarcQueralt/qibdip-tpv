@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * CustomerPayment Model
  *
+ * @property Customer $Customer
  * @property CustomerOrder $CustomerOrder
- * @property CustomerInvoice $CustomerInvoice
  */
 class CustomerPayment extends AppModel {
 
@@ -17,6 +17,26 @@ class CustomerPayment extends AppModel {
 		'payment_date' => array(
 			'date' => array(
 				'rule' => array('date'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'payment_amount' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'payment_is_down_payment' => array(
+			'boolean' => array(
+				'rule' => array('boolean'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -44,26 +64,19 @@ class CustomerPayment extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
+		'Customer' => array(
+			'className' => 'Customer',
+			'foreignKey' => 'customer_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'CustomerOrder' => array(
 			'className' => 'CustomerOrder',
 			'foreignKey' => 'customer_order_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		),
-		'CustomerInvoice' => array(
-			'className' => 'CustomerInvoice',
-			'foreignKey' => 'customer_invoice_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-                'Customer' => array(
-                        'className' => 'Customer',
-                        'foreignKey' => 'customer_id',
-                        'conditions' => '',
-                        'fields' => '',
-                        'order' => ''
-                )
+		)
 	);
 }

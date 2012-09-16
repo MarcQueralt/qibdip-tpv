@@ -5,6 +5,7 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_date'); ?></th>
+			<th><?php echo $this->Paginator->sort('serie_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_number'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_status'); ?></th>
 			<th><?php echo $this->Paginator->sort('customer_invoice_comments'); ?></th>
@@ -17,9 +18,12 @@
 	<tr>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customerInvoice['Customer']['id'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
+			<?php echo $this->Html->link($customerInvoice['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
 		</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_date']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($customerInvoice['Serie']['id'], array('controller' => 'series', 'action' => 'view', $customerInvoice['Serie']['id'])); ?>
+		</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_number']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_status']); ?>&nbsp;</td>
 		<td><?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_comments']); ?>&nbsp;</td>
@@ -54,6 +58,8 @@
 		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Series'), array('controller' => 'series', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Serie'), array('controller' => 'series', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Invoice Lines'), array('controller' => 'customer_invoice_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>

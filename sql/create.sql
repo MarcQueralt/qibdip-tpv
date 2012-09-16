@@ -167,12 +167,10 @@ create table customer_payments (
     payment_comments varchar(255),
     payment_is_down_payment boolean default false, /* paga i senyal */
     customer_order_id int(10) not null,
-    customer_invoice_id int(10),
     created datetime default null,
     modified datetime default null,
     foreign key (customer_order_id) references customer_orders(id),
-    foreign key (customer_id) references customers(id),
-    foreign key (customer_invoice_id) references customer_invoices(id)
+    foreign key (customer_id) references customers(id)
 );
 drop table if exists customer_invoices;
 create table customer_invoices (
@@ -180,12 +178,13 @@ create table customer_invoices (
     customer_id int(10) not null,
     customer_invoice_date date not null,
     serie_id int(10) not null,
-    customer_invoice_number varchar(15) not null,
+    customer_invoice_number int(10) not null,
     customer_invoice_status int(10) not null,
     customer_invoice_comments varchar(255),
     created datetime default null,
     modified datetime default null,
-    foreign key (customer_id) references customers(id)
+    foreign key (customer_id) references customers(id),
+    foreign key (serie_id) references series(id)
 );
 drop table if exists customer_order_lines;
 create table customer_order_lines (
@@ -312,6 +311,8 @@ create table series (
     id int(10) unsigned auto_increment primary key,
     serie_code varchar(5) not null,
     serie_description varchar(255) not null,
-    active boolean not null default true
+    active boolean not null default true,
+    created datetime default null,
+    modified datetime default null
 );
 ALTER TABLE series ENGINE = INNODB;

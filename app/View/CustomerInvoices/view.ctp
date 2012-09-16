@@ -8,12 +8,17 @@
 		</dd>
 		<dt><?php echo __('Customer'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customerInvoice['Customer']['id'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
+			<?php echo $this->Html->link($customerInvoice['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $customerInvoice['Customer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Date'); ?></dt>
 		<dd>
 			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_date']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Serie'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($customerInvoice['Serie']['id'], array('controller' => 'series', 'action' => 'view', $customerInvoice['Serie']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Number'); ?></dt>
@@ -52,6 +57,8 @@
 		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Series'), array('controller' => 'series', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Serie'), array('controller' => 'series', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Invoice Lines'), array('controller' => 'customer_invoice_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
@@ -130,7 +137,7 @@
 		<th><?php echo __('Modified'); ?></th>
 		<th><?php echo __('Customer Invoice Id'); ?></th>
 		<th><?php echo __('Customer Invoice Line Number'); ?></th>
-		<th><?php echo __('Order Line Amout'); ?></th>
+		<th><?php echo __('Order Line Amount'); ?></th>
 		<th><?php echo __('Order Line Vat'); ?></th>
 		<th><?php echo __('Order Line Comments'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -153,7 +160,7 @@
 			<td><?php echo $customerOrderLine['modified']; ?></td>
 			<td><?php echo $customerOrderLine['customer_invoice_id']; ?></td>
 			<td><?php echo $customerOrderLine['customer_invoice_line_number']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_amout']; ?></td>
+			<td><?php echo $customerOrderLine['order_line_amount']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_vat']; ?></td>
 			<td><?php echo $customerOrderLine['order_line_comments']; ?></td>
 			<td class="actions">
@@ -178,6 +185,7 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Customer Id'); ?></th>
 		<th><?php echo __('Payment Date'); ?></th>
 		<th><?php echo __('Payment Amount'); ?></th>
 		<th><?php echo __('Payment Comments'); ?></th>
@@ -193,6 +201,7 @@
 		foreach ($customerInvoice['CustomerPayment'] as $customerPayment): ?>
 		<tr>
 			<td><?php echo $customerPayment['id']; ?></td>
+			<td><?php echo $customerPayment['customer_id']; ?></td>
 			<td><?php echo $customerPayment['payment_date']; ?></td>
 			<td><?php echo $customerPayment['payment_amount']; ?></td>
 			<td><?php echo $customerPayment['payment_comments']; ?></td>

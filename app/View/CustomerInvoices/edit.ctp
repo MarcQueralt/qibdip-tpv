@@ -6,6 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('customer_id');
 		echo $this->Form->input('customer_invoice_date');
+		echo $this->Form->input('serie_id');
 		echo $this->Form->input('customer_invoice_number');
 		echo $this->Form->input('customer_invoice_status');
 		echo $this->Form->input('customer_invoice_comments');
@@ -21,6 +22,8 @@
 		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Series'), array('controller' => 'series', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Serie'), array('controller' => 'series', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Invoice Lines'), array('controller' => 'customer_invoice_lines', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>

@@ -113,6 +113,9 @@ endif;
                                 <?php echo $this->Html->link(__('Towns'), array('controller' => 'towns')); ?>
                             </li>
                             <li>
+                                <?php echo $this->Html->link(__('Invoice Series'), array('controller' => 'series')); ?>
+                            </li>
+                            <li>
                                 <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialTypes')); ?>
                             </li>
                             <li>
