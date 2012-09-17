@@ -3,21 +3,18 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('stock_type'); ?></th>
 			<th><?php echo $this->Paginator->sort('raw_material_type_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('raw_mat_units'); ?></th>
-			<th><?php echo $this->Paginator->sort('raw_mat_userfield01'); ?></th>
-			<th><?php echo $this->Paginator->sort('raw_mat_unit_price'); ?></th>
+                        <th><?php echo $this->Paginator->sort('raw_mat_userfield01',  qibdipTPV_raw_uf01()); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_comment'); ?></th>
-			<th><?php echo $this->Paginator->sort('stock_userfield01'); ?></th>
-			<th><?php echo $this->Paginator->sort('stock_userfield02'); ?></th>
-			<th><?php echo $this->Paginator->sort('stock_userfield03'); ?></th>
+                        <th><?php echo $this->Paginator->sort('stock_userfield01',  qibdipTPV_stock_uf01()); ?></th>
+                        <th><?php echo $this->Paginator->sort('stock_userfield02',  qibdipTPV_stock_uf02()); ?></th>
+                        <th><?php echo $this->Paginator->sort('stock_userfield03', qibdipTPV_stock_uf03()); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_buy_price'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_vat'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_vat_re'); ?></th>
+			<th><?php echo $this->Paginator->sort('raw_mat_unit_price'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_sale_price'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_slip_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_slip_line'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_invoice_id'); ?></th>
@@ -27,23 +24,20 @@
 	foreach ($rawMaterials as $rawMaterial): ?>
 	<tr>
 		<td><?php echo h($rawMaterial['RawMaterial']['id']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['stock_type']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['id'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['raw_mat_type_name'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
 		</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['raw_mat_units']); ?>&nbsp;</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['raw_mat_userfield01']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['raw_mat_unit_price']); ?>&nbsp;</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['stock_comment']); ?>&nbsp;</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['stock_userfield01']); ?>&nbsp;</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['stock_userfield02']); ?>&nbsp;</td>
 		<td><?php echo h($rawMaterial['RawMaterial']['stock_userfield03']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['stock_buy_price']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['stock_vat']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['stock_vat_re']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['stock_sale_price']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['created']); ?>&nbsp;</td>
-		<td><?php echo h($rawMaterial['RawMaterial']['modified']); ?>&nbsp;</td>
+		<td style="text-align: right;"><?php echo h($rawMaterial['RawMaterial']['stock_buy_price']); ?>&nbsp;</td>
+		<td style="text-align: right;"><?php echo h($rawMaterial['RawMaterial']['stock_vat']); ?>&nbsp;</td>
+		<td style="text-align: right;"><?php echo h($rawMaterial['RawMaterial']['stock_vat_re']); ?>&nbsp;</td>
+		<td style="text-align: right;"><?php echo h($rawMaterial['RawMaterial']['raw_mat_unit_price']); ?>&nbsp;</td>
+		<td style="text-align: right;"><?php echo h($rawMaterial['RawMaterial']['stock_sale_price']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($rawMaterial['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $rawMaterial['SupplierSlip']['id'])); ?>
 		</td>

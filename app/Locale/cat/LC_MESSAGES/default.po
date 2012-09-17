@@ -1,412 +1,412 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: qibdip dvdClub\n"
 "POT-Creation-Date: 2012-09-17 09:49+0200\n"
-"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-09-17 10:47+0100\n"
+"Last-Translator: marc <marc@qibdip.com>\n"
+"Language-Team: qibdip <info@qibdip.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: Catalan\n"
 
 #: Controller/ArticlesController.php:33;73;108
 msgid "Invalid article"
-msgstr ""
+msgstr "No hi ha cap article amb aquest codi"
 
 #: Controller/ArticlesController.php:47;77
 msgid "The article has been saved"
-msgstr ""
+msgstr "S'ha desat l'article"
 
 #: Controller/ArticlesController.php:50;80
 msgid "The article could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar l'article. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/ArticlesController.php:111
 msgid "Article deleted"
-msgstr ""
+msgstr "S'ha esborrat l'article"
 
 #: Controller/ArticlesController.php:114
 msgid "Article was not deleted"
-msgstr ""
+msgstr "No es pot esborrar l'article"
 
 #: Controller/ConsumptionsController.php:30;65;96
 msgid "Invalid consumption"
-msgstr ""
+msgstr "No hi ha cap consum amb aquest codi"
 
 #: Controller/ConsumptionsController.php:44;69
 msgid "The consumption has been saved"
-msgstr ""
+msgstr "S'ha desat el consum"
 
 #: Controller/ConsumptionsController.php:47;72
 msgid "The consumption could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar el consum. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/ConsumptionsController.php:99
 msgid "Consumption deleted"
-msgstr ""
+msgstr "S'ha eliminat el consum"
 
 #: Controller/ConsumptionsController.php:102
 msgid "Consumption was not deleted"
-msgstr ""
+msgstr "No es pot eliminar el consum"
 
 #: Controller/CustomerInvoiceLinesController.php:30;66;98
 msgid "Invalid customer invoice line"
-msgstr ""
+msgstr "Línia de factura de client no vàlida"
 
 #: Controller/CustomerInvoiceLinesController.php:44;70
 msgid "The customer invoice line has been saved"
-msgstr ""
+msgstr "S'ha desat l'a factura de client"
 
 #: Controller/CustomerInvoiceLinesController.php:47;73
 msgid "The customer invoice line could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la factura de client. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomerInvoiceLinesController.php:101
 msgid "Customer invoice line deleted"
-msgstr ""
+msgstr "Línia de factura de client eliminada"
 
 #: Controller/CustomerInvoiceLinesController.php:104
 msgid "Customer invoice line was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la factura de client"
 
 #: Controller/CustomerInvoiceStatusesController.php:30;62;90
 msgid "Invalid customer invoice status"
-msgstr ""
+msgstr "Estat de factura client no vàlid"
 
 #: Controller/CustomerInvoiceStatusesController.php:44;66
 msgid "The customer invoice status has been saved"
-msgstr ""
+msgstr "S'ha desat l'estat de factura"
 
 #: Controller/CustomerInvoiceStatusesController.php:47;69
 msgid "The customer invoice status could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la factura. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomerInvoiceStatusesController.php:93
 msgid "Customer invoice status deleted"
-msgstr ""
+msgstr "Estat de factura client eliminat"
 
 #: Controller/CustomerInvoiceStatusesController.php:96
 msgid "Customer invoice status was not deleted"
-msgstr ""
+msgstr "No es pot eliminar la factura"
 
 #: Controller/CustomerInvoicesController.php:44
 msgid "The customer invoice has been saved"
-msgstr ""
+msgstr "S'ha desat la factura"
 
 #: Controller/CustomerInvoicesController.php:47
 #: Controller/CustomerOrderLinesController.php:66;85;113;155;180;204
 msgid "The customer order line could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la línia de comanda. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomerInvoicesController.php:54
 #: Controller/CustomerOrderLinesController.php:91;119
 #: Controller/CustomerOrdersController.php:37;72;103;118
 msgid "Invalid customer order"
-msgstr ""
+msgstr "No hi ha cap comanda amb aquest codi"
 
 #: Controller/CustomerInvoicesController.php:72;91
 msgid "Invalid customer invoice"
-msgstr ""
+msgstr "No hi ha cap factura amb aquest codi"
 
 #: Controller/CustomerInvoicesController.php:94
 msgid "Customer invoice deleted"
-msgstr ""
+msgstr "Factura esborrada"
 
 #: Controller/CustomerInvoicesController.php:97
 msgid "Customer invoice was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la factura"
 
 #: Controller/CustomerOrderLinesController.php:32;41;49;148;170;194;230
 msgid "Invalid customer order line"
-msgstr ""
+msgstr "No existex cap línia de comanda amb aquest codi"
 
 #: Controller/CustomerOrderLinesController.php:63;82;110;152;177;201
 msgid "The customer order line has been saved"
-msgstr ""
+msgstr "S'ha desat la línia de comanda"
 
 #: Controller/CustomerOrderLinesController.php:235
 msgid "Customer order line deleted"
-msgstr ""
+msgstr "Línia de comanda de client eliminada"
 
 #: Controller/CustomerOrderLinesController.php:238
 msgid "Customer order line was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la línia"
 
 #: Controller/CustomerOrdersController.php:51;76
 msgid "The customer order has been saved"
-msgstr ""
+msgstr "S'ha desat la comanda"
 
 #: Controller/CustomerOrdersController.php:54;79
 msgid "The customer order could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la comanda. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomerOrdersController.php:106
 msgid "Customer order deleted"
-msgstr ""
+msgstr "S'ha esborrat la comanda"
 
 #: Controller/CustomerOrdersController.php:109
 msgid "Customer order was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la comanda"
 
 #: Controller/CustomerOrdersController.php:125
 msgid "Order"
-msgstr ""
+msgstr "Comanda"
 
 #: Controller/CustomerPaymentsController.php:32;71;106
 msgid "Invalid customer payment"
-msgstr ""
+msgstr "No hi ha cap pagament amb aquest codi"
 
 #: Controller/CustomerPaymentsController.php:50;79
 msgid "The customer payment has been saved"
-msgstr ""
+msgstr "S'ha desat el pagament"
 
 #: Controller/CustomerPaymentsController.php:53;82
 msgid "The customer payment could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar el pagament. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomerPaymentsController.php:111
 msgid "Customer payment deleted"
-msgstr ""
+msgstr "S'ha eliminat el pagament"
 
 #: Controller/CustomerPaymentsController.php:114
 msgid "Customer payment was not deleted"
-msgstr ""
+msgstr "No es pot eliminar el pagament"
 
 #: Controller/CustomersController.php:59;91;119
 msgid "Invalid customer"
-msgstr ""
+msgstr "No hi ha cap client amb aquest codi"
 
 #: Controller/CustomersController.php:73;95
 msgid "The customer has been saved"
-msgstr ""
+msgstr "S'ha desat el client"
 
 #: Controller/CustomersController.php:76;98
 msgid "The customer could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar el client. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/CustomersController.php:122
 msgid "Customer deleted"
-msgstr ""
+msgstr "S'ha esborrat el client"
 
 #: Controller/CustomersController.php:125
 msgid "Customer was not deleted"
-msgstr ""
+msgstr "No es pot esborrar el client"
 
 #: Controller/OptionsController.php:34;67
 msgid "Invalid option"
-msgstr ""
+msgstr "No hi ha cap opció amb aquest codi"
 
 #: Controller/OptionsController.php:71
 msgid "The option has been saved"
-msgstr ""
+msgstr "S'ha desat les opcions"
 
 #: Controller/OptionsController.php:74
 msgid "The option could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar les opcions. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/OrderStatusesController.php:30;62;90
 msgid "Invalid order status"
-msgstr ""
+msgstr "No hi ha cap estat de comanda amb aquest codi"
 
 #: Controller/OrderStatusesController.php:44;66
 msgid "The order status has been saved"
-msgstr ""
+msgstr "S'ha desat l'estat"
 
 #: Controller/OrderStatusesController.php:47;69
 msgid "The order status could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar l'estat. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/OrderStatusesController.php:93
 msgid "Order status deleted"
-msgstr ""
+msgstr "Estat de comanda eliminat"
 
 #: Controller/OrderStatusesController.php:96
 msgid "Order status was not deleted"
-msgstr ""
+msgstr "No es pot eliminar l'estat de comanda"
 
 #: Controller/RawMaterialTypesController.php:30;62;90
 msgid "Invalid raw material type"
-msgstr ""
+msgstr "No hi ha cap matèria primera amb aquest codi"
 
 #: Controller/RawMaterialTypesController.php:44;66
 msgid "The raw material type has been saved"
-msgstr ""
+msgstr "S'ha desat la matèria primera"
 
 #: Controller/RawMaterialTypesController.php:47;69
 msgid "The raw material type could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la matèria primera. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/RawMaterialTypesController.php:93
 msgid "Raw material type deleted"
-msgstr ""
+msgstr "Tipus de matèria primera eliminat"
 
 #: Controller/RawMaterialTypesController.php:96
 msgid "Raw material type was not deleted"
-msgstr ""
+msgstr "No es pot eliminar la matèria primera"
 
 #: Controller/RawMaterialsController.php:32;73;109
 msgid "Invalid raw material"
-msgstr ""
+msgstr "No hi ha cap matèria primera amb aquest codi"
 
 #: Controller/RawMaterialsController.php:46;77
 msgid "The raw material has been saved"
-msgstr ""
+msgstr "S'ha desat la matèria primera"
 
 #: Controller/RawMaterialsController.php:49;80
 msgid "The raw material could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la matèria primera. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/RawMaterialsController.php:112
 msgid "Raw material deleted"
-msgstr ""
+msgstr "S'ha eliminat la matèria primera"
 
 #: Controller/RawMaterialsController.php:115
 msgid "Raw material was not deleted"
-msgstr ""
+msgstr "No es pot eliminar la matèria primera"
 
 #: Controller/SeriesController.php:30;62;90
 msgid "Invalid series"
-msgstr ""
+msgstr "Sèries invàlides"
 
 #: Controller/SeriesController.php:44;66
 msgid "The series has been saved"
-msgstr ""
+msgstr "La sèrie s'ha desat"
 
 #: Controller/SeriesController.php:47;69
 msgid "The series could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la sèrie. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/SeriesController.php:93
 msgid "Series deleted"
-msgstr ""
+msgstr "S'ha esborrat la sèrie"
 
 #: Controller/SeriesController.php:96
 msgid "Series was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la sèrie"
 
 #: Controller/SupplierInvoiceStatusesController.php:30;62;90
 msgid "Invalid supplier invoice status"
-msgstr ""
+msgstr "Estat de factura proveïdor no vàlida"
 
 #: Controller/SupplierInvoiceStatusesController.php:44;66
 msgid "The supplier invoice status has been saved"
-msgstr ""
+msgstr "S'ha desat l'estat de factura"
 
 #: Controller/SupplierInvoiceStatusesController.php:47;69
 msgid "The supplier invoice status could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar l'estat. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/SupplierInvoiceStatusesController.php:93
 msgid "Supplier invoice status deleted"
-msgstr ""
+msgstr "Estat de factura proveïdor eliminat"
 
 #: Controller/SupplierInvoiceStatusesController.php:96
 msgid "Supplier invoice status was not deleted"
-msgstr ""
+msgstr "No es pot esborrar l'estat"
 
 #: Controller/SupplierInvoicesController.php:45;80;111
 msgid "Invalid supplier invoice"
-msgstr ""
+msgstr "No hi ha cap factura de proveïdor amb aquest codi"
 
 #: Controller/SupplierInvoicesController.php:59;84
 msgid "The supplier invoice has been saved"
-msgstr ""
+msgstr "S'ha desat la factura de proveïdor"
 
 #: Controller/SupplierInvoicesController.php:62;87
 msgid "The supplier invoice could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar la factura proveïdor. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/SupplierInvoicesController.php:114
 msgid "Supplier invoice deleted"
-msgstr ""
+msgstr "S'ha esborrat la factura"
 
 #: Controller/SupplierInvoicesController.php:117
 msgid "Supplier invoice was not deleted"
-msgstr ""
+msgstr "No es pot esborrar la factura"
 
 #: Controller/SupplierSlipsController.php:39;73;103
 msgid "Invalid supplier slip"
-msgstr ""
+msgstr "No hi ha cap albarà amb aquest codi"
 
 #: Controller/SupplierSlipsController.php:53;77
 msgid "The supplier slip has been saved"
-msgstr ""
+msgstr "S'ha desat l'albarà"
 
 #: Controller/SupplierSlipsController.php:56;80
 msgid "The supplier slip could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar l'albarà. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/SupplierSlipsController.php:106
 msgid "Supplier slip deleted"
-msgstr ""
+msgstr "S'ha esborrat l'albarà"
 
 #: Controller/SupplierSlipsController.php:109
 msgid "Supplier slip was not deleted"
-msgstr ""
+msgstr "No es pot esborrar l'albarà"
 
 #: Controller/SuppliersController.php:30;62;90
 msgid "Invalid supplier"
-msgstr ""
+msgstr "No hi ha cap proveïdor amb aquest codi"
 
 #: Controller/SuppliersController.php:44;66
 msgid "The supplier has been saved"
-msgstr ""
+msgstr "S'ha desat el proveïdor"
 
 #: Controller/SuppliersController.php:47;69
 msgid "The supplier could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar el proveïdor. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/SuppliersController.php:93
 msgid "Supplier deleted"
-msgstr ""
+msgstr "S'ha esborrat el proveïdor"
 
 #: Controller/SuppliersController.php:96
 msgid "Supplier was not deleted"
-msgstr ""
+msgstr "No es pot esborrar el proveïdor"
 
 #: Controller/UsersController.php:24
 msgid "Invalid username or password, try again"
-msgstr ""
+msgstr "L'usuari o la contrasenya no vàlids. Intenta-ho de nou."
 
 #: Controller/UsersController.php:58;90;118
 msgid "Invalid user"
-msgstr ""
+msgstr "No hi ha cap usuari amb aquest codi"
 
 #: Controller/UsersController.php:72;94
 msgid "The user has been saved"
-msgstr ""
+msgstr "S'ha desat l'usuari"
 
 #: Controller/UsersController.php:75;97
 msgid "The user could not be saved. Please, try again."
-msgstr ""
+msgstr "No es pot desar l'usuari. Corregeix els errors i torna-ho a intentar."
 
 #: Controller/UsersController.php:121
 msgid "User deleted"
-msgstr ""
+msgstr "S'ha esborrat l'usuari"
 
 #: Controller/UsersController.php:124
 msgid "User was not deleted"
-msgstr ""
+msgstr "No es pot esborrar l'usuari"
 
 #: Vendor/qibdipTPV.php:10
 #: View/Articles/view.ctp:2
 #: View/Consumptions/view.ctp:9
 #: View/CustomerOrders/printer.ctp:54
 msgid "Article"
-msgstr ""
+msgstr "Article"
 
 #: Vendor/qibdipTPV.php:12
 msgid "Service"
-msgstr ""
+msgstr "Servei"
 
 #: View/Articles/add.ctp:8
 msgid "Add Article"
-msgstr ""
+msgstr "Afegir article"
 
 #: View/Articles/add.ctp:31
 #: View/Articles/edit.ctp:31
@@ -449,7 +449,7 @@ msgstr ""
 #: View/Users/add.ctp:11
 #: View/Users/edit.ctp:12
 msgid "Submit"
-msgstr ""
+msgstr "Desar"
 
 #: View/Articles/add.ctp:34
 #: View/Articles/edit.ctp:34
@@ -532,7 +532,7 @@ msgstr ""
 #: View/Users/index.ctp:11;46
 #: View/Users/view.ctp:37
 msgid "Actions"
-msgstr ""
+msgstr "Accions"
 
 #: View/Articles/add.ctp:37
 #: View/Articles/edit.ctp:38
@@ -549,7 +549,7 @@ msgstr ""
 #: View/SupplierSlips/edit.ctp:22
 #: View/SupplierSlips/index.ctp:69
 msgid "List Articles"
-msgstr ""
+msgstr "Llista d'articles"
 
 #: View/Articles/add.ctp:38
 #: View/Articles/edit.ctp:39
@@ -563,7 +563,7 @@ msgstr ""
 #: View/SupplierSlips/view.ctp:61
 #: View/Suppliers/view.ctp:79
 msgid "List Supplier Slips"
-msgstr ""
+msgstr "Llista d'albarans"
 
 #: View/Articles/add.ctp:39
 #: View/Articles/edit.ctp:40
@@ -576,7 +576,7 @@ msgstr ""
 #: View/SupplierSlips/view.ctp:62
 #: View/Suppliers/view.ctp:80;173
 msgid "New Supplier Slip"
-msgstr ""
+msgstr "Nou albarà"
 
 #: View/Articles/add.ctp:40
 #: View/Articles/edit.ctp:41
@@ -594,7 +594,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:61
 #: View/Suppliers/view.ctp:77
 msgid "List Supplier Invoices"
-msgstr ""
+msgstr "Llista de factures proveïdor"
 
 #: View/Articles/add.ctp:41
 #: View/Articles/edit.ctp:42
@@ -611,7 +611,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:62
 #: View/Suppliers/view.ctp:78;127
 msgid "New Supplier Invoice"
-msgstr ""
+msgstr "Nova factura proveïdor"
 
 #: View/Articles/add.ctp:42
 #: View/Articles/edit.ctp:43
@@ -624,7 +624,7 @@ msgstr ""
 #: View/RawMaterials/index.ctp:81
 #: View/RawMaterials/view.ctp:109
 msgid "List Consumptions"
-msgstr ""
+msgstr "Llista de consums"
 
 #: View/Articles/add.ctp:43
 #: View/Articles/edit.ctp:44
@@ -636,12 +636,12 @@ msgstr ""
 #: View/RawMaterials/index.ctp:82
 #: View/RawMaterials/view.ctp:110;152
 msgid "New Consumption"
-msgstr ""
+msgstr "Nou consum"
 
 #: View/Articles/edit.ctp:8
 #: View/Articles/view.ctp:99
 msgid "Edit Article"
-msgstr ""
+msgstr "Editar article"
 
 #: View/Articles/edit.ctp:37
 #: View/Articles/index.ctp:47
@@ -691,7 +691,7 @@ msgstr ""
 #: View/Users/edit.ctp:18
 #: View/Users/index.ctp:25
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: View/Articles/edit.ctp:37
 #: View/Articles/index.ctp:47
@@ -748,12 +748,12 @@ msgstr ""
 #: View/Users/index.ctp:25
 #: View/Users/view.ctp:40
 msgid "Are you sure you want to delete # %s?"
-msgstr ""
+msgstr "Vols eliminar #%s?"
 
 #: View/Articles/index.ctp:2
 #: View/Layouts/default.ctp:89
 msgid "Articles"
-msgstr ""
+msgstr "Articles"
 
 #: View/Articles/index.ctp:45
 #: View/Articles/view.ctp:135
@@ -786,7 +786,7 @@ msgstr ""
 #: View/Suppliers/view.ctp:116;162
 #: View/Users/index.ctp:23
 msgid "View"
-msgstr ""
+msgstr "Veure"
 
 #: View/Articles/index.ctp:46
 #: View/Articles/view.ctp:136
@@ -818,7 +818,7 @@ msgstr ""
 #: View/Suppliers/view.ctp:117;163
 #: View/Users/index.ctp:24
 msgid "Edit"
-msgstr ""
+msgstr "Modificar"
 
 #: View/Articles/index.ctp:55
 #: View/Consumptions/index.ctp:41
@@ -840,7 +840,7 @@ msgstr ""
 #: View/Suppliers/index.ctp:39
 #: View/Users/index.ctp:33
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
-msgstr ""
+msgstr "Pàgina {:page} de {:pages}, mostrant {:current} registres d'un total de {:count}, mostrant del registre {:start} fins {:end}"
 
 #: View/Articles/index.ctp:61
 #: View/Consumptions/index.ctp:47
@@ -862,7 +862,7 @@ msgstr ""
 #: View/Suppliers/index.ctp:45
 #: View/Users/index.ctp:39
 msgid "previous"
-msgstr ""
+msgstr "previ"
 
 #: View/Articles/index.ctp:63
 #: View/Consumptions/index.ctp:49
@@ -884,7 +884,7 @@ msgstr ""
 #: View/Suppliers/index.ctp:47
 #: View/Users/index.ctp:41
 msgid "next"
-msgstr ""
+msgstr "següent"
 
 #: View/Articles/index.ctp:70
 #: View/Articles/view.ctp:102
@@ -901,7 +901,7 @@ msgstr ""
 #: View/SupplierSlips/index.ctp:70
 #: View/SupplierSlips/view.ctp:123
 msgid "New Article"
-msgstr ""
+msgstr "Nou article"
 
 #: View/Articles/view.ctp:4;112
 #: View/Consumptions/view.ctp:4
@@ -924,34 +924,34 @@ msgstr ""
 #: View/Suppliers/view.ctp:13;88;136
 #: View/Users/view.ctp:4
 msgid "Id"
-msgstr ""
+msgstr "Codi"
 
 #: View/Articles/view.ctp:9
 #: View/RawMaterialTypes/view.ctp:45;110
 #: View/SupplierInvoices/view.ctp:81;144;209
 msgid "Stock Type"
-msgstr ""
+msgstr "Tipus"
 
 #: View/Articles/view.ctp:14
 #: View/RawMaterialTypes/view.ctp:111
 #: View/SupplierInvoices/view.ctp:82;210
 #: View/SupplierSlips/view.ctp:72
 msgid "Article Reference"
-msgstr ""
+msgstr "Referència"
 
 #: View/Articles/view.ctp:19
 #: View/RawMaterialTypes/view.ctp:112
 #: View/SupplierInvoices/view.ctp:83;211
 #: View/SupplierSlips/view.ctp:73
 msgid "Article Model"
-msgstr ""
+msgstr "Model"
 
 #: View/Articles/view.ctp:24
 #: View/RawMaterialTypes/view.ctp:113
 #: View/SupplierInvoices/view.ctp:84;212
 #: View/SupplierSlips/view.ctp:74
 msgid "Article Size"
-msgstr ""
+msgstr "Mida"
 
 #: View/Articles/view.ctp:29
 #: View/RawMaterialTypes/view.ctp:50;118
@@ -959,7 +959,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:85;149;217
 #: View/SupplierSlips/view.ctp:75;137
 msgid "Stock Comment"
-msgstr ""
+msgstr "Comentaris"
 
 #: View/Articles/view.ctp:49
 #: View/RawMaterialTypes/view.ctp:54;122
@@ -967,7 +967,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:89;153;221
 #: View/SupplierSlips/view.ctp:79;141
 msgid "Stock Buy Price"
-msgstr ""
+msgstr "Preu de compra"
 
 #: View/Articles/view.ctp:54
 #: View/RawMaterialTypes/view.ctp:55;123
@@ -975,7 +975,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:90;154;222
 #: View/SupplierSlips/view.ctp:80;142
 msgid "Stock Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/Articles/view.ctp:59
 #: View/RawMaterialTypes/view.ctp:56;124
@@ -983,7 +983,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:91;155;223
 #: View/SupplierSlips/view.ctp:81;143
 msgid "Stock Vat Re"
-msgstr ""
+msgstr "IVA RE"
 
 #: View/Articles/view.ctp:64
 #: View/RawMaterialTypes/view.ctp:57;125
@@ -991,7 +991,7 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:92;156;224
 #: View/SupplierSlips/view.ctp:82;144
 msgid "Stock Sale Price"
-msgstr ""
+msgstr "Preu de venda"
 
 #: View/Articles/view.ctp:69
 #: View/CustomerInvoiceLines/view.ctp:44
@@ -1013,7 +1013,7 @@ msgstr ""
 #: View/Suppliers/view.ctp:58;96
 #: View/Users/view.ctp:24
 msgid "Created"
-msgstr ""
+msgstr "Creació"
 
 #: View/Articles/view.ctp:74
 #: View/CustomerInvoiceLines/view.ctp:49
@@ -1035,13 +1035,13 @@ msgstr ""
 #: View/Suppliers/view.ctp:63;97
 #: View/Users/view.ctp:29
 msgid "Modified"
-msgstr ""
+msgstr "Modificació"
 
 #: View/Articles/view.ctp:79
 #: View/RawMaterials/view.ctp:79
 #: View/SupplierSlips/view.ctp:2
 msgid "Supplier Slip"
-msgstr ""
+msgstr "Albarà"
 
 #: View/Articles/view.ctp:84
 #: View/RawMaterialTypes/view.ctp:61;129
@@ -1049,42 +1049,42 @@ msgstr ""
 #: View/SupplierInvoices/view.ctp:96;160;228
 #: View/SupplierSlips/view.ctp:86;148
 msgid "Supplier Slip Line"
-msgstr ""
+msgstr "Línia d'albarà"
 
 #: View/Articles/view.ctp:89
 #: View/RawMaterials/view.ctp:89
 #: View/SupplierInvoices/view.ctp:2
 msgid "Supplier Invoice"
-msgstr ""
+msgstr "Factura proveïdor"
 
 #: View/Articles/view.ctp:100
 msgid "Delete Article"
-msgstr ""
+msgstr "Esborrar article"
 
 #: View/Articles/view.ctp:108
 #: View/RawMaterials/view.ctp:114
 msgid "Related Consumptions"
-msgstr ""
+msgstr "Consums i costos"
 
 #: View/Articles/view.ctp:113
 #: View/RawMaterials/view.ctp:119
 msgid "Article Id"
-msgstr ""
+msgstr "Id Article"
 
 #: View/Articles/view.ctp:114
 #: View/RawMaterials/view.ctp:120
 msgid "Raw Material Id"
-msgstr ""
+msgstr "Id Matèria primera"
 
 #: View/Articles/view.ctp:115
 #: View/Consumptions/view.ctp:19
 #: View/RawMaterials/view.ctp:121
 msgid "Consumption Raw Mat Consumed Units"
-msgstr ""
+msgstr "Unitats consumides"
 
 #: View/Consumptions/add.ctp:4
 msgid "Add Consumption"
-msgstr ""
+msgstr "Afegir consum"
 
 #: View/Consumptions/add.ctp:24
 #: View/Consumptions/edit.ctp:26
@@ -1105,7 +1105,7 @@ msgstr ""
 #: View/SupplierSlips/edit.ctp:24
 #: View/SupplierSlips/index.ctp:71
 msgid "List Raw Materials"
-msgstr ""
+msgstr "Llista matèries primeres"
 
 #: View/Consumptions/add.ctp:25
 #: View/Consumptions/edit.ctp:27
@@ -1126,54 +1126,54 @@ msgstr ""
 #: View/SupplierSlips/index.ctp:72
 #: View/SupplierSlips/view.ctp:186
 msgid "New Raw Material"
-msgstr ""
+msgstr "Nova matèria primera"
 
 #: View/Consumptions/edit.ctp:4
 #: View/Consumptions/view.ctp:49
 msgid "Edit Consumption"
-msgstr ""
+msgstr "Modificar consum"
 
 #: View/Consumptions/index.ctp:2
 #: View/Layouts/default.ctp:95
 msgid "Consumptions"
-msgstr ""
+msgstr "Consums"
 
 #: View/Consumptions/view.ctp:2
 msgid "Consumption"
-msgstr ""
+msgstr "Consum"
 
 #: View/Consumptions/view.ctp:14
 #: View/RawMaterials/view.ctp:2
 msgid "Raw Material"
-msgstr ""
+msgstr "Matèria primera"
 
 #: View/Consumptions/view.ctp:24
 #: View/RawMaterials/view.ctp:122
 msgid "Consumption Cost 01"
-msgstr ""
+msgstr "Cost 1"
 
 #: View/Consumptions/view.ctp:29
 #: View/RawMaterials/view.ctp:123
 msgid "Consumption Cost 02"
-msgstr ""
+msgstr "Cost 2"
 
 #: View/Consumptions/view.ctp:34
 #: View/RawMaterials/view.ctp:124
 msgid "Consumption Cost 03"
-msgstr ""
+msgstr "Cost 3"
 
 #: View/Consumptions/view.ctp:39
 #: View/RawMaterials/view.ctp:125
 msgid "Consumption Cost 04"
-msgstr ""
+msgstr "Cost 4"
 
 #: View/Consumptions/view.ctp:50
 msgid "Delete Consumption"
-msgstr ""
+msgstr "Eliminar consum"
 
 #: View/CustomerInvoiceLines/add.ctp:4
 msgid "Add Customer Invoice Line"
-msgstr ""
+msgstr "Afegir línia factura client"
 
 #: View/CustomerInvoiceLines/add.ctp:23
 #: View/CustomerInvoiceLines/edit.ctp:25
@@ -1181,7 +1181,7 @@ msgstr ""
 #: View/CustomerInvoices/view.ctp:57
 #: View/CustomerOrders/edit.ctp:25
 msgid "List Customer Invoice Lines"
-msgstr ""
+msgstr "Llista línies factura client"
 
 #: View/CustomerInvoiceLines/add.ctp:24
 #: View/CustomerInvoiceLines/edit.ctp:26
@@ -1192,7 +1192,7 @@ msgstr ""
 #: View/CustomerOrderLines/index.ctp:85
 #: View/CustomerOrderLines/view.ctp:104
 msgid "List Customer Invoices"
-msgstr ""
+msgstr "Llista de factures"
 
 #: View/CustomerInvoiceLines/add.ctp:25
 #: View/CustomerInvoiceLines/edit.ctp:27
@@ -1204,7 +1204,7 @@ msgstr ""
 #: View/CustomerOrderLines/view.ctp:105
 #: View/Customers/view.ctp:117
 msgid "New Customer Invoice"
-msgstr ""
+msgstr "Nova factura client"
 
 #: View/CustomerInvoiceLines/add.ctp:26
 #: View/CustomerInvoiceLines/edit.ctp:28
@@ -1226,7 +1226,7 @@ msgstr ""
 #: View/OrderStatuses/index.ctp:49
 #: View/OrderStatuses/view.ctp:40
 msgid "List Customer Orders"
-msgstr ""
+msgstr "Llista de comandes"
 
 #: View/CustomerInvoiceLines/add.ctp:27
 #: View/CustomerInvoiceLines/edit.ctp:29
@@ -1246,7 +1246,7 @@ msgstr ""
 #: View/OrderStatuses/index.ctp:50
 #: View/OrderStatuses/view.ctp:41;142
 msgid "New Customer Order"
-msgstr ""
+msgstr "Nova comanda"
 
 #: View/CustomerInvoiceLines/add.ctp:28
 #: View/CustomerInvoiceLines/edit.ctp:30
@@ -1267,7 +1267,7 @@ msgstr ""
 #: View/SupplierSlips/edit.ctp:26
 #: View/SupplierSlips/index.ctp:73
 msgid "List Stocks"
-msgstr ""
+msgstr "Llista d'inventari"
 
 #: View/CustomerInvoiceLines/add.ctp:29
 #: View/CustomerInvoiceLines/edit.ctp:31
@@ -1288,27 +1288,27 @@ msgstr ""
 #: View/SupplierSlips/edit.ctp:27
 #: View/SupplierSlips/index.ctp:74
 msgid "New Stock"
-msgstr ""
+msgstr "Nou inventari"
 
 #: View/CustomerInvoiceLines/edit.ctp:4
 #: View/CustomerInvoiceLines/view.ctp:69
 msgid "Edit Customer Invoice Line"
-msgstr ""
+msgstr "Editar línia factura client"
 
 #: View/CustomerInvoiceLines/index.ctp:2
 msgid "Customer Invoice Lines"
-msgstr ""
+msgstr "Línies factura client"
 
 #: View/CustomerInvoiceLines/index.ctp:66
 #: View/CustomerInvoiceLines/view.ctp:72
 #: View/CustomerInvoices/view.ctp:58;112
 #: View/CustomerOrders/edit.ctp:26
 msgid "New Customer Invoice Line"
-msgstr ""
+msgstr "Nova línia factura client"
 
 #: View/CustomerInvoiceLines/view.ctp:2
 msgid "Customer Invoice Line"
-msgstr ""
+msgstr "Línia factura client"
 
 #: View/CustomerInvoiceLines/view.ctp:9
 #: View/CustomerInvoices/view.ctp:2
@@ -1316,7 +1316,7 @@ msgstr ""
 #: View/CustomerOrderLines/view_sale.ctp:39
 #: View/CustomerOrderLines/view_service.ctp:74
 msgid "Customer Invoice"
-msgstr ""
+msgstr "Factura client"
 
 #: View/CustomerInvoiceLines/view.ctp:14
 #: View/CustomerInvoices/view.ctp:72;134
@@ -1325,7 +1325,7 @@ msgstr ""
 #: View/CustomerOrderLines/view_service.ctp:79
 #: View/OrderStatuses/view.ctp:62
 msgid "Customer Invoice Line Number"
-msgstr ""
+msgstr "Núm. línia"
 
 #: View/CustomerInvoiceLines/view.ctp:19
 #: View/CustomerOrderLines/view.ctp:9
@@ -1335,7 +1335,7 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:11
 #: View/CustomerPayments/view.ctp:34
 msgid "Customer Order"
-msgstr ""
+msgstr "Comanda"
 
 #: View/CustomerInvoiceLines/view.ctp:24
 #: View/CustomerInvoices/view.ctp:74;123
@@ -1345,94 +1345,94 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:91
 #: View/OrderStatuses/view.ctp:51
 msgid "Order Line Number"
-msgstr ""
+msgstr "Núm. línia"
 
 #: View/CustomerInvoiceLines/view.ctp:29
 #: View/CustomerInvoices/view.ctp:75
 msgid "Customer Invoice Line Type"
-msgstr ""
+msgstr "Tipus de línia"
 
 #: View/CustomerInvoiceLines/view.ctp:34
 #: View/CustomerOrderLines/view.ctp:29
 #: View/CustomerOrderLines/view_sale.ctp:19
 #: View/CustomerOrderLines/view_service.ctp:29
 msgid "Stock"
-msgstr ""
+msgstr "Inventari"
 
 #: View/CustomerInvoiceLines/view.ctp:39
 #: View/CustomerInvoices/view.ctp:77
 msgid "Customer Invoice Line Description"
-msgstr ""
+msgstr "Descripció"
 
 #: View/CustomerInvoiceLines/view.ctp:54
 #: View/CustomerInvoices/view.ctp:80
 msgid "Customer Invoice Line Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerInvoiceLines/view.ctp:59
 #: View/CustomerInvoices/view.ctp:81
 msgid "Customer Invoice Line Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/CustomerInvoiceLines/view.ctp:70
 msgid "Delete Customer Invoice Line"
-msgstr ""
+msgstr "Eliminar línia factura client"
 
 #: View/CustomerInvoiceStatuses/add.ctp:4
 msgid "Add Customer Invoice Status"
-msgstr ""
+msgstr "Afegir estat factura client"
 
 #: View/CustomerInvoiceStatuses/add.ctp:16
 #: View/CustomerInvoiceStatuses/edit.ctp:18
 #: View/CustomerInvoiceStatuses/view.ctp:36
 msgid "List Customer Invoice Statuses"
-msgstr ""
+msgstr "Llista estats factura client"
 
 #: View/CustomerInvoiceStatuses/edit.ctp:4
 #: View/CustomerInvoiceStatuses/view.ctp:34
 msgid "Edit Customer Invoice Status"
-msgstr ""
+msgstr "Editar estat factura client"
 
 #: View/CustomerInvoiceStatuses/index.ctp:2
 msgid "Customer Invoice Statuses"
-msgstr ""
+msgstr "Estats factura client"
 
 #: View/CustomerInvoiceStatuses/index.ctp:46
 #: View/CustomerInvoiceStatuses/view.ctp:37
 msgid "New Customer Invoice Status"
-msgstr ""
+msgstr "Nou estat factura client"
 
 #: View/CustomerInvoiceStatuses/view.ctp:2
 #: View/CustomerInvoices/view.ctp:19
 #: View/Customers/view.ctp:86
 #: View/Layouts/default.ctp:119
 msgid "Customer Invoice Status"
-msgstr ""
+msgstr "Estats factura client"
 
 #: View/CustomerInvoiceStatuses/view.ctp:9
 msgid "Cus Inv Status Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/CustomerInvoiceStatuses/view.ctp:14
 msgid "Cus Inv Is Final Status"
-msgstr ""
+msgstr "És final?"
 
 #: View/CustomerInvoiceStatuses/view.ctp:35
 msgid "Delete Customer Invoice Status"
-msgstr ""
+msgstr "Eliminar estat factura client"
 
 #: View/CustomerInvoices/index.ctp:11
 msgid "Customer Invoices"
-msgstr ""
+msgstr "Factures client"
 
 #: View/CustomerInvoices/index.ctp:38
 #: View/Customers/view.ctp:107;151
 msgid "Print"
-msgstr ""
+msgstr "Imprimir"
 
 #: View/CustomerInvoices/view.ctp:4
 msgid "Invoice Number"
-msgstr ""
+msgstr "Núm.Factura"
 
 #: View/CustomerInvoices/view.ctp:9
 #: View/CustomerOrders/printer.ctp:15
@@ -1440,26 +1440,26 @@ msgstr ""
 #: View/CustomerPayments/view.ctp:9
 #: View/Customers/view.ctp:11
 msgid "Customer"
-msgstr ""
+msgstr "Client"
 
 #: View/CustomerInvoices/view.ctp:14
 #: View/Customers/view.ctp:85
 msgid "Customer Invoice Date"
-msgstr ""
+msgstr "Data"
 
 #: View/CustomerInvoices/view.ctp:24
 #: View/Customers/view.ctp:90
 msgid "Customer Invoice Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: View/CustomerInvoices/view.ctp:29
 #: View/CustomerOrders/view.ctp:33
 msgid "Sum Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerInvoices/view.ctp:34
 msgid "Sum Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/CustomerInvoices/view.ctp:39
 #: View/CustomerOrders/printer.ctp:97
@@ -1467,15 +1467,15 @@ msgstr ""
 #: View/Customers/view.ctp:129
 #: View/Suppliers/view.ctp:142
 msgid "Total Amount"
-msgstr ""
+msgstr "Total"
 
 #: View/CustomerInvoices/view.ctp:49
 msgid "Edit Customer Invoice"
-msgstr ""
+msgstr "Editar factura client"
 
 #: View/CustomerInvoices/view.ctp:50
 msgid "Delete Customer Invoice"
-msgstr ""
+msgstr "Eliminar factura client"
 
 #: View/CustomerInvoices/view.ctp:53
 #: View/CustomerOrders/add.ctp:20
@@ -1488,7 +1488,7 @@ msgstr ""
 #: View/Customers/edit.ctp:24
 #: View/Customers/view.ctp:75
 msgid "List Customers"
-msgstr ""
+msgstr "Llista clients"
 
 #: View/CustomerInvoices/view.ctp:54
 #: View/CustomerOrders/add.ctp:21
@@ -1500,18 +1500,18 @@ msgstr ""
 #: View/Customers/index.ctp:63
 #: View/Customers/view.ctp:76
 msgid "New Customer"
-msgstr ""
+msgstr "Nou client"
 
 #: View/CustomerInvoices/view.ctp:55
 #: View/Series/add.ctp:17
 #: View/Series/edit.ctp:19
 #: View/Series/view.ctp:41
 msgid "List Series"
-msgstr ""
+msgstr "Llista sèries"
 
 #: View/CustomerInvoices/view.ctp:56
 msgid "New Serie"
-msgstr ""
+msgstr "Nova sèrie"
 
 #: View/CustomerInvoices/view.ctp:59
 #: View/CustomerOrderLines/add.ctp:27
@@ -1523,7 +1523,7 @@ msgstr ""
 #: View/OrderStatuses/index.ctp:47
 #: View/OrderStatuses/view.ctp:38
 msgid "List Customer Order Lines"
-msgstr ""
+msgstr "Llista línies comanda"
 
 #: View/CustomerInvoices/view.ctp:60;173
 #: View/CustomerOrderLines/index.ctp:78
@@ -1534,7 +1534,7 @@ msgstr ""
 #: View/OrderStatuses/index.ctp:48
 #: View/OrderStatuses/view.ctp:39;101
 msgid "New Customer Order Line"
-msgstr ""
+msgstr "Nova línia comanda"
 
 #: View/CustomerInvoices/view.ctp:61
 #: View/CustomerOrders/edit.ctp:29
@@ -1542,7 +1542,7 @@ msgstr ""
 #: View/CustomerPayments/edit.ctp:22
 #: View/CustomerPayments/view.ctp:56
 msgid "List Customer Payments"
-msgstr ""
+msgstr "Llista pagaments"
 
 #: View/CustomerInvoices/view.ctp:62;220
 #: View/CustomerOrders/edit.ctp:30
@@ -1550,38 +1550,38 @@ msgstr ""
 #: View/CustomerPayments/index.ctp:58
 #: View/CustomerPayments/view.ctp:57
 msgid "New Customer Payment"
-msgstr ""
+msgstr "Nou pagament"
 
 #: View/CustomerInvoices/view.ctp:66
 msgid "Related Customer Invoice Lines"
-msgstr ""
+msgstr "Línies factura"
 
 #: View/CustomerInvoices/view.ctp:71;133;189
 #: View/CustomerOrders/view.ctp:97
 #: View/OrderStatuses/view.ctp:61
 msgid "Customer Invoice Id"
-msgstr ""
+msgstr "Id Factura"
 
 #: View/CustomerInvoices/view.ctp:73;122;188
 #: View/OrderStatuses/view.ctp:50
 msgid "Customer Order Id"
-msgstr ""
+msgstr "Id Comanda"
 
 #: View/CustomerInvoices/view.ctp:76;126
 #: View/OrderStatuses/view.ctp:54
 msgid "Stock Id"
-msgstr ""
+msgstr "Id Inventari"
 
 #: View/CustomerInvoices/view.ctp:117
 #: View/CustomerOrders/view.ctp:87
 #: View/OrderStatuses/view.ctp:45
 msgid "Related Customer Order Lines"
-msgstr ""
+msgstr "Línies de comanda"
 
 #: View/CustomerInvoices/view.ctp:124
 #: View/OrderStatuses/view.ctp:52;112
 msgid "Order Status Id"
-msgstr ""
+msgstr "Id Estat"
 
 #: View/CustomerInvoices/view.ctp:125
 #: View/CustomerOrderLines/view.ctp:24
@@ -1589,21 +1589,21 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:92
 #: View/OrderStatuses/view.ctp:53
 msgid "Order Line Type"
-msgstr ""
+msgstr "Tipus línia"
 
 #: View/CustomerInvoices/view.ctp:127
 #: View/CustomerOrderLines/view.ctp:34
 #: View/CustomerOrderLines/view_service.ctp:34
 #: View/OrderStatuses/view.ctp:55
 msgid "Order Line Description"
-msgstr ""
+msgstr "Descripció"
 
 #: View/CustomerInvoices/view.ctp:128
 #: View/CustomerOrderLines/view.ctp:39
 #: View/CustomerOrderLines/view_service.ctp:39
 #: View/OrderStatuses/view.ctp:56
 msgid "Order Line Is Left Article"
-msgstr ""
+msgstr "Hi ha article en dipòsit?"
 
 #: View/CustomerInvoices/view.ctp:129
 #: View/CustomerOrderLines/view.ctp:44
@@ -1611,7 +1611,7 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:94
 #: View/OrderStatuses/view.ctp:57
 msgid "Order Line Left Article Description"
-msgstr ""
+msgstr "Article en dipòsit"
 
 #: View/CustomerInvoices/view.ctp:130
 #: View/CustomerOrderLines/view.ctp:49
@@ -1619,13 +1619,13 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:95
 #: View/OrderStatuses/view.ctp:58
 msgid "Order Line Due Date"
-msgstr ""
+msgstr "Data lliurament"
 
 #: View/CustomerInvoices/view.ctp:135
 #: View/CustomerOrderLines/view_service.ctp:59
 #: View/CustomerOrders/view.ctp:98
 msgid "Order Line Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerInvoices/view.ctp:136
 #: View/CustomerOrderLines/view.ctp:79
@@ -1634,7 +1634,7 @@ msgstr ""
 #: View/CustomerOrders/view.ctp:99
 #: View/OrderStatuses/view.ctp:64
 msgid "Order Line Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/CustomerInvoices/view.ctp:137
 #: View/CustomerOrderLines/view.ctp:84
@@ -1642,72 +1642,72 @@ msgstr ""
 #: View/CustomerOrderLines/view_service.ctp:69
 #: View/OrderStatuses/view.ctp:65
 msgid "Order Line Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: View/CustomerInvoices/view.ctp:178
 #: View/CustomerOrders/view.ctp:139
 msgid "Related Customer Payments"
-msgstr ""
+msgstr "Pagaments"
 
 #: View/CustomerInvoices/view.ctp:183
 #: View/OrderStatuses/view.ctp:111
 msgid "Customer Id"
-msgstr ""
+msgstr "Id Client"
 
 #: View/CustomerInvoices/view.ctp:184
 #: View/CustomerOrders/view.ctp:144
 #: View/CustomerPayments/view.ctp:14
 msgid "Payment Date"
-msgstr ""
+msgstr "Data pagament"
 
 #: View/CustomerInvoices/view.ctp:185
 #: View/CustomerOrders/view.ctp:145
 #: View/CustomerPayments/view.ctp:19
 msgid "Payment Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerInvoices/view.ctp:186
 #: View/CustomerOrders/view.ctp:146
 #: View/CustomerPayments/view.ctp:24
 msgid "Payment Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: View/CustomerInvoices/view.ctp:187
 #: View/CustomerOrders/view.ctp:147
 #: View/CustomerPayments/view.ctp:29
 msgid "Payment Is Down Payment"
-msgstr ""
+msgstr "És a compte?"
 
 #: View/CustomerOrderLines/add.ctp:4
 msgid "Add Customer Order Line"
-msgstr ""
+msgstr "Afegir línia de comanda"
 
 #: View/CustomerOrderLines/add_sale.ctp:8
 #: View/CustomerOrderLines/edit_sale.ctp:8
 msgid "Add Customer Order Line (Sale)"
-msgstr ""
+msgstr "Afegir línia de venda"
 
 #: View/CustomerOrderLines/add_sale.ctp:31
 #: View/CustomerOrderLines/add_service.ctp:21
 #: View/CustomerOrderLines/edit_sale.ctp:32
 #: View/CustomerOrderLines/edit_service.ctp:22
 msgid "Back to Customer Order"
-msgstr ""
+msgstr "Tornar a la comanda"
 
 #: View/CustomerOrderLines/add_service.ctp:4
 #: View/CustomerOrderLines/edit_service.ctp:4
 msgid "Add Customer Order Line (Service)"
-msgstr ""
+msgstr "Afegir línia de servei"
 
 #: View/CustomerOrderLines/add_service.ctp:12
 #: View/CustomerOrderLines/edit_service.ctp:13
 msgid "Total line amount (taxes included)"
-msgstr ""
+msgstr "Total (incloent IVA)"
 
 #: View/CustomerOrderLines/edit.ctp:4
 #: View/CustomerOrderLines/view.ctp:94
 msgid "Edit Customer Order Line"
-msgstr ""
+msgstr "Editar línia comanda"
 
 #: View/CustomerOrderLines/edit.ctp:33
 #: View/CustomerOrderLines/index.ctp:81
@@ -1717,7 +1717,7 @@ msgstr ""
 #: View/OrderStatuses/edit.ctp:18
 #: View/OrderStatuses/view.ctp:36
 msgid "List Order Statuses"
-msgstr ""
+msgstr "Llista estats comanda"
 
 #: View/CustomerOrderLines/edit.ctp:34
 #: View/CustomerOrderLines/index.ctp:82
@@ -1726,15 +1726,15 @@ msgstr ""
 #: View/OrderStatuses/index.ctp:46
 #: View/OrderStatuses/view.ctp:37
 msgid "New Order Status"
-msgstr ""
+msgstr "Nou estat de comanda"
 
 #: View/CustomerOrderLines/index.ctp:2
 msgid "Customer Order Lines"
-msgstr ""
+msgstr "Línies de comanda"
 
 #: View/CustomerOrderLines/view.ctp:2
 msgid "Customer Order Line"
-msgstr ""
+msgstr "Línia de comanda"
 
 #: View/CustomerOrderLines/view.ctp:19
 #: View/CustomerOrderLines/view_service.ctp:19
@@ -1743,399 +1743,399 @@ msgstr ""
 #: View/Customers/view.ctp:127
 #: View/OrderStatuses/view.ctp:2
 msgid "Order Status"
-msgstr ""
+msgstr "Estat"
 
 #: View/CustomerOrderLines/view.ctp:74
 #: View/CustomerOrderLines/view_sale.ctp:24
 #: View/OrderStatuses/view.ctp:63
 msgid "Order Line Amout"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerOrderLines/view.ctp:95
 msgid "Delete Customer Order Line"
-msgstr ""
+msgstr "Eliminar línia de comanda"
 
 #: View/CustomerOrderLines/view_sale.ctp:2
 msgid "Customer Order Line (Sale)"
-msgstr ""
+msgstr "Línia de venda"
 
 #: View/CustomerOrderLines/view_service.ctp:2
 msgid "Customer Order Line (Service)"
-msgstr ""
+msgstr "Línia de servei"
 
 #: View/CustomerOrderLines/view_service.ctp:54
 #: View/CustomerOrders/view.ctp:96
 msgid "Order Line Ready"
-msgstr ""
+msgstr "A punt de recollir?"
 
 #: View/CustomerOrders/add.ctp:5
 msgid "Add Customer Order Header"
-msgstr ""
+msgstr "Afegir capçalera de comanda"
 
 #: View/CustomerOrders/edit.ctp:4
 #: View/CustomerOrders/view.ctp:78
 msgid "Edit Customer Order"
-msgstr ""
+msgstr "Editar capçalera de comanda"
 
 #: View/CustomerOrders/index.ctp:9
 msgid "Customer Orders"
-msgstr ""
+msgstr "Comandes"
 
 #: View/CustomerOrders/printer.ctp:30
 #: View/CustomerOrders/view.ctp:28
 #: View/Customers/view.ctp:128
 #: View/OrderStatuses/view.ctp:113
 msgid "Order Date"
-msgstr ""
+msgstr "Data"
 
 #: View/CustomerOrders/printer.ctp:38
 #: View/CustomerOrders/view.ctp:58
 #: View/Customers/view.ctp:133
 #: View/OrderStatuses/view.ctp:114
 msgid "Order Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: View/CustomerOrders/printer.ctp:52
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: View/CustomerOrders/printer.ctp:53
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: View/CustomerOrders/printer.ctp:55
 msgid "Due Date"
-msgstr ""
+msgstr "Data lliurament"
 
 #: View/CustomerOrders/printer.ctp:56
 #: View/Suppliers/view.ctp:139
 msgid "Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/CustomerOrders/printer.ctp:79
 msgid "Left article"
-msgstr ""
+msgstr "Article en dipòsit"
 
 #: View/CustomerOrders/printer.ctp:101
 msgid "Total VAT"
-msgstr ""
+msgstr "IVA"
 
 #: View/CustomerOrders/printer.ctp:105
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: View/CustomerOrders/printer.ctp:119
 #: View/Layouts/default.ctp:67
 msgid "Payments"
-msgstr ""
+msgstr "Pagaments"
 
 #: View/CustomerOrders/printer.ctp:135
 msgid "Total Due Amount"
-msgstr ""
+msgstr "Total pendent"
 
 #: View/CustomerOrders/view.ctp:38
 msgid "Sum VAT"
-msgstr ""
+msgstr "IVA"
 
 #: View/CustomerOrders/view.ctp:48
 msgid "Sum Payments"
-msgstr ""
+msgstr "Pagaments"
 
 #: View/CustomerOrders/view.ctp:53
 msgid "Due amount"
-msgstr ""
+msgstr "Import pendent"
 
 #: View/CustomerOrders/view.ctp:79
 msgid "Print Customer Order"
-msgstr ""
+msgstr "Imprimir comanda"
 
 #: View/CustomerOrders/view.ctp:80
 msgid "Delete Customer Order"
-msgstr ""
+msgstr "Eliminar comanda"
 
 #: View/CustomerOrders/view.ctp:82;132
 msgid "New Services Line"
-msgstr ""
+msgstr "Nova línia de servei"
 
 #: View/CustomerOrders/view.ctp:83;133
 msgid "New Sales Line"
-msgstr ""
+msgstr "Nova línia de venda"
 
 #: View/CustomerOrders/view.ctp:93
 msgid "Order Line Text"
-msgstr ""
+msgstr "Text"
 
 #: View/CustomerPayments/add.ctp:4
 msgid "Add Customer Payment"
-msgstr ""
+msgstr "Afegir pagament"
 
 #: View/CustomerPayments/edit.ctp:4
 #: View/CustomerPayments/view.ctp:54
 msgid "Edit Customer Payment"
-msgstr ""
+msgstr "Editar pagament"
 
 #: View/CustomerPayments/index.ctp:2
 msgid "Customer Payments"
-msgstr ""
+msgstr "Pagaments de clients"
 
 #: View/CustomerPayments/view.ctp:2
 msgid "Customer Payment"
-msgstr ""
+msgstr "Pagament"
 
 #: View/CustomerPayments/view.ctp:55
 msgid "Delete Customer Payment"
-msgstr ""
+msgstr "Eliminar pagament"
 
 #: View/Customers/add.ctp:4
 msgid "Add Customer"
-msgstr ""
+msgstr "Afegir client"
 
 #: View/Customers/edit.ctp:4
 #: View/Customers/view.ctp:73
 msgid "Edit Customer"
-msgstr ""
+msgstr "Editar client"
 
 #: View/Customers/index.ctp:2
 #: View/Layouts/default.ctp:58
 msgid "Customers"
-msgstr ""
+msgstr "Clients"
 
 #: View/Customers/index.ctp:6
 msgid "Filter"
-msgstr ""
+msgstr "Filtre"
 
 #: View/Customers/index.ctp:8
 msgid "Search"
-msgstr ""
+msgstr "Cercar"
 
 #: View/Customers/view.ctp:18
 msgid "Customer Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/Customers/view.ctp:23
 msgid "Customer Address"
-msgstr ""
+msgstr "Adreça"
 
 #: View/Customers/view.ctp:28
 #: View/Suppliers/view.ctp:38
 msgid "Town"
-msgstr ""
+msgstr "Població"
 
 #: View/Customers/view.ctp:33
 #: View/Suppliers/view.ctp:33
 msgid "Zip"
-msgstr ""
+msgstr "CP"
 
 #: View/Customers/view.ctp:38
 msgid "Customer Vat Number"
-msgstr ""
+msgstr "CIF/NIF"
 
 #: View/Customers/view.ctp:43
 msgid "Customer Phone1"
-msgstr ""
+msgstr "Telèfon 1"
 
 #: View/Customers/view.ctp:48
 msgid "Customer Phone2"
-msgstr ""
+msgstr "Telèfon 2"
 
 #: View/Customers/view.ctp:53
 msgid "Customer Email"
-msgstr ""
+msgstr "e-mail"
 
 #: View/Customers/view.ctp:74
 msgid "Delete Customer"
-msgstr ""
+msgstr "Eliminar client"
 
 #: View/Customers/view.ctp:80
 msgid "Related Customer Invoices"
-msgstr ""
+msgstr "Factures"
 
 #: View/Customers/view.ctp:84
 msgid "Customer Invoice Number"
-msgstr ""
+msgstr "Número de factura"
 
 #: View/Customers/view.ctp:87
 msgid "Customer Invoice Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/Customers/view.ctp:88
 msgid "Customer Invoice Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/Customers/view.ctp:89
 msgid "Customer Invoice Totals"
-msgstr ""
+msgstr "Total"
 
 #: View/Customers/view.ctp:122
 #: View/OrderStatuses/view.ctp:106
 msgid "Related Customer Orders"
-msgstr ""
+msgstr "Comandes"
 
 #: View/Customers/view.ctp:130
 msgid "Due Amount"
-msgstr ""
+msgstr "Import pendent"
 
 #: View/Customers/view.ctp:131
 msgid "Left Articles"
-msgstr ""
+msgstr "Articles en dipòsit"
 
 #: View/Customers/view.ctp:132
 #: View/Suppliers/view.ctp:143
 msgid "Lines"
-msgstr ""
+msgstr "Línies"
 
 #: View/Customers/view.ctp:152
 msgid "Invoice"
-msgstr ""
+msgstr "Factura"
 
 #: View/Layouts/default.ctp:52
 #: View/Helper/HtmlHelper.php:731
 msgid "Home"
-msgstr ""
+msgstr "Inici"
 
 #: View/Layouts/default.ctp:55
 msgid "Sales"
-msgstr ""
+msgstr "Vendes"
 
 #: View/Layouts/default.ctp:61
 msgid "Orders"
-msgstr ""
+msgstr "Comandes"
 
 #: View/Layouts/default.ctp:64
 msgid "Invoices"
-msgstr ""
+msgstr "Factures"
 
 #: View/Layouts/default.ctp:72
 msgid "Purchases"
-msgstr ""
+msgstr "Compres"
 
 #: View/Layouts/default.ctp:75
 #: View/Suppliers/index.ctp:2
 msgid "Suppliers"
-msgstr ""
+msgstr "Proveïdors"
 
 #: View/Layouts/default.ctp:78
 #: View/SupplierSlips/index.ctp:11
 msgid "Supplier Slips"
-msgstr ""
+msgstr "Albarans"
 
 #: View/Layouts/default.ctp:81
 #: View/SupplierInvoices/index.ctp:2
 msgid "Supplier Invoices"
-msgstr ""
+msgstr "Factures proveïdor"
 
 #: View/Layouts/default.ctp:86
 msgid "Stocks"
-msgstr ""
+msgstr "Inventaris"
 
 #: View/Layouts/default.ctp:92
 msgid "Raw materials"
-msgstr ""
+msgstr "Matèries primeres"
 
 #: View/Layouts/default.ctp:100
 msgid "Analysis"
-msgstr ""
+msgstr "Informes"
 
 #: View/Layouts/default.ctp:104
 msgid "Administration"
-msgstr ""
+msgstr "Administració"
 
 #: View/Layouts/default.ctp:107
 #: View/Users/index.ctp:2
 msgid "Users"
-msgstr ""
+msgstr "Usuaris"
 
 #: View/Layouts/default.ctp:110
 msgid "Invoice Series"
-msgstr ""
+msgstr "Sèries de facturació"
 
 #: View/Layouts/default.ctp:113
 #: View/RawMaterialTypes/index.ctp:2
 msgid "Raw Material Types"
-msgstr ""
+msgstr "Tipus de matèria primera"
 
 #: View/Layouts/default.ctp:116
 msgid "Customer Order Status"
-msgstr ""
+msgstr "Estat comanda"
 
 #: View/Layouts/default.ctp:122
 #: View/SupplierInvoiceStatuses/view.ctp:2
 #: View/SupplierInvoices/view.ctp:39
 msgid "Supplier Invoice Status"
-msgstr ""
+msgstr "Estat factura proveïdor"
 
 #: View/Layouts/default.ctp:125
 #: View/Options/index.ctp:2
 msgid "Options"
-msgstr ""
+msgstr "Configuració"
 
 #: View/Layouts/default.ctp:130
 msgid "Logout"
-msgstr ""
+msgstr "Desconnectar"
 
 #: View/Layouts/default.ctp:141
 msgid "Developed by qibdip"
-msgstr ""
+msgstr "Desenvolupat per qibdip"
 
 #: View/Options/add.ctp:4
 msgid "Add Option"
-msgstr ""
+msgstr "Afegir configuració"
 
 #: View/Options/add.ctp:16
 #: View/Options/edit.ctp:16
 #: View/Options/view.ctp:20
 msgid "List Options"
-msgstr ""
+msgstr "Llista configuració"
 
 #: View/Options/edit.ctp:4
 #: View/Options/view.ctp:19
 msgid "Edit Option"
-msgstr ""
+msgstr "Editar configuració"
 
 #: View/Options/index.ctp:42
 msgid "New Option"
-msgstr ""
+msgstr "Nova configuració"
 
 #: View/Options/view.ctp:2
 msgid "Option"
-msgstr ""
+msgstr "Configuració"
 
 #: View/Options/view.ctp:4
 msgid "Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/Options/view.ctp:9
 msgid "Vat Re"
-msgstr ""
+msgstr "IVA RE"
 
 #: View/OrderStatuses/add.ctp:4
 msgid "Add Order Status"
-msgstr ""
+msgstr "Afegir estat comanda"
 
 #: View/OrderStatuses/edit.ctp:4
 #: View/OrderStatuses/view.ctp:34
 msgid "Edit Order Status"
-msgstr ""
+msgstr "Editar estat comanda"
 
 #: View/OrderStatuses/index.ctp:2
 msgid "Order Statuses"
-msgstr ""
+msgstr "Estats de comanda"
 
 #: View/OrderStatuses/view.ctp:9
 msgid "Order Status Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/OrderStatuses/view.ctp:14
 msgid "Order Status Is Final"
-msgstr ""
+msgstr "És final?"
 
 #: View/OrderStatuses/view.ctp:35
 msgid "Delete Order Status"
-msgstr ""
+msgstr "Eliminar estat de comanda"
 
 #: View/RawMaterialTypes/add.ctp:4
 msgid "Add Raw Material Type"
-msgstr ""
+msgstr "Afegir tipus mat. primera"
 
 #: View/RawMaterialTypes/add.ctp:17
 #: View/RawMaterialTypes/edit.ctp:19
@@ -2145,12 +2145,12 @@ msgstr ""
 #: View/RawMaterials/index.ctp:75
 #: View/RawMaterials/view.ctp:103
 msgid "List Raw Material Types"
-msgstr ""
+msgstr "Llista mat.primera"
 
 #: View/RawMaterialTypes/edit.ctp:4
 #: View/RawMaterialTypes/view.ctp:29
 msgid "Edit Raw Material Type"
-msgstr ""
+msgstr "Editat mat.primera"
 
 #: View/RawMaterialTypes/index.ctp:44
 #: View/RawMaterialTypes/view.ctp:32
@@ -2159,150 +2159,150 @@ msgstr ""
 #: View/RawMaterials/index.ctp:76
 #: View/RawMaterials/view.ctp:104
 msgid "New Raw Material Type"
-msgstr ""
+msgstr "Nou tipus de matèria primera"
 
 #: View/RawMaterialTypes/view.ctp:2
 #: View/RawMaterials/view.ctp:9
 msgid "Raw Material Type"
-msgstr ""
+msgstr "Tipus mat.primera"
 
 #: View/RawMaterialTypes/view.ctp:9
 msgid "Raw Mat Type Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/RawMaterialTypes/view.ctp:14
 msgid "Raw Mat Type Is Partial Consume"
-msgstr ""
+msgstr "Permet consum parcial?"
 
 #: View/RawMaterialTypes/view.ctp:19
 msgid "Raw Mat Measuring Unit"
-msgstr ""
+msgstr "Unitat mesura"
 
 #: View/RawMaterialTypes/view.ctp:30
 msgid "Delete Raw Material Type"
-msgstr ""
+msgstr "Eliminar tipus mat.primera"
 
 #: View/RawMaterialTypes/view.ctp:40
 #: View/SupplierInvoices/view.ctp:139
 #: View/SupplierSlips/view.ctp:128
 msgid "Related Raw Materials"
-msgstr ""
+msgstr "Matèries primeres"
 
 #: View/RawMaterialTypes/view.ctp:46;114
 #: View/SupplierInvoices/view.ctp:145;213
 #: View/SupplierSlips/view.ctp:133
 msgid "Raw Material Type Id"
-msgstr ""
+msgstr "ID"
 
 #: View/RawMaterialTypes/view.ctp:47;115
 #: View/RawMaterials/view.ctp:14
 #: View/SupplierInvoices/view.ctp:146;214
 #: View/SupplierSlips/view.ctp:134
 msgid "Raw Mat Units"
-msgstr ""
+msgstr "Unitats"
 
 #: View/RawMaterialTypes/view.ctp:48;116
 #: View/SupplierInvoices/view.ctp:147;215
 msgid "Raw Mat Userfield01"
-msgstr ""
+msgstr "Camp lliure 01"
 
 #: View/RawMaterialTypes/view.ctp:49;117
 #: View/RawMaterials/view.ctp:24
 #: View/SupplierInvoices/view.ctp:148;216
 #: View/SupplierSlips/view.ctp:136
 msgid "Raw Mat Unit Price"
-msgstr ""
+msgstr "Preu unitari"
 
 #: View/RawMaterialTypes/view.ctp:51;119
 #: View/SupplierInvoices/view.ctp:86;150;218
 #: View/SupplierSlips/view.ctp:138
 msgid "Stock Userfield01"
-msgstr ""
+msgstr "Camp lliure 01"
 
 #: View/RawMaterialTypes/view.ctp:52;120
 #: View/SupplierInvoices/view.ctp:87;151;219
 #: View/SupplierSlips/view.ctp:139
 msgid "Stock Userfield02"
-msgstr ""
+msgstr "Camp lliure 02"
 
 #: View/RawMaterialTypes/view.ctp:53;121
 #: View/SupplierInvoices/view.ctp:88;152;220
 #: View/SupplierSlips/view.ctp:140
 msgid "Stock Userfield03"
-msgstr ""
+msgstr "Camp lliure 03"
 
 #: View/RawMaterialTypes/view.ctp:60;128
 #: View/SupplierInvoices/view.ctp:95;159;227
 #: View/SupplierSlips/view.ctp:85;147
 msgid "Supplier Slip Id"
-msgstr ""
+msgstr "Id albarà"
 
 #: View/RawMaterialTypes/view.ctp:62;130
 #: View/SupplierInvoices/view.ctp:97;161;229
 #: View/SupplierSlips/view.ctp:87;149
 msgid "Supplier Invoice Id"
-msgstr ""
+msgstr "Id factura proveïdor"
 
 #: View/RawMaterialTypes/view.ctp:105
 #: View/SupplierInvoices/view.ctp:204
 msgid "Related Stocks"
-msgstr ""
+msgstr "Materials"
 
 #: View/RawMaterials/add.ctp:8
 msgid "Add Raw Material"
-msgstr ""
+msgstr "Afegir mat.primera"
 
 #: View/RawMaterials/edit.ctp:8
 #: View/RawMaterials/view.ctp:99
 msgid "Edit Raw Material"
-msgstr ""
+msgstr "Editar mat.primera"
 
 #: View/RawMaterials/index.ctp:2
 msgid "Raw Materials"
-msgstr ""
+msgstr "Matèries primeres"
 
 #: View/RawMaterials/view.ctp:100
 msgid "Delete Raw Material"
-msgstr ""
+msgstr "Eliminar matèria primera"
 
 #: View/Series/add.ctp:4
 msgid "Add Series"
-msgstr ""
+msgstr "Afegir sèrie"
 
 #: View/Series/edit.ctp:4
 #: View/Series/view.ctp:39
 msgid "Edit Series"
-msgstr ""
+msgstr "Editar sèrie"
 
 #: View/Series/index.ctp:2
 #: View/Series/view.ctp:2
 msgid "Series"
-msgstr ""
+msgstr "Sèrie"
 
 #: View/Series/index.ctp:50
 #: View/Series/view.ctp:42
 msgid "New Series"
-msgstr ""
+msgstr "Nova sèrie"
 
 #: View/Series/view.ctp:9
 msgid "Serie Code"
-msgstr ""
+msgstr "Codi"
 
 #: View/Series/view.ctp:14
 msgid "Serie Description"
-msgstr ""
+msgstr "Descripció"
 
 #: View/Series/view.ctp:19
 msgid "Active"
-msgstr ""
+msgstr "Actiu"
 
 #: View/Series/view.ctp:40
 msgid "Delete Series"
-msgstr ""
+msgstr "Eliminar sèrie"
 
 #: View/SupplierInvoiceStatuses/add.ctp:4
 msgid "Add Supplier Invoice Status"
-msgstr ""
+msgstr "Afegir estat factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/add.ctp:16
 #: View/SupplierInvoiceStatuses/edit.ctp:18
@@ -2312,16 +2312,16 @@ msgstr ""
 #: View/SupplierInvoices/index.ctp:63
 #: View/SupplierInvoices/view.ctp:65
 msgid "List Supplier Invoice Statuses"
-msgstr ""
+msgstr "Llista estats factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/edit.ctp:4
 #: View/SupplierInvoiceStatuses/view.ctp:34
 msgid "Edit Supplier Invoice Status"
-msgstr ""
+msgstr "Editar estat factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/index.ctp:2
 msgid "Supplier Invoice Statuses"
-msgstr ""
+msgstr "Estats de factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/index.ctp:46
 #: View/SupplierInvoiceStatuses/view.ctp:37
@@ -2330,68 +2330,68 @@ msgstr ""
 #: View/SupplierInvoices/index.ctp:64
 #: View/SupplierInvoices/view.ctp:66
 msgid "New Supplier Invoice Status"
-msgstr ""
+msgstr "Nou estat de factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/view.ctp:9
 msgid "Sup Inv Status Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/SupplierInvoiceStatuses/view.ctp:14
 msgid "Sup Inv Is Final Status"
-msgstr ""
+msgstr "És final?"
 
 #: View/SupplierInvoiceStatuses/view.ctp:35
 msgid "Delete Supplier Invoice Status"
-msgstr ""
+msgstr "Eliminar estat factura proveïdor"
 
 #: View/SupplierInvoiceStatuses/view.ctp:43
 #: View/Suppliers/view.ctp:84
 msgid "Related Supplier Invoices"
-msgstr ""
+msgstr "Factures proveïdor"
 
 #: View/SupplierInvoiceStatuses/view.ctp:48
 #: View/SupplierInvoices/view.ctp:9
 #: View/Suppliers/view.ctp:89
 msgid "Supplier Invoice Number"
-msgstr ""
+msgstr "Núm.Factura"
 
 #: View/SupplierInvoiceStatuses/view.ctp:49
 #: View/Suppliers/view.ctp:90
 msgid "Supplier Id"
-msgstr ""
+msgstr "Id proveïdor"
 
 #: View/SupplierInvoiceStatuses/view.ctp:50
 #: View/SupplierInvoices/view.ctp:19
 #: View/Suppliers/view.ctp:91
 msgid "Supplier Invoice Date"
-msgstr ""
+msgstr "Data"
 
 #: View/SupplierInvoiceStatuses/view.ctp:51
 #: View/SupplierInvoices/view.ctp:24
 #: View/Suppliers/view.ctp:92
 msgid "Supplier Invoice Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/SupplierInvoiceStatuses/view.ctp:52
 #: View/SupplierInvoices/view.ctp:29
 #: View/Suppliers/view.ctp:93
 msgid "Supplier Invoice Vat"
-msgstr ""
+msgstr "IVA"
 
 #: View/SupplierInvoiceStatuses/view.ctp:53
 #: View/SupplierInvoices/view.ctp:34
 #: View/Suppliers/view.ctp:94
 msgid "Supplier Invoice Vat Re"
-msgstr ""
+msgstr "IVA RE"
 
 #: View/SupplierInvoiceStatuses/view.ctp:54
 #: View/Suppliers/view.ctp:95
 msgid "Supplier Invoice Status Id"
-msgstr ""
+msgstr "Id Estat"
 
 #: View/SupplierInvoices/add.ctp:4
 msgid "Add Supplier Invoice"
-msgstr ""
+msgstr "Afegir factura proveïdor"
 
 #: View/SupplierInvoices/add.ctp:22
 #: View/SupplierInvoices/edit.ctp:24
@@ -2405,7 +2405,7 @@ msgstr ""
 #: View/Suppliers/edit.ctp:24
 #: View/Suppliers/view.ctp:75
 msgid "List Suppliers"
-msgstr ""
+msgstr "Llista proveïdors"
 
 #: View/SupplierInvoices/add.ctp:23
 #: View/SupplierInvoices/edit.ctp:25
@@ -2417,177 +2417,417 @@ msgstr ""
 #: View/Suppliers/index.ctp:54
 #: View/Suppliers/view.ctp:76
 msgid "New Supplier"
-msgstr ""
+msgstr "Nou proveïdor"
 
 #: View/SupplierInvoices/edit.ctp:4
 #: View/SupplierInvoices/view.ctp:59
 msgid "Edit Supplier Invoice"
-msgstr ""
+msgstr "Editar factura proveïdor"
 
 #: View/SupplierInvoices/view.ctp:14
 #: View/SupplierSlips/view.ctp:14
 #: View/Suppliers/view.ctp:11
 msgid "Supplier"
-msgstr ""
+msgstr "Proveïdor"
 
 #: View/SupplierInvoices/view.ctp:60
 msgid "Delete Supplier Invoice"
-msgstr ""
+msgstr "Esborrar factura client"
 
 #: View/SupplierInvoices/view.ctp:76
 #: View/SupplierSlips/view.ctp:67
 msgid "Related Articles"
-msgstr ""
+msgstr "Articles"
 
 #: View/SupplierSlips/add.ctp:4
 msgid "Add Supplier Slip"
-msgstr ""
+msgstr "Afegir albarà"
 
 #: View/SupplierSlips/edit.ctp:4
 #: View/SupplierSlips/view.ctp:59
 msgid "Edit Supplier Slip"
-msgstr ""
+msgstr "Editar albarà"
 
 #: View/SupplierSlips/view.ctp:9
 #: View/Suppliers/view.ctp:137
 msgid "Supplier Slip Num"
-msgstr ""
+msgstr "Núm.albarà"
 
 #: View/SupplierSlips/view.ctp:19
 #: View/Suppliers/view.ctp:138
 msgid "Supplier Slip Date"
-msgstr ""
+msgstr "Data"
 
 #: View/SupplierSlips/view.ctp:24
 msgid "Supplier Slip Amount"
-msgstr ""
+msgstr "Import"
 
 #: View/SupplierSlips/view.ctp:29
 msgid "Supplier Slip VAT"
-msgstr ""
+msgstr "IVA"
 
 #: View/SupplierSlips/view.ctp:34
 msgid "Supplier Slip VAT RE"
-msgstr ""
+msgstr "IVA RE"
 
 #: View/SupplierSlips/view.ctp:39
 msgid "Suplier Slip Total Amount"
-msgstr ""
+msgstr "Total"
 
 #: View/SupplierSlips/view.ctp:44
 msgid "Supplier Slip Lines"
-msgstr ""
+msgstr "Línies"
 
 #: View/SupplierSlips/view.ctp:49
 msgid "Suplier Slip Pending Lines"
-msgstr ""
+msgstr "Línies no facturades"
 
 #: View/SupplierSlips/view.ctp:60
 msgid "Delete Supplier Slip"
-msgstr ""
+msgstr "Eliminar albarà"
 
 #: View/Suppliers/add.ctp:4
 msgid "Add Supplier"
-msgstr ""
+msgstr "Afegir proveïdor"
 
 #: View/Suppliers/edit.ctp:4
 #: View/Suppliers/view.ctp:73
 msgid "Edit Supplier"
-msgstr ""
+msgstr "Editar proveïdor"
 
 #: View/Suppliers/view.ctp:18
 msgid "Supplier Name"
-msgstr ""
+msgstr "Nom"
 
 #: View/Suppliers/view.ctp:23
 msgid "Supplier Abreviated"
-msgstr ""
+msgstr "Codi proveïdor"
 
 #: View/Suppliers/view.ctp:28
 msgid "Supplier Address"
-msgstr ""
+msgstr "Adreça"
 
 #: View/Suppliers/view.ctp:43
 msgid "Supplier Vat Number"
-msgstr ""
+msgstr "CIF/NIF"
 
 #: View/Suppliers/view.ctp:48
 msgid "Supplier Phone1"
-msgstr ""
+msgstr "Telèfon 1"
 
 #: View/Suppliers/view.ctp:53
 msgid "Supplier Phone2"
-msgstr ""
+msgstr "Telèfon 2"
 
 #: View/Suppliers/view.ctp:74
 msgid "Delete Supplier"
-msgstr ""
+msgstr "Esborrar proveïdor"
 
 #: View/Suppliers/view.ctp:132
 msgid "Related Supplier Slips"
-msgstr ""
+msgstr "Albarans"
 
 #: View/Suppliers/view.ctp:140
 msgid "VAT"
-msgstr ""
+msgstr "IVA"
 
 #: View/Suppliers/view.ctp:141
 msgid "VAT RE"
-msgstr ""
+msgstr "IVA RE"
 
 #: View/Suppliers/view.ctp:144
 msgid "Not Invoiced Lines"
-msgstr ""
+msgstr "Línies no facturades"
 
 #: View/Users/add.ctp:4
 msgid "Add User"
-msgstr ""
+msgstr "Afegir usuari"
 
 #: View/Users/add.ctp:17
 #: View/Users/edit.ctp:19
 #: View/Users/view.ctp:41
 msgid "List Users"
-msgstr ""
+msgstr "Llista d'usuaris"
 
 #: View/Users/edit.ctp:4
 #: View/Users/view.ctp:39
 msgid "Edit User"
-msgstr ""
+msgstr "Modificar usuari"
 
 #: View/Users/index.ctp:48
 #: View/Users/view.ctp:42
 msgid "New User"
-msgstr ""
+msgstr "Nou usuari"
 
 #: View/Users/login.ctp:5
 msgid "Please enter your username and password"
-msgstr ""
+msgstr "Introdueix l'usuari i la contrasenya"
 
 #: View/Users/login.ctp:11
 msgid "Login"
-msgstr ""
+msgstr "Connecta"
 
 #: View/Users/view.ctp:2
 msgid "User"
-msgstr ""
+msgstr "Usuari"
 
 #: View/Users/view.ctp:9
 msgid "Username"
-msgstr ""
+msgstr "Usuari"
 
 #: View/Users/view.ctp:14
 msgid "Password"
-msgstr ""
+msgstr "Contrasenya"
 
 #: View/Users/view.ctp:19
 msgid "Role"
-msgstr ""
+msgstr "Rol"
 
 #: View/Users/view.ctp:40
 msgid "Delete User"
-msgstr ""
+msgstr "Eliminar usuari"
 
 #: View/Helper/FormHelper.php:1323
 msgid "empty"
-msgstr ""
+msgstr "No pot ésser buit"
 
+#~ msgid "Copy ID is required"
+#~ msgstr "Cal triar una pel·lícula per a poder-la llogar!"
+
+#~ msgid "You only can return based on a rent movement"
+#~ msgstr "Sols es pot fer la devolució d'un lloguer"
+
+#~ msgid "You only can return once"
+#~ msgstr "Sols es pot tornar el mateix lloguer una única vegada"
+
+#~ msgid "You must select complete dates"
+#~ msgstr "Cal seleccionar dates completes"
+
+#~ msgid "List Clients"
+#~ msgstr "Llista de clients"
+
+#~ msgid "Clients"
+#~ msgstr "Clients"
+
+#~ msgid "Client Search"
+#~ msgstr "Buscar client"
+
+#~ msgid "Client"
+#~ msgstr "Client"
+
+#~ msgid "Firstname"
+#~ msgstr "Nom"
+
+#~ msgid "Surname"
+#~ msgstr "Cognoms"
+
+#~ msgid "Balance"
+#~ msgstr "Saldo"
+
+#~ msgid "Cp"
+#~ msgstr "CP"
+
+#~ msgid "City"
+#~ msgstr "Població"
+
+#~ msgid "Phone"
+#~ msgstr "Telèfon"
+
+#~ msgid "Mobile"
+#~ msgstr "Mòbil"
+
+#~ msgid "Personal ID"
+#~ msgstr "NIF"
+
+#~ msgid "Birthday"
+#~ msgstr "Naixement"
+
+#~ msgid "Rent Copy"
+#~ msgstr "Llogar disc"
+
+#~ msgid "Charge Money"
+#~ msgstr "Carregar saldo"
+
+#~ msgid "Copy"
+#~ msgstr "Disc"
+
+#~ msgid "Started"
+#~ msgstr "Inici"
+
+#~ msgid "Ended"
+#~ msgstr "Final"
+
+#~ msgid "Returned"
+#~ msgstr "Retornat"
+
+#~ msgid "Rental"
+#~ msgstr "Lloguer"
+
+#~ msgid "Money"
+#~ msgstr "Saldo"
+
+#~ msgid "Yes"
+#~ msgstr "Sí"
+
+#~ msgid "Copy Return"
+#~ msgstr "Retornar"
+
+#~ msgid "List Formats"
+#~ msgstr "Llista de formats"
+
+#~ msgid "New Format"
+#~ msgstr "Nou format"
+
+#~ msgid "Copies"
+#~ msgstr "Discos"
+
+#~ msgid "Copy Search"
+#~ msgstr "Buscar disc"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Title"
+#~ msgstr "Títol"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Adquisition Cost"
+#~ msgstr "Cost de compra"
+
+#~ msgid "Add Format"
+#~ msgstr "Afegir format"
+
+#~ msgid "Edit Format"
+#~ msgstr "Modificar format"
+
+#~ msgid "Formats"
+#~ msgstr "Formats"
+
+#~ msgid "Daily Rate"
+#~ msgstr "Lloguer diari"
+
+#~ msgid "Pending"
+#~ msgstr "Retards"
+
+#~ msgid "Movements"
+#~ msgstr "Moviments"
+
+#~ msgid "Report"
+#~ msgstr "Informe"
+
+#~ msgid "Charge date"
+#~ msgstr "Data de càrrega"
+
+#~ msgid "Imported from older system"
+#~ msgstr ""
+#~ "Importat des del sistema anterior (marcar per evitar doble tributació)"
+
+#~ msgid "Back to Client"
+#~ msgstr "Tornar al Client"
+
+#~ msgid "Movie rental"
+#~ msgstr "Lloguer de disc"
+
+#~ msgid "Prepayed"
+#~ msgstr "Prepagat"
+
+#~ msgid "Return Register"
+#~ msgstr "Registrar devolució"
+
+#~ msgid "Rental Report"
+#~ msgstr "Informe de lloguers"
+
+#~ msgid "Date Selection"
+#~ msgstr "Selecció de dates"
+
+#~ msgid "From date"
+#~ msgstr "Data inicial"
+
+#~ msgid "To date"
+#~ msgstr "Data final"
+
+#~ msgid "fiscalDate"
+#~ msgstr "Data operació"
+
+#~ msgid "Movement Id"
+#~ msgstr "Codi de moviment"
+
+#~ msgid "Movement"
+#~ msgstr "Moviment"
+
+#~ msgid "Prepaid"
+#~ msgstr "Prepagat"
+
+#~ msgid "Reconfigure this page by updating file:"
+#~ msgstr "Reconfigura aquesta pàgina actualitzant el fitxer:"
+
+#~ msgid "set router value:"
+#~ msgstr "Posa el valor de router a:"
+
+#~ msgid "numeric"
+#~ msgstr "Ha de ser numèric"
+
+#~ msgid "inlist"
+#~ msgstr "No està a la llista de valors permesos"
+
+#~ msgid "A username is required"
+#~ msgstr "El camp d'usuari és obligatori"
+
+#~ msgid "A password is required"
+#~ msgstr "La contrasenya és obligatòria"
+
+#~ msgid "Please enter a valid role"
+#~ msgstr "El rol introduït no és vàlid"
+
+#~ msgid "Copy Id"
+#~ msgstr "Codi de disc"
+
+#~ msgid "Return"
+#~ msgstr "Retornar"
+
+#~ msgid "January"
+#~ msgstr "Gener"
+
+#~ msgid "February"
+#~ msgstr "Febrer"
+
+#~ msgid "March"
+#~ msgstr "Març"
+
+#~ msgid "May"
+#~ msgstr "Maig"
+
+#~ msgid "June"
+#~ msgstr "Juny"
+
+#~ msgid "July"
+#~ msgstr "Juliol"
+
+#~ msgid "August"
+#~ msgstr "Agost"
+
+#~ msgid "September"
+#~ msgstr "Setembre"
+
+#~ msgid "October"
+#~ msgstr "Octubre"
+
+#~ msgid "November"
+#~ msgstr "Novembre"
+
+#~ msgid "December"
+#~ msgstr "Desembre"
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "Corregeix els errors."
+
+#~ msgid "Debug setting does not allow access to this url."
+#~ msgstr "La configuració de depuració no permet l'accés a aquesta url."
+
+#~ msgid "Format Id"
+#~ msgstr "Codi de format"
+
+#~ msgid "boolean"
+#~ msgstr "Ha de ser lògic"

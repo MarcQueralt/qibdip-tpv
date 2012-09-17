@@ -1,3 +1,12 @@
+<?php
+$this->Number->addFormat('QBD', array(
+    'before' => '',
+    'after' => '',
+    'zero' => '',
+    'thousands' => '.',
+    'decimals' => ',',
+));
+?>
 <div class="customerOrders view">
     <h2><?php echo __('Customer Order') . '&nbsp;' . h($customerOrder['CustomerOrder']['id']); ?></h2>
     <table id="document-header">
@@ -49,7 +58,7 @@
             <?php
             $i = 0;
             foreach ($customerOrder['CustomerOrderLine'] as $customerOrderLine):
-                $total+=$customerOrderLine['order_line_amout'];
+                $total+=$customerOrderLine['order_line_amount'];
                 $total_vat+=$customerOrderLine['order_line_vat'];
                 ?>
                 <tr>
@@ -79,22 +88,22 @@
                         ?>
                     </td>
                     <td><?php echo $customerOrderLine['order_line_due_date']; ?></td>
-                    <td style="text-align:right;"><?php echo $customerOrderLine['order_line_amout']; ?></td>
+                    <td style="text-align:right;"><?php echo $this->Number->currency($customerOrderLine['order_line_amount'],'QBD'); ?></td>
                 </tr>
             <?php endforeach;
             ?>
         <?php endif; ?>
         <tr class="subtotal">
             <td colspan="4" style="text-align:right;"><?php echo __('Total Amount'); ?></td>
-            <td style="text-align:right;"><?php echo $total; ?></td>
+            <td style="text-align:right;"><?php echo $this->Number->currency($total,'QBD'); ?></td>
         </tr>
         <tr class="subtotal">
             <td colspan="4" style="text-align:right;"><?php echo __('Total VAT'); ?></td>
-            <td style="text-align:right;"><?php echo $total_vat; ?></td>
+            <td style="text-align:right;"><?php echo $this->Number->currency($total_vat,'QBD'); ?></td>
         </tr>
         <tr class="total">
             <td colspan="4" style="text-align:right;"><?php echo __('Total'); ?></td>
-            <td style="text-align:right;"><?php echo $total_vat+$total; ?></td>
+            <td style="text-align:right;"><?php echo $this->Number->currency($total_vat+$total,'QBD'); ?></td>
         </tr>
         <?php
         if (!empty($customerOrder['CustomerPayment'])):
@@ -118,7 +127,7 @@
                         <?php echo $customerPayment['payment_date']; ?>
                     </td>
                     <td style="text-align:right;">
-                        <?php echo $customerPayment['payment_amount']; ?>
+                        <?php echo $this->Number->currency($customerPayment['payment_amount'],'QBD'); ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

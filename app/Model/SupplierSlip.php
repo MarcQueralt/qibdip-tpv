@@ -10,6 +10,19 @@ App::uses('AppModel', 'Model');
  */
 class SupplierSlip extends AppModel {
 
+    public $displayField = 'extended_number';
+    public $virtualFields = array(
+        'sum_amount' => '@ta:=(SELECT COALESCE(SUM(stocks.stock_buy_price),0) FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id)',
+        'sum_vat' => '@tv:=(SELECT COALESCE(SUM(stocks.stock_vat),0) FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id)',
+        'sum_vat_re' => '@tvr:=(SELECT COALESCE(SUM(stocks.stock_vat_re),0) FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id)',
+        'total_amount' => '@ta+@tv+@tvr',
+        'count_lines' => '(SELECT COUNT(*) FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id)',
+        'count_pending_lines' => '(SELECT COUNT(*) FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id AND stocks.supplier_invoice_id is null)',
+        'next_line' => 'SELECT COALESCE(MAX(stocks.supplier_slip_line) DIV 10*10,0)+10 FROM stocks WHERE stocks.supplier_slip_id = SupplierSlip.id',
+        'expected_vat'=> 'SELECT vat FROM options WHERE options.id=1',
+        'expected_vat_re'=> 'SELECT vat_re FROM options WHERE options.id=1',
+        'extended_number'=>'concat((select suppliers.supplier_abr from suppliers where suppliers.id=SupplierSlip.supplier_id),"-",SupplierSlip.supplier_slip_num)',
+    );
 /**
  * Validation rules
  *
@@ -103,7 +116,7 @@ class SupplierSlip extends AppModel {
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
-			'order' => '',
+			'order' => 'supplier_slip_line',
 			'limit' => '',
 			'offset' => '',
 			'exclusive' => '',

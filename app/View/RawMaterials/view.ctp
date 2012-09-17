@@ -6,14 +6,9 @@
 			<?php echo h($rawMaterial['RawMaterial']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Type'); ?></dt>
-		<dd>
-			<?php echo h($rawMaterial['RawMaterial']['stock_type']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Raw Material Type'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['id'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['RawMaterialType']['raw_mat_type_name'], array('controller' => 'raw_material_types', 'action' => 'view', $rawMaterial['RawMaterialType']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Raw Mat Units'); ?></dt>
@@ -21,7 +16,7 @@
 			<?php echo h($rawMaterial['RawMaterial']['raw_mat_units']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Raw Mat Userfield01'); ?></dt>
+                <dt><?php echo qibdipTPV_raw_uf01(); ?></dt>
 		<dd>
 			<?php echo h($rawMaterial['RawMaterial']['raw_mat_userfield01']); ?>
 			&nbsp;
@@ -36,17 +31,17 @@
 			<?php echo h($rawMaterial['RawMaterial']['stock_comment']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield01'); ?></dt>
+                <dt><?php echo qibdipTPV_stock_uf01(); ?></dt>
 		<dd>
 			<?php echo h($rawMaterial['RawMaterial']['stock_userfield01']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield02'); ?></dt>
+                <dt><?php echo qibdipTPV_stock_uf02(); ?></dt>
 		<dd>
 			<?php echo h($rawMaterial['RawMaterial']['stock_userfield02']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield03'); ?></dt>
+                <dt><?php echo qibdipTPV_stock_uf03(); ?></dt>
 		<dd>
 			<?php echo h($rawMaterial['RawMaterial']['stock_userfield03']); ?>
 			&nbsp;
@@ -83,7 +78,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Slip'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['SupplierSlip']['id'], array('controller' => 'supplier_slips', 'action' => 'view', $rawMaterial['SupplierSlip']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['SupplierSlip']['extended_number'], array('controller' => 'supplier_slips', 'action' => 'view', $rawMaterial['SupplierSlip']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier Slip Line'); ?></dt>
@@ -93,7 +88,7 @@
 		</dd>
 		<dt><?php echo __('Supplier Invoice'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rawMaterial['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $rawMaterial['SupplierInvoice']['id'])); ?>
+			<?php echo $this->Html->link($rawMaterial['SupplierInvoice']['extended_number'], array('controller' => 'supplier_invoices', 'action' => 'view', $rawMaterial['SupplierInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
 	</dl>

@@ -36,7 +36,7 @@ class CustomerOrderLinesController extends AppController {
 
     public function viewSale($id = null) {
         $this->CustomerOrderLine->id = $id;
-        $this->CustomerOrderLine->recursive=2;
+        $this->CustomerOrderLine->recursive = 2;
         if (!$this->CustomerOrderLine->exists()) {
             throw new NotFoundException(__('Invalid customer order line'));
         }
@@ -125,8 +125,13 @@ class CustomerOrderLinesController extends AppController {
         $this->request->data['CustomerOrderLine']['order_line_number'] = $this->CustomerOrderLine->CustomerOrder->data['CustomerOrder']['next_line'];
         $this->request->data['CustomerOrderLine']['expected_vat'] = $this->CustomerOrderLine->CustomerOrder->data['CustomerOrder']['expected_vat'];
         $customerOrders = $this->CustomerOrderLine->CustomerOrder->find('list');
-        $stocks = $this->CustomerOrderLine->Stock->find('list');
-        $prices = $this->CustomerOrderLine->Stock->find('list', array('fields' => array('id', 'stock_sale_price')));
+        $stocks = $this->CustomerOrderLine->Stock->find('list', array(
+            'conditions' => array('available' => 1),
+                ));
+        $prices = $this->CustomerOrderLine->Stock->find('list', array(
+            'fields' => array('id', 'stock_sale_price'),
+            'conditions'=>array('available'=>1),
+            ));
         $this->set(compact('customerOrders', 'stocks', 'prices'));
     }
 
@@ -177,6 +182,7 @@ class CustomerOrderLinesController extends AppController {
         } else {
             $this->request->data = $this->CustomerOrderLine->read(null, $id);
         }
+        $this->request->data['CustomerOrderLine']['order_line_amount']=$this->request->data['CustomerOrderLine']['order_line_amount']+$this->request->data['CustomerOrderLine']['order_line_vat'];
         $customerOrders = $this->CustomerOrderLine->CustomerOrder->find('list');
         $stocks = $this->CustomerOrderLine->Stock->find('list');
         $this->set(compact('customerOrders'));

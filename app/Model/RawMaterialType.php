@@ -8,6 +8,7 @@ App::uses('AppModel', 'Model');
  */
 class RawMaterialType extends AppModel {
 
+    public $displayField = 'raw_mat_type_name';
 /**
  * Validation rules
  *

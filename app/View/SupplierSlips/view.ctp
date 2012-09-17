@@ -8,12 +8,12 @@
 		</dd>
 		<dt><?php echo __('Supplier Slip Num'); ?></dt>
 		<dd>
-			<?php echo h($supplierSlip['SupplierSlip']['supplier_slip_num']); ?>
+			<?php echo h($supplierSlip['SupplierSlip']['extended_number']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($supplierSlip['Supplier']['id'], array('controller' => 'suppliers', 'action' => 'view', $supplierSlip['Supplier']['id'])); ?>
+			<?php echo $this->Html->link($supplierSlip['Supplier']['supplier_name'], array('controller' => 'suppliers', 'action' => 'view', $supplierSlip['Supplier']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Supplier Slip Date'); ?></dt>
@@ -21,14 +21,34 @@
 			<?php echo h($supplierSlip['SupplierSlip']['supplier_slip_date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Supplier Slip Amount'); ?></dt>
 		<dd>
-			<?php echo h($supplierSlip['SupplierSlip']['created']); ?>
+			<?php echo h($supplierSlip['SupplierSlip']['sum_amount']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Supplier Slip VAT'); ?></dt>
 		<dd>
-			<?php echo h($supplierSlip['SupplierSlip']['modified']); ?>
+			<?php echo h($supplierSlip['SupplierSlip']['sum_vat']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Supplier Slip VAT RE'); ?></dt>
+		<dd>
+			<?php echo h($supplierSlip['SupplierSlip']['sum_vat_re']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Suplier Slip Total Amount'); ?></dt>
+		<dd>
+			<?php echo h($supplierSlip['SupplierSlip']['total_amount']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Supplier Slip Lines'); ?></dt>
+		<dd>
+			<?php echo h($supplierSlip['SupplierSlip']['count_lines']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Suplier Slip Pending Lines'); ?></dt>
+		<dd>
+			<?php echo h($supplierSlip['SupplierSlip']['count_pending_lines']); ?>
 			&nbsp;
 		</dd>
 	</dl>
@@ -41,13 +61,6 @@
 		<li><?php echo $this->Html->link(__('List Supplier Slips'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Supplier Slip'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Articles'), array('controller' => 'articles', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Article'), array('controller' => 'articles', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Raw Materials'), array('controller' => 'raw_materials', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Raw Material'), array('controller' => 'raw_materials', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -56,14 +69,13 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Stock Type'); ?></th>
 		<th><?php echo __('Article Reference'); ?></th>
 		<th><?php echo __('Article Model'); ?></th>
 		<th><?php echo __('Article Size'); ?></th>
 		<th><?php echo __('Stock Comment'); ?></th>
-		<th><?php echo __('Stock Userfield01'); ?></th>
-		<th><?php echo __('Stock Userfield02'); ?></th>
-		<th><?php echo __('Stock Userfield03'); ?></th>
+                <th><?php echo qibdipTPV_stock_uf01(); ?></th>
+                <th><?php echo qibdipTPV_stock_uf02(); ?></th>
+                <th><?php echo qibdipTPV_stock_uf03(); ?></th>
 		<th><?php echo __('Stock Buy Price'); ?></th>
 		<th><?php echo __('Stock Vat'); ?></th>
 		<th><?php echo __('Stock Vat Re'); ?></th>
@@ -80,7 +92,6 @@
 		foreach ($supplierSlip['Article'] as $article): ?>
 		<tr>
 			<td><?php echo $article['id']; ?></td>
-			<td><?php echo $article['stock_type']; ?></td>
 			<td><?php echo $article['article_reference']; ?></td>
 			<td><?php echo $article['article_model']; ?></td>
 			<td><?php echo $article['article_size']; ?></td>
@@ -119,10 +130,9 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Stock Type'); ?></th>
 		<th><?php echo __('Raw Material Type Id'); ?></th>
 		<th><?php echo __('Raw Mat Units'); ?></th>
-		<th><?php echo __('Raw Mat Userfield01'); ?></th>
+                <th><?php echo qibdipTPV_raw_uf01(); ?></th>
 		<th><?php echo __('Raw Mat Unit Price'); ?></th>
 		<th><?php echo __('Stock Comment'); ?></th>
 		<th><?php echo __('Stock Userfield01'); ?></th>
@@ -144,7 +154,6 @@
 		foreach ($supplierSlip['RawMaterial'] as $rawMaterial): ?>
 		<tr>
 			<td><?php echo $rawMaterial['id']; ?></td>
-			<td><?php echo $rawMaterial['stock_type']; ?></td>
 			<td><?php echo $rawMaterial['raw_material_type_id']; ?></td>
 			<td><?php echo $rawMaterial['raw_mat_units']; ?></td>
 			<td><?php echo $rawMaterial['raw_mat_userfield01']; ?></td>
@@ -175,77 +184,6 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Raw Material'), array('controller' => 'raw_materials', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Stocks'); ?></h3>
-	<?php if (!empty($supplierSlip['Stock'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Stock Type'); ?></th>
-		<th><?php echo __('Article Reference'); ?></th>
-		<th><?php echo __('Article Model'); ?></th>
-		<th><?php echo __('Article Size'); ?></th>
-		<th><?php echo __('Raw Material Type Id'); ?></th>
-		<th><?php echo __('Raw Mat Units'); ?></th>
-		<th><?php echo __('Raw Mat Userfield01'); ?></th>
-		<th><?php echo __('Raw Mat Unit Price'); ?></th>
-		<th><?php echo __('Stock Comment'); ?></th>
-		<th><?php echo __('Stock Userfield01'); ?></th>
-		<th><?php echo __('Stock Userfield02'); ?></th>
-		<th><?php echo __('Stock Userfield03'); ?></th>
-		<th><?php echo __('Stock Buy Price'); ?></th>
-		<th><?php echo __('Stock Vat'); ?></th>
-		<th><?php echo __('Stock Vat Re'); ?></th>
-		<th><?php echo __('Stock Sale Price'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Supplier Slip Id'); ?></th>
-		<th><?php echo __('Supplier Slip Line'); ?></th>
-		<th><?php echo __('Supplier Invoice Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($supplierSlip['Stock'] as $stock): ?>
-		<tr>
-			<td><?php echo $stock['id']; ?></td>
-			<td><?php echo $stock['stock_type']; ?></td>
-			<td><?php echo $stock['article_reference']; ?></td>
-			<td><?php echo $stock['article_model']; ?></td>
-			<td><?php echo $stock['article_size']; ?></td>
-			<td><?php echo $stock['raw_material_type_id']; ?></td>
-			<td><?php echo $stock['raw_mat_units']; ?></td>
-			<td><?php echo $stock['raw_mat_userfield01']; ?></td>
-			<td><?php echo $stock['raw_mat_unit_price']; ?></td>
-			<td><?php echo $stock['stock_comment']; ?></td>
-			<td><?php echo $stock['stock_userfield01']; ?></td>
-			<td><?php echo $stock['stock_userfield02']; ?></td>
-			<td><?php echo $stock['stock_userfield03']; ?></td>
-			<td><?php echo $stock['stock_buy_price']; ?></td>
-			<td><?php echo $stock['stock_vat']; ?></td>
-			<td><?php echo $stock['stock_vat_re']; ?></td>
-			<td><?php echo $stock['stock_sale_price']; ?></td>
-			<td><?php echo $stock['created']; ?></td>
-			<td><?php echo $stock['modified']; ?></td>
-			<td><?php echo $stock['supplier_slip_id']; ?></td>
-			<td><?php echo $stock['supplier_slip_line']; ?></td>
-			<td><?php echo $stock['supplier_invoice_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'stocks', 'action' => 'view', $stock['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'stocks', 'action' => 'edit', $stock['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'stocks', 'action' => 'delete', $stock['id']), null, __('Are you sure you want to delete # %s?', $stock['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

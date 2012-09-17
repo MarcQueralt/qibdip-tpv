@@ -6,4 +6,12 @@
     Configure::write('Company-Email','name@mail.com');
     Configure::write('Company-Web','http://web.com');
     Configure::write('Company-Logo-File','logo.png');
+    Configure::write('RawMat-Userfield-01','Casc');
+    Configure::write('Stock-Userfield-01','Pell');
+    Configure::write('Stock-Userfield-01','Acabat');
+    Configure::write('Stock-Userfield-01','Color');
+    Configure::write('Consumption-Cost-01','Cost 1');
+    Configure::write('Consumption-Cost-02','Cost 2');
+    Configure::write('Consumption-Cost-03','Cost 3');
+    Configure::write('Consumption-Cost-04','Cost 4');
 ?>

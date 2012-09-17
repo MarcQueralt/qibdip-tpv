@@ -1,5 +1,7 @@
 <?php
+
 App::uses('AppModel', 'Model');
+
 /**
  * Supplier Model
  *
@@ -9,65 +11,77 @@ App::uses('AppModel', 'Model');
  */
 class Supplier extends AppModel {
 
-/**
- * Validation rules
- *
- * @var array
- */
-	public $validate = array(
-		'supplier_name' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-	);
+    public $displayField = 'supplier_name';
 
-	//The Associations below have been created with all possible keys, those that are not needed can be removed
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public $validate = array(
+        'supplier_name' => array(
+            'notempty' => array(
+                'rule' => array('notempty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'supplier_abr' => array(
+            'notempty' => array(
+                'rule' => array('notempty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+    );
 
-/**
- * belongsTo associations
- *
- * @var array
- */
-	public $belongsTo = array();
+    //The Associations below have been created with all possible keys, those that are not needed can be removed
 
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'SupplierInvoice' => array(
-			'className' => 'SupplierInvoice',
-			'foreignKey' => 'supplier_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'SupplierSlip' => array(
-			'className' => 'SupplierSlip',
-			'foreignKey' => 'supplier_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
+    /**
+     * belongsTo associations
+     *
+     * @var array
+     */
+    public $belongsTo = array();
+
+    /**
+     * hasMany associations
+     *
+     * @var array
+     */
+    public $hasMany = array(
+        'SupplierInvoice' => array(
+            'className' => 'SupplierInvoice',
+            'foreignKey' => 'supplier_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
+        'SupplierSlip' => array(
+            'className' => 'SupplierSlip',
+            'foreignKey' => 'supplier_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        )
+    );
 
 }

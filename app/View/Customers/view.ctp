@@ -1,10 +1,12 @@
-<?php $this->Number->addFormat('QBD',array(
-    'before'=>'',
-    'after'=>'',
-    'zero'=>'',
-    'thousands'=>'.',
-    'decimals'=>',',
-));?>
+<?php
+$this->Number->addFormat('QBD', array(
+    'before' => '',
+    'after' => '',
+    'zero' => '',
+    'thousands' => '.',
+    'decimals' => ',',
+));
+?>
 <div class="customers view">
     <h2><?php echo __('Customer'); ?></h2>
     <dl>
@@ -79,10 +81,12 @@
     <?php if (!empty($customer['CustomerInvoice'])): ?>
         <table cellpadding = "0" cellspacing = "0">
             <tr>
-                <th><?php echo __('Id'); ?></th>
-                <th><?php echo __('Customer Invoice Date'); ?></th>
                 <th><?php echo __('Customer Invoice Number'); ?></th>
+                <th><?php echo __('Customer Invoice Date'); ?></th>
                 <th><?php echo __('Customer Invoice Status'); ?></th>
+                <th><?php echo __('Customer Invoice Amount'); ?></th>
+                <th><?php echo __('Customer Invoice Vat'); ?></th>
+                <th><?php echo __('Customer Invoice Totals'); ?></th>
                 <th><?php echo __('Customer Invoice Comments'); ?></th>
                 <th class="actions"><?php echo __('Actions'); ?></th>
             </tr>
@@ -91,20 +95,22 @@
             foreach ($customer['CustomerInvoice'] as $customerInvoice):
                 ?>
                 <tr>
-                    <td><?php echo $customerInvoice['id']; ?></td>
+                    <td><?php echo $customerInvoice['extended_number']; ?></td>
                     <td><?php echo $customerInvoice['customer_invoice_date']; ?></td>
-                    <td><?php echo $customerInvoice['customer_invoice_number']; ?></td>
-                    <td><?php echo $customerInvoice['customer_invoice_status']; ?></td>
+                    <td><?php echo $customerInvoice['InvoiceStatus']['cus_inv_status_name']; ?></td>
+                    <td><?php echo $this->Number->currency($customerInvoice['sum_amount'], 'QBD'); ?></td>
+                    <td><?php echo $this->Number->currency($customerInvoice['sum_vat'], 'QBD'); ?></td>
+                    <td><?php echo $this->Number->currency($customerInvoice['total_amount'], 'QBD'); ?></td>
                     <td><?php echo $customerInvoice['customer_invoice_comments']; ?></td>
                     <td class="actions">
                         <?php echo $this->Html->link(__('View'), array('controller' => 'customer_invoices', 'action' => 'view', $customerInvoice['id'])); ?>
-                        <?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_invoices', 'action' => 'edit', $customerInvoice['id'])); ?>
-        <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_invoices', 'action' => 'delete', $customerInvoice['id']), null, __('Are you sure you want to delete # %s?', $customerInvoice['id'])); ?>
+                        <?php echo $this->Html->link(__('Print'), array('controller' => 'customer_invoices', 'action' => 'printer', $customerInvoice['id'])); ?>
+                        <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_invoices', 'action' => 'delete', $customerInvoice['id']), null, __('Are you sure you want to delete # %s?', $customerInvoice['id'])); ?>
                     </td>
                 </tr>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         </table>
-<?php endif; ?>
+    <?php endif; ?>
 
     <div class="actions">
         <ul>
@@ -114,7 +120,7 @@
 </div>
 <div class="related">
     <h3><?php echo __('Related Customer Orders'); ?></h3>
-<?php if (!empty($customer['CustomerOrder'])): ?>
+    <?php if (!empty($customer['CustomerOrder'])): ?>
         <table cellpadding = "0" cellspacing = "0">
             <tr>
                 <th><?php echo __('Id'); ?></th>
@@ -135,20 +141,22 @@
                     <td></pre><?php echo $customerOrder['id']; ?></td>
                     <td><?php echo $customerOrder['OrderStatus']['order_status_name']; ?></td>
                     <td><?php echo $customerOrder['order_date']; ?></td>
-<td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount'],'QBD'); ?></td>
-<td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['due_amount'],'QBD'); ?></td>
-<td style="text-align: right;"><?php echo $customerOrder['count_left_articles']; ?></td>
-<td style="text-align: right;"><?php echo $customerOrder['count_lines']; ?></td>
+                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount'], 'QBD'); ?></td>
+                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['due_amount'], 'QBD'); ?></td>
+                    <td style="text-align: right;"><?php echo $customerOrder['count_left_articles']; ?></td>
+                    <td style="text-align: right;"><?php echo $customerOrder['count_lines']; ?></td>
                     <td><?php echo $customerOrder['order_comments']; ?></td>
                     <td class="actions">
                         <?php echo $this->Html->link(__('View'), array('controller' => 'customer_orders', 'action' => 'view', $customerOrder['id'])); ?>
-        <?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_orders', 'action' => 'edit', $customerOrder['id'])); ?>
-                <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_orders', 'action' => 'delete', $customerOrder['id']), null, __('Are you sure you want to delete # %s?', $customerOrder['id'])); ?>
+                        <?php echo $this->Html->link(__('Print'), array('controller' => 'customer_orders', 'action' => 'printer', $customerInvoice['id'])); ?>
+                        <?php echo $this->Html->link(__('Invoice'), array('controller' => 'customer_invoices', 'action' => 'invoice', $customerOrder['id'])); ?>
+                        <?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_orders', 'action' => 'edit', $customerOrder['id'])); ?>
+                        <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_orders', 'action' => 'delete', $customerOrder['id']), null, __('Are you sure you want to delete # %s?', $customerOrder['id'])); ?>
                     </td>
                 </tr>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         </table>
-<?php endif; ?>
+    <?php endif; ?>
 
     <div class="actions">
         <ul>

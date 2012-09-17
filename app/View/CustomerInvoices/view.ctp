@@ -1,9 +1,9 @@
 <div class="customerInvoices view">
 <h2><?php  echo __('Customer Invoice'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('Invoice Number'); ?></dt>
 		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['id']); ?>
+			<?php echo h($customerInvoice['CustomerInvoice']['extended_number']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer'); ?></dt>
@@ -16,19 +16,9 @@
 			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Serie'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($customerInvoice['Serie']['id'], array('controller' => 'series', 'action' => 'view', $customerInvoice['Serie']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Customer Invoice Number'); ?></dt>
-		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_number']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Customer Invoice Status'); ?></dt>
 		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_status']); ?>
+			<?php echo h($customerInvoice['InvoiceStatus']['cus_inv_status_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Invoice Comments'); ?></dt>
@@ -36,14 +26,19 @@
 			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_comments']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Sum Amount'); ?></dt>
 		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['created']); ?>
+			<?php echo h($customerInvoice['CustomerInvoice']['sum_amount']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Sum Vat'); ?></dt>
 		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['modified']); ?>
+			<?php echo h($customerInvoice['CustomerInvoice']['sum_vat']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Total Amount'); ?></dt>
+		<dd>
+			<?php echo h($customerInvoice['CustomerInvoice']['total_amount']); ?>
 			&nbsp;
 		</dd>
 	</dl>

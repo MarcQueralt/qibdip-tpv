@@ -92,9 +92,6 @@ endif;
                                 <?php echo $this->Html->link(__('Raw materials'), array('controller' => 'rawMaterials', 'action'=>'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('All materials'), array('controller' => 'stocks', 'action'=>'index')); ?>
-                            </li>
-                            <li>
                                 <?php echo $this->Html->link(__('Consumptions'), array('controller' => 'consumptions', 'action'=>'index')); ?>
                             </li>
                         </ul>
@@ -116,13 +113,13 @@ endif;
                                 <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialTypes', 'action'=>'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'customerOrderStatus', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'OrderStatuses', 'action'=>'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Customer Invoice Status'), array('controller' => 'customerInvoiceStatus', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Customer Invoice Status'), array('controller' => 'customerInvoiceStatuses', 'action'=>'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Supplier Invoice Status'), array('controller' => 'supplierInvoiceStatus', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Supplier Invoice Status'), array('controller' => 'supplierInvoiceStatuses', 'action'=>'index')); ?>
                             </li>
                             <li>
                                 <?php echo $this->Html->link(__('Options'), array('controller' => 'options', 'action'=>'index')); ?>

@@ -31,17 +31,17 @@
 			<?php echo h($article['Article']['stock_comment']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield01'); ?></dt>
+                <dt><?php echo qibdipTPV_stock_uf01(); ?></dt>
 		<dd>
 			<?php echo h($article['Article']['stock_userfield01']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield02'); ?></dt>
+                <dt><?php echo qibdipTPV_stock_uf02(); ?></dt>
 		<dd>
 			<?php echo h($article['Article']['stock_userfield02']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Stock Userfield03'); ?></dt>
+		<dt><?php echo qibdipTPV_stock_uf03(); ?></dt>
 		<dd>
 			<?php echo h($article['Article']['stock_userfield03']); ?>
 			&nbsp;
@@ -100,10 +100,6 @@
 		<li><?php echo $this->Form->postLink(__('Delete Article'), array('action' => 'delete', $article['Article']['id']), null, __('Are you sure you want to delete # %s?', $article['Article']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Articles'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Article'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier Slip'), array('controller' => 'supplier_slips', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Consumptions'), array('controller' => 'consumptions', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Consumption'), array('controller' => 'consumptions', 'action' => 'add')); ?> </li>
 	</ul>
@@ -117,10 +113,10 @@
 		<th><?php echo __('Article Id'); ?></th>
 		<th><?php echo __('Raw Material Id'); ?></th>
 		<th><?php echo __('Consumption Raw Mat Consumed Units'); ?></th>
-		<th><?php echo __('Consumption Cost 01'); ?></th>
-		<th><?php echo __('Consumption Cost 02'); ?></th>
-		<th><?php echo __('Consumption Cost 03'); ?></th>
-		<th><?php echo __('Consumption Cost 04'); ?></th>
+                <th><?php echo qibdipTPV_cost01(); ?></th>
+                <th><?php echo qibdipTPV_cost02(); ?></th>
+                <th><?php echo qibdipTPV_cost03(); ?></th>
+                <th><?php echo qibdipTPV_cost04(); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php

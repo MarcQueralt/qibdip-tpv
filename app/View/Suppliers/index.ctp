@@ -4,13 +4,13 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_name'); ?></th>
+                        <th><?php echo $this->Paginator->sort('supplier_abr'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_address'); ?></th>
-			<th><?php echo $this->Paginator->sort('town_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('zip'); ?></th>
+			<th><?php echo $this->Paginator->sort('town'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_vat_number'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_phone1'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_phone2'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -18,13 +18,13 @@
 	<tr>
 		<td><?php echo h($supplier['Supplier']['id']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_name']); ?>&nbsp;</td>
+		<td><?php echo h($supplier['Supplier']['supplier_abr']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_address']); ?>&nbsp;</td>
-		<td><?php echo h($supplier['Supplier']['town_id']); ?>&nbsp;</td>
+		<td><?php echo h($supplier['Supplier']['zip']); ?>&nbsp;</td>
+                <td><?php echo h($supplier['Supplier']['town']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_vat_number']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_phone1']); ?>&nbsp;</td>
 		<td><?php echo h($supplier['Supplier']['supplier_phone2']); ?>&nbsp;</td>
-		<td><?php echo h($supplier['Supplier']['created']); ?>&nbsp;</td>
-		<td><?php echo h($supplier['Supplier']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $supplier['Supplier']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $supplier['Supplier']['id'])); ?>
@@ -52,9 +52,5 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Supplier'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Supplier Slip'), array('controller' => 'supplier_slips', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

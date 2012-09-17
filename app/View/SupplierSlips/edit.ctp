@@ -6,7 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('supplier_slip_num');
 		echo $this->Form->input('supplier_id');
-		echo $this->Form->input('supplier_slip_date');
+		echo $this->Form->input('supplier_slip_date',array('dateFormat'=>'DMY'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

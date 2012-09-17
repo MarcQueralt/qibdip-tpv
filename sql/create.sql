@@ -30,6 +30,7 @@ drop table if exists suppliers;
 create table suppliers (
     id int(10) unsigned auto_increment primary key,
     supplier_name varchar(100) not null,
+    supplier_abr varchar(6) not null,
     supplier_address varchar(100),
     town varchar(100),
     zip varchar(10),
@@ -99,7 +100,6 @@ create table stocks (
     raw_material_type_id int(10),
     raw_mat_units decimal(10,2),
     raw_mat_userfield01 varchar(50), /* casc */
-    raw_mat_unit_price decimal(10,2),
     /* Common */
     stock_comment varchar(250) default '',
     stock_userfield01 varchar(10), /* pell */
@@ -111,8 +111,8 @@ create table stocks (
     stock_sale_price decimal(10,2) default 0,
     created datetime default null,
     modified datetime default null,
-    supplier_slip_id int(10) not null,
-    supplier_slip_line int(10) not null default 1,
+    supplier_slip_id int(10),
+    supplier_slip_line int(10),
     supplier_invoice_id int(10),
     foreign key (supplier_invoice_id) references supplier_invoices(id),
     foreign key (raw_material_type_id) references raw_material_types(id),
@@ -172,7 +172,7 @@ create table customer_invoices (
     customer_invoice_date date not null,
     serie_id int(10) not null,
     customer_invoice_number int(10) not null,
-    customer_invoice_status int(10) not null,
+    customer_invoice_status_id int(10) not null,
     customer_invoice_comments varchar(255),
     created datetime default null,
     modified datetime default null,
@@ -256,7 +256,7 @@ create view raw_materials as select
     raw_material_type_id,
     raw_mat_units,
     raw_mat_userfield01, /* casc */
-    raw_mat_unit_price,
+    stock_buy_price/raw_mat_units as raw_mat_unit_price,
     stock_comment,
     stock_userfield01,
     stock_userfield02,

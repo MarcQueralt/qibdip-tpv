@@ -14,4 +14,28 @@ function qibdipTPV_prettyOrderLineType($lineType) {
     return $result;
 }
 
+function qibdipTPV_raw_uf01() {
+    return Configure::read('RawMat-Userfield-01');
+}
+function qibdipTPV_stock_uf01() {
+    return Configure::read('Stock-Userfield-01');
+}
+function qibdipTPV_stock_uf02() {
+    return Configure::read('Stock-Userfield-02');
+}
+function qibdipTPV_stock_uf03() {
+    return Configure::read('Stock-Userfield-03');
+}
+function qibdipTPV_cost01(){
+    return Configure::read('Consumption-Cost-01');
+}
+function qibdipTPV_cost02(){
+    return Configure::read('Consumption-Cost-02');
+}
+function qibdipTPV_cost03(){
+    return Configure::read('Consumption-Cost-03');
+}
+function qibdipTPV_cost04(){
+    return Configure::read('Consumption-Cost-04');
+}
 ?>
