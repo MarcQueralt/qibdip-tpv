@@ -15,7 +15,7 @@ class CustomerOrderLine extends AppModel {
     public $virtualFields = array(
         'order_line_total' => 'order_line_amount + order_line_vat',
         'order_line_is_left_article' => 'trim(order_line_left_article_description)<>""',
-        'order_line_text' => 'IF(CustomerOrderLine.order_line_type="A",(SELECT stocks.article_reference FROM stocks WHERE stocks.id=CustomerOrderLine.stock_id),CustomerOrderLine.order_line_description)',
+        'order_line_text' => 'IF(CustomerOrderLine.order_line_type="A",(SELECT concat(stocks.id,"-",stocks.article_model) FROM stocks WHERE stocks.id=CustomerOrderLine.stock_id),CustomerOrderLine.order_line_description)',
         'expected_vat' => 'SELECT vat FROM options WHERE options.id=1',
     );
 

@@ -16,29 +16,14 @@
             <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_number']); ?>
             &nbsp;
         </dd>
-        <dt><?php echo __('Order Status'); ?></dt>
-        <dd>
-            <?php echo $this->Html->link($customerOrderLine['OrderStatus']['id'], array('controller' => 'order_statuses', 'action' => 'view', $customerOrderLine['OrderStatus']['id'])); ?>
-            &nbsp;
-        </dd>
         <dt><?php echo __('Order Line Type'); ?></dt>
         <dd>
             <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_type']); ?>
             &nbsp;
         </dd>
-        <dt><?php echo __('Stock'); ?></dt>
-        <dd>
-            <?php echo $this->Html->link($customerOrderLine['Stock']['id'], array('controller' => 'stocks', 'action' => 'view', $customerOrderLine['Stock']['id'])); ?>
-            &nbsp;
-        </dd>
         <dt><?php echo __('Order Line Description'); ?></dt>
         <dd>
-            <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_description']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Order Line Is Left Article'); ?></dt>
-        <dd>
-            <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_is_left_article']); ?>
+            <?php echo nl2br($customerOrderLine['CustomerOrderLine']['order_line_description']); ?>
             &nbsp;
         </dd>
         <dt><?php echo __('Order Line Left Article Description'); ?></dt>

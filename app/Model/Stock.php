@@ -15,7 +15,7 @@ class Stock extends AppModel {
 
     public $virtualFields = array(
         'available' => 'if((select count(*) from customer_order_lines where customer_order_lines.stock_id=Stock.id)=0 AND Stock.stock_type="A",true,false)',
-        'stock_description' => 'IF(Stock.stock_type="A",Stock.article_reference,(Select raw_mat_type_name from raw_material_types where raw_material_type_id=Stock.raw_material_type_id))',
+        'stock_description' => 'IF(Stock.stock_type="A",concat(Stock.id,"-",Stock.article_model),(Select raw_mat_type_name from raw_material_types where raw_material_type_id=Stock.raw_material_type_id))',
         'expected_vat' => 'SELECT vat FROM options WHERE options.id=1',
         'expected_vat_re' => 'SELECT vat_re FROM options WHERE options.id=1',
     );

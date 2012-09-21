@@ -3,7 +3,8 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('article_reference'); ?></th>
+			<th><?php echo $this->Paginator->sort('supplier_slip_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('supplier_slip_line'); ?></th>
 			<th><?php echo $this->Paginator->sort('article_model'); ?></th>
 			<th><?php echo $this->Paginator->sort('article_size'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_comment'); ?></th>
@@ -14,8 +15,6 @@
 			<th><?php echo $this->Paginator->sort('stock_vat'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_vat_re'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock_sale_price'); ?></th>
-			<th><?php echo $this->Paginator->sort('supplier_slip_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('supplier_slip_line'); ?></th>
 			<th><?php echo $this->Paginator->sort('supplier_invoice_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -23,7 +22,13 @@
 	foreach ($articles as $article): ?>
 	<tr>
 		<td><?php echo h($article['Article']['id']); ?>&nbsp;</td>
-		<td><?php echo h($article['Article']['article_reference']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($article['SupplierSlip']['extended_number'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
+		</td>
+		<td><?php echo h($article['Article']['supplier_slip_line']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($article['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
+		</td>
 		<td><?php echo h($article['Article']['article_model']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['article_size']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['stock_comment']); ?>&nbsp;</td>
@@ -34,13 +39,6 @@
 		<td><?php echo h($article['Article']['stock_vat']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['stock_vat_re']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['stock_sale_price']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($article['SupplierSlip']['extended_number'], array('controller' => 'supplier_slips', 'action' => 'view', $article['SupplierSlip']['id'])); ?>
-		</td>
-		<td><?php echo h($article['Article']['supplier_slip_line']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($article['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
-		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $article['Article']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $article['Article']['id'])); ?>

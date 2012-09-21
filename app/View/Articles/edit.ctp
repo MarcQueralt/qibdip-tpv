@@ -10,7 +10,6 @@ echo $this->Html->script('articles', FALSE);
         echo $this->Form->input('id');
         echo $this->Form->hidden('expected_vat');
         echo $this->Form->hidden('expected_vat_re');
-        echo $this->Form->input('article_reference');
         echo $this->Form->input('article_model');
         echo $this->Form->input('article_size');
         echo $this->Form->input('stock_comment');
@@ -23,9 +22,10 @@ echo $this->Html->script('articles', FALSE);
         echo $this->Form->input('stock_vat');
         echo $this->Form->input('stock_vat_re');
         echo $this->Form->input('stock_sale_price');
-        echo $this->Form->input('supplier_slip_id',array('empty'=>'---'));
+        echo $this->Form->input('supplier_slip_id', array('empty' => '---'));
         echo $this->Form->input('supplier_slip_line');
-        echo $this->Form->input('supplier_invoice_id',array('empty'=>'---'));
+        echo $this->Form->input('supplier_invoice_id', array('empty' => '---'));
+        echo $this->Form->input('article_returned');
         ?>
     </fieldset>
     <?php echo $this->Form->end(__('Submit')); ?>

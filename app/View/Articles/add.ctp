@@ -10,7 +10,6 @@ echo $this->Html->script('articles', FALSE);
         echo $this->Form->hidden('stock_type');
         echo $this->Form->hidden('expected_vat');
         echo $this->Form->hidden('expected_vat_re');
-        echo $this->Form->input('article_reference');
         echo $this->Form->input('article_model');
         echo $this->Form->input('article_size');
         echo $this->Form->input('stock_comment');

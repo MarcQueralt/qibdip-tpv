@@ -53,19 +53,6 @@ class OrderStatus extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'CustomerOrderLine' => array(
-			'className' => 'CustomerOrderLine',
-			'foreignKey' => 'order_status_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
 		'CustomerOrder' => array(
 			'className' => 'CustomerOrder',
 			'foreignKey' => 'order_status_id',

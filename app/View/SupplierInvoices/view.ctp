@@ -79,7 +79,6 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Stock Type'); ?></th>
-		<th><?php echo __('Article Reference'); ?></th>
 		<th><?php echo __('Article Model'); ?></th>
 		<th><?php echo __('Article Size'); ?></th>
 		<th><?php echo __('Stock Comment'); ?></th>
@@ -103,7 +102,6 @@
 		<tr>
 			<td><?php echo $article['id']; ?></td>
 			<td><?php echo $article['stock_type']; ?></td>
-			<td><?php echo $article['article_reference']; ?></td>
 			<td><?php echo $article['article_model']; ?></td>
 			<td><?php echo $article['article_size']; ?></td>
 			<td><?php echo $article['stock_comment']; ?></td>
@@ -207,7 +205,6 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Stock Type'); ?></th>
-		<th><?php echo __('Article Reference'); ?></th>
 		<th><?php echo __('Article Model'); ?></th>
 		<th><?php echo __('Article Size'); ?></th>
 		<th><?php echo __('Raw Material Type Id'); ?></th>
@@ -235,7 +232,6 @@
 		<tr>
 			<td><?php echo $stock['id']; ?></td>
 			<td><?php echo $stock['stock_type']; ?></td>
-			<td><?php echo $stock['article_reference']; ?></td>
 			<td><?php echo $stock['article_model']; ?></td>
 			<td><?php echo $stock['article_size']; ?></td>
 			<td><?php echo $stock['raw_material_type_id']; ?></td>

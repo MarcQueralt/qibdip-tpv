@@ -69,7 +69,6 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Article Reference'); ?></th>
 		<th><?php echo __('Article Model'); ?></th>
 		<th><?php echo __('Article Size'); ?></th>
 		<th><?php echo __('Stock Comment'); ?></th>
@@ -92,7 +91,6 @@
 		foreach ($supplierSlip['Article'] as $article): ?>
 		<tr>
 			<td><?php echo $article['id']; ?></td>
-			<td><?php echo $article['article_reference']; ?></td>
 			<td><?php echo $article['article_model']; ?></td>
 			<td><?php echo $article['article_size']; ?></td>
 			<td><?php echo $article['stock_comment']; ?></td>

@@ -13,7 +13,6 @@ class StockFixture extends CakeTestFixture {
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
 		'stock_type' => array('type' => 'string', 'null' => false, 'default' => 'A', 'length' => 1, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-		'article_reference' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'article_model' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 250, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'article_size' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 10, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'raw_material_type_id' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 10, 'key' => 'index'),
@@ -50,7 +49,6 @@ class StockFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'stock_type' => 'Lorem ipsum dolor sit ame',
-			'article_reference' => 'Lorem ipsum dolor sit amet',
 			'article_model' => 'Lorem ipsum dolor sit amet',
 			'article_size' => 'Lorem ip',
 			'raw_material_type_id' => 1,

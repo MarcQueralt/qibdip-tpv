@@ -106,7 +106,7 @@ $this->Number->addFormat('QBD', array(
                 <tr>
                     <td><?php echo $customerOrderLine['order_line_number']; ?></td>
                     <td><?php echo qibdipTPV_prettyOrderLineType($customerOrderLine['order_line_type']); ?></td>
-                    <td><?php echo $customerOrderLine['order_line_text']; ?></td>
+                    <td><?php echo nl2br($customerOrderLine['order_line_text']); ?></td>
                     <td><?php echo $customerOrderLine['order_line_left_article_description']; ?></td>
                     <td><?php echo $customerOrderLine['order_line_due_date']; ?></td>
                     <td><?php echo $customerOrderLine['order_line_ready']; ?></td>

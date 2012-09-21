@@ -11,11 +11,6 @@
 			<?php echo h($article['Article']['stock_type']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Article Reference'); ?></dt>
-		<dd>
-			<?php echo h($article['Article']['article_reference']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Article Model'); ?></dt>
 		<dd>
 			<?php echo h($article['Article']['article_model']); ?>
@@ -91,6 +86,12 @@
 			<?php echo $this->Html->link($article['SupplierInvoice']['id'], array('controller' => 'supplier_invoices', 'action' => 'view', $article['SupplierInvoice']['id'])); ?>
 			&nbsp;
 		</dd>
+                		<dt><?php echo __('Article Returned'); ?></dt>
+		<dd>
+			<?php echo h($article['Article']['article_returned']); ?>
+			&nbsp;
+		</dd>
+
 	</dl>
 </div>
 <div class="actions">
