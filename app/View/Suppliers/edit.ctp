@@ -5,7 +5,7 @@
         <?php
         echo $this->Form->input('id');
         echo $this->Form->input('supplier_name');
-        echo $this->Form->input('supplier_abr');
+        echo $this->Form->input('supplier_abr',array('label'=>__('Supplier Abreviated')));
         echo $this->Form->input('supplier_address');
         echo $this->Form->input('zip');
         echo $this->Form->input('town');
