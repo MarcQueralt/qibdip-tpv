@@ -10,6 +10,11 @@
             'empty' => '---',
             'options' => $this->viewVars['OrderStatuses']
         ));
+        echo $this->Form->input('order_invoiced_status_id', array(
+            'label' => 'Default Order Invoiced Status',
+            'empty' => '---',
+            'options' => $this->viewVars['OrderStatuses']
+        ));
         echo $this->Form->input('customer_invoice_status_id', array(
             'label' => 'Default Customer Invoice Status',
             'empty' => '---',

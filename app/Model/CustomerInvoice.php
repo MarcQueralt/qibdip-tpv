@@ -12,8 +12,8 @@ App::uses('AppModel', 'Model');
 class CustomerInvoice extends AppModel {
 
     public $virtualFields = array(
-        'serie'=>'SELECT series.serie_code FROM series WHERE series.id=CustomerInvoice.serie_id',
-        'extended_number' => 'CONCAT((SELECT series.serie_code FROM series WHERE series.id=CustomerInvoice.serie_id),"-",RIGHT(CONCAT("00000",CustomerInvoice.customer_invoice_number),5))',
+        'serie'=>'SELECT invoice_groups.code FROM invoice_groups WHERE invoice_groups.id=CustomerInvoice.invoice_group_id',
+        'extended_number' => 'CONCAT((SELECT invoice_groups.code FROM invoice_groups WHERE invoice_groups.id=CustomerInvoice.invoice_group_id),"-",RIGHT(CONCAT("00000",CustomerInvoice.customer_invoice_number),5))',
         'expected_vat'=> 'SELECT vat FROM options WHERE options.id=1',
         'sum_amount' => '@ta:=(SELECT COALESCE(SUM(customer_order_lines.order_line_amount),0) FROM customer_order_lines WHERE customer_order_lines.customer_invoice_id = CustomerInvoice.id)',
         'sum_vat' => '@tv:=(SELECT COALESCE(SUM(customer_order_lines.order_line_vat),0) FROM customer_order_lines WHERE customer_order_lines.customer_invoice_id = CustomerInvoice.id)',
@@ -52,7 +52,7 @@ class CustomerInvoice extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'serie_id' => array(
+		'invoice_group_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -99,9 +99,9 @@ class CustomerInvoice extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Serie' => array(
-			'className' => 'Serie',
-			'foreignKey' => 'serie_id',
+		'InvoiceGroup' => array(
+			'className' => 'InvoiceGroup',
+			'foreignKey' => 'invoice_group_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

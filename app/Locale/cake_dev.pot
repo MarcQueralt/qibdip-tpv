@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-09-17 09:49+0200\n"
+"POT-Creation-Date: 2012-09-22 11:57+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -18,59 +18,59 @@ msgstr ""
 msgid "CakePHP: the rapid development php framework"
 msgstr ""
 
-#: View/Pages/home.ctp:29
+#: View/Pages/home.ctp:38
 msgid "URL rewriting is not properly configured on your server."
 msgstr ""
 
-#: View/Pages/home.ctp:37
+#: View/Pages/home.ctp:46
 msgid "Your version of PHP is 5.2.8 or higher."
 msgstr ""
 
-#: View/Pages/home.ctp:41
+#: View/Pages/home.ctp:50
 msgid "Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP."
 msgstr ""
 
-#: View/Pages/home.ctp:50
+#: View/Pages/home.ctp:59
 msgid "Your tmp directory is writable."
 msgstr ""
 
-#: View/Pages/home.ctp:54
+#: View/Pages/home.ctp:63
 msgid "Your tmp directory is NOT writable."
 msgstr ""
 
-#: View/Pages/home.ctp:64
+#: View/Pages/home.ctp:73
 msgid "The %s is being used for core caching. To change the config edit APP/Config/core.php "
 msgstr ""
 
-#: View/Pages/home.ctp:68
+#: View/Pages/home.ctp:77
 msgid "Your cache is NOT working. Please check the settings in APP/Config/core.php"
 msgstr ""
 
-#: View/Pages/home.ctp:78
+#: View/Pages/home.ctp:87
 msgid "Your database configuration file is present."
 msgstr ""
 
-#: View/Pages/home.ctp:83
+#: View/Pages/home.ctp:92
 msgid "Your database configuration file is NOT present."
 msgstr ""
 
-#: View/Pages/home.ctp:85
+#: View/Pages/home.ctp:94
 msgid "Rename APP/Config/database.php.default to APP/Config/database.php"
 msgstr ""
 
-#: View/Pages/home.ctp:103
+#: View/Pages/home.ctp:112
 msgid "Cake is able to connect to the database."
 msgstr ""
 
-#: View/Pages/home.ctp:107
+#: View/Pages/home.ctp:116
 msgid "Cake is NOT able to connect to the database."
 msgstr ""
 
-#: View/Pages/home.ctp:119
+#: View/Pages/home.ctp:128
 msgid "PCRE has not been compiled with Unicode support."
 msgstr ""
 
-#: View/Pages/home.ctp:121
+#: View/Pages/home.ctp:130
 msgid "Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring"
 msgstr ""
 

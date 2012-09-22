@@ -107,7 +107,7 @@ endif;
                                 <?php echo $this->Html->link(__('Users'), array('controller' => 'users', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Invoice Series'), array('controller' => 'series', 'action' => 'index')); ?>
+                                <?php echo $this->Html->link(__('Invoice Series'), array('controller' => 'invoiceGroups', 'action' => 'index')); ?>
                             </li>
                             <li>
                                 <?php echo $this->Html->link(__('Service Types'), array('controller' => 'serviceTypes', 'action' => 'index')); ?>

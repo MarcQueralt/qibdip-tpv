@@ -12,6 +12,7 @@ by Marc Queralt i Bassa
 * Quick Article entry
 * Quick Sale
 * Quick Service
+* Series table renamed to invoice_groups
 
 ==Version 1.0.2==
 Initial partial version. Invoicing not managed

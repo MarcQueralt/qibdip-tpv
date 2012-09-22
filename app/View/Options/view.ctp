@@ -16,6 +16,12 @@
             <?php echo h($option['OrderStatus']['order_status_name']); ?>
             &nbsp;
         </dd>
+        <dt><?php echo __('Default Order Invoiced Status'); ?></dt>
+        <dd>
+            <?php echo h($option['OrderInvoicedStatus']['order_status_name']); ?>
+            &nbsp;
+        </dd>
+
         <dt><?php echo __('Default Customer Invoice Status'); ?></dt>
         <dd>
             <?php echo h($option['CustomerInvoiceStatus']['cus_inv_status_name']); ?>

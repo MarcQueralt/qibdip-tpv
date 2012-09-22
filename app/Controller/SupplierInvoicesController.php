@@ -4,8 +4,23 @@ App::uses('AppController', 'Controller');
  * SupplierInvoices Controller
  *
  * @property SupplierInvoice $SupplierInvoice
+ * @property Mpdf.MpdfComponent $Mpdf.Mpdf
  */
 class SupplierInvoicesController extends AppController {
+
+/**
+ * Helpers
+ *
+ * @var array
+ */
+	public $helpers = array('Number');
+
+/**
+ * Components
+ *
+ * @var array
+ */
+	public $components = array('Mpdf.Mpdf');
 
 /**
  * index method

@@ -14,7 +14,23 @@ class CustomerInvoicesControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.customer_invoice',
-		'app.customer_invoice_customer'
+		'app.customer',
+		'app.town',
+		'app.supplier',
+		'app.supplier_invoice',
+		'app.supplier_invoice_status',
+		'app.article',
+		'app.supplier_slip',
+		'app.raw_material',
+		'app.raw_material_type',
+		'app.stock',
+		'app.customer_invoice_line',
+		'app.customer_order',
+		'app.order_status',
+		'app.customer_order_line',
+		'app.customer_payment',
+		'app.consumption',
+		'app.serie'
 	);
 
 }

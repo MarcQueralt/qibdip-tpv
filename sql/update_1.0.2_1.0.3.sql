@@ -62,3 +62,28 @@ create view raw_materials as select
     supplier_invoice_id
     from stocks
     where stock_type='M';
+ALTER TABLE  `options` ADD  `order_invoiced_status_id` INT( 10 ) NULL;
+drop table if exists series;
+create table invoice_groups (
+    id int(10) unsigned auto_increment primary key,
+    code varchar(5) not null,
+    description varchar(255) not null,
+    active boolean not null default true,
+    created datetime default null,
+    modified datetime default null
+);
+ALTER TABLE invoice_groups ENGINE = INNODB;
+drop table if exists customer_invoices;
+create table customer_invoices (
+    id int(10) unsigned auto_increment primary key,
+    customer_id int(10) not null,
+    customer_invoice_date date not null,
+    invoice_group_id int(10) not null,
+    customer_invoice_number int(10) not null,
+    customer_invoice_status_id int(10) not null,
+    customer_invoice_comments varchar(255),
+    created datetime default null,
+    modified datetime default null,
+    foreign key (customer_id) references customers(id),
+    foreign key (invoice_group_id) references invoice_groups(id)
+);

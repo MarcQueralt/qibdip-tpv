@@ -14,7 +14,23 @@ class CustomerPaymentTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.customer_payment',
-		'app.payment_order'
+		'app.customer',
+		'app.town',
+		'app.supplier',
+		'app.supplier_invoice',
+		'app.supplier_invoice_status',
+		'app.article',
+		'app.supplier_slip',
+		'app.raw_material',
+		'app.raw_material_type',
+		'app.stock',
+		'app.customer_invoice_line',
+		'app.customer_invoice',
+		'app.serie',
+		'app.customer_order_line',
+		'app.customer_order',
+		'app.order_status',
+		'app.consumption'
 	);
 
 /**
