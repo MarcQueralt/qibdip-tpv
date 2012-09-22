@@ -69,7 +69,8 @@ class CustomerOrderLinesController extends AppController {
         $customerOrders = $this->CustomerOrderLine->CustomerOrder->find('list');
         $stocks = $this->CustomerOrderLine->Stock->find('list');
         $customerInvoices = $this->CustomerOrderLine->CustomerInvoice->find('list');
-        $this->set(compact('customerOrders', 'stocks', 'customerInvoices'));
+        $serviceTypes = $this->CustomerOrderLine->ServiceType->find('list');
+        $this->set(compact('customerOrders', 'stocks', 'customerInvoices','serviceTypes'));
     }
 
     public function addService() {
@@ -97,7 +98,8 @@ class CustomerOrderLinesController extends AppController {
         $this->request->data['CustomerOrderLine']['order_line_number'] = $this->CustomerOrderLine->CustomerOrder->data['CustomerOrder']['next_line'];
         $this->request->data['CustomerOrderLine']['expected_vat'] = $this->CustomerOrderLine->CustomerOrder->data['CustomerOrder']['expected_vat'];
         $customerOrders = $this->CustomerOrderLine->CustomerOrder->find('list');
-        $this->set(compact('customerOrders'));
+        $serviceTypes = $this->CustomerOrderLine->ServiceType->find('list');
+        $this->set(compact('customerOrders', 'serviceTypes'));
     }
 
     public function addSale() {
@@ -161,7 +163,8 @@ class CustomerOrderLinesController extends AppController {
         $orderStatuses = $this->CustomerOrderLine->OrderStatus->find('list');
         $stocks = $this->CustomerOrderLine->Stock->find('list');
         $customerInvoices = $this->CustomerOrderLine->CustomerInvoice->find('list');
-        $this->set(compact('customerOrders', 'orderStatuses', 'stocks', 'customerInvoices'));
+        $serviceTypes = $this->CustomerOrderLine->ServiceType->find('list');
+        $this->set(compact('customerOrders', 'orderStatuses', 'stocks', 'customerInvoices','serviceTypes'));
     }
 
     public function editService($id = null) {
@@ -185,7 +188,8 @@ class CustomerOrderLinesController extends AppController {
         $this->request->data['CustomerOrderLine']['order_line_amount']=$this->request->data['CustomerOrderLine']['order_line_amount']+$this->request->data['CustomerOrderLine']['order_line_vat'];
         $customerOrders = $this->CustomerOrderLine->CustomerOrder->find('list');
         $stocks = $this->CustomerOrderLine->Stock->find('list');
-        $this->set(compact('customerOrders'));
+        $serviceTypes = $this->CustomerOrderLine->ServiceType->find('list');
+        $this->set(compact('customerOrders','serviceTypes'));
     }
 
     public function editSale($id = null) {

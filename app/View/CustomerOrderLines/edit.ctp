@@ -6,6 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('customer_order_id');
 		echo $this->Form->input('order_line_number');
+                echo $this->Form->input('service_type_id',array('empty'=>'---'));
 		echo $this->Form->input('order_status_id');
 		echo $this->Form->input('order_line_type');
 		echo $this->Form->input('stock_id');

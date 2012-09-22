@@ -45,11 +45,20 @@ class ArticlesController extends AppController {
             $this->Article->create();
             if ($this->Article->save($this->request->data)) {
                 $this->Session->setFlash(__('The article has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'add', $this->request->data['Article']['supplier_slip_id']));
             } else {
                 $this->Session->setFlash(__('The article could not be saved. Please, try again.'));
             }
         }
+        if (isset($this->request->params['pass'][0])):
+            $this->Article->SupplierSlip->id = $this->request->params['pass'][0];
+            if (!$this->Article->SupplierSlip->exists()) {
+                throw new NotFoundException(__('Invalid supplier slip'));
+            }
+            $this->request->data['Article']['supplier_slip_id'] = $this->request->params['pass'][0];
+            $l = $this->Article->SupplierSlip->read();
+            $this->request->data['Article']['supplier_slip_line'] = $l['SupplierSlip']['next_line'];
+        endif;
         $this->loadModel('Option');
         $option = $this->Option->read(null, 1);
         $this->request->data['Article']['expected_vat'] = $option['Option']['vat'];

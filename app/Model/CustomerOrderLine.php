@@ -85,7 +85,14 @@ class CustomerOrderLine extends AppModel {
             'conditions' => '',
             'fields' => '',
             'order' => ''
-        )
+        ),
+        'ServiceType' => array(
+            'className' => 'ServiceType',
+            'foreignKey' => 'service_type_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        ),
     );
 
 }

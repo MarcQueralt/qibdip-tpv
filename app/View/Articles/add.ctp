@@ -34,11 +34,8 @@ echo $this->Html->script('articles', FALSE);
     <ul>
 
         <li><?php echo $this->Html->link(__('List Articles'), array('action' => 'index')); ?></li>
-        <li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Supplier Slip'), array('controller' => 'supplier_slips', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Consumptions'), array('controller' => 'consumptions', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Consumption'), array('controller' => 'consumptions', 'action' => 'add')); ?> </li>
+        <?php if(isset($this->data['Article']['supplier_slip_id'])):?>
+        <li><?php echo $this->Html->link(__('Back to Supplier Slip'), array('action' => 'view','controller'=>'SupplierSlips',$this->data['Article']['supplier_slip_id'])); ?></li>
+        <?php endif;?>
     </ul>
 </div>

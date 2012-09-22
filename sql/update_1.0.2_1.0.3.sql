@@ -30,3 +30,35 @@ ALTER TABLE  `customer_orders` CHANGE  `order_comments`  `order_comments` TEXT C
 ALTER TABLE  `customer_payments` CHANGE  `payment_comments`  `payment_comments` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
 ALTER TABLE  `customer_invoices` CHANGE  `customer_invoice_comments`  `customer_invoice_comments` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
 ALTER TABLE  `stocks` CHANGE  `stock_comment`  `stock_comment` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+drop table if exists service_types;
+create table service_types(
+    id int(10) unsigned auto_increment primary key,
+    description varchar(50) not null
+);
+ALTER TABLE  `customer_order_lines` ADD  `service_type_id` INT( 10 ) NULL;
+Alter table customer_order_lines add foreign key (service_type_id) references service_types (id);
+ALTER TABLE  `options` ADD PRIMARY KEY (  `id` ) ;
+ALTER TABLE  `options` ADD  `order_status_id` INT( 10 ) NULL ,
+ADD  `customer_invoice_status_id` INT( 10 ) NULL ,
+ADD  `supplier_invoice_status_id` INT( 10 ) NULL;
+drop view if exists raw_materials;
+create view raw_materials as select 
+    id,
+    stock_type,
+    raw_material_type_id,
+    raw_mat_units,
+    raw_mat_userfield01, /* casc */
+    stock_comment,
+    stock_userfield01,
+    stock_userfield02,
+    stock_userfield03,
+    stock_buy_price,
+    stock_vat,
+    stock_vat_re,
+    created,
+    modified,
+    supplier_slip_id,
+    supplier_slip_line,
+    supplier_invoice_id
+    from stocks
+    where stock_type='M';

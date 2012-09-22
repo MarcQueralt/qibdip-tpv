@@ -5,6 +5,7 @@ App::uses('AppModel', 'Model');
  *
  */
 class CustomerInvoiceStatus extends AppModel {
+    public $displayField = 'cus_inv_status_name';
 
 /**
  * Use table

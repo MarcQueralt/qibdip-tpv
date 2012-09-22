@@ -6,6 +6,7 @@
         echo $this->Form->hidden('customer_order_id');
         echo $this->Form->hidden('order_line_number');
         echo $this->Form->hidden('expected_vat');
+        echo $this->Form->input('service_type_id', array('required' => 'required','empty'=>'---'));
         echo $this->Form->input('order_line_description', array('required' => 'required'));
         echo $this->Form->input('order_line_left_article_description');
         echo $this->Form->input('order_line_due_date', array('dateFormat' => 'DMY'));

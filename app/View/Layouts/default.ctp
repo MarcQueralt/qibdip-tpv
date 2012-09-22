@@ -55,16 +55,16 @@ endif;
                         <?php echo $this->Html->link(__('Sales'), ''); ?>
                         <ul>
                             <li>
-                                <?php echo $this->Html->link(__('Customers'), array('controller' => 'customers', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Customers'), array('controller' => 'customers', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Orders'), array('controller' => 'customerOrders', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Orders'), array('controller' => 'customerOrders', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Invoices'), array('controller' => 'customerInvoices', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Invoices'), array('controller' => 'customerInvoices', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Payments'), array('controller' => 'customerPayments', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Payments'), array('controller' => 'customerPayments', 'action' => 'index')); ?>
                             </li>
                         </ul>
                     </li>
@@ -72,13 +72,13 @@ endif;
                         <?php echo $this->Html->link(__('Purchases'), ''); ?>
                         <ul>
                             <li>
-                                <?php echo $this->Html->link(__('Suppliers'), array('controller' => 'suppliers', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Suppliers'), array('controller' => 'suppliers', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Supplier Slips'), array('controller' => 'supplierSlips', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Supplier Slips'), array('controller' => 'supplierSlips', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Supplier Invoices'), array('controller' => 'supplierInvoices', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Supplier Invoices'), array('controller' => 'supplierInvoices', 'action' => 'index')); ?>
                             </li>
                         </ul>
                     </li>
@@ -86,13 +86,13 @@ endif;
                         <?php echo $this->Html->link(__('Stocks'), ''); ?>
                         <ul>
                             <li>
-                                <?php echo $this->Html->link(__('Articles'), array('controller' => 'articles', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Articles'), array('controller' => 'articles', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Raw materials'), array('controller' => 'rawMaterials', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Raw materials'), array('controller' => 'rawMaterials', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Consumptions'), array('controller' => 'consumptions', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Consumptions'), array('controller' => 'consumptions', 'action' => 'index')); ?>
                             </li>
                         </ul>
                     </li>
@@ -104,25 +104,29 @@ endif;
                         <?php echo $this->Html->link(__('Administration'), ''); ?>
                         <ul>
                             <li>
-                                <?php echo $this->Html->link(__('Users'), array('controller' => 'users', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Users'), array('controller' => 'users', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Invoice Series'), array('controller' => 'series', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Invoice Series'), array('controller' => 'series', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialTypes', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Service Types'), array('controller' => 'serviceTypes', 'action' => 'index')); ?>
+                            </li>
+
+                            <li>
+                                <?php echo $this->Html->link(__('Raw Material Types'), array('controller' => 'rawMaterialTypes', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'OrderStatuses', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Customer Order Status'), array('controller' => 'OrderStatuses', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Customer Invoice Status'), array('controller' => 'customerInvoiceStatuses', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Customer Invoice Status'), array('controller' => 'customerInvoiceStatuses', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Supplier Invoice Status'), array('controller' => 'supplierInvoiceStatuses', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Supplier Invoice Status'), array('controller' => 'supplierInvoiceStatuses', 'action' => 'index')); ?>
                             </li>
                             <li>
-                                <?php echo $this->Html->link(__('Options'), array('controller' => 'options', 'action'=>'index')); ?>
+                                <?php echo $this->Html->link(__('Options'), array('controller' => 'options', 'action' => 'index')); ?>
                             </li>
                         </ul>
                     </li>

@@ -23,7 +23,6 @@ echo $this->Html->script('rawMaterials', FALSE);
         $this->Js->event('change', 'rawMaterialBuyPriceChanged(event)');
         echo $this->Form->input('stock_vat');
         echo $this->Form->input('stock_vat_re');
-        echo $this->Form->input('stock_sale_price');
         echo $this->Form->input('supplier_slip_id', array('empty' => '---'));
         echo $this->Form->input('supplier_slip_line');
         echo $this->Form->input('supplier_invoice_id', array('empty' => '---'));

@@ -5,6 +5,7 @@
         <?php
         echo $this->Form->input('id');
         echo $this->Form->input('customer_order_id');
+        echo $this->Form->input('service_type_id', array('required' => 'required','empty'=>'---'));
         echo $this->Form->input('order_line_number');
         echo $this->Form->hidden('expected_vat');
         echo $this->Form->input('order_line_description', array('required' => 'required'));

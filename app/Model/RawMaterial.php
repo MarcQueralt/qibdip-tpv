@@ -15,6 +15,7 @@ class RawMaterial extends AppModel {
     public $virtualFields = array(
         'expected_vat' => 'SELECT vat FROM options WHERE options.id=1',
         'expected_vat_re' => 'SELECT vat_re FROM options WHERE options.id=1',
+        'raw_mat_unit_price' => 'RawMaterial.stock_buy_price/RawMaterial.raw_mat_units',
     );
 
     /**
@@ -33,6 +34,26 @@ class RawMaterial extends AppModel {
             //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
         ),
+        'stock_buy_price' => array(
+            'numeric' => array(
+                'rule' => array('numeric'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'stock_vat' => array(
+            'numeric' => array(
+                'rule' => array('numeric'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
         'raw_material_type_id' => array(
             'numeric' => array(
                 'rule' => array('numeric'),
@@ -44,42 +65,15 @@ class RawMaterial extends AppModel {
             ),
         ),
         'raw_mat_units' => array(
-//            'notempty' => array(
-//                'rule' => array('notempty'),
-//            //'message' => 'Your custom message here',
-//            //'allowEmpty' => false,
-//            //'required' => false,
-//            //'last' => false, // Stop validation after this rule
-//            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-//            ),
             'numeric' => array(
                 'rule' => array('numeric'),
-            //'message' => 'Your custom message here',
-            //'allowEmpty' => false,
-            //'required' => false,
-            //'last' => false, // Stop validation after this rule
-            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+//            //'message' => 'Your custom message here',
+//            //'allowEmpty' => false,
+//            //'required' => false,
+//            //'last' => false, // Stop validation after this rule
+//            //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
-        ), //        'supplier_slip_id' => array(
-//            'numeric' => array(
-//                'rule' => array('numeric'),
-//            //'message' => 'Your custom message here',
-//            //'allowEmpty' => false,
-//            //'required' => false,
-//            //'last' => false, // Stop validation after this rule
-//            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-//            ),
-//        ),
-//        'supplier_slip_line' => array(
-//            'numeric' => array(
-//                'rule' => array('numeric'),
-//            //'message' => 'Your custom message here',
-//            //'allowEmpty' => false,
-//            //'required' => false,
-//            //'last' => false, // Stop validation after this rule
-//            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-//            ),
-//        ),
+        ),
     );
 
     //The Associations below have been created with all possible keys, those that are not needed can be removed

@@ -44,11 +44,20 @@ class RawMaterialsController extends AppController {
             $this->RawMaterial->create();
             if ($this->RawMaterial->save($this->request->data)) {
                 $this->Session->setFlash(__('The raw material has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'add', $this->request->data['RawMaterial']['supplier_slip_id']));
             } else {
                 $this->Session->setFlash(__('The raw material could not be saved. Please, try again.'));
             }
         }
+        if (isset($this->request->params['pass'][0])):
+            $this->RawMaterial->SupplierSlip->id = $this->request->params['pass'][0];
+            if (!$this->RawMaterial->SupplierSlip->exists()) {
+                throw new NotFoundException(__('Invalid supplier slip'));
+            }
+            $this->request->data['RawMaterial']['supplier_slip_id'] = $this->request->params['pass'][0];
+            $l=$this->RawMaterial->SupplierSlip->read();
+            $this->request->data['RawMaterial']['supplier_slip_line']=$l['SupplierSlip']['next_line'];
+        endif;
         $this->loadModel('Option');
         $option = $this->Option->read(null, 1);
         $this->request->data['RawMaterial']['expected_vat'] = $option['Option']['vat'];

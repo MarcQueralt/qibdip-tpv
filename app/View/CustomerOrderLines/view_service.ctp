@@ -21,6 +21,11 @@
             <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_type']); ?>
             &nbsp;
         </dd>
+        <dt><?php echo __('Service Type'); ?></dt>
+        <dd>
+            <?php echo h($customerOrderLine['ServiceType']['description']); ?>
+            &nbsp;
+        </dd>
         <dt><?php echo __('Order Line Description'); ?></dt>
         <dd>
             <?php echo nl2br($customerOrderLine['CustomerOrderLine']['order_line_description']); ?>
@@ -53,7 +58,7 @@
         </dd>
         <dt><?php echo __('Order Line Comments'); ?></dt>
         <dd>
-            <?php echo h($customerOrderLine['CustomerOrderLine']['order_line_comments']); ?>
+            <?php echo nl2br($customerOrderLine['CustomerOrderLine']['order_line_comments']); ?>
             &nbsp;
         </dd>
         <dt><?php echo __('Customer Invoice'); ?></dt>

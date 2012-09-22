@@ -76,6 +76,10 @@ class OptionsController extends AppController {
         } else {
             $this->request->data = $this->Option->read(null, $id);
         }
+        $OrderStatuses=$this->Option->OrderStatus->find('list');
+        $CustomerInvoiceStatuses=  $this->Option->CustomerInvoiceStatus->find('list');
+        $SupplierInvoiceStatuses=$this->Option->SupplierInvoiceStatus->find('list');
+        $this->set(compact('OrderStatuses','CustomerInvoiceStatuses','SupplierInvoiceStatuses'));
     }
 
     /**

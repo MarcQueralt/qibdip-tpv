@@ -10,7 +10,7 @@ echo $this->Html->script('rawMaterials', FALSE);
         echo $this->Form->hidden('stock_type');
         echo $this->Form->hidden('expected_vat');
         echo $this->Form->hidden('expected_vat_re');
-        echo $this->Form->input('raw_material_type_id',array('empty'=>'---'));
+        echo $this->Form->input('raw_material_type_id', array('empty' => '---'));
         echo $this->Form->input('raw_mat_units');
         echo $this->Form->input('raw_mat_userfield01', array('label' => qibdipTPV_raw_uf01()));
         echo $this->Form->input('stock_comment');
@@ -22,10 +22,9 @@ echo $this->Html->script('rawMaterials', FALSE);
         $this->Js->event('change', 'rawMaterialBuyPriceChanged(event)');
         echo $this->Form->input('stock_vat');
         echo $this->Form->input('stock_vat_re');
-        echo $this->Form->input('stock_sale_price');
-        echo $this->Form->input('supplier_slip_id',array('empty'=>'---'));
+        echo $this->Form->input('supplier_slip_id', array('empty' => '---'));
         echo $this->Form->input('supplier_slip_line');
-        echo $this->Form->input('supplier_invoice_id',array('empty'=>'---'));
+        echo $this->Form->input('supplier_invoice_id', array('empty' => '---'));
         ?>
     </fieldset>
     <?php echo $this->Form->end(__('Submit')); ?>
@@ -37,11 +36,9 @@ echo $this->Html->script('rawMaterials', FALSE);
         <li><?php echo $this->Html->link(__('List Raw Materials'), array('action' => 'index')); ?></li>
         <li><?php echo $this->Html->link(__('List Raw Material Types'), array('controller' => 'raw_material_types', 'action' => 'index')); ?> </li>
         <li><?php echo $this->Html->link(__('New Raw Material Type'), array('controller' => 'raw_material_types', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Supplier Slips'), array('controller' => 'supplier_slips', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Supplier Slip'), array('controller' => 'supplier_slips', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Supplier Invoices'), array('controller' => 'supplier_invoices', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Supplier Invoice'), array('controller' => 'supplier_invoices', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Consumptions'), array('controller' => 'consumptions', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Consumption'), array('controller' => 'consumptions', 'action' => 'add')); ?> </li>
+        <?php if (isset($this->data['RawMaterial']['supplier_slip_id'])): ?>
+            <li><?php echo $this->Html->link(__('Back to Supplier Slip'), array('action' => 'view', 'controller' => 'SupplierSlips', $this->data['RawMaterial']['supplier_slip_id'])); ?></li>
+        <?php endif; ?>
+
     </ul>
 </div>
