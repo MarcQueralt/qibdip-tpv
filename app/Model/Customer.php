@@ -62,7 +62,7 @@ class Customer extends AppModel {
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
-			'order' => '',
+			'order' => 'id desc',
 			'limit' => '',
 			'offset' => '',
 			'exclusive' => '',

@@ -74,7 +74,7 @@ class CustomerOrdersController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->CustomerOrder->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer order has been saved'));
-                $this->redirect(array('action' => 'view',$this->CustomerOrder->id));
+                $this->redirect(array('action' => 'view', $this->CustomerOrder->id));
             } else {
                 $this->Session->setFlash(__('The customer order could not be saved. Please, try again.'));
             }
@@ -102,12 +102,14 @@ class CustomerOrdersController extends AppController {
         if (!$this->CustomerOrder->exists()) {
             throw new NotFoundException(__('Invalid customer order'));
         }
+        $old = $this->CustomerOrder->read(null, $id);
+        $desti = $old['CustomerOrder']['customer_id'];
         if ($this->CustomerOrder->delete()) {
             $this->Session->setFlash(__('Customer order deleted'));
-            $this->redirect(array('action' => 'index'));
+            $this->redirect(array('action' => 'view', 'controller' => 'customers', $desti));
         }
         $this->Session->setFlash(__('Customer order was not deleted'));
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'view', 'controller' => 'customers', $desti));
     }
 
     public function printer($id = null) {

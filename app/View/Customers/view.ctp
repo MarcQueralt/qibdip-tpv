@@ -74,7 +74,55 @@ $this->Number->addFormat('QBD', array(
         <li><?php echo $this->Form->postLink(__('Delete Customer'), array('action' => 'delete', $customer['Customer']['id']), null, __('Are you sure you want to delete # %s?', $customer['Customer']['id'])); ?> </li>
         <li><?php echo $this->Html->link(__('List Customers'), array('action' => 'index')); ?> </li>
         <li><?php echo $this->Html->link(__('New Customer'), array('action' => 'add')); ?> </li>
+        <li><?php echo $this->Html->link(__('New Sale'), array('action' => 'quickSale', $customer['Customer']['id'])); ?> </li>
+        <li><?php echo $this->Html->link(__('New Service'), array('action' => 'quickService', $customer['Customer']['id'])); ?> </li>
     </ul>
+</div>
+<div class="related">
+    <h3><?php echo __('Related Customer Orders'); ?></h3>
+    <?php if (!empty($customer['CustomerOrder'])): ?>
+        <table cellpadding = "0" cellspacing = "0">
+            <tr>
+                <th><?php echo __('Id'); ?></th>
+                <th><?php echo __('Order Status'); ?></th>
+                <th><?php echo __('Order Date'); ?></th>
+                <th><?php echo __('Total Amount'); ?></th>
+                <th><?php echo __('Due Amount'); ?></th>
+                <th><?php echo __('Left Articles'); ?></th>
+                <th><?php echo __('Lines'); ?></th>
+                <th><?php echo __('Order Comments'); ?></th>
+                <th class="actions"><?php echo __('Actions'); ?></th>
+            </tr>
+            <?php
+            $i = 0;
+            foreach ($customer['CustomerOrder'] as $customerOrder):
+                ?>
+                <tr>
+                    <td></pre><?php echo $customerOrder['id']; ?></td>
+                    <td><?php echo $customerOrder['OrderStatus']['order_status_name']; ?></td>
+                    <td><?php echo $customerOrder['order_date']; ?></td>
+                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount'], 'QBD'); ?></td>
+                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['due_amount'], 'QBD'); ?></td>
+                    <td style="text-align: right;"><?php echo $customerOrder['count_left_articles']; ?></td>
+                    <td style="text-align: right;"><?php echo $customerOrder['count_lines']; ?></td>
+                    <td><?php echo $customerOrder['order_comments']; ?></td>
+                    <td class="actions">
+                        <?php echo $this->Html->link(__('View'), array('controller' => 'customer_orders', 'action' => 'view', $customerOrder['id'])); ?>
+                        <?php echo $this->Html->link(__('Print'), array('controller' => 'customer_orders', 'action' => 'printer', $customerOrder['id'])); ?>
+                        <?php echo $this->Html->link(__('Invoice'), array('controller' => 'customer_invoices', 'action' => 'invoice', $customerOrder['id'])); ?>
+                        <?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_orders', 'action' => 'edit', $customerOrder['id'])); ?>
+                        <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_orders', 'action' => 'delete', $customerOrder['id']), null, __('Are you sure you want to delete # %s?', $customerOrder['id'])); ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+
+    <div class="actions">
+        <ul>
+            <li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add', $customer['Customer']['id'])); ?> </li>
+        </ul>
+    </div>
 </div>
 <div class="related">
     <h3><?php echo __('Related Customer Invoices'); ?></h3>
@@ -115,52 +163,6 @@ $this->Number->addFormat('QBD', array(
     <div class="actions">
         <ul>
             <li><?php echo $this->Html->link(__('New Customer Invoice'), array('controller' => 'customer_invoices', 'action' => 'add', $customer['Customer']['id'])); ?> </li>
-        </ul>
-    </div>
-</div>
-<div class="related">
-    <h3><?php echo __('Related Customer Orders'); ?></h3>
-    <?php if (!empty($customer['CustomerOrder'])): ?>
-        <table cellpadding = "0" cellspacing = "0">
-            <tr>
-                <th><?php echo __('Id'); ?></th>
-                <th><?php echo __('Order Status'); ?></th>
-                <th><?php echo __('Order Date'); ?></th>
-                <th><?php echo __('Total Amount'); ?></th>
-                <th><?php echo __('Due Amount'); ?></th>
-                <th><?php echo __('Left Articles'); ?></th>
-                <th><?php echo __('Lines'); ?></th>
-                <th><?php echo __('Order Comments'); ?></th>
-                <th class="actions"><?php echo __('Actions'); ?></th>
-            </tr>
-            <?php
-            $i = 0;
-            foreach ($customer['CustomerOrder'] as $customerOrder):
-                ?>
-                <tr>
-                    <td></pre><?php echo $customerOrder['id']; ?></td>
-                    <td><?php echo $customerOrder['OrderStatus']['order_status_name']; ?></td>
-                    <td><?php echo $customerOrder['order_date']; ?></td>
-                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['total_amount'], 'QBD'); ?></td>
-                    <td style="text-align: right;"><?php echo $this->Number->currency($customerOrder['due_amount'], 'QBD'); ?></td>
-                    <td style="text-align: right;"><?php echo $customerOrder['count_left_articles']; ?></td>
-                    <td style="text-align: right;"><?php echo $customerOrder['count_lines']; ?></td>
-                    <td><?php echo $customerOrder['order_comments']; ?></td>
-                    <td class="actions">
-                        <?php echo $this->Html->link(__('View'), array('controller' => 'customer_orders', 'action' => 'view', $customerOrder['id'])); ?>
-                        <?php echo $this->Html->link(__('Print'), array('controller' => 'customer_orders', 'action' => 'printer', $customerInvoice['id'])); ?>
-                        <?php echo $this->Html->link(__('Invoice'), array('controller' => 'customer_invoices', 'action' => 'invoice', $customerOrder['id'])); ?>
-                        <?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_orders', 'action' => 'edit', $customerOrder['id'])); ?>
-                        <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_orders', 'action' => 'delete', $customerOrder['id']), null, __('Are you sure you want to delete # %s?', $customerOrder['id'])); ?>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-
-    <div class="actions">
-        <ul>
-            <li><?php echo $this->Html->link(__('New Customer Order'), array('controller' => 'customer_orders', 'action' => 'add', $customer['Customer']['id'])); ?> </li>
         </ul>
     </div>
 </div>

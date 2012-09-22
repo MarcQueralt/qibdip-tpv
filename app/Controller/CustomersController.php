@@ -71,7 +71,7 @@ class CustomersController extends AppController {
             $this->Customer->create();
             if ($this->Customer->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer has been saved'));
-                $this->redirect(array('action' => 'view',$this->Customer->id));
+                $this->redirect(array('action' => 'view', $this->Customer->id));
             } else {
                 $this->Session->setFlash(__('The customer could not be saved. Please, try again.'));
             }
@@ -124,6 +124,50 @@ class CustomersController extends AppController {
         }
         $this->Session->setFlash(__('Customer was not deleted'));
         $this->redirect(array('action' => 'index'));
+    }
+
+    public function quickSale($id = null) {
+        $this->Customer->id = $id;
+        if (!$this->Customer->exists()) {
+            throw new NotFoundException(__('Invalid customer'));
+        }
+        $this->loadModel('Option');
+        $optionData = $this->Option->read(null, 1);
+        $this->loadModel('CustomerOrder');
+        $customerOrderData = array();
+        $customerOrderData['customer_id'] = $this->Customer->id;
+        $customerOrderData['order_status_id'] = $optionData['Option']['order_status_id'];
+        $customerOrderData['order_date'] = date('Y-m-d');
+        $this->CustomerOrder->create();
+        if ($this->CustomerOrder->save($customerOrderData)) {
+            $this->Session->setFlash(__('The customer order has been created'));
+            $this->redirect(array('controller' => 'CustomerOrderLines', 'action' => 'addSale', $this->CustomerOrder->id));
+        } else {
+            $this->Session->setFlash(__('The customer order could not be created. Please, try again.'));
+            $this->redirect(array('action' => 'view', $this->Customer->id));
+        }
+    }
+
+    public function quickService($id = null) {
+        $this->Customer->id = $id;
+        if (!$this->Customer->exists()) {
+            throw new NotFoundException(__('Invalid customer'));
+        }
+        $this->loadModel('Option');
+        $optionData = $this->Option->read(null, 1);
+        $this->loadModel('CustomerOrder');
+        $customerOrderData = array();
+        $customerOrderData['customer_id'] = $this->Customer->id;
+        $customerOrderData['order_status_id'] = $optionData['Option']['order_status_id'];
+        $customerOrderData['order_date'] = date('Y-m-d');
+        $this->CustomerOrder->create();
+        if ($this->CustomerOrder->save($customerOrderData)) {
+            $this->Session->setFlash(__('The customer order has been created'));
+            $this->redirect(array('controller' => 'CustomerOrderLines', 'action' => 'addService', $this->CustomerOrder->id));
+        } else {
+            $this->Session->setFlash(__('The customer order could not be created. Please, try again.'));
+            $this->redirect(array('action' => 'view', $this->Customer->id));
+        }
     }
 
 }
