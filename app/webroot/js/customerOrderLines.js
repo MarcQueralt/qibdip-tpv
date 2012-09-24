@@ -2,10 +2,10 @@ function stockIdChanged(event) {
     var id=$('#CustomerOrderLineStockId').val();
     var llistaPreus=$('#CustomerOrderLinePrice');
     llistaPreus.val(id);
-    var preu=$('#CustomerOrderLinePrice option:selected').html();
+    var preu=Math.round($('#CustomerOrderLinePrice option:selected').html()*100)/100;
     var vatrate=$('#CustomerOrderLineExpectedVat').val();
     var vat=Math.round(preu*vatrate*100)/100;
-    var total=1*preu+vat;
+    var total=Math.round((1*preu+vat)*100)/100;
     $('#CustomerOrderLineOrderLineAmount').val(preu);
     $('#CustomerOrderLineOrderLineVat').val(vat);
     $('#CustomerOrderLineOrderLineTotal').val(total);
@@ -13,9 +13,29 @@ function stockIdChanged(event) {
 
 function lineTotalChanged(event) {
     var vatrate=$('#CustomerOrderLineExpectedVat').val();
-    var total=$('#CustomerOrderLineOrderLineTotal').val();
-    var preu=total/(1+1*vatrate);
-    var vat=total-preu;
+    var total=Math.round($('#CustomerOrderLineOrderLineTotal').val()*100)/100;
+    var preu=Math.round(total/(1+1*vatrate)*100)/100;
+    var vat=Math.round((total-preu)*100)/100;
     $('#CustomerOrderLineOrderLineAmount').val(preu);
     $('#CustomerOrderLineOrderLineVat').val(vat);
+    $('#CustomerOrderLineOrderLineTotal').val(total);
+}
+
+function lineVatChanged(event) {
+    var preu=Math.round($('#CustomerOrderLineOrderLineAmount').val()*100)/100;
+    var vat=Math.round($('#CustomerOrderLineOrderLineVat').val()*100)/100;
+    var total=Math.round((preu+vat)*100)/100;
+    $('#CustomerOrderLineOrderLineAmount').val(preu);
+    $('#CustomerOrderLineOrderLineVat').val(vat);
+    $('#CustomerOrderLineOrderLineTotal').val(total);
+}
+
+function lineAmountChanged(event) {
+    var vatrate=$('#CustomerOrderLineExpectedVat').val();
+    var preu=Math.round($('#CustomerOrderLineOrderLineAmount').val()*100)/100;
+    var vat=Math.round(vatrate*preu*100)/100;
+    var total=Math.round((preu+vat)*100)/100;
+    $('#CustomerOrderLineOrderLineAmount').val(preu);
+    $('#CustomerOrderLineOrderLineVat').val(vat);
+    $('#CustomerOrderLineOrderLineTotal').val(total);
 }

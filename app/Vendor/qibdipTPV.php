@@ -38,4 +38,23 @@ function qibdipTPV_cost03(){
 function qibdipTPV_cost04(){
     return Configure::read('Consumption-Cost-04');
 }
+function qibdipTPV_document_header(){
+    $logo=Router::url('/', true).'img/'.Configure::read('Company-Logo-File');
+    $html='<table border="0">';
+    $html.='<tr>';
+    $html.='<td>';
+    $html.='<img src="'.$logo.'">';
+    $html.='</td>';
+    $html.='<td>';
+    $html.=Configure::read('Company').'<br/>';
+    $html.=Configure::read('Company-Address');
+    $html.=(''==trim(Configure::read('Company-Address2')))?'':  '<br/>'.Configure::read('Company-Address2');
+    $html.=(''==trim(Configure::read('Company-Phone')))?'':  '<br/>'.Configure::read('Company-Phone');
+    $html.=(''==trim(Configure::read('Company-Email')))?'':  '<br/>'.__('e-mail').': '.Configure::read('Company-Phone');
+    $html.=(''==trim(Configure::read('Company-Web')))?'':  '<br/>'.__('web').': '.Configure::read('Company-Phone');
+    $html.='</td>';
+    $html.='</tr>';
+    $html.='</table>';
+    return $html;
+}
 ?>

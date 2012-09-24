@@ -113,21 +113,13 @@ class CustomerOrdersController extends AppController {
     }
 
     public function printer($id = null) {
-        $this->layout = 'print_document';
         $this->CustomerOrder->id = $id;
         $this->set('customerOrder', $this->CustomerOrder->read(null, $id));
         if (!$this->CustomerOrder->exists()) {
             throw new NotFoundException(__('Invalid customer order'));
         }
-
-        // initializing mPDF
-        $this->Mpdf->init();
-
-        // setting filename of output pdf file
-        $this->Mpdf->setFilename(__('Order') . '-' . $id . '.pdf');
-
-        // setting output to I, D, F, S
-        $this->Mpdf->setOutput('D');
+        $this->layout = 'pdf';
+        $this->render();
     }
 
 }

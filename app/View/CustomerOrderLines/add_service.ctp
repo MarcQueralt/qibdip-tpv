@@ -1,3 +1,7 @@
+<?php
+echo $this->Html->script('jquery', FALSE);
+echo $this->Html->script('customerOrderLines', FALSE);
+?>
 <div class="customerOrderLines form">
     <?php echo $this->Form->create('CustomerOrderLine'); ?>
     <fieldset>
@@ -6,11 +10,19 @@
         echo $this->Form->hidden('customer_order_id');
         echo $this->Form->hidden('order_line_number');
         echo $this->Form->hidden('expected_vat');
-        echo $this->Form->input('service_type_id', array('required' => 'required','empty'=>'---'));
+        echo $this->Form->input('service_type_id', array('required' => 'required', 'empty' => '---'));
         echo $this->Form->input('order_line_description', array('required' => 'required'));
         echo $this->Form->input('order_line_left_article_description');
         echo $this->Form->input('order_line_due_date', array('dateFormat' => 'DMY'));
-        echo $this->Form->input('order_line_amount', array('label' => __('Total line amount (taxes included)'), 'required' => 'required'));
+        echo $this->Form->input('order_line_amount', array('required' => 'required'));
+        $this->Js->get('#CustomerOrderLineOrderLineAmount');
+        $this->Js->event('change', 'lineAmountChanged(event)');
+        echo $this->Form->input('order_line_vat', array('required' => 'required'));
+        $this->Js->get('#CustomerOrderLineOrderLineVat');
+        $this->Js->event('change', 'lineVatChanged(event)');
+        echo $this->Form->input('order_line_total', array('label' => __('Total'), 'required' => 'required'));
+        $this->Js->get('#CustomerOrderLineOrderLineTotal');
+        $this->Js->event('change', 'lineTotalChanged(event)');
         echo $this->Form->input('order_line_comments');
         ?>
     </fieldset>

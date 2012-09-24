@@ -76,9 +76,9 @@ class CustomerOrderLinesController extends AppController {
     public function addService() {
         if ($this->request->is('post')) {
             $this->CustomerOrderLine->create();
-            $total = $this->request->data['CustomerOrderLine']['order_line_amount'];
-            $this->request->data['CustomerOrderLine']['order_line_amount'] = round($total / (1 + $this->request->data['CustomerOrderLine']['expected_vat']), 2);
-            $this->request->data['CustomerOrderLine']['order_line_vat'] = $total - $this->request->data['CustomerOrderLine']['order_line_amount'];
+//            $total = $this->request->data['CustomerOrderLine']['order_line_amount'];
+//            $this->request->data['CustomerOrderLine']['order_line_amount'] = round($total / (1 + $this->request->data['CustomerOrderLine']['expected_vat']), 2);
+//            $this->request->data['CustomerOrderLine']['order_line_vat'] = $total - $this->request->data['CustomerOrderLine']['order_line_amount'];
             if ($this->CustomerOrderLine->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer order line has been saved'));
                 $this->redirect(array('action' => 'view', 'controller' => 'CustomerOrders', $this->request->data['CustomerOrderLine']['customer_order_id']));
@@ -173,9 +173,9 @@ class CustomerOrderLinesController extends AppController {
             throw new NotFoundException(__('Invalid customer order line'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
-            $total = $this->request->data['CustomerOrderLine']['order_line_amount'];
-            $this->request->data['CustomerOrderLine']['order_line_amount'] = round($total / (1 + $this->request->data['CustomerOrderLine']['expected_vat']), 2);
-            $this->request->data['CustomerOrderLine']['order_line_vat'] = $total - $this->request->data['CustomerOrderLine']['order_line_amount'];
+//            $total = $this->request->data['CustomerOrderLine']['order_line_amount'];
+//            $this->request->data['CustomerOrderLine']['order_line_amount'] = round($total / (1 + $this->request->data['CustomerOrderLine']['expected_vat']), 2);
+//            $this->request->data['CustomerOrderLine']['order_line_vat'] = $total - $this->request->data['CustomerOrderLine']['order_line_amount'];
             if ($this->CustomerOrderLine->save($this->request->data)) {
                 $this->Session->setFlash(__('The customer order line has been saved'));
                 $this->redirect(array('action' => 'view', 'controller' => 'CustomerOrders', $this->request->data['CustomerOrderLine']['customer_order_id']));
