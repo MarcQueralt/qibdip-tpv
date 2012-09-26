@@ -77,7 +77,7 @@ $this->Number->addFormat('QBD', array(
     <ul>
         <li><?php echo $this->Html->link(__('Edit Customer Order'), array('action' => 'edit', $customerOrder['CustomerOrder']['id'])); ?> </li>
         <li><?php echo $this->Html->link(__('Print Customer Order'), array('action' => 'printer', $customerOrder['CustomerOrder']['id'])); ?> </li>
-        <li><?php echo $this->Html->link(__('Invoice'), array('controller'=>'CustomerInvoices','action' => 'invoice', $customerOrder['CustomerOrder']['id'])); ?> </li>
+        <li><?php echo $this->Html->link(__('Generate Invoice'), array('controller'=>'CustomerInvoices','action' => 'invoice', $customerOrder['CustomerOrder']['id'])); ?> </li>
         <li><?php echo $this->Form->postLink(__('Delete Customer Order'), array('action' => 'delete', $customerOrder['CustomerOrder']['id']), null, __('Are you sure you want to delete # %s?', $customerOrder['CustomerOrder']['id'])); ?> </li>
         <li><?php echo $this->Html->link(__('New Customer Payment'), array('controller' => 'CustomerPayments', 'action' => 'add', $customerOrder['CustomerOrder']['id'])); ?> </li>
         <li><?php echo $this->Html->link(__('New Services Line'), array('controller' => 'CustomerOrderLines', 'action' => 'addService', $customerOrder['CustomerOrder']['id'])); ?> </li>

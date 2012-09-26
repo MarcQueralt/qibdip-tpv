@@ -22,7 +22,8 @@ class CustomerOrder extends AppModel {
         'count_lines' => '(SELECT count(*) FROM customer_order_lines WHERE customer_order_lines.customer_order_id = CustomerOrder.id)',
         'count_left_articles' => '(SELECT count(*) FROM customer_order_lines WHERE trim(order_line_left_article_description)<>"" AND customer_order_lines.customer_order_id = CustomerOrder.id)',
         'next_line' => 'SELECT COALESCE(MAX(customer_order_lines.order_line_number) DIV 10*10,0)+10 FROM customer_order_lines WHERE customer_order_lines.customer_order_id = CustomerOrder.id',
-        'expected_vat'=> 'SELECT vat FROM options WHERE options.id=1'
+        'expected_vat'=> 'SELECT vat FROM options WHERE options.id=1',
+        'lines_not_invoiced'=>'SELECT COUNT(*) FROM customer_order_lines WHERE customer_order_lines.customer_order_id = CustomerOrder.id and customer_order_lines.customer_invoice_id is null',
     );
 
     /**

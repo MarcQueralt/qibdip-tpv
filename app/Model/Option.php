@@ -69,6 +69,16 @@ class Option extends AppModel {
             //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
         ),
+        'customer_invoice_group_id' => array(
+            'numeric' => array(
+                'rule' => array('numeric'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
     );
     public $belongsTo = array(
         'OrderStatus' => array(
@@ -98,6 +108,13 @@ class Option extends AppModel {
             'conditions' => '',
             'fields' => '',
             'order' => ''
+        ),
+        'InvoiceGroup'=>array(
+            'className'=>'InvoiceGroup',
+            'foreignKey'=>'customer_invoice_group_id',
+            'conditions'=>'',
+            'fields'=>'',
+            'order'=>''
         ),
     );
 

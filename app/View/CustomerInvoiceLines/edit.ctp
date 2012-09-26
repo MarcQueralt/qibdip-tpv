@@ -9,7 +9,7 @@
 		echo $this->Form->input('customer_order_id');
 		echo $this->Form->input('order_line_number');
 		echo $this->Form->input('customer_invoice_line_type');
-		echo $this->Form->input('stock_id');
+		echo $this->Form->input('stock_id',array('empty'=>'---'));
 		echo $this->Form->input('customer_invoice_line_description');
 		echo $this->Form->input('customer_invoice_line_amount');
 		echo $this->Form->input('customer_invoice_line_vat');

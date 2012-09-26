@@ -1,0 +1,1 @@
+ALTER TABLE  `options` ADD  `customer_invoice_group_id` INT( 10 ) NULL;

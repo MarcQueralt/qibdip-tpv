@@ -15,6 +15,11 @@
             'empty' => '---',
             'options' => $this->viewVars['OrderStatuses']
         ));
+        echo $this->Form->input('customer_invoice_group_id', array(
+            'label' => 'Default Customer Invoice Group',
+            'empty' => '---',
+            'options' => $this->viewVars['InvoiceGroups']
+        ));
         echo $this->Form->input('customer_invoice_status_id', array(
             'label' => 'Default Customer Invoice Status',
             'empty' => '---',

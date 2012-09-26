@@ -1,7 +1,12 @@
 <div class="customerInvoices view">
 <h2><?php  echo __('Customer Invoice'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('Customer Invoice Number'); ?></dt>
+		<dd>
+			<?php echo h($customerInvoice['CustomerInvoice']['extended_number']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Id Intern'); ?></dt>
 		<dd>
 			<?php echo h($customerInvoice['CustomerInvoice']['id']); ?>
 			&nbsp;
@@ -14,16 +19,6 @@
 		<dt><?php echo __('Customer Invoice Date'); ?></dt>
 		<dd>
 			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_date']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Invoice Group'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($customerInvoice['InvoiceGroup']['code'], array('controller' => 'invoice_groups', 'action' => 'view', $customerInvoice['InvoiceGroup']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Customer Invoice Number'); ?></dt>
-		<dd>
-			<?php echo h($customerInvoice['CustomerInvoice']['customer_invoice_number']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Invoice Status'); ?></dt>
@@ -52,19 +47,8 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Customer Invoice'), array('action' => 'edit', $customerInvoice['CustomerInvoice']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Print Customer Invoice'), array('action' => 'printer', $customerInvoice['CustomerInvoice']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Customer Invoice'), array('action' => 'delete', $customerInvoice['CustomerInvoice']['id']), null, __('Are you sure you want to delete # %s?', $customerInvoice['CustomerInvoice']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Invoices'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Invoice'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Invoice Groups'), array('controller' => 'invoice_groups', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Invoice Group'), array('controller' => 'invoice_groups', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Invoice Statuses'), array('controller' => 'customer_invoice_statuses', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Invoice Status'), array('controller' => 'customer_invoice_statuses', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Invoice Lines'), array('controller' => 'customer_invoice_lines', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Customer Order Lines'), array('controller' => 'customer_order_lines', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -72,16 +56,12 @@
 	<?php if (!empty($customerInvoice['CustomerInvoiceLine'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Customer Invoice Id'); ?></th>
 		<th><?php echo __('Customer Invoice Line Number'); ?></th>
 		<th><?php echo __('Customer Order Id'); ?></th>
 		<th><?php echo __('Order Line Number'); ?></th>
 		<th><?php echo __('Customer Invoice Line Type'); ?></th>
 		<th><?php echo __('Stock Id'); ?></th>
 		<th><?php echo __('Customer Invoice Line Description'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
 		<th><?php echo __('Customer Invoice Line Amount'); ?></th>
 		<th><?php echo __('Customer Invoice Line Vat'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -90,16 +70,12 @@
 		$i = 0;
 		foreach ($customerInvoice['CustomerInvoiceLine'] as $customerInvoiceLine): ?>
 		<tr>
-			<td><?php echo $customerInvoiceLine['id']; ?></td>
-			<td><?php echo $customerInvoiceLine['customer_invoice_id']; ?></td>
 			<td><?php echo $customerInvoiceLine['customer_invoice_line_number']; ?></td>
 			<td><?php echo $customerInvoiceLine['customer_order_id']; ?></td>
 			<td><?php echo $customerInvoiceLine['order_line_number']; ?></td>
 			<td><?php echo $customerInvoiceLine['customer_invoice_line_type']; ?></td>
-			<td><?php echo $customerInvoiceLine['stock_id']; ?></td>
+			<td><?php echo isset($customerInvoiceLine['Stock']['article_name'])?$customerInvoiceLine['Stock']['article_name']:'&nbsp;';?></td>
 			<td><?php echo $customerInvoiceLine['customer_invoice_line_description']; ?></td>
-			<td><?php echo $customerInvoiceLine['created']; ?></td>
-			<td><?php echo $customerInvoiceLine['modified']; ?></td>
 			<td><?php echo $customerInvoiceLine['customer_invoice_line_amount']; ?></td>
 			<td><?php echo $customerInvoiceLine['customer_invoice_line_vat']; ?></td>
 			<td class="actions">
@@ -112,70 +88,4 @@
 	</table>
 <?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Customer Invoice Line'), array('controller' => 'customer_invoice_lines', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Customer Order Lines'); ?></h3>
-	<?php if (!empty($customerInvoice['CustomerOrderLine'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Customer Order Id'); ?></th>
-		<th><?php echo __('Order Line Number'); ?></th>
-		<th><?php echo __('Order Line Type'); ?></th>
-		<th><?php echo __('Stock Id'); ?></th>
-		<th><?php echo __('Order Line Description'); ?></th>
-		<th><?php echo __('Order Line Left Article Description'); ?></th>
-		<th><?php echo __('Order Line Due Date'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Customer Invoice Id'); ?></th>
-		<th><?php echo __('Customer Invoice Line Number'); ?></th>
-		<th><?php echo __('Order Line Amount'); ?></th>
-		<th><?php echo __('Order Line Vat'); ?></th>
-		<th><?php echo __('Order Line Comments'); ?></th>
-		<th><?php echo __('Order Line Ready'); ?></th>
-		<th><?php echo __('Service Type Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($customerInvoice['CustomerOrderLine'] as $customerOrderLine): ?>
-		<tr>
-			<td><?php echo $customerOrderLine['id']; ?></td>
-			<td><?php echo $customerOrderLine['customer_order_id']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_number']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_type']; ?></td>
-			<td><?php echo $customerOrderLine['stock_id']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_description']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_left_article_description']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_due_date']; ?></td>
-			<td><?php echo $customerOrderLine['created']; ?></td>
-			<td><?php echo $customerOrderLine['modified']; ?></td>
-			<td><?php echo $customerOrderLine['customer_invoice_id']; ?></td>
-			<td><?php echo $customerOrderLine['customer_invoice_line_number']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_amount']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_vat']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_comments']; ?></td>
-			<td><?php echo $customerOrderLine['order_line_ready']; ?></td>
-			<td><?php echo $customerOrderLine['service_type_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'customer_order_lines', 'action' => 'view', $customerOrderLine['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customer_order_lines', 'action' => 'edit', $customerOrderLine['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customer_order_lines', 'action' => 'delete', $customerOrderLine['id']), null, __('Are you sure you want to delete # %s?', $customerOrderLine['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Customer Order Line'), array('controller' => 'customer_order_lines', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>

@@ -24,7 +24,7 @@ class CustomerInvoice extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'customer_invoice_extended_number';
+	public $displayField = 'extended_number';
 
 /**
  * Validation rules

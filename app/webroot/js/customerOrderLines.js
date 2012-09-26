@@ -2,10 +2,10 @@ function stockIdChanged(event) {
     var id=$('#CustomerOrderLineStockId').val();
     var llistaPreus=$('#CustomerOrderLinePrice');
     llistaPreus.val(id);
-    var preu=Math.round($('#CustomerOrderLinePrice option:selected').html()*100)/100;
+    var total=Math.round($('#CustomerOrderLinePrice option:selected').html()*100)/100;
     var vatrate=$('#CustomerOrderLineExpectedVat').val();
-    var vat=Math.round(preu*vatrate*100)/100;
-    var total=Math.round((1*preu+vat)*100)/100;
+    var preu=Math.round((total/(1+1*vatrate)*100))/100;
+    var vat=total-preu;
     $('#CustomerOrderLineOrderLineAmount').val(preu);
     $('#CustomerOrderLineOrderLineVat').val(vat);
     $('#CustomerOrderLineOrderLineTotal').val(total);

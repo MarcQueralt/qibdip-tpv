@@ -9,6 +9,10 @@ App::uses('AppModel', 'Model');
  */
 class CustomerInvoiceLine extends AppModel {
 
+    public $virtualFields = array(
+        'customer_invoice_line_total' => 'customer_invoice_line_amount + customer_invoice_line_vat',
+        'customer_invoice_line_text' => 'IF(CustomerInvoiceLine.customer_invoice_line_type="A",(SELECT concat(stocks.id,"-",stocks.article_model) FROM stocks WHERE stocks.id=CustomerInvoiceLine.stock_id),CustomerInvoiceLine.customer_invoice_line_description)',
+    );
 /**
  * Validation rules
  *

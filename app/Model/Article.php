@@ -11,10 +11,11 @@ App::uses('AppModel', 'Model');
  */
 class Article extends AppModel {
 
-    public $displayField = "concat(Article.id,'-',Article.article_model)";
+    public $displayField = "article_name";
     public $virtualFields = array(
         'expected_vat' => 'SELECT vat FROM options WHERE options.id=1',
         'expected_vat_re' => 'SELECT vat_re FROM options WHERE options.id=1',
+        'article_name' => "concat(Article.id,'-',Article.article_model)",
     );
 
     /**
