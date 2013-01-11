@@ -1,11 +1,11 @@
 <?php
-App::uses('CustomerInvoicesController', 'Controller');
+App::uses('InvoiceGroup', 'Model');
 
 /**
- * CustomerInvoicesController Test Case
+ * InvoiceGroup Test Case
  *
  */
-class CustomerInvoicesControllerTest extends ControllerTestCase {
+class InvoiceGroupTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,6 +13,7 @@ class CustomerInvoicesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.invoice_group',
 		'app.customer_invoice',
 		'app.customer',
 		'app.customer_order',
@@ -30,48 +31,29 @@ class CustomerInvoicesControllerTest extends ControllerTestCase {
 		'app.customer_order_line',
 		'app.service_type',
 		'app.customer_payment',
-		'app.invoice_group',
+		'app.serie',
 		'app.customer_invoice_status'
 	);
 
 /**
- * testIndex method
+ * setUp method
  *
  * @return void
  */
-	public function testIndex() {
+	public function setUp() {
+		parent::setUp();
+		$this->InvoiceGroup = ClassRegistry::init('InvoiceGroup');
 	}
 
 /**
- * testView method
+ * tearDown method
  *
  * @return void
  */
-	public function testView() {
-	}
+	public function tearDown() {
+		unset($this->InvoiceGroup);
 
-/**
- * testAdd method
- *
- * @return void
- */
-	public function testAdd() {
-	}
-
-/**
- * testEdit method
- *
- * @return void
- */
-	public function testEdit() {
-	}
-
-/**
- * testDelete method
- *
- * @return void
- */
-	public function testDelete() {
+		parent::tearDown();
 	}
 
 }

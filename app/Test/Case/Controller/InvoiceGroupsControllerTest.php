@@ -1,11 +1,11 @@
 <?php
-App::uses('CustomerInvoicesController', 'Controller');
+App::uses('InvoiceGroupsController', 'Controller');
 
 /**
- * CustomerInvoicesController Test Case
+ * InvoiceGroupsController Test Case
  *
  */
-class CustomerInvoicesControllerTest extends ControllerTestCase {
+class InvoiceGroupsControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,6 +13,7 @@ class CustomerInvoicesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.invoice_group',
 		'app.customer_invoice',
 		'app.customer',
 		'app.customer_order',
@@ -30,7 +31,7 @@ class CustomerInvoicesControllerTest extends ControllerTestCase {
 		'app.customer_order_line',
 		'app.service_type',
 		'app.customer_payment',
-		'app.invoice_group',
+		'app.serie',
 		'app.customer_invoice_status'
 	);
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-09-22 11:48+0200\n"
+"POT-Creation-Date: 2012-12-23 17:32+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,2708 +14,2844 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/ArticlesController.php:33;82;117
+#: app\Controller\ArticlesController.php:33;82;117
 msgid "Invalid article"
 msgstr ""
 
-#: Controller/ArticlesController.php:47;86
+#: app\Controller\ArticlesController.php:47;86
 msgid "The article has been saved"
 msgstr ""
 
-#: Controller/ArticlesController.php:50;89
+#: app\Controller\ArticlesController.php:50;89
 msgid "The article could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/ArticlesController.php:56
-#: Controller/RawMaterialsController.php:55
-#: Controller/SupplierSlipsController.php:39;73;103
+#: app\Controller\ArticlesController.php:56
+#: app\Controller\RawMaterialsController.php:55
+#: app\Controller\SupplierSlipsController.php:39;73;103
 msgid "Invalid supplier slip"
 msgstr ""
 
-#: Controller/ArticlesController.php:120
+#: app\Controller\ArticlesController.php:120
 msgid "Article deleted"
 msgstr ""
 
-#: Controller/ArticlesController.php:123
+#: app\Controller\ArticlesController.php:123
 msgid "Article was not deleted"
 msgstr ""
 
-#: Controller/ConsumptionsController.php:30;65;96
+#: app\Controller\ConsumptionsController.php:30;65;96
 msgid "Invalid consumption"
 msgstr ""
 
-#: Controller/ConsumptionsController.php:44;69
+#: app\Controller\ConsumptionsController.php:44;69
 msgid "The consumption has been saved"
 msgstr ""
 
-#: Controller/ConsumptionsController.php:47;72
+#: app\Controller\ConsumptionsController.php:47;72
 msgid "The consumption could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/ConsumptionsController.php:99
+#: app\Controller\ConsumptionsController.php:99
 msgid "Consumption deleted"
 msgstr ""
 
-#: Controller/ConsumptionsController.php:102
+#: app\Controller\ConsumptionsController.php:102
 msgid "Consumption was not deleted"
 msgstr ""
 
-#: Controller/CustomerInvoiceLinesController.php:30;66;98
+#: app\Controller\CustomerInvoiceLinesController.php:32;68;100
 msgid "Invalid customer invoice line"
 msgstr ""
 
-#: Controller/CustomerInvoiceLinesController.php:44;70
+#: app\Controller\CustomerInvoiceLinesController.php:46;72
 msgid "The customer invoice line has been saved"
 msgstr ""
 
-#: Controller/CustomerInvoiceLinesController.php:47;73
+#: app\Controller\CustomerInvoiceLinesController.php:49;75
 msgid "The customer invoice line could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomerInvoiceLinesController.php:101
+#: app\Controller\CustomerInvoiceLinesController.php:107
 msgid "Customer invoice line deleted"
 msgstr ""
 
-#: Controller/CustomerInvoiceLinesController.php:104
+#: app\Controller\CustomerInvoiceLinesController.php:110
 msgid "Customer invoice line was not deleted"
 msgstr ""
 
-#: Controller/CustomerInvoiceStatusesController.php:30;62;90
+#: app\Controller\CustomerInvoiceStatusesController.php:30;62;90
 msgid "Invalid customer invoice status"
 msgstr ""
 
-#: Controller/CustomerInvoiceStatusesController.php:44;66
+#: app\Controller\CustomerInvoiceStatusesController.php:44;66
 msgid "The customer invoice status has been saved"
 msgstr ""
 
-#: Controller/CustomerInvoiceStatusesController.php:47;69
+#: app\Controller\CustomerInvoiceStatusesController.php:47;69
 msgid "The customer invoice status could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomerInvoiceStatusesController.php:93
+#: app\Controller\CustomerInvoiceStatusesController.php:93
 msgid "Customer invoice status deleted"
 msgstr ""
 
-#: Controller/CustomerInvoiceStatusesController.php:96
+#: app\Controller\CustomerInvoiceStatusesController.php:96
 msgid "Customer invoice status was not deleted"
 msgstr ""
 
-#: Controller/CustomerInvoicesController-old.php:47
-#: Controller/CustomerInvoicesController.php:47;73
-msgid "The customer invoice could not be saved. Please, try again."
-msgstr ""
-
-#: Controller/CustomerInvoicesController-old.php:54
-#: Controller/CustomerOrderLinesController.php:92;121
-#: Controller/CustomerOrdersController.php:37;72;103;120
-msgid "Invalid customer order"
-msgstr ""
-
-#: Controller/CustomerInvoicesController-old.php:75;94
-#: Controller/CustomerInvoicesController.php:30;66;98
+#: app\Controller\CustomerInvoicesController.php:33;69;101;187
 msgid "Invalid customer invoice"
 msgstr ""
 
-#: Controller/CustomerInvoicesController-old.php:97
-#: Controller/CustomerInvoicesController.php:101
-msgid "Customer invoice deleted"
-msgstr ""
-
-#: Controller/CustomerInvoicesController-old.php:100
-#: Controller/CustomerInvoicesController.php:104
-msgid "Customer invoice was not deleted"
-msgstr ""
-
-#: Controller/CustomerInvoicesController.php:44;70
+#: app\Controller\CustomerInvoicesController.php:47;73
 msgid "The customer invoice has been saved"
 msgstr ""
 
-#: Controller/CustomerOrderLinesController.php:32;41;49;150;173;198;234
+#: app\Controller\CustomerInvoicesController.php:50;76;147
+msgid "The customer invoice could not be saved. Please, try again."
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:104
+msgid "Customer invoice deleted"
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:107
+msgid "Customer invoice was not deleted"
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:114
+msgid "The customer invoice number provider is not valid."
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:137
+msgid "The customer order line could not be processed."
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:144
+msgid "The customer invoice could not be created. Customer Order can not be edited."
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:160
+#: app\Controller\CustomerOrderLinesController.php:92;121
+#: app\Controller\CustomerOrdersController.php:37;72;103;119
+msgid "Invalid customer order"
+msgstr ""
+
+#: app\Controller\CustomerInvoicesController.php:164
+msgid "There're no lines to invoice"
+msgstr ""
+
+#: app\Controller\CustomerOrderLinesController.php:32;41;49;150;173;198;234
 msgid "Invalid customer order line"
 msgstr ""
 
-#: Controller/CustomerOrderLinesController.php:63;83;112;154;180;205
+#: app\Controller\CustomerOrderLinesController.php:63;83;112;154;180;205
 msgid "The customer order line has been saved"
 msgstr ""
 
-#: Controller/CustomerOrderLinesController.php:66;86;115;157;183;208
+#: app\Controller\CustomerOrderLinesController.php:66;86;115;157;183;208
 msgid "The customer order line could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomerOrderLinesController.php:239
+#: app\Controller\CustomerOrderLinesController.php:239
 msgid "Customer order line deleted"
 msgstr ""
 
-#: Controller/CustomerOrderLinesController.php:242
+#: app\Controller\CustomerOrderLinesController.php:242
 msgid "Customer order line was not deleted"
 msgstr ""
 
-#: Controller/CustomerOrdersController.php:51;76
+#: app\Controller\CustomerOrdersController.php:51;76
 msgid "The customer order has been saved"
 msgstr ""
 
-#: Controller/CustomerOrdersController.php:54;79
+#: app\Controller\CustomerOrdersController.php:54;79
 msgid "The customer order could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomerOrdersController.php:108
+#: app\Controller\CustomerOrdersController.php:108
 msgid "Customer order deleted"
 msgstr ""
 
-#: Controller/CustomerOrdersController.php:111
+#: app\Controller\CustomerOrdersController.php:111
 msgid "Customer order was not deleted"
 msgstr ""
 
-#: Controller/CustomerOrdersController.php:127
-msgid "Order"
-msgstr ""
-
-#: Controller/CustomerPaymentsController.php:32;71;106
+#: app\Controller\CustomerPaymentsController.php:32;71;106
 msgid "Invalid customer payment"
 msgstr ""
 
-#: Controller/CustomerPaymentsController.php:50;79
+#: app\Controller\CustomerPaymentsController.php:50;79
 msgid "The customer payment has been saved"
 msgstr ""
 
-#: Controller/CustomerPaymentsController.php:53;82
+#: app\Controller\CustomerPaymentsController.php:53;82
 msgid "The customer payment could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomerPaymentsController.php:111
+#: app\Controller\CustomerPaymentsController.php:111
 msgid "Customer payment deleted"
 msgstr ""
 
-#: Controller/CustomerPaymentsController.php:114
+#: app\Controller\CustomerPaymentsController.php:114
 msgid "Customer payment was not deleted"
 msgstr ""
 
-#: Controller/CustomersController.php:59;91;119;132;154
+#: app\Controller\CustomersController.php:59;91;119;132;154
 msgid "Invalid customer"
 msgstr ""
 
-#: Controller/CustomersController.php:73;95
+#: app\Controller\CustomersController.php:73;95
 msgid "The customer has been saved"
 msgstr ""
 
-#: Controller/CustomersController.php:76;98
+#: app\Controller\CustomersController.php:76;98
 msgid "The customer could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CustomersController.php:122
+#: app\Controller\CustomersController.php:122
 msgid "Customer deleted"
 msgstr ""
 
-#: Controller/CustomersController.php:125
+#: app\Controller\CustomersController.php:125
 msgid "Customer was not deleted"
 msgstr ""
 
-#: Controller/CustomersController.php:143;165
+#: app\Controller\CustomersController.php:143;165
 msgid "The customer order has been created"
 msgstr ""
 
-#: Controller/CustomersController.php:146;168
+#: app\Controller\CustomersController.php:146;168
 msgid "The customer order could not be created. Please, try again."
 msgstr ""
 
-#: Controller/InvoiceGroupsController.php:30;62;90
+#: app\Controller\InvoiceGroupsController.php:30;62;90
 msgid "Invalid invoice group"
 msgstr ""
 
-#: Controller/InvoiceGroupsController.php:44;66
+#: app\Controller\InvoiceGroupsController.php:44;66
 msgid "The invoice group has been saved"
 msgstr ""
 
-#: Controller/InvoiceGroupsController.php:47;69
+#: app\Controller\InvoiceGroupsController.php:47;69
 msgid "The invoice group could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/InvoiceGroupsController.php:93
+#: app\Controller\InvoiceGroupsController.php:93
 msgid "Invoice group deleted"
 msgstr ""
 
-#: Controller/InvoiceGroupsController.php:96
+#: app\Controller\InvoiceGroupsController.php:96
 msgid "Invoice group was not deleted"
 msgstr ""
 
-#: Controller/OptionsController.php:34;49
+#: app\Controller\OptionsController.php:34;49
 msgid "Invalid option"
 msgstr ""
 
-#: Controller/OptionsController.php:53
+#: app\Controller\OptionsController.php:53
 msgid "The option has been saved"
 msgstr ""
 
-#: Controller/OptionsController.php:56
+#: app\Controller\OptionsController.php:56
 msgid "The option could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/OrderStatusesController.php:30;62;90
+#: app\Controller\OrderStatusesController.php:30;62;90
 msgid "Invalid order status"
 msgstr ""
 
-#: Controller/OrderStatusesController.php:44;66
+#: app\Controller\OrderStatusesController.php:44;66
 msgid "The order status has been saved"
 msgstr ""
 
-#: Controller/OrderStatusesController.php:47;69
+#: app\Controller\OrderStatusesController.php:47;69
 msgid "The order status could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/OrderStatusesController.php:93
+#: app\Controller\OrderStatusesController.php:93
 msgid "Order status deleted"
 msgstr ""
 
-#: Controller/OrderStatusesController.php:96
+#: app\Controller\OrderStatusesController.php:96
 msgid "Order status was not deleted"
 msgstr ""
 
-#: Controller/RawMaterialTypesController.php:30;62;90
+#: app\Controller\RawMaterialTypesController.php:30;62;90
 msgid "Invalid raw material type"
 msgstr ""
 
-#: Controller/RawMaterialTypesController.php:44;66
+#: app\Controller\RawMaterialTypesController.php:44;66
 msgid "The raw material type has been saved"
 msgstr ""
 
-#: Controller/RawMaterialTypesController.php:47;69
+#: app\Controller\RawMaterialTypesController.php:47;69
 msgid "The raw material type could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/RawMaterialTypesController.php:93
+#: app\Controller\RawMaterialTypesController.php:93
 msgid "Raw material type deleted"
 msgstr ""
 
-#: Controller/RawMaterialTypesController.php:96
+#: app\Controller\RawMaterialTypesController.php:96
 msgid "Raw material type was not deleted"
 msgstr ""
 
-#: Controller/RawMaterialsController.php:32;82;118
+#: app\Controller\RawMaterialsController.php:32;82;118
 msgid "Invalid raw material"
 msgstr ""
 
-#: Controller/RawMaterialsController.php:46;86
+#: app\Controller\RawMaterialsController.php:46;86
 msgid "The raw material has been saved"
 msgstr ""
 
-#: Controller/RawMaterialsController.php:49;89
+#: app\Controller\RawMaterialsController.php:49;89
 msgid "The raw material could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/RawMaterialsController.php:121
+#: app\Controller\RawMaterialsController.php:121
 msgid "Raw material deleted"
 msgstr ""
 
-#: Controller/RawMaterialsController.php:124
+#: app\Controller\RawMaterialsController.php:124
 msgid "Raw material was not deleted"
 msgstr ""
 
-#: Controller/ServiceTypesController.php:30;62;90
+#: app\Controller\ServiceTypesController.php:30;62;90
 msgid "Invalid service type"
 msgstr ""
 
-#: Controller/ServiceTypesController.php:44;66
+#: app\Controller\ServiceTypesController.php:44;66
 msgid "The service type has been saved"
 msgstr ""
 
-#: Controller/ServiceTypesController.php:47;69
+#: app\Controller\ServiceTypesController.php:47;69
 msgid "The service type could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/ServiceTypesController.php:93
+#: app\Controller\ServiceTypesController.php:93
 msgid "Service type deleted"
 msgstr ""
 
-#: Controller/ServiceTypesController.php:96
+#: app\Controller\ServiceTypesController.php:96
 msgid "Service type was not deleted"
 msgstr ""
 
-#: Controller/SupplierInvoiceStatusesController.php:30;62;90
+#: app\Controller\SupplierInvoiceStatusesController.php:30;62;90
 msgid "Invalid supplier invoice status"
 msgstr ""
 
-#: Controller/SupplierInvoiceStatusesController.php:44;66
+#: app\Controller\SupplierInvoiceStatusesController.php:44;66
 msgid "The supplier invoice status has been saved"
 msgstr ""
 
-#: Controller/SupplierInvoiceStatusesController.php:47;69
+#: app\Controller\SupplierInvoiceStatusesController.php:47;69
 msgid "The supplier invoice status could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/SupplierInvoiceStatusesController.php:93
+#: app\Controller\SupplierInvoiceStatusesController.php:93
 msgid "Supplier invoice status deleted"
 msgstr ""
 
-#: Controller/SupplierInvoiceStatusesController.php:96
+#: app\Controller\SupplierInvoiceStatusesController.php:96
 msgid "Supplier invoice status was not deleted"
 msgstr ""
 
-#: Controller/SupplierInvoicesController.php:45;80;111
+#: app\Controller\SupplierInvoicesController.php:45;80;111
 msgid "Invalid supplier invoice"
 msgstr ""
 
-#: Controller/SupplierInvoicesController.php:59;84
+#: app\Controller\SupplierInvoicesController.php:59;84
 msgid "The supplier invoice has been saved"
 msgstr ""
 
-#: Controller/SupplierInvoicesController.php:62;87
+#: app\Controller\SupplierInvoicesController.php:62;87
 msgid "The supplier invoice could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/SupplierInvoicesController.php:114
+#: app\Controller\SupplierInvoicesController.php:114
 msgid "Supplier invoice deleted"
 msgstr ""
 
-#: Controller/SupplierInvoicesController.php:117
+#: app\Controller\SupplierInvoicesController.php:117
 msgid "Supplier invoice was not deleted"
 msgstr ""
 
-#: Controller/SupplierSlipsController.php:53;77
+#: app\Controller\SupplierSlipsController.php:53;77
 msgid "The supplier slip has been saved"
 msgstr ""
 
-#: Controller/SupplierSlipsController.php:56;80
+#: app\Controller\SupplierSlipsController.php:56;80
 msgid "The supplier slip could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/SupplierSlipsController.php:106
+#: app\Controller\SupplierSlipsController.php:106
 msgid "Supplier slip deleted"
 msgstr ""
 
-#: Controller/SupplierSlipsController.php:109
+#: app\Controller\SupplierSlipsController.php:109
 msgid "Supplier slip was not deleted"
 msgstr ""
 
-#: Controller/SuppliersController.php:30;62;90
+#: app\Controller\SuppliersController.php:30;62;90
 msgid "Invalid supplier"
 msgstr ""
 
-#: Controller/SuppliersController.php:44;66
+#: app\Controller\SuppliersController.php:44;66
 msgid "The supplier has been saved"
 msgstr ""
 
-#: Controller/SuppliersController.php:47;69
+#: app\Controller\SuppliersController.php:47;69
 msgid "The supplier could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/SuppliersController.php:93
+#: app\Controller\SuppliersController.php:93
 msgid "Supplier deleted"
 msgstr ""
 
-#: Controller/SuppliersController.php:96
+#: app\Controller\SuppliersController.php:96
 msgid "Supplier was not deleted"
 msgstr ""
 
-#: Controller/UsersController.php:24
+#: app\Controller\UsersController.php:24
 msgid "Invalid username or password, try again"
 msgstr ""
 
-#: Controller/UsersController.php:58;90;118
+#: app\Controller\UsersController.php:58;90;118
 msgid "Invalid user"
 msgstr ""
 
-#: Controller/UsersController.php:72;94
+#: app\Controller\UsersController.php:72;94
 msgid "The user has been saved"
 msgstr ""
 
-#: Controller/UsersController.php:75;97
+#: app\Controller\UsersController.php:75;97
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:121
+#: app\Controller\UsersController.php:121
 msgid "User deleted"
 msgstr ""
 
-#: Controller/UsersController.php:124
+#: app\Controller\UsersController.php:124
 msgid "User was not deleted"
 msgstr ""
 
-#: Vendor/qibdipTPV.php:10
-#: View/Articles/view.ctp:2
-#: View/Consumptions/view.ctp:9
-#: View/CustomerOrders/printer.ctp:54
+#: app\Vendor\qibdipTPV.php:10
+#: app\View\Articles\view.ctp:2
+#: app\View\Consumptions\view.ctp:9
+#: app\View\CustomerInvoices\printer.ctp:33
+#: app\View\CustomerOrders\printer.ctp:33
 msgid "Article"
 msgstr ""
 
-#: Vendor/qibdipTPV.php:12
+#: app\Vendor\qibdipTPV.php:12
 msgid "Service"
 msgstr ""
 
-#: View/Articles/add.ctp:8
+#: app\Vendor\qibdipTPV.php:53
+msgid "e-mail"
+msgstr ""
+
+#: app\Vendor\qibdipTPV.php:54
+msgid "web"
+msgstr ""
+
+#: app\View\Articles\add.ctp:8
 msgid "Add Article"
 msgstr ""
 
-#: View/Articles/add.ctp:30
-#: View/Articles/edit.ctp:31
-#: View/Consumptions/add.ctp:15
-#: View/Consumptions/edit.ctp:16
-#: View/CustomerInvoiceLines/add.ctp:17
-#: View/CustomerInvoiceLines/edit.ctp:18
-#: View/CustomerInvoiceStatuses/add.ctp:10
-#: View/CustomerInvoiceStatuses/edit.ctp:11
-#: View/CustomerInvoices/add.ctp:14
-#: View/CustomerInvoices/edit.ctp:15
-#: View/CustomerInvoices/invoice.ctp:12
-#: View/CustomerOrderLines/add.ctp:21
-#: View/CustomerOrderLines/add_sale.ctp:26
-#: View/CustomerOrderLines/add_service.ctp:17
-#: View/CustomerOrderLines/edit.ctp:24
-#: View/CustomerOrderLines/edit_sale.ctp:27
-#: View/CustomerOrderLines/edit_service.ctp:18
-#: View/CustomerOrders/add.ctp:13
-#: View/CustomerOrders/edit.ctp:13
-#: View/CustomerPayments/add.ctp:14
-#: View/CustomerPayments/edit.ctp:15
-#: View/Customers/add.ctp:16
-#: View/Customers/edit.ctp:17
-#: View/InvoiceGroups/add.ctp:11
-#: View/InvoiceGroups/edit.ctp:12
-#: View/Options/edit.ctp:30
-#: View/OrderStatuses/add.ctp:10
-#: View/OrderStatuses/edit.ctp:11
-#: View/RawMaterialTypes/add.ctp:11
-#: View/RawMaterialTypes/edit.ctp:12
-#: View/RawMaterials/add.ctp:30
-#: View/RawMaterials/edit.ctp:31
-#: View/ServiceTypes/add.ctp:9
-#: View/ServiceTypes/edit.ctp:10
-#: View/SupplierInvoiceStatuses/add.ctp:10
-#: View/SupplierInvoiceStatuses/edit.ctp:11
-#: View/SupplierInvoices/add.ctp:15
-#: View/SupplierInvoices/edit.ctp:16
-#: View/SupplierSlips/add.ctp:11
-#: View/SupplierSlips/edit.ctp:12
-#: View/Suppliers/add.ctp:16
-#: View/Suppliers/edit.ctp:17
-#: View/Users/add.ctp:11
-#: View/Users/edit.ctp:12
+#: app\View\Articles\add.ctp:30
+#: app\View\Articles\edit.ctp:31
+#: app\View\Consumptions\add.ctp:15
+#: app\View\Consumptions\edit.ctp:16
+#: app\View\CustomerInvoiceLines\add.ctp:17
+#: app\View\CustomerInvoiceLines\edit.ctp:18
+#: app\View\CustomerInvoiceStatuses\add.ctp:10
+#: app\View\CustomerInvoiceStatuses\edit.ctp:11
+#: app\View\CustomerInvoices\add.ctp:14
+#: app\View\CustomerInvoices\edit.ctp:15
+#: app\View\CustomerInvoices\invoice.ctp:21
+#: app\View\CustomerOrderLines\add.ctp:21
+#: app\View\CustomerOrderLines\add_sale.ctp:26
+#: app\View\CustomerOrderLines\add_service.ctp:29
+#: app\View\CustomerOrderLines\edit.ctp:24
+#: app\View\CustomerOrderLines\edit_sale.ctp:27
+#: app\View\CustomerOrderLines\edit_service.ctp:30
+#: app\View\CustomerOrders\add.ctp:13
+#: app\View\CustomerOrders\edit.ctp:13
+#: app\View\CustomerPayments\add.ctp:14
+#: app\View\CustomerPayments\edit.ctp:15
+#: app\View\Customers\add.ctp:16
+#: app\View\Customers\edit.ctp:17
+#: app\View\InvoiceGroups\add.ctp:11
+#: app\View\InvoiceGroups\edit.ctp:12
+#: app\View\Options\edit.ctp:35
+#: app\View\OrderStatuses\add.ctp:10
+#: app\View\OrderStatuses\edit.ctp:11
+#: app\View\RawMaterialTypes\add.ctp:11
+#: app\View\RawMaterialTypes\edit.ctp:12
+#: app\View\RawMaterials\add.ctp:30
+#: app\View\RawMaterials\edit.ctp:31
+#: app\View\ServiceTypes\add.ctp:9
+#: app\View\ServiceTypes\edit.ctp:10
+#: app\View\SupplierInvoiceStatuses\add.ctp:10
+#: app\View\SupplierInvoiceStatuses\edit.ctp:11
+#: app\View\SupplierInvoices\add.ctp:15
+#: app\View\SupplierInvoices\edit.ctp:16
+#: app\View\SupplierSlips\add.ctp:11
+#: app\View\SupplierSlips\edit.ctp:12
+#: app\View\Suppliers\add.ctp:16
+#: app\View\Suppliers\edit.ctp:17
+#: app\View\Users\add.ctp:11
+#: app\View\Users\edit.ctp:12
 msgid "Submit"
 msgstr ""
 
-#: View/Articles/add.ctp:33
-#: View/Articles/edit.ctp:34
-#: View/Articles/index.ctp:19;66
-#: View/Articles/view.ctp:98;121
-#: View/Consumptions/add.ctp:18
-#: View/Consumptions/edit.ctp:19
-#: View/Consumptions/index.ctp:13;54
-#: View/Consumptions/view.ctp:47
-#: View/CustomerInvoiceLines/add.ctp:20
-#: View/CustomerInvoiceLines/edit.ctp:21
-#: View/CustomerInvoiceLines/index.ctp:17;64
-#: View/CustomerInvoiceLines/view.ctp:67
-#: View/CustomerInvoiceStatuses/add.ctp:13
-#: View/CustomerInvoiceStatuses/edit.ctp:14
-#: View/CustomerInvoiceStatuses/index.ctp:10;44
-#: View/CustomerInvoiceStatuses/view.ctp:32
-#: View/CustomerInvoices/add.ctp:17
-#: View/CustomerInvoices/edit.ctp:18
-#: View/CustomerInvoices/index.ctp:14;58
-#: View/CustomerInvoices/invoice.ctp:15
-#: View/CustomerInvoices/view.ctp:52;87;143
-#: View/CustomerOrderLines/add.ctp:24
-#: View/CustomerOrderLines/add_sale.ctp:29
-#: View/CustomerOrderLines/add_service.ctp:20
-#: View/CustomerOrderLines/edit.ctp:27
-#: View/CustomerOrderLines/edit_sale.ctp:30
-#: View/CustomerOrderLines/edit_service.ctp:21
-#: View/CustomerOrderLines/index.ctp:22;76
-#: View/CustomerOrderLines/view.ctp:92
-#: View/CustomerOrderLines/view_sale.ctp:62
-#: View/CustomerOrderLines/view_service.ctp:87
-#: View/CustomerOrders/add.ctp:16
-#: View/CustomerOrders/edit.ctp:16
-#: View/CustomerOrders/index.ctp:20;56
-#: View/CustomerOrders/view.ctp:76;101;149
-#: View/CustomerPayments/add.ctp:17
-#: View/CustomerPayments/edit.ctp:18
-#: View/CustomerPayments/index.ctp:14;56
-#: View/CustomerPayments/view.ctp:52
-#: View/Customers/add.ctp:19
-#: View/Customers/edit.ctp:20
-#: View/Customers/index.ctp:24;61
-#: View/Customers/view.ctp:71;94;139
-#: View/InvoiceGroups/add.ctp:14
-#: View/InvoiceGroups/edit.ctp:15
-#: View/InvoiceGroups/index.ctp:11;46
-#: View/InvoiceGroups/view.ctp:37
-#: View/Options/edit.ctp:33
-#: View/Options/view.ctp:39
-#: View/OrderStatuses/add.ctp:13
-#: View/OrderStatuses/edit.ctp:14
-#: View/OrderStatuses/index.ctp:10;44
-#: View/OrderStatuses/view.ctp:32;66;117
-#: View/RawMaterialTypes/add.ctp:14
-#: View/RawMaterialTypes/edit.ctp:15
-#: View/RawMaterialTypes/index.ctp:9;42
-#: View/RawMaterialTypes/view.ctp:27;63;130
-#: View/RawMaterials/add.ctp:33
-#: View/RawMaterials/edit.ctp:34
-#: View/RawMaterials/index.ctp:21;72
-#: View/RawMaterials/view.ctp:97;126
-#: View/ServiceTypes/add.ctp:12
-#: View/ServiceTypes/edit.ctp:13
-#: View/ServiceTypes/index.ctp:7;38
-#: View/ServiceTypes/view.ctp:17
-#: View/SupplierInvoiceStatuses/add.ctp:13
-#: View/SupplierInvoiceStatuses/edit.ctp:14
-#: View/SupplierInvoiceStatuses/index.ctp:10;44
-#: View/SupplierInvoiceStatuses/view.ctp:32;57
-#: View/SupplierInvoices/add.ctp:18
-#: View/SupplierInvoices/edit.ctp:19
-#: View/SupplierInvoices/index.ctp:15;58
-#: View/SupplierInvoices/view.ctp:57;97;160;227
-#: View/SupplierSlips/add.ctp:14
-#: View/SupplierSlips/edit.ctp:15
-#: View/SupplierSlips/index.ctp:24;64
-#: View/SupplierSlips/view.ctp:57;87;142
-#: View/Suppliers/add.ctp:19
-#: View/Suppliers/edit.ctp:20
-#: View/Suppliers/index.ctp:14;52
-#: View/Suppliers/view.ctp:71;98;145
-#: View/Users/add.ctp:14
-#: View/Users/edit.ctp:15
-#: View/Users/index.ctp:11;46
-#: View/Users/view.ctp:37
+#: app\View\Articles\add.ctp:33
+#: app\View\Articles\edit.ctp:34
+#: app\View\Articles\index.ctp:19;66
+#: app\View\Articles\view.ctp:98;121
+#: app\View\Consumptions\add.ctp:18
+#: app\View\Consumptions\edit.ctp:19
+#: app\View\Consumptions\index.ctp:13;54
+#: app\View\Consumptions\view.ctp:47
+#: app\View\CustomerInvoiceLines\add.ctp:20
+#: app\View\CustomerInvoiceLines\edit.ctp:21
+#: app\View\CustomerInvoiceLines\index.ctp:17;64
+#: app\View\CustomerInvoiceLines\view.ctp:67
+#: app\View\CustomerInvoiceStatuses\add.ctp:13
+#: app\View\CustomerInvoiceStatuses\edit.ctp:14
+#: app\View\CustomerInvoiceStatuses\index.ctp:10;44
+#: app\View\CustomerInvoiceStatuses\view.ctp:32
+#: app\View\CustomerInvoices\add.ctp:17
+#: app\View\CustomerInvoices\edit.ctp:18
+#: app\View\CustomerInvoices\index.ctp:12;52
+#: app\View\CustomerInvoices\invoice.ctp:24
+#: app\View\CustomerInvoices\view.ctp:47;67
+#: app\View\CustomerOrderLines\add.ctp:24
+#: app\View\CustomerOrderLines\add_sale.ctp:29
+#: app\View\CustomerOrderLines\add_service.ctp:32
+#: app\View\CustomerOrderLines\edit.ctp:27
+#: app\View\CustomerOrderLines\edit_sale.ctp:30
+#: app\View\CustomerOrderLines\edit_service.ctp:33
+#: app\View\CustomerOrderLines\index.ctp:22;76
+#: app\View\CustomerOrderLines\view.ctp:92
+#: app\View\CustomerOrderLines\view_sale.ctp:62
+#: app\View\CustomerOrderLines\view_service.ctp:87
+#: app\View\CustomerOrders\add.ctp:16
+#: app\View\CustomerOrders\edit.ctp:16
+#: app\View\CustomerOrders\index.ctp:20;56
+#: app\View\CustomerOrders\view.ctp:76;101;149
+#: app\View\CustomerPayments\add.ctp:17
+#: app\View\CustomerPayments\edit.ctp:18
+#: app\View\CustomerPayments\index.ctp:14;56
+#: app\View\CustomerPayments\view.ctp:52
+#: app\View\Customers\add.ctp:19
+#: app\View\Customers\edit.ctp:20
+#: app\View\Customers\index.ctp:24;61
+#: app\View\Customers\view.ctp:71;94;139
+#: app\View\InvoiceGroups\add.ctp:14
+#: app\View\InvoiceGroups\edit.ctp:15
+#: app\View\InvoiceGroups\index.ctp:11;46
+#: app\View\InvoiceGroups\view.ctp:37
+#: app\View\Options\edit.ctp:38
+#: app\View\Options\view.ctp:43
+#: app\View\OrderStatuses\add.ctp:13
+#: app\View\OrderStatuses\edit.ctp:14
+#: app\View\OrderStatuses\index.ctp:10;44
+#: app\View\OrderStatuses\view.ctp:32;66;117
+#: app\View\RawMaterialTypes\add.ctp:14
+#: app\View\RawMaterialTypes\edit.ctp:15
+#: app\View\RawMaterialTypes\index.ctp:9;42
+#: app\View\RawMaterialTypes\view.ctp:27;63;130
+#: app\View\RawMaterials\add.ctp:33
+#: app\View\RawMaterials\edit.ctp:34
+#: app\View\RawMaterials\index.ctp:21;72
+#: app\View\RawMaterials\view.ctp:97;126
+#: app\View\ServiceTypes\add.ctp:12
+#: app\View\ServiceTypes\edit.ctp:13
+#: app\View\ServiceTypes\index.ctp:7;38
+#: app\View\ServiceTypes\view.ctp:17
+#: app\View\SupplierInvoiceStatuses\add.ctp:13
+#: app\View\SupplierInvoiceStatuses\edit.ctp:14
+#: app\View\SupplierInvoiceStatuses\index.ctp:10;44
+#: app\View\SupplierInvoiceStatuses\view.ctp:32;57
+#: app\View\SupplierInvoices\add.ctp:18
+#: app\View\SupplierInvoices\edit.ctp:19
+#: app\View\SupplierInvoices\index.ctp:15;58
+#: app\View\SupplierInvoices\view.ctp:57;97;160;227
+#: app\View\SupplierSlips\add.ctp:14
+#: app\View\SupplierSlips\edit.ctp:15
+#: app\View\SupplierSlips\index.ctp:24;64
+#: app\View\SupplierSlips\view.ctp:57;87;142
+#: app\View\Suppliers\add.ctp:19
+#: app\View\Suppliers\edit.ctp:20
+#: app\View\Suppliers\index.ctp:14;52
+#: app\View\Suppliers\view.ctp:71;98;145
+#: app\View\Users\add.ctp:14
+#: app\View\Users\edit.ctp:15
+#: app\View\Users\index.ctp:11;46
+#: app\View\Users\view.ctp:37
 msgid "Actions"
 msgstr ""
 
-#: View/Articles/add.ctp:36
-#: View/Articles/edit.ctp:38
-#: View/Articles/view.ctp:102
-#: View/Consumptions/add.ctp:22
-#: View/Consumptions/edit.ctp:24
-#: View/Consumptions/index.ctp:57
-#: View/Consumptions/view.ctp:53
-#: View/SupplierInvoices/add.ctp:26
-#: View/SupplierInvoices/edit.ctp:28
-#: View/SupplierInvoices/index.ctp:65
-#: View/SupplierInvoices/view.ctp:67
-#: View/SupplierSlips/add.ctp:20
-#: View/SupplierSlips/edit.ctp:22
-#: View/SupplierSlips/index.ctp:69
+#: app\View\Articles\add.ctp:36
+#: app\View\Articles\edit.ctp:38
+#: app\View\Articles\view.ctp:102
+#: app\View\Consumptions\add.ctp:22
+#: app\View\Consumptions\edit.ctp:24
+#: app\View\Consumptions\index.ctp:57
+#: app\View\Consumptions\view.ctp:53
+#: app\View\SupplierInvoices\add.ctp:26
+#: app\View\SupplierInvoices\edit.ctp:28
+#: app\View\SupplierInvoices\index.ctp:65
+#: app\View\SupplierInvoices\view.ctp:67
+#: app\View\SupplierSlips\add.ctp:20
+#: app\View\SupplierSlips\edit.ctp:22
+#: app\View\SupplierSlips\index.ctp:69
 msgid "List Articles"
 msgstr ""
 
-#: View/Articles/add.ctp:38
-#: View/RawMaterials/add.ctp:40
+#: app\View\Articles\add.ctp:38
+#: app\View\RawMaterials\add.ctp:40
 msgid "Back to Supplier Slip"
 msgstr ""
 
-#: View/Articles/edit.ctp:8
-#: View/Articles/view.ctp:100
+#: app\View\Articles\edit.ctp:8
+#: app\View\Articles\view.ctp:100
 msgid "Edit Article"
 msgstr ""
 
-#: View/Articles/edit.ctp:37
-#: View/Articles/index.ctp:45
-#: View/Articles/view.ctp:138
-#: View/Consumptions/edit.ctp:22
-#: View/Consumptions/index.ctp:33
-#: View/CustomerInvoiceLines/edit.ctp:24
-#: View/CustomerInvoiceLines/index.ctp:43
-#: View/CustomerInvoiceStatuses/edit.ctp:17
-#: View/CustomerInvoiceStatuses/index.ctp:23
-#: View/CustomerInvoices/edit.ctp:21
-#: View/CustomerInvoices/index.ctp:37
-#: View/CustomerInvoices/view.ctp:108;169
-#: View/CustomerOrderLines/edit.ctp:30
-#: View/CustomerOrderLines/index.ctp:55
-#: View/CustomerOrders/edit.ctp:19
-#: View/CustomerOrders/index.ctp:35
-#: View/CustomerOrders/view.ctp:125;164
-#: View/CustomerPayments/edit.ctp:21
-#: View/CustomerPayments/index.ctp:35
-#: View/Customers/edit.ctp:23
-#: View/Customers/index.ctp:40
-#: View/Customers/view.ctp:114;156
-#: View/InvoiceGroups/edit.ctp:18
-#: View/InvoiceGroups/index.ctp:25
-#: View/OrderStatuses/edit.ctp:17
-#: View/OrderStatuses/index.ctp:23
-#: View/OrderStatuses/view.ctp:92;133
-#: View/RawMaterialTypes/edit.ctp:18
-#: View/RawMaterialTypes/index.ctp:21
-#: View/RawMaterialTypes/view.ctp:91;160
-#: View/RawMaterials/edit.ctp:37
-#: View/RawMaterials/index.ctp:51
-#: View/RawMaterials/view.ctp:143
-#: View/ServiceTypes/edit.ctp:16
-#: View/ServiceTypes/index.ctp:17
-#: View/SupplierInvoiceStatuses/edit.ctp:17
-#: View/SupplierInvoiceStatuses/index.ctp:23
-#: View/SupplierInvoiceStatuses/view.ctp:76
-#: View/SupplierInvoices/edit.ctp:22
-#: View/SupplierInvoices/index.ctp:37
-#: View/SupplierInvoices/view.ctp:123;188;257
-#: View/SupplierSlips/edit.ctp:18
-#: View/SupplierSlips/index.ctp:43
-#: View/SupplierSlips/view.ctp:110;166
-#: View/Suppliers/edit.ctp:23
-#: View/Suppliers/index.ctp:31
-#: View/Suppliers/view.ctp:118;164
-#: View/Users/edit.ctp:18
-#: View/Users/index.ctp:25
+#: app\View\Articles\edit.ctp:37
+#: app\View\Articles\index.ctp:45
+#: app\View\Articles\view.ctp:138
+#: app\View\Consumptions\edit.ctp:22
+#: app\View\Consumptions\index.ctp:33
+#: app\View\CustomerInvoiceLines\edit.ctp:24
+#: app\View\CustomerInvoiceLines\index.ctp:43
+#: app\View\CustomerInvoiceStatuses\edit.ctp:17
+#: app\View\CustomerInvoiceStatuses\index.ctp:23
+#: app\View\CustomerInvoices\edit.ctp:21
+#: app\View\CustomerInvoices\index.ctp:31
+#: app\View\CustomerInvoices\view.ctp:84
+#: app\View\CustomerOrderLines\edit.ctp:30
+#: app\View\CustomerOrderLines\index.ctp:55
+#: app\View\CustomerOrders\edit.ctp:19
+#: app\View\CustomerOrders\index.ctp:35
+#: app\View\CustomerOrders\view.ctp:125;164
+#: app\View\CustomerPayments\edit.ctp:21
+#: app\View\CustomerPayments\index.ctp:35
+#: app\View\Customers\edit.ctp:23
+#: app\View\Customers\index.ctp:40
+#: app\View\Customers\view.ctp:114;156
+#: app\View\InvoiceGroups\edit.ctp:18
+#: app\View\InvoiceGroups\index.ctp:25
+#: app\View\OrderStatuses\edit.ctp:17
+#: app\View\OrderStatuses\index.ctp:23
+#: app\View\OrderStatuses\view.ctp:92;133
+#: app\View\RawMaterialTypes\edit.ctp:18
+#: app\View\RawMaterialTypes\index.ctp:21
+#: app\View\RawMaterialTypes\view.ctp:91;160
+#: app\View\RawMaterials\edit.ctp:37
+#: app\View\RawMaterials\index.ctp:51
+#: app\View\RawMaterials\view.ctp:143
+#: app\View\ServiceTypes\edit.ctp:16
+#: app\View\ServiceTypes\index.ctp:17
+#: app\View\SupplierInvoiceStatuses\edit.ctp:17
+#: app\View\SupplierInvoiceStatuses\index.ctp:23
+#: app\View\SupplierInvoiceStatuses\view.ctp:76
+#: app\View\SupplierInvoices\edit.ctp:22
+#: app\View\SupplierInvoices\index.ctp:37
+#: app\View\SupplierInvoices\view.ctp:123;188;257
+#: app\View\SupplierSlips\edit.ctp:18
+#: app\View\SupplierSlips\index.ctp:43
+#: app\View\SupplierSlips\view.ctp:110;166
+#: app\View\Suppliers\edit.ctp:23
+#: app\View\Suppliers\index.ctp:31
+#: app\View\Suppliers\view.ctp:118;164
+#: app\View\Users\edit.ctp:18
+#: app\View\Users\index.ctp:25
 msgid "Delete"
 msgstr ""
 
-#: View/Articles/edit.ctp:37
-#: View/Articles/index.ctp:45
-#: View/Articles/view.ctp:101;138
-#: View/Consumptions/edit.ctp:22
-#: View/Consumptions/index.ctp:33
-#: View/Consumptions/view.ctp:50
-#: View/CustomerInvoiceLines/edit.ctp:24
-#: View/CustomerInvoiceLines/index.ctp:43
-#: View/CustomerInvoiceLines/view.ctp:70
-#: View/CustomerInvoiceStatuses/edit.ctp:17
-#: View/CustomerInvoiceStatuses/index.ctp:23
-#: View/CustomerInvoiceStatuses/view.ctp:35
-#: View/CustomerInvoices/edit.ctp:21
-#: View/CustomerInvoices/index.ctp:37
-#: View/CustomerInvoices/view.ctp:55;108;169
-#: View/CustomerOrderLines/edit.ctp:30
-#: View/CustomerOrderLines/index.ctp:55
-#: View/CustomerOrderLines/view.ctp:95
-#: View/CustomerOrders/edit.ctp:19
-#: View/CustomerOrders/index.ctp:35
-#: View/CustomerOrders/view.ctp:81;125;164
-#: View/CustomerPayments/edit.ctp:21
-#: View/CustomerPayments/index.ctp:35
-#: View/CustomerPayments/view.ctp:55
-#: View/Customers/edit.ctp:23
-#: View/Customers/index.ctp:40
-#: View/Customers/view.ctp:74;114;156
-#: View/InvoiceGroups/edit.ctp:18
-#: View/InvoiceGroups/index.ctp:25
-#: View/InvoiceGroups/view.ctp:40
-#: View/OrderStatuses/edit.ctp:17
-#: View/OrderStatuses/index.ctp:23
-#: View/OrderStatuses/view.ctp:35;92;133
-#: View/RawMaterialTypes/edit.ctp:18
-#: View/RawMaterialTypes/index.ctp:21
-#: View/RawMaterialTypes/view.ctp:30;91;160
-#: View/RawMaterials/edit.ctp:37
-#: View/RawMaterials/index.ctp:51
-#: View/RawMaterials/view.ctp:100;143
-#: View/ServiceTypes/edit.ctp:16
-#: View/ServiceTypes/index.ctp:17
-#: View/ServiceTypes/view.ctp:20
-#: View/SupplierInvoiceStatuses/edit.ctp:17
-#: View/SupplierInvoiceStatuses/index.ctp:23
-#: View/SupplierInvoiceStatuses/view.ctp:35;76
-#: View/SupplierInvoices/edit.ctp:22
-#: View/SupplierInvoices/index.ctp:37
-#: View/SupplierInvoices/view.ctp:60;123;188;257
-#: View/SupplierSlips/edit.ctp:18
-#: View/SupplierSlips/index.ctp:43
-#: View/SupplierSlips/view.ctp:60;110;166
-#: View/Suppliers/edit.ctp:23
-#: View/Suppliers/index.ctp:31
-#: View/Suppliers/view.ctp:74;118;164
-#: View/Users/edit.ctp:18
-#: View/Users/index.ctp:25
-#: View/Users/view.ctp:40
+#: app\View\Articles\edit.ctp:37
+#: app\View\Articles\index.ctp:45
+#: app\View\Articles\view.ctp:101;138
+#: app\View\Consumptions\edit.ctp:22
+#: app\View\Consumptions\index.ctp:33
+#: app\View\Consumptions\view.ctp:50
+#: app\View\CustomerInvoiceLines\edit.ctp:24
+#: app\View\CustomerInvoiceLines\index.ctp:43
+#: app\View\CustomerInvoiceLines\view.ctp:70
+#: app\View\CustomerInvoiceStatuses\edit.ctp:17
+#: app\View\CustomerInvoiceStatuses\index.ctp:23
+#: app\View\CustomerInvoiceStatuses\view.ctp:35
+#: app\View\CustomerInvoices\edit.ctp:21
+#: app\View\CustomerInvoices\index.ctp:31
+#: app\View\CustomerInvoices\view.ctp:51;84
+#: app\View\CustomerOrderLines\edit.ctp:30
+#: app\View\CustomerOrderLines\index.ctp:55
+#: app\View\CustomerOrderLines\view.ctp:95
+#: app\View\CustomerOrders\edit.ctp:19
+#: app\View\CustomerOrders\index.ctp:35
+#: app\View\CustomerOrders\view.ctp:81;125;164
+#: app\View\CustomerPayments\edit.ctp:21
+#: app\View\CustomerPayments\index.ctp:35
+#: app\View\CustomerPayments\view.ctp:55
+#: app\View\Customers\edit.ctp:23
+#: app\View\Customers\index.ctp:40
+#: app\View\Customers\view.ctp:74;114;156
+#: app\View\InvoiceGroups\edit.ctp:18
+#: app\View\InvoiceGroups\index.ctp:25
+#: app\View\InvoiceGroups\view.ctp:40
+#: app\View\OrderStatuses\edit.ctp:17
+#: app\View\OrderStatuses\index.ctp:23
+#: app\View\OrderStatuses\view.ctp:35;92;133
+#: app\View\RawMaterialTypes\edit.ctp:18
+#: app\View\RawMaterialTypes\index.ctp:21
+#: app\View\RawMaterialTypes\view.ctp:30;91;160
+#: app\View\RawMaterials\edit.ctp:37
+#: app\View\RawMaterials\index.ctp:51
+#: app\View\RawMaterials\view.ctp:100;143
+#: app\View\ServiceTypes\edit.ctp:16
+#: app\View\ServiceTypes\index.ctp:17
+#: app\View\ServiceTypes\view.ctp:20
+#: app\View\SupplierInvoiceStatuses\edit.ctp:17
+#: app\View\SupplierInvoiceStatuses\index.ctp:23
+#: app\View\SupplierInvoiceStatuses\view.ctp:35;76
+#: app\View\SupplierInvoices\edit.ctp:22
+#: app\View\SupplierInvoices\index.ctp:37
+#: app\View\SupplierInvoices\view.ctp:60;123;188;257
+#: app\View\SupplierSlips\edit.ctp:18
+#: app\View\SupplierSlips\index.ctp:43
+#: app\View\SupplierSlips\view.ctp:60;110;166
+#: app\View\Suppliers\edit.ctp:23
+#: app\View\Suppliers\index.ctp:31
+#: app\View\Suppliers\view.ctp:74;118;164
+#: app\View\Users\edit.ctp:18
+#: app\View\Users\index.ctp:25
+#: app\View\Users\view.ctp:40
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
-#: View/Articles/edit.ctp:39
-#: View/RawMaterials/edit.ctp:41
-#: View/RawMaterials/index.ctp:77
-#: View/RawMaterials/view.ctp:105
-#: View/SupplierSlips/add.ctp:17
-#: View/SupplierSlips/edit.ctp:19
-#: View/SupplierSlips/view.ctp:61
-#: View/Suppliers/view.ctp:79
+#: app\View\Articles\edit.ctp:39
+#: app\View\RawMaterials\edit.ctp:41
+#: app\View\RawMaterials\index.ctp:77
+#: app\View\RawMaterials\view.ctp:105
+#: app\View\SupplierSlips\add.ctp:17
+#: app\View\SupplierSlips\edit.ctp:19
+#: app\View\SupplierSlips\view.ctp:61
+#: app\View\Suppliers\view.ctp:79
 msgid "List Supplier Slips"
 msgstr ""
 
-#: View/Articles/edit.ctp:40
-#: View/RawMaterials/edit.ctp:42
-#: View/RawMaterials/index.ctp:78
-#: View/RawMaterials/view.ctp:106
-#: View/SupplierSlips/index.ctp:66
-#: View/SupplierSlips/view.ctp:62
-#: View/Suppliers/view.ctp:80;173
+#: app\View\Articles\edit.ctp:40
+#: app\View\RawMaterials\edit.ctp:42
+#: app\View\RawMaterials\index.ctp:78
+#: app\View\RawMaterials\view.ctp:106
+#: app\View\SupplierSlips\index.ctp:66
+#: app\View\SupplierSlips\view.ctp:62
+#: app\View\Suppliers\view.ctp:80;173
 msgid "New Supplier Slip"
 msgstr ""
 
-#: View/Articles/edit.ctp:41
-#: View/RawMaterials/edit.ctp:43
-#: View/RawMaterials/index.ctp:79
-#: View/RawMaterials/view.ctp:107
-#: View/SupplierInvoiceStatuses/add.ctp:17
-#: View/SupplierInvoiceStatuses/edit.ctp:19
-#: View/SupplierInvoiceStatuses/index.ctp:47
-#: View/SupplierInvoiceStatuses/view.ctp:38
-#: View/SupplierInvoices/add.ctp:21
-#: View/SupplierInvoices/edit.ctp:23
-#: View/SupplierInvoices/view.ctp:61
-#: View/Suppliers/view.ctp:77
+#: app\View\Articles\edit.ctp:41
+#: app\View\RawMaterials\edit.ctp:43
+#: app\View\RawMaterials\index.ctp:79
+#: app\View\RawMaterials\view.ctp:107
+#: app\View\SupplierInvoiceStatuses\add.ctp:17
+#: app\View\SupplierInvoiceStatuses\edit.ctp:19
+#: app\View\SupplierInvoiceStatuses\index.ctp:47
+#: app\View\SupplierInvoiceStatuses\view.ctp:38
+#: app\View\SupplierInvoices\add.ctp:21
+#: app\View\SupplierInvoices\edit.ctp:23
+#: app\View\SupplierInvoices\view.ctp:61
+#: app\View\Suppliers\view.ctp:77
 msgid "List Supplier Invoices"
 msgstr ""
 
-#: View/Articles/edit.ctp:42
-#: View/RawMaterials/edit.ctp:44
-#: View/RawMaterials/index.ctp:80
-#: View/RawMaterials/view.ctp:108
-#: View/SupplierInvoiceStatuses/add.ctp:18
-#: View/SupplierInvoiceStatuses/edit.ctp:20
-#: View/SupplierInvoiceStatuses/index.ctp:48
-#: View/SupplierInvoiceStatuses/view.ctp:39;85
-#: View/SupplierInvoices/index.ctp:60
-#: View/SupplierInvoices/view.ctp:62
-#: View/Suppliers/view.ctp:78;127
+#: app\View\Articles\edit.ctp:42
+#: app\View\RawMaterials\edit.ctp:44
+#: app\View\RawMaterials\index.ctp:80
+#: app\View\RawMaterials\view.ctp:108
+#: app\View\SupplierInvoiceStatuses\add.ctp:18
+#: app\View\SupplierInvoiceStatuses\edit.ctp:20
+#: app\View\SupplierInvoiceStatuses\index.ctp:48
+#: app\View\SupplierInvoiceStatuses\view.ctp:39;85
+#: app\View\SupplierInvoices\index.ctp:60
+#: app\View\SupplierInvoices\view.ctp:62
+#: app\View\Suppliers\view.ctp:78;127
 msgid "New Supplier Invoice"
 msgstr ""
 
-#: View/Articles/edit.ctp:43
-#: View/Articles/view.ctp:104
-#: View/Consumptions/add.ctp:21
-#: View/Consumptions/edit.ctp:23
-#: View/Consumptions/view.ctp:51
-#: View/RawMaterials/edit.ctp:45
-#: View/RawMaterials/index.ctp:81
-#: View/RawMaterials/view.ctp:109
+#: app\View\Articles\edit.ctp:43
+#: app\View\Articles\view.ctp:104
+#: app\View\Consumptions\add.ctp:21
+#: app\View\Consumptions\edit.ctp:23
+#: app\View\Consumptions\view.ctp:51
+#: app\View\RawMaterials\edit.ctp:45
+#: app\View\RawMaterials\index.ctp:81
+#: app\View\RawMaterials\view.ctp:109
 msgid "List Consumptions"
 msgstr ""
 
-#: View/Articles/edit.ctp:44
-#: View/Articles/view.ctp:105;147
-#: View/Consumptions/index.ctp:56
-#: View/Consumptions/view.ctp:52
-#: View/RawMaterials/edit.ctp:46
-#: View/RawMaterials/index.ctp:82
-#: View/RawMaterials/view.ctp:110;152
+#: app\View\Articles\edit.ctp:44
+#: app\View\Articles\view.ctp:105;147
+#: app\View\Consumptions\index.ctp:56
+#: app\View\Consumptions\view.ctp:52
+#: app\View\RawMaterials\edit.ctp:46
+#: app\View\RawMaterials\index.ctp:82
+#: app\View\RawMaterials\view.ctp:110;152
 msgid "New Consumption"
 msgstr ""
 
-#: View/Articles/index.ctp:2
-#: View/Layouts/default.ctp:89
+#: app\View\Articles\index.ctp:2
+#: app\View\Layouts\default.ctp:89
 msgid "Articles"
 msgstr ""
 
-#: View/Articles/index.ctp:43
-#: View/Articles/view.ctp:136
-#: View/Consumptions/index.ctp:31
-#: View/CustomerInvoiceLines/index.ctp:41
-#: View/CustomerInvoiceStatuses/index.ctp:21
-#: View/CustomerInvoices/index.ctp:35
-#: View/CustomerInvoices/view.ctp:106;167
-#: View/CustomerOrderLines/index.ctp:53
-#: View/CustomerOrders/index.ctp:33
-#: View/CustomerOrders/view.ctp:119;122;162
-#: View/CustomerPayments/index.ctp:33
-#: View/Customers/index.ctp:38
-#: View/Customers/view.ctp:110;154
-#: View/InvoiceGroups/index.ctp:23
-#: View/OrderStatuses/index.ctp:21
-#: View/OrderStatuses/view.ctp:90;131
-#: View/RawMaterialTypes/index.ctp:19
-#: View/RawMaterialTypes/view.ctp:89;158
-#: View/RawMaterials/index.ctp:49
-#: View/RawMaterials/view.ctp:141
-#: View/ServiceTypes/index.ctp:15
-#: View/SupplierInvoiceStatuses/index.ctp:21
-#: View/SupplierInvoiceStatuses/view.ctp:74
-#: View/SupplierInvoices/index.ctp:35
-#: View/SupplierInvoices/view.ctp:121;186;255
-#: View/SupplierSlips/index.ctp:41
-#: View/SupplierSlips/view.ctp:108;164
-#: View/Suppliers/index.ctp:29
-#: View/Suppliers/view.ctp:116;162
-#: View/Users/index.ctp:23
+#: app\View\Articles\index.ctp:43
+#: app\View\Articles\view.ctp:136
+#: app\View\Consumptions\index.ctp:31
+#: app\View\CustomerInvoiceLines\index.ctp:41
+#: app\View\CustomerInvoiceStatuses\index.ctp:21
+#: app\View\CustomerInvoices\index.ctp:28
+#: app\View\CustomerInvoices\view.ctp:82
+#: app\View\CustomerOrderLines\index.ctp:53
+#: app\View\CustomerOrders\index.ctp:33
+#: app\View\CustomerOrders\view.ctp:119;122;162
+#: app\View\CustomerPayments\index.ctp:33
+#: app\View\Customers\index.ctp:38
+#: app\View\Customers\view.ctp:110;154
+#: app\View\InvoiceGroups\index.ctp:23
+#: app\View\OrderStatuses\index.ctp:21
+#: app\View\OrderStatuses\view.ctp:90;131
+#: app\View\RawMaterialTypes\index.ctp:19
+#: app\View\RawMaterialTypes\view.ctp:89;158
+#: app\View\RawMaterials\index.ctp:49
+#: app\View\RawMaterials\view.ctp:141
+#: app\View\ServiceTypes\index.ctp:15
+#: app\View\SupplierInvoiceStatuses\index.ctp:21
+#: app\View\SupplierInvoiceStatuses\view.ctp:74
+#: app\View\SupplierInvoices\index.ctp:35
+#: app\View\SupplierInvoices\view.ctp:121;186;255
+#: app\View\SupplierSlips\index.ctp:41
+#: app\View\SupplierSlips\view.ctp:108;164
+#: app\View\Suppliers\index.ctp:29
+#: app\View\Suppliers\view.ctp:116;162
+#: app\View\Users\index.ctp:23
 msgid "View"
 msgstr ""
 
-#: View/Articles/index.ctp:44
-#: View/Articles/view.ctp:137
-#: View/Consumptions/index.ctp:32
-#: View/CustomerInvoiceLines/index.ctp:42
-#: View/CustomerInvoiceStatuses/index.ctp:22
-#: View/CustomerInvoices/index.ctp:36
-#: View/CustomerInvoices/view.ctp:107;168
-#: View/CustomerOrderLines/index.ctp:54
-#: View/CustomerOrders/index.ctp:34
-#: View/CustomerOrders/view.ctp:120;123;163
-#: View/CustomerPayments/index.ctp:34
-#: View/Customers/index.ctp:39
-#: View/Customers/view.ctp:113
-#: View/InvoiceGroups/index.ctp:24
-#: View/OrderStatuses/index.ctp:22
-#: View/OrderStatuses/view.ctp:91;132
-#: View/RawMaterialTypes/index.ctp:20
-#: View/RawMaterialTypes/view.ctp:90;159
-#: View/RawMaterials/index.ctp:50
-#: View/RawMaterials/view.ctp:142
-#: View/ServiceTypes/index.ctp:16
-#: View/SupplierInvoiceStatuses/index.ctp:22
-#: View/SupplierInvoiceStatuses/view.ctp:75
-#: View/SupplierInvoices/index.ctp:36
-#: View/SupplierInvoices/view.ctp:122;187;256
-#: View/SupplierSlips/index.ctp:42
-#: View/SupplierSlips/view.ctp:109;165
-#: View/Suppliers/index.ctp:30
-#: View/Suppliers/view.ctp:117;163
-#: View/Users/index.ctp:24
+#: app\View\Articles\index.ctp:44
+#: app\View\Articles\view.ctp:137
+#: app\View\Consumptions\index.ctp:32
+#: app\View\CustomerInvoiceLines\index.ctp:42
+#: app\View\CustomerInvoiceStatuses\index.ctp:22
+#: app\View\CustomerInvoices\index.ctp:29
+#: app\View\CustomerInvoices\view.ctp:83
+#: app\View\CustomerOrderLines\index.ctp:54
+#: app\View\CustomerOrders\index.ctp:34
+#: app\View\CustomerOrders\view.ctp:120;123;163
+#: app\View\CustomerPayments\index.ctp:34
+#: app\View\Customers\index.ctp:39
+#: app\View\Customers\view.ctp:113
+#: app\View\InvoiceGroups\index.ctp:24
+#: app\View\OrderStatuses\index.ctp:22
+#: app\View\OrderStatuses\view.ctp:91;132
+#: app\View\RawMaterialTypes\index.ctp:20
+#: app\View\RawMaterialTypes\view.ctp:90;159
+#: app\View\RawMaterials\index.ctp:50
+#: app\View\RawMaterials\view.ctp:142
+#: app\View\ServiceTypes\index.ctp:16
+#: app\View\SupplierInvoiceStatuses\index.ctp:22
+#: app\View\SupplierInvoiceStatuses\view.ctp:75
+#: app\View\SupplierInvoices\index.ctp:36
+#: app\View\SupplierInvoices\view.ctp:122;187;256
+#: app\View\SupplierSlips\index.ctp:42
+#: app\View\SupplierSlips\view.ctp:109;165
+#: app\View\Suppliers\index.ctp:30
+#: app\View\Suppliers\view.ctp:117;163
+#: app\View\Users\index.ctp:24
 msgid "Edit"
 msgstr ""
 
-#: View/Articles/index.ctp:53
-#: View/Consumptions/index.ctp:41
-#: View/CustomerInvoiceLines/index.ctp:51
-#: View/CustomerInvoiceStatuses/index.ctp:31
-#: View/CustomerInvoices/index.ctp:45
-#: View/CustomerOrderLines/index.ctp:63
-#: View/CustomerOrders/index.ctp:43
-#: View/CustomerPayments/index.ctp:43
-#: View/Customers/index.ctp:48
-#: View/InvoiceGroups/index.ctp:33
-#: View/OrderStatuses/index.ctp:31
-#: View/RawMaterialTypes/index.ctp:29
-#: View/RawMaterials/index.ctp:59
-#: View/ServiceTypes/index.ctp:25
-#: View/SupplierInvoiceStatuses/index.ctp:31
-#: View/SupplierInvoices/index.ctp:45
-#: View/SupplierSlips/index.ctp:51
-#: View/Suppliers/index.ctp:39
-#: View/Users/index.ctp:33
+#: app\View\Articles\index.ctp:53
+#: app\View\Consumptions\index.ctp:41
+#: app\View\CustomerInvoiceLines\index.ctp:51
+#: app\View\CustomerInvoiceStatuses\index.ctp:31
+#: app\View\CustomerInvoices\index.ctp:39
+#: app\View\CustomerOrderLines\index.ctp:63
+#: app\View\CustomerOrders\index.ctp:43
+#: app\View\CustomerPayments\index.ctp:43
+#: app\View\Customers\index.ctp:48
+#: app\View\InvoiceGroups\index.ctp:33
+#: app\View\OrderStatuses\index.ctp:31
+#: app\View\RawMaterialTypes\index.ctp:29
+#: app\View\RawMaterials\index.ctp:59
+#: app\View\ServiceTypes\index.ctp:25
+#: app\View\SupplierInvoiceStatuses\index.ctp:31
+#: app\View\SupplierInvoices\index.ctp:45
+#: app\View\SupplierSlips\index.ctp:51
+#: app\View\Suppliers\index.ctp:39
+#: app\View\Users\index.ctp:33
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
 msgstr ""
 
-#: View/Articles/index.ctp:59
-#: View/Consumptions/index.ctp:47
-#: View/CustomerInvoiceLines/index.ctp:57
-#: View/CustomerInvoiceStatuses/index.ctp:37
-#: View/CustomerInvoices/index.ctp:51
-#: View/CustomerOrderLines/index.ctp:69
-#: View/CustomerOrders/index.ctp:49
-#: View/CustomerPayments/index.ctp:49
-#: View/Customers/index.ctp:54
-#: View/InvoiceGroups/index.ctp:39
-#: View/OrderStatuses/index.ctp:37
-#: View/RawMaterialTypes/index.ctp:35
-#: View/RawMaterials/index.ctp:65
-#: View/ServiceTypes/index.ctp:31
-#: View/SupplierInvoiceStatuses/index.ctp:37
-#: View/SupplierInvoices/index.ctp:51
-#: View/SupplierSlips/index.ctp:57
-#: View/Suppliers/index.ctp:45
-#: View/Users/index.ctp:39
+#: app\View\Articles\index.ctp:59
+#: app\View\Consumptions\index.ctp:47
+#: app\View\CustomerInvoiceLines\index.ctp:57
+#: app\View\CustomerInvoiceStatuses\index.ctp:37
+#: app\View\CustomerInvoices\index.ctp:45
+#: app\View\CustomerOrderLines\index.ctp:69
+#: app\View\CustomerOrders\index.ctp:49
+#: app\View\CustomerPayments\index.ctp:49
+#: app\View\Customers\index.ctp:54
+#: app\View\InvoiceGroups\index.ctp:39
+#: app\View\OrderStatuses\index.ctp:37
+#: app\View\RawMaterialTypes\index.ctp:35
+#: app\View\RawMaterials\index.ctp:65
+#: app\View\ServiceTypes\index.ctp:31
+#: app\View\SupplierInvoiceStatuses\index.ctp:37
+#: app\View\SupplierInvoices\index.ctp:51
+#: app\View\SupplierSlips\index.ctp:57
+#: app\View\Suppliers\index.ctp:45
+#: app\View\Users\index.ctp:39
 msgid "previous"
 msgstr ""
 
-#: View/Articles/index.ctp:61
-#: View/Consumptions/index.ctp:49
-#: View/CustomerInvoiceLines/index.ctp:59
-#: View/CustomerInvoiceStatuses/index.ctp:39
-#: View/CustomerInvoices/index.ctp:53
-#: View/CustomerOrderLines/index.ctp:71
-#: View/CustomerOrders/index.ctp:51
-#: View/CustomerPayments/index.ctp:51
-#: View/Customers/index.ctp:56
-#: View/InvoiceGroups/index.ctp:41
-#: View/OrderStatuses/index.ctp:39
-#: View/RawMaterialTypes/index.ctp:37
-#: View/RawMaterials/index.ctp:67
-#: View/ServiceTypes/index.ctp:33
-#: View/SupplierInvoiceStatuses/index.ctp:39
-#: View/SupplierInvoices/index.ctp:53
-#: View/SupplierSlips/index.ctp:59
-#: View/Suppliers/index.ctp:47
-#: View/Users/index.ctp:41
+#: app\View\Articles\index.ctp:61
+#: app\View\Consumptions\index.ctp:49
+#: app\View\CustomerInvoiceLines\index.ctp:59
+#: app\View\CustomerInvoiceStatuses\index.ctp:39
+#: app\View\CustomerInvoices\index.ctp:47
+#: app\View\CustomerOrderLines\index.ctp:71
+#: app\View\CustomerOrders\index.ctp:51
+#: app\View\CustomerPayments\index.ctp:51
+#: app\View\Customers\index.ctp:56
+#: app\View\InvoiceGroups\index.ctp:41
+#: app\View\OrderStatuses\index.ctp:39
+#: app\View\RawMaterialTypes\index.ctp:37
+#: app\View\RawMaterials\index.ctp:67
+#: app\View\ServiceTypes\index.ctp:33
+#: app\View\SupplierInvoiceStatuses\index.ctp:39
+#: app\View\SupplierInvoices\index.ctp:53
+#: app\View\SupplierSlips\index.ctp:59
+#: app\View\Suppliers\index.ctp:47
+#: app\View\Users\index.ctp:41
 msgid "next"
 msgstr ""
 
-#: View/Articles/index.ctp:68
-#: View/Articles/view.ctp:103
-#: View/Consumptions/add.ctp:23
-#: View/Consumptions/edit.ctp:25
-#: View/Consumptions/index.ctp:58
-#: View/Consumptions/view.ctp:54
-#: View/SupplierInvoices/add.ctp:27
-#: View/SupplierInvoices/edit.ctp:29
-#: View/SupplierInvoices/index.ctp:66
-#: View/SupplierInvoices/view.ctp:68;132
-#: View/SupplierSlips/add.ctp:21
-#: View/SupplierSlips/edit.ctp:23
-#: View/SupplierSlips/index.ctp:70
-#: View/SupplierSlips/view.ctp:64;119
+#: app\View\Articles\index.ctp:68
+#: app\View\Articles\view.ctp:103
+#: app\View\Consumptions\add.ctp:23
+#: app\View\Consumptions\edit.ctp:25
+#: app\View\Consumptions\index.ctp:58
+#: app\View\Consumptions\view.ctp:54
+#: app\View\SupplierInvoices\add.ctp:27
+#: app\View\SupplierInvoices\edit.ctp:29
+#: app\View\SupplierInvoices\index.ctp:66
+#: app\View\SupplierInvoices\view.ctp:68;132
+#: app\View\SupplierSlips\add.ctp:21
+#: app\View\SupplierSlips\edit.ctp:23
+#: app\View\SupplierSlips\index.ctp:70
+#: app\View\SupplierSlips\view.ctp:64;119
 msgid "New Article"
 msgstr ""
 
-#: View/Articles/view.ctp:4;113
-#: View/Consumptions/view.ctp:4
-#: View/CustomerInvoiceLines/view.ctp:4
-#: View/CustomerInvoiceStatuses/view.ctp:4
-#: View/CustomerInvoices/view.ctp:4;75;126
-#: View/CustomerOrderLines/view.ctp:4
-#: View/CustomerOrderLines/view_sale.ctp:4
-#: View/CustomerOrderLines/view_service.ctp:4
-#: View/CustomerOrders/view.ctp:13;144
-#: View/CustomerPayments/view.ctp:4
-#: View/Customers/view.ctp:13;86
-#: View/InvoiceGroups/view.ctp:4
-#: View/OrderStatuses/view.ctp:4;49;110
-#: View/RawMaterialTypes/view.ctp:4;44;109
-#: View/RawMaterials/view.ctp:4;118
-#: View/ServiceTypes/view.ctp:4
-#: View/SupplierInvoiceStatuses/view.ctp:4;47
-#: View/SupplierInvoices/view.ctp:4;80;141;206
-#: View/SupplierSlips/view.ctp:4;74;128
-#: View/Suppliers/view.ctp:13;88;136
-#: View/Users/view.ctp:4
+#: app\View\Articles\view.ctp:4;113
+#: app\View\Consumptions\view.ctp:4
+#: app\View\CustomerInvoiceLines\view.ctp:4
+#: app\View\CustomerInvoiceStatuses\view.ctp:4
+#: app\View\CustomerOrderLines\view.ctp:4
+#: app\View\CustomerOrderLines\view_sale.ctp:4
+#: app\View\CustomerOrderLines\view_service.ctp:4
+#: app\View\CustomerOrders\view.ctp:13;144
+#: app\View\CustomerPayments\view.ctp:4
+#: app\View\Customers\view.ctp:13;86
+#: app\View\InvoiceGroups\view.ctp:4
+#: app\View\OrderStatuses\view.ctp:4;49;110
+#: app\View\RawMaterialTypes\view.ctp:4;44;109
+#: app\View\RawMaterials\view.ctp:4;118
+#: app\View\ServiceTypes\view.ctp:4
+#: app\View\SupplierInvoiceStatuses\view.ctp:4;47
+#: app\View\SupplierInvoices\view.ctp:4;80;141;206
+#: app\View\SupplierSlips\view.ctp:4;74;128
+#: app\View\Suppliers\view.ctp:13;88;136
+#: app\View\Users\view.ctp:4
 msgid "Id"
 msgstr ""
 
-#: View/Articles/view.ctp:9
-#: View/RawMaterialTypes/view.ctp:45;110
-#: View/SupplierInvoices/view.ctp:81;142;207
+#: app\View\Articles\view.ctp:9
+#: app\View\RawMaterialTypes\view.ctp:45;110
+#: app\View\SupplierInvoices\view.ctp:81;142;207
 msgid "Stock Type"
 msgstr ""
 
-#: View/Articles/view.ctp:14
-#: View/RawMaterialTypes/view.ctp:111
-#: View/SupplierInvoices/view.ctp:82;208
-#: View/SupplierSlips/view.ctp:75
+#: app\View\Articles\view.ctp:14
+#: app\View\RawMaterialTypes\view.ctp:111
+#: app\View\SupplierInvoices\view.ctp:82;208
+#: app\View\SupplierSlips\view.ctp:75
 msgid "Article Model"
 msgstr ""
 
-#: View/Articles/view.ctp:19
-#: View/RawMaterialTypes/view.ctp:112
-#: View/SupplierInvoices/view.ctp:83;209
-#: View/SupplierSlips/view.ctp:76
+#: app\View\Articles\view.ctp:19
+#: app\View\RawMaterialTypes\view.ctp:112
+#: app\View\SupplierInvoices\view.ctp:83;209
+#: app\View\SupplierSlips\view.ctp:76
 msgid "Article Size"
 msgstr ""
 
-#: View/Articles/view.ctp:24
-#: View/RawMaterialTypes/view.ctp:50;117
-#: View/RawMaterials/view.ctp:29
-#: View/SupplierInvoices/view.ctp:84;147;214
-#: View/SupplierSlips/view.ctp:77;133
+#: app\View\Articles\view.ctp:24
+#: app\View\RawMaterialTypes\view.ctp:50;117
+#: app\View\RawMaterials\view.ctp:29
+#: app\View\SupplierInvoices\view.ctp:84;147;214
+#: app\View\SupplierSlips\view.ctp:77;133
 msgid "Stock Comment"
 msgstr ""
 
-#: View/Articles/view.ctp:44
-#: View/RawMaterialTypes/view.ctp:54;121
-#: View/RawMaterials/view.ctp:49
-#: View/SupplierInvoices/view.ctp:88;151;218
-#: View/SupplierSlips/view.ctp:81;137
+#: app\View\Articles\view.ctp:44
+#: app\View\RawMaterialTypes\view.ctp:54;121
+#: app\View\RawMaterials\view.ctp:49
+#: app\View\SupplierInvoices\view.ctp:88;151;218
+#: app\View\SupplierSlips\view.ctp:81;137
 msgid "Stock Buy Price"
 msgstr ""
 
-#: View/Articles/view.ctp:49
-#: View/RawMaterialTypes/view.ctp:55;122
-#: View/RawMaterials/view.ctp:54
-#: View/SupplierInvoices/view.ctp:89;152;219
-#: View/SupplierSlips/view.ctp:82;138
+#: app\View\Articles\view.ctp:49
+#: app\View\RawMaterialTypes\view.ctp:55;122
+#: app\View\RawMaterials\view.ctp:54
+#: app\View\SupplierInvoices\view.ctp:89;152;219
+#: app\View\SupplierSlips\view.ctp:82;138
 msgid "Stock Vat"
 msgstr ""
 
-#: View/Articles/view.ctp:54
-#: View/RawMaterialTypes/view.ctp:56;123
-#: View/RawMaterials/view.ctp:59
-#: View/SupplierInvoices/view.ctp:90;153;220
-#: View/SupplierSlips/view.ctp:83;139
+#: app\View\Articles\view.ctp:54
+#: app\View\RawMaterialTypes\view.ctp:56;123
+#: app\View\RawMaterials\view.ctp:59
+#: app\View\SupplierInvoices\view.ctp:90;153;220
+#: app\View\SupplierSlips\view.ctp:83;139
 msgid "Stock Vat Re"
 msgstr ""
 
-#: View/Articles/view.ctp:59
-#: View/RawMaterialTypes/view.ctp:57;124
-#: View/RawMaterials/view.ctp:64
-#: View/SupplierInvoices/view.ctp:91;154;221
-#: View/SupplierSlips/view.ctp:84
+#: app\View\Articles\view.ctp:59
+#: app\View\RawMaterialTypes\view.ctp:57;124
+#: app\View\RawMaterials\view.ctp:64
+#: app\View\SupplierInvoices\view.ctp:91;154;221
+#: app\View\SupplierSlips\view.ctp:84
 msgid "Stock Sale Price"
 msgstr ""
 
-#: View/Articles/view.ctp:64
-#: View/CustomerInvoiceLines/view.ctp:44
-#: View/CustomerInvoiceStatuses/view.ctp:19
-#: View/CustomerInvoices/view.ctp:39;83;134
-#: View/CustomerOrderLines/view.ctp:54
-#: View/CustomerOrderLines/view_sale.ctp:49
-#: View/CustomerOrderLines/view_service.ctp:74
-#: View/CustomerOrders/view.ctp:63
-#: View/CustomerPayments/view.ctp:39
-#: View/Customers/view.ctp:58
-#: View/InvoiceGroups/view.ctp:24
-#: View/OrderStatuses/view.ctp:19;59;115
-#: View/RawMaterialTypes/view.ctp:58;125
-#: View/RawMaterials/view.ctp:69
-#: View/SupplierInvoiceStatuses/view.ctp:19;55
-#: View/SupplierInvoices/view.ctp:44;92;155;222
-#: View/Suppliers/view.ctp:58;96
-#: View/Users/view.ctp:24
+#: app\View\Articles\view.ctp:64
+#: app\View\CustomerInvoiceLines\view.ctp:44
+#: app\View\CustomerInvoiceStatuses\view.ctp:19
+#: app\View\CustomerInvoices\view.ctp:34
+#: app\View\CustomerOrderLines\view.ctp:54
+#: app\View\CustomerOrderLines\view_sale.ctp:49
+#: app\View\CustomerOrderLines\view_service.ctp:74
+#: app\View\CustomerOrders\view.ctp:63
+#: app\View\CustomerPayments\view.ctp:39
+#: app\View\Customers\view.ctp:58
+#: app\View\InvoiceGroups\view.ctp:24
+#: app\View\OrderStatuses\view.ctp:19;59;115
+#: app\View\RawMaterialTypes\view.ctp:58;125
+#: app\View\RawMaterials\view.ctp:69
+#: app\View\SupplierInvoiceStatuses\view.ctp:19;55
+#: app\View\SupplierInvoices\view.ctp:44;92;155;222
+#: app\View\Suppliers\view.ctp:58;96
+#: app\View\Users\view.ctp:24
 msgid "Created"
 msgstr ""
 
-#: View/Articles/view.ctp:69
-#: View/CustomerInvoiceLines/view.ctp:49
-#: View/CustomerInvoiceStatuses/view.ctp:24
-#: View/CustomerInvoices/view.ctp:44;84;135
-#: View/CustomerOrderLines/view.ctp:59
-#: View/CustomerOrderLines/view_sale.ctp:54
-#: View/CustomerOrderLines/view_service.ctp:79
-#: View/CustomerOrders/view.ctp:68
-#: View/CustomerPayments/view.ctp:44
-#: View/Customers/view.ctp:63
-#: View/InvoiceGroups/view.ctp:29
-#: View/OrderStatuses/view.ctp:24;60;116
-#: View/RawMaterialTypes/view.ctp:59;126
-#: View/RawMaterials/view.ctp:74
-#: View/SupplierInvoiceStatuses/view.ctp:24;56
-#: View/SupplierInvoices/view.ctp:49;93;156;223
-#: View/Suppliers/view.ctp:63;97
-#: View/Users/view.ctp:29
+#: app\View\Articles\view.ctp:69
+#: app\View\CustomerInvoiceLines\view.ctp:49
+#: app\View\CustomerInvoiceStatuses\view.ctp:24
+#: app\View\CustomerInvoices\view.ctp:39
+#: app\View\CustomerOrderLines\view.ctp:59
+#: app\View\CustomerOrderLines\view_sale.ctp:54
+#: app\View\CustomerOrderLines\view_service.ctp:79
+#: app\View\CustomerOrders\view.ctp:68
+#: app\View\CustomerPayments\view.ctp:44
+#: app\View\Customers\view.ctp:63
+#: app\View\InvoiceGroups\view.ctp:29
+#: app\View\OrderStatuses\view.ctp:24;60;116
+#: app\View\RawMaterialTypes\view.ctp:59;126
+#: app\View\RawMaterials\view.ctp:74
+#: app\View\SupplierInvoiceStatuses\view.ctp:24;56
+#: app\View\SupplierInvoices\view.ctp:49;93;156;223
+#: app\View\Suppliers\view.ctp:63;97
+#: app\View\Users\view.ctp:29
 msgid "Modified"
 msgstr ""
 
-#: View/Articles/view.ctp:74
-#: View/RawMaterials/view.ctp:79
-#: View/SupplierSlips/view.ctp:2
+#: app\View\Articles\view.ctp:74
+#: app\View\RawMaterials\view.ctp:79
+#: app\View\SupplierSlips\view.ctp:2
 msgid "Supplier Slip"
 msgstr ""
 
-#: View/Articles/view.ctp:79
-#: View/RawMaterialTypes/view.ctp:61;128
-#: View/RawMaterials/view.ctp:84
-#: View/SupplierInvoices/view.ctp:95;158;225
-#: View/SupplierSlips/view.ctp:85;140
+#: app\View\Articles\view.ctp:79
+#: app\View\RawMaterialTypes\view.ctp:61;128
+#: app\View\RawMaterials\view.ctp:84
+#: app\View\SupplierInvoices\view.ctp:95;158;225
+#: app\View\SupplierSlips\view.ctp:85;140
 msgid "Supplier Slip Line"
 msgstr ""
 
-#: View/Articles/view.ctp:84
-#: View/RawMaterials/view.ctp:89
-#: View/SupplierInvoices/view.ctp:2
+#: app\View\Articles\view.ctp:84
+#: app\View\RawMaterials\view.ctp:89
+#: app\View\SupplierInvoices\view.ctp:2
 msgid "Supplier Invoice"
 msgstr ""
 
-#: View/Articles/view.ctp:89
+#: app\View\Articles\view.ctp:89
 msgid "Article Returned"
 msgstr ""
 
-#: View/Articles/view.ctp:101
+#: app\View\Articles\view.ctp:101
 msgid "Delete Article"
 msgstr ""
 
-#: View/Articles/view.ctp:109
-#: View/RawMaterials/view.ctp:114
+#: app\View\Articles\view.ctp:109
+#: app\View\RawMaterials\view.ctp:114
 msgid "Related Consumptions"
 msgstr ""
 
-#: View/Articles/view.ctp:114
-#: View/RawMaterials/view.ctp:119
+#: app\View\Articles\view.ctp:114
+#: app\View\RawMaterials\view.ctp:119
 msgid "Article Id"
 msgstr ""
 
-#: View/Articles/view.ctp:115
-#: View/RawMaterials/view.ctp:120
+#: app\View\Articles\view.ctp:115
+#: app\View\RawMaterials\view.ctp:120
 msgid "Raw Material Id"
 msgstr ""
 
-#: View/Articles/view.ctp:116
-#: View/Consumptions/view.ctp:19
-#: View/RawMaterials/view.ctp:121
+#: app\View\Articles\view.ctp:116
+#: app\View\Consumptions\view.ctp:19
+#: app\View\RawMaterials\view.ctp:121
 msgid "Consumption Raw Mat Consumed Units"
 msgstr ""
 
-#: View/Consumptions/add.ctp:4
+#: app\View\Consumptions\add.ctp:4
 msgid "Add Consumption"
 msgstr ""
 
-#: View/Consumptions/add.ctp:24
-#: View/Consumptions/edit.ctp:26
-#: View/Consumptions/index.ctp:59
-#: View/Consumptions/view.ctp:55
-#: View/RawMaterialTypes/add.ctp:18
-#: View/RawMaterialTypes/edit.ctp:20
-#: View/RawMaterialTypes/index.ctp:45
-#: View/RawMaterialTypes/view.ctp:33
-#: View/RawMaterials/add.ctp:36
-#: View/RawMaterials/edit.ctp:38
-#: View/RawMaterials/view.ctp:101
-#: View/SupplierInvoices/add.ctp:28
-#: View/SupplierInvoices/edit.ctp:30
-#: View/SupplierInvoices/index.ctp:67
-#: View/SupplierInvoices/view.ctp:69
-#: View/SupplierSlips/add.ctp:22
-#: View/SupplierSlips/edit.ctp:24
-#: View/SupplierSlips/index.ctp:71
+#: app\View\Consumptions\add.ctp:24
+#: app\View\Consumptions\edit.ctp:26
+#: app\View\Consumptions\index.ctp:59
+#: app\View\Consumptions\view.ctp:55
+#: app\View\RawMaterialTypes\add.ctp:18
+#: app\View\RawMaterialTypes\edit.ctp:20
+#: app\View\RawMaterialTypes\index.ctp:45
+#: app\View\RawMaterialTypes\view.ctp:33
+#: app\View\RawMaterials\add.ctp:36
+#: app\View\RawMaterials\edit.ctp:38
+#: app\View\RawMaterials\view.ctp:101
+#: app\View\SupplierInvoices\add.ctp:28
+#: app\View\SupplierInvoices\edit.ctp:30
+#: app\View\SupplierInvoices\index.ctp:67
+#: app\View\SupplierInvoices\view.ctp:69
+#: app\View\SupplierSlips\add.ctp:22
+#: app\View\SupplierSlips\edit.ctp:24
+#: app\View\SupplierSlips\index.ctp:71
 msgid "List Raw Materials"
 msgstr ""
 
-#: View/Consumptions/add.ctp:25
-#: View/Consumptions/edit.ctp:27
-#: View/Consumptions/index.ctp:60
-#: View/Consumptions/view.ctp:56
-#: View/RawMaterialTypes/add.ctp:19
-#: View/RawMaterialTypes/edit.ctp:21
-#: View/RawMaterialTypes/index.ctp:46
-#: View/RawMaterialTypes/view.ctp:34;100
-#: View/RawMaterials/index.ctp:74
-#: View/RawMaterials/view.ctp:102
-#: View/SupplierInvoices/add.ctp:29
-#: View/SupplierInvoices/edit.ctp:31
-#: View/SupplierInvoices/index.ctp:68
-#: View/SupplierInvoices/view.ctp:70;197
-#: View/SupplierSlips/add.ctp:23
-#: View/SupplierSlips/edit.ctp:25
-#: View/SupplierSlips/index.ctp:72
-#: View/SupplierSlips/view.ctp:65;175
+#: app\View\Consumptions\add.ctp:25
+#: app\View\Consumptions\edit.ctp:27
+#: app\View\Consumptions\index.ctp:60
+#: app\View\Consumptions\view.ctp:56
+#: app\View\RawMaterialTypes\add.ctp:19
+#: app\View\RawMaterialTypes\edit.ctp:21
+#: app\View\RawMaterialTypes\index.ctp:46
+#: app\View\RawMaterialTypes\view.ctp:34;100
+#: app\View\RawMaterials\index.ctp:74
+#: app\View\RawMaterials\view.ctp:102
+#: app\View\SupplierInvoices\add.ctp:29
+#: app\View\SupplierInvoices\edit.ctp:31
+#: app\View\SupplierInvoices\index.ctp:68
+#: app\View\SupplierInvoices\view.ctp:70;197
+#: app\View\SupplierSlips\add.ctp:23
+#: app\View\SupplierSlips\edit.ctp:25
+#: app\View\SupplierSlips\index.ctp:72
+#: app\View\SupplierSlips\view.ctp:65;175
 msgid "New Raw Material"
 msgstr ""
 
-#: View/Consumptions/edit.ctp:4
-#: View/Consumptions/view.ctp:49
+#: app\View\Consumptions\edit.ctp:4
+#: app\View\Consumptions\view.ctp:49
 msgid "Edit Consumption"
 msgstr ""
 
-#: View/Consumptions/index.ctp:2
-#: View/Layouts/default.ctp:95
+#: app\View\Consumptions\index.ctp:2
+#: app\View\Layouts\default.ctp:95
 msgid "Consumptions"
 msgstr ""
 
-#: View/Consumptions/view.ctp:2
+#: app\View\Consumptions\view.ctp:2
 msgid "Consumption"
 msgstr ""
 
-#: View/Consumptions/view.ctp:14
-#: View/RawMaterials/view.ctp:2
+#: app\View\Consumptions\view.ctp:14
+#: app\View\RawMaterials\view.ctp:2
 msgid "Raw Material"
 msgstr ""
 
-#: View/Consumptions/view.ctp:24
-#: View/RawMaterials/view.ctp:122
+#: app\View\Consumptions\view.ctp:24
+#: app\View\RawMaterials\view.ctp:122
 msgid "Consumption Cost 01"
 msgstr ""
 
-#: View/Consumptions/view.ctp:29
-#: View/RawMaterials/view.ctp:123
+#: app\View\Consumptions\view.ctp:29
+#: app\View\RawMaterials\view.ctp:123
 msgid "Consumption Cost 02"
 msgstr ""
 
-#: View/Consumptions/view.ctp:34
-#: View/RawMaterials/view.ctp:124
+#: app\View\Consumptions\view.ctp:34
+#: app\View\RawMaterials\view.ctp:124
 msgid "Consumption Cost 03"
 msgstr ""
 
-#: View/Consumptions/view.ctp:39
-#: View/RawMaterials/view.ctp:125
+#: app\View\Consumptions\view.ctp:39
+#: app\View\RawMaterials\view.ctp:125
 msgid "Consumption Cost 04"
 msgstr ""
 
-#: View/Consumptions/view.ctp:50
+#: app\View\Consumptions\view.ctp:50
 msgid "Delete Consumption"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:4
+#: app\View\CustomerInvoiceLines\add.ctp:4
 msgid "Add Customer Invoice Line"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:23
-#: View/CustomerInvoiceLines/edit.ctp:25
-#: View/CustomerInvoiceLines/view.ctp:71
-#: View/CustomerInvoices/add.ctp:27
-#: View/CustomerInvoices/edit.ctp:29
-#: View/CustomerInvoices/index.ctp:67
-#: View/CustomerInvoices/view.ctp:64
-#: View/CustomerOrders/edit.ctp:25
+#: app\View\CustomerInvoiceLines\add.ctp:23
+#: app\View\CustomerInvoiceLines\edit.ctp:25
+#: app\View\CustomerInvoiceLines\view.ctp:71
+#: app\View\CustomerInvoices\add.ctp:27
+#: app\View\CustomerInvoices\edit.ctp:29
+#: app\View\CustomerOrders\edit.ctp:25
 msgid "List Customer Invoice Lines"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:24
-#: View/CustomerInvoiceLines/edit.ctp:26
-#: View/CustomerInvoiceLines/index.ctp:67
-#: View/CustomerInvoiceLines/view.ctp:73
-#: View/CustomerInvoices/add.ctp:20
-#: View/CustomerInvoices/edit.ctp:22
-#: View/CustomerInvoices/view.ctp:56
-#: View/CustomerOrderLines/edit.ctp:38
-#: View/CustomerOrderLines/index.ctp:85
-#: View/CustomerOrderLines/view.ctp:104
-#: View/InvoiceGroups/add.ctp:18
-#: View/InvoiceGroups/edit.ctp:20
-#: View/InvoiceGroups/view.ctp:43
+#: app\View\CustomerInvoiceLines\add.ctp:24
+#: app\View\CustomerInvoiceLines\edit.ctp:26
+#: app\View\CustomerInvoiceLines\index.ctp:67
+#: app\View\CustomerInvoiceLines\view.ctp:73
+#: app\View\CustomerInvoices\add.ctp:20
+#: app\View\CustomerInvoices\edit.ctp:22
+#: app\View\CustomerOrderLines\edit.ctp:38
+#: app\View\CustomerOrderLines\index.ctp:85
+#: app\View\CustomerOrderLines\view.ctp:104
+#: app\View\InvoiceGroups\add.ctp:18
+#: app\View\InvoiceGroups\edit.ctp:20
+#: app\View\InvoiceGroups\view.ctp:43
 msgid "List Customer Invoices"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:25
-#: View/CustomerInvoiceLines/edit.ctp:27
-#: View/CustomerInvoiceLines/index.ctp:68
-#: View/CustomerInvoiceLines/view.ctp:74
-#: View/CustomerInvoices/index.ctp:60
-#: View/CustomerInvoices/view.ctp:57
-#: View/CustomerOrderLines/edit.ctp:39
-#: View/CustomerOrderLines/index.ctp:86
-#: View/CustomerOrderLines/view.ctp:105
-#: View/Customers/view.ctp:165
-#: View/InvoiceGroups/add.ctp:19
-#: View/InvoiceGroups/edit.ctp:21
-#: View/InvoiceGroups/view.ctp:44
+#: app\View\CustomerInvoiceLines\add.ctp:25
+#: app\View\CustomerInvoiceLines\edit.ctp:27
+#: app\View\CustomerInvoiceLines\index.ctp:68
+#: app\View\CustomerInvoiceLines\view.ctp:74
+#: app\View\CustomerInvoices\index.ctp:54
+#: app\View\CustomerOrderLines\edit.ctp:39
+#: app\View\CustomerOrderLines\index.ctp:86
+#: app\View\CustomerOrderLines\view.ctp:105
+#: app\View\Customers\view.ctp:165
+#: app\View\InvoiceGroups\add.ctp:19
+#: app\View\InvoiceGroups\edit.ctp:21
+#: app\View\InvoiceGroups\view.ctp:44
 msgid "New Customer Invoice"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:26
-#: View/CustomerInvoiceLines/edit.ctp:28
-#: View/CustomerInvoiceLines/index.ctp:69
-#: View/CustomerInvoiceLines/view.ctp:75
-#: View/CustomerOrderLines/add.ctp:28
-#: View/CustomerOrderLines/edit.ctp:32
-#: View/CustomerOrderLines/index.ctp:79
-#: View/CustomerOrderLines/view.ctp:98
-#: View/CustomerOrders/add.ctp:19
-#: View/CustomerOrders/edit.ctp:20
-#: View/CustomerPayments/add.ctp:23
-#: View/CustomerPayments/edit.ctp:25
-#: View/CustomerPayments/index.ctp:61
-#: View/CustomerPayments/view.ctp:60
-#: View/Customers/add.ctp:23
-#: View/OrderStatuses/add.ctp:19
-#: View/OrderStatuses/edit.ctp:21
-#: View/OrderStatuses/index.ctp:49
-#: View/OrderStatuses/view.ctp:40
+#: app\View\CustomerInvoiceLines\add.ctp:26
+#: app\View\CustomerInvoiceLines\edit.ctp:28
+#: app\View\CustomerInvoiceLines\index.ctp:69
+#: app\View\CustomerInvoiceLines\view.ctp:75
+#: app\View\CustomerOrderLines\add.ctp:28
+#: app\View\CustomerOrderLines\edit.ctp:32
+#: app\View\CustomerOrderLines\index.ctp:79
+#: app\View\CustomerOrderLines\view.ctp:98
+#: app\View\CustomerOrders\add.ctp:19
+#: app\View\CustomerOrders\edit.ctp:20
+#: app\View\CustomerPayments\add.ctp:23
+#: app\View\CustomerPayments\edit.ctp:25
+#: app\View\CustomerPayments\index.ctp:61
+#: app\View\CustomerPayments\view.ctp:60
+#: app\View\Customers\add.ctp:23
+#: app\View\OrderStatuses\add.ctp:19
+#: app\View\OrderStatuses\edit.ctp:21
+#: app\View\OrderStatuses\index.ctp:49
+#: app\View\OrderStatuses\view.ctp:40
 msgid "List Customer Orders"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:27
-#: View/CustomerInvoiceLines/edit.ctp:29
-#: View/CustomerInvoiceLines/index.ctp:70
-#: View/CustomerInvoiceLines/view.ctp:76
-#: View/CustomerOrderLines/edit.ctp:33
-#: View/CustomerOrderLines/index.ctp:80
-#: View/CustomerOrderLines/view.ctp:99
-#: View/CustomerOrders/index.ctp:58
-#: View/CustomerPayments/add.ctp:24
-#: View/CustomerPayments/edit.ctp:26
-#: View/CustomerPayments/index.ctp:62
-#: View/CustomerPayments/view.ctp:61
-#: View/Customers/view.ctp:123
-#: View/OrderStatuses/add.ctp:20
-#: View/OrderStatuses/edit.ctp:22
-#: View/OrderStatuses/index.ctp:50
-#: View/OrderStatuses/view.ctp:41;142
+#: app\View\CustomerInvoiceLines\add.ctp:27
+#: app\View\CustomerInvoiceLines\edit.ctp:29
+#: app\View\CustomerInvoiceLines\index.ctp:70
+#: app\View\CustomerInvoiceLines\view.ctp:76
+#: app\View\CustomerOrderLines\edit.ctp:33
+#: app\View\CustomerOrderLines\index.ctp:80
+#: app\View\CustomerOrderLines\view.ctp:99
+#: app\View\CustomerOrders\index.ctp:58
+#: app\View\CustomerPayments\add.ctp:24
+#: app\View\CustomerPayments\edit.ctp:26
+#: app\View\CustomerPayments\index.ctp:62
+#: app\View\CustomerPayments\view.ctp:61
+#: app\View\Customers\view.ctp:123
+#: app\View\OrderStatuses\add.ctp:20
+#: app\View\OrderStatuses\edit.ctp:22
+#: app\View\OrderStatuses\index.ctp:50
+#: app\View\OrderStatuses\view.ctp:41;142
 msgid "New Customer Order"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:28
-#: View/CustomerInvoiceLines/edit.ctp:30
-#: View/CustomerInvoiceLines/index.ctp:71
-#: View/CustomerInvoiceLines/view.ctp:77
-#: View/CustomerOrderLines/edit.ctp:36
-#: View/CustomerOrderLines/index.ctp:83
-#: View/CustomerOrderLines/view.ctp:102
-#: View/RawMaterialTypes/add.ctp:20
-#: View/RawMaterialTypes/edit.ctp:22
-#: View/RawMaterialTypes/index.ctp:47
-#: View/RawMaterialTypes/view.ctp:35
-#: View/SupplierInvoices/add.ctp:30
-#: View/SupplierInvoices/edit.ctp:32
-#: View/SupplierInvoices/index.ctp:69
-#: View/SupplierInvoices/view.ctp:71
-#: View/SupplierSlips/add.ctp:24
-#: View/SupplierSlips/edit.ctp:26
-#: View/SupplierSlips/index.ctp:73
+#: app\View\CustomerInvoiceLines\add.ctp:28
+#: app\View\CustomerInvoiceLines\edit.ctp:30
+#: app\View\CustomerInvoiceLines\index.ctp:71
+#: app\View\CustomerInvoiceLines\view.ctp:77
+#: app\View\CustomerOrderLines\edit.ctp:36
+#: app\View\CustomerOrderLines\index.ctp:83
+#: app\View\CustomerOrderLines\view.ctp:102
+#: app\View\RawMaterialTypes\add.ctp:20
+#: app\View\RawMaterialTypes\edit.ctp:22
+#: app\View\RawMaterialTypes\index.ctp:47
+#: app\View\RawMaterialTypes\view.ctp:35
+#: app\View\SupplierInvoices\add.ctp:30
+#: app\View\SupplierInvoices\edit.ctp:32
+#: app\View\SupplierInvoices\index.ctp:69
+#: app\View\SupplierInvoices\view.ctp:71
+#: app\View\SupplierSlips\add.ctp:24
+#: app\View\SupplierSlips\edit.ctp:26
+#: app\View\SupplierSlips\index.ctp:73
 msgid "List Stocks"
 msgstr ""
 
-#: View/CustomerInvoiceLines/add.ctp:29
-#: View/CustomerInvoiceLines/edit.ctp:31
-#: View/CustomerInvoiceLines/index.ctp:72
-#: View/CustomerInvoiceLines/view.ctp:78
-#: View/CustomerOrderLines/edit.ctp:37
-#: View/CustomerOrderLines/index.ctp:84
-#: View/CustomerOrderLines/view.ctp:103
-#: View/RawMaterialTypes/add.ctp:21
-#: View/RawMaterialTypes/edit.ctp:23
-#: View/RawMaterialTypes/index.ctp:48
-#: View/RawMaterialTypes/view.ctp:36;169
-#: View/SupplierInvoices/add.ctp:31
-#: View/SupplierInvoices/edit.ctp:33
-#: View/SupplierInvoices/index.ctp:70
-#: View/SupplierInvoices/view.ctp:72;266
-#: View/SupplierSlips/add.ctp:25
-#: View/SupplierSlips/edit.ctp:27
-#: View/SupplierSlips/index.ctp:74
+#: app\View\CustomerInvoiceLines\add.ctp:29
+#: app\View\CustomerInvoiceLines\edit.ctp:31
+#: app\View\CustomerInvoiceLines\index.ctp:72
+#: app\View\CustomerInvoiceLines\view.ctp:78
+#: app\View\CustomerOrderLines\edit.ctp:37
+#: app\View\CustomerOrderLines\index.ctp:84
+#: app\View\CustomerOrderLines\view.ctp:103
+#: app\View\RawMaterialTypes\add.ctp:21
+#: app\View\RawMaterialTypes\edit.ctp:23
+#: app\View\RawMaterialTypes\index.ctp:48
+#: app\View\RawMaterialTypes\view.ctp:36;169
+#: app\View\SupplierInvoices\add.ctp:31
+#: app\View\SupplierInvoices\edit.ctp:33
+#: app\View\SupplierInvoices\index.ctp:70
+#: app\View\SupplierInvoices\view.ctp:72;266
+#: app\View\SupplierSlips\add.ctp:25
+#: app\View\SupplierSlips\edit.ctp:27
+#: app\View\SupplierSlips\index.ctp:74
 msgid "New Stock"
 msgstr ""
 
-#: View/CustomerInvoiceLines/edit.ctp:4
-#: View/CustomerInvoiceLines/view.ctp:69
+#: app\View\CustomerInvoiceLines\edit.ctp:4
+#: app\View\CustomerInvoiceLines\view.ctp:69
 msgid "Edit Customer Invoice Line"
 msgstr ""
 
-#: View/CustomerInvoiceLines/index.ctp:2
+#: app\View\CustomerInvoiceLines\index.ctp:2
 msgid "Customer Invoice Lines"
 msgstr ""
 
-#: View/CustomerInvoiceLines/index.ctp:66
-#: View/CustomerInvoiceLines/view.ctp:72
-#: View/CustomerInvoices/add.ctp:28
-#: View/CustomerInvoices/edit.ctp:30
-#: View/CustomerInvoices/index.ctp:68
-#: View/CustomerInvoices/view.ctp:65;117
-#: View/CustomerOrders/edit.ctp:26
+#: app\View\CustomerInvoiceLines\index.ctp:66
+#: app\View\CustomerInvoiceLines\view.ctp:72
+#: app\View\CustomerInvoices\add.ctp:28
+#: app\View\CustomerInvoices\edit.ctp:30
+#: app\View\CustomerOrders\edit.ctp:26
 msgid "New Customer Invoice Line"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:2
+#: app\View\CustomerInvoiceLines\view.ctp:2
 msgid "Customer Invoice Line"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:9
-#: View/CustomerInvoices/view.ctp:2
-#: View/CustomerOrderLines/view.ctp:64
-#: View/CustomerOrderLines/view_sale.ctp:39
-#: View/CustomerOrderLines/view_service.ctp:64
+#: app\View\CustomerInvoiceLines\view.ctp:9
+#: app\View\CustomerInvoices\printer.ctp:17
+#: app\View\CustomerInvoices\view.ctp:2
+#: app\View\CustomerOrderLines\view.ctp:64
+#: app\View\CustomerOrderLines\view_sale.ctp:39
+#: app\View\CustomerOrderLines\view_service.ctp:64
 msgid "Customer Invoice"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:14
-#: View/CustomerInvoices/view.ctp:77;137
-#: View/CustomerOrderLines/view.ctp:69
-#: View/CustomerOrderLines/view_sale.ctp:44
-#: View/CustomerOrderLines/view_service.ctp:69
-#: View/OrderStatuses/view.ctp:62
+#: app\View\CustomerInvoiceLines\view.ctp:14
+#: app\View\CustomerInvoices\view.ctp:59
+#: app\View\CustomerOrderLines\view.ctp:69
+#: app\View\CustomerOrderLines\view_sale.ctp:44
+#: app\View\CustomerOrderLines\view_service.ctp:69
+#: app\View\OrderStatuses\view.ctp:62
 msgid "Customer Invoice Line Number"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:19
-#: View/CustomerOrderLines/view.ctp:9
-#: View/CustomerOrderLines/view_sale.ctp:9
-#: View/CustomerOrderLines/view_service.ctp:9
-#: View/CustomerOrders/printer.ctp:11
-#: View/CustomerOrders/view.ctp:11
-#: View/CustomerPayments/view.ctp:34
+#: app\View\CustomerInvoiceLines\view.ctp:19
+#: app\View\CustomerOrderLines\view.ctp:9
+#: app\View\CustomerOrderLines\view_sale.ctp:9
+#: app\View\CustomerOrderLines\view_service.ctp:9
+#: app\View\CustomerOrders\printer.ctp:17
+#: app\View\CustomerOrders\view.ctp:11
+#: app\View\CustomerPayments\view.ctp:34
 msgid "Customer Order"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:24
-#: View/CustomerInvoices/view.ctp:79;128
-#: View/CustomerOrderLines/view.ctp:14
-#: View/CustomerOrderLines/view_sale.ctp:14
-#: View/CustomerOrderLines/view_service.ctp:14
-#: View/CustomerOrders/view.ctp:92
-#: View/OrderStatuses/view.ctp:51
+#: app\View\CustomerInvoiceLines\view.ctp:24
+#: app\View\CustomerInvoices\view.ctp:61
+#: app\View\CustomerOrderLines\view.ctp:14
+#: app\View\CustomerOrderLines\view_sale.ctp:14
+#: app\View\CustomerOrderLines\view_service.ctp:14
+#: app\View\CustomerOrders\view.ctp:92
+#: app\View\OrderStatuses\view.ctp:51
 msgid "Order Line Number"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:29
-#: View/CustomerInvoices/view.ctp:80
+#: app\View\CustomerInvoiceLines\view.ctp:29
+#: app\View\CustomerInvoices\view.ctp:62
 msgid "Customer Invoice Line Type"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:34
-#: View/CustomerOrderLines/view.ctp:29
-#: View/CustomerOrderLines/view_sale.ctp:19
+#: app\View\CustomerInvoiceLines\view.ctp:34
+#: app\View\CustomerOrderLines\view.ctp:29
+#: app\View\CustomerOrderLines\view_sale.ctp:19
 msgid "Stock"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:39
-#: View/CustomerInvoices/view.ctp:82
+#: app\View\CustomerInvoiceLines\view.ctp:39
+#: app\View\CustomerInvoices\view.ctp:64
 msgid "Customer Invoice Line Description"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:54
-#: View/CustomerInvoices/view.ctp:85
+#: app\View\CustomerInvoiceLines\view.ctp:54
+#: app\View\CustomerInvoices\view.ctp:65
 msgid "Customer Invoice Line Amount"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:59
-#: View/CustomerInvoices/view.ctp:86
+#: app\View\CustomerInvoiceLines\view.ctp:59
+#: app\View\CustomerInvoices\view.ctp:66
 msgid "Customer Invoice Line Vat"
 msgstr ""
 
-#: View/CustomerInvoiceLines/view.ctp:70
+#: app\View\CustomerInvoiceLines\view.ctp:70
 msgid "Delete Customer Invoice Line"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/add.ctp:4
+#: app\View\CustomerInvoiceStatuses\add.ctp:4
 msgid "Add Customer Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/add.ctp:16
-#: View/CustomerInvoiceStatuses/edit.ctp:18
-#: View/CustomerInvoiceStatuses/view.ctp:36
-#: View/CustomerInvoices/add.ctp:25
-#: View/CustomerInvoices/edit.ctp:27
-#: View/CustomerInvoices/index.ctp:65
-#: View/CustomerInvoices/view.ctp:62
+#: app\View\CustomerInvoiceStatuses\add.ctp:16
+#: app\View\CustomerInvoiceStatuses\edit.ctp:18
+#: app\View\CustomerInvoiceStatuses\view.ctp:36
+#: app\View\CustomerInvoices\add.ctp:25
+#: app\View\CustomerInvoices\edit.ctp:27
 msgid "List Customer Invoice Statuses"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/edit.ctp:4
-#: View/CustomerInvoiceStatuses/view.ctp:34
+#: app\View\CustomerInvoiceStatuses\edit.ctp:4
+#: app\View\CustomerInvoiceStatuses\view.ctp:34
 msgid "Edit Customer Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/index.ctp:2
+#: app\View\CustomerInvoiceStatuses\index.ctp:2
 msgid "Customer Invoice Statuses"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/index.ctp:46
-#: View/CustomerInvoiceStatuses/view.ctp:37
+#: app\View\CustomerInvoiceStatuses\index.ctp:46
+#: app\View\CustomerInvoiceStatuses\view.ctp:37
 msgid "New Customer Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/view.ctp:2
-#: View/Customers/view.ctp:134
-#: View/Layouts/default.ctp:123
+#: app\View\CustomerInvoiceStatuses\view.ctp:2
+#: app\View\Customers\view.ctp:134
+#: app\View\Layouts\default.ctp:123
 msgid "Customer Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/view.ctp:9
+#: app\View\CustomerInvoiceStatuses\view.ctp:9
 msgid "Cus Inv Status Name"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/view.ctp:14
+#: app\View\CustomerInvoiceStatuses\view.ctp:14
 msgid "Cus Inv Is Final Status"
 msgstr ""
 
-#: View/CustomerInvoiceStatuses/view.ctp:35
+#: app\View\CustomerInvoiceStatuses\view.ctp:35
 msgid "Delete Customer Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:4
+#: app\View\CustomerInvoices\add.ctp:4
+#: app\View\CustomerInvoices\invoice.ctp:6
 msgid "Add Customer Invoice"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:21
-#: View/CustomerInvoices/edit.ctp:23
-#: View/CustomerInvoices/index.ctp:61
-#: View/CustomerInvoices/view.ctp:58
-#: View/CustomerOrders/add.ctp:20
-#: View/CustomerOrders/edit.ctp:21
-#: View/CustomerPayments/add.ctp:21
-#: View/CustomerPayments/edit.ctp:23
-#: View/CustomerPayments/index.ctp:59
-#: View/CustomerPayments/view.ctp:58
-#: View/Customers/add.ctp:22
-#: View/Customers/edit.ctp:24
-#: View/Customers/view.ctp:75
+#: app\View\CustomerInvoices\add.ctp:21
+#: app\View\CustomerInvoices\edit.ctp:23
+#: app\View\CustomerOrders\add.ctp:20
+#: app\View\CustomerOrders\edit.ctp:21
+#: app\View\CustomerPayments\add.ctp:21
+#: app\View\CustomerPayments\edit.ctp:23
+#: app\View\CustomerPayments\index.ctp:59
+#: app\View\CustomerPayments\view.ctp:58
+#: app\View\Customers\add.ctp:22
+#: app\View\Customers\edit.ctp:24
+#: app\View\Customers\view.ctp:75
 msgid "List Customers"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:22
-#: View/CustomerInvoices/edit.ctp:24
-#: View/CustomerInvoices/index.ctp:62
-#: View/CustomerInvoices/view.ctp:59
-#: View/CustomerOrders/add.ctp:21
-#: View/CustomerOrders/edit.ctp:22
-#: View/CustomerPayments/add.ctp:22
-#: View/CustomerPayments/edit.ctp:24
-#: View/CustomerPayments/index.ctp:60
-#: View/CustomerPayments/view.ctp:59
-#: View/Customers/index.ctp:63
-#: View/Customers/view.ctp:76
+#: app\View\CustomerInvoices\add.ctp:22
+#: app\View\CustomerInvoices\edit.ctp:24
+#: app\View\CustomerOrders\add.ctp:21
+#: app\View\CustomerOrders\edit.ctp:22
+#: app\View\CustomerPayments\add.ctp:22
+#: app\View\CustomerPayments\edit.ctp:24
+#: app\View\CustomerPayments\index.ctp:60
+#: app\View\CustomerPayments\view.ctp:59
+#: app\View\Customers\index.ctp:63
+#: app\View\Customers\view.ctp:76
 msgid "New Customer"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:23
-#: View/CustomerInvoices/edit.ctp:25
-#: View/CustomerInvoices/index.ctp:63
-#: View/CustomerInvoices/view.ctp:60
-#: View/InvoiceGroups/add.ctp:17
-#: View/InvoiceGroups/edit.ctp:19
-#: View/InvoiceGroups/view.ctp:41
+#: app\View\CustomerInvoices\add.ctp:23
+#: app\View\CustomerInvoices\edit.ctp:25
+#: app\View\InvoiceGroups\add.ctp:17
+#: app\View\InvoiceGroups\edit.ctp:19
+#: app\View\InvoiceGroups\view.ctp:41
 msgid "List Invoice Groups"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:24
-#: View/CustomerInvoices/edit.ctp:26
-#: View/CustomerInvoices/index.ctp:64
-#: View/CustomerInvoices/view.ctp:61
-#: View/InvoiceGroups/index.ctp:48
-#: View/InvoiceGroups/view.ctp:42
+#: app\View\CustomerInvoices\add.ctp:24
+#: app\View\CustomerInvoices\edit.ctp:26
+#: app\View\InvoiceGroups\index.ctp:48
+#: app\View\InvoiceGroups\view.ctp:42
 msgid "New Invoice Group"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:26
-#: View/CustomerInvoices/edit.ctp:28
-#: View/CustomerInvoices/index.ctp:66
-#: View/CustomerInvoices/view.ctp:63
+#: app\View\CustomerInvoices\add.ctp:26
+#: app\View\CustomerInvoices\edit.ctp:28
 msgid "New Invoice Status"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:29
-#: View/CustomerInvoices/edit.ctp:31
-#: View/CustomerInvoices/index.ctp:69
-#: View/CustomerInvoices/view.ctp:66
-#: View/CustomerOrderLines/add.ctp:27
-#: View/CustomerOrderLines/edit.ctp:31
-#: View/CustomerOrderLines/view.ctp:96
-#: View/CustomerOrders/edit.ctp:27
-#: View/OrderStatuses/add.ctp:17
-#: View/OrderStatuses/edit.ctp:19
-#: View/OrderStatuses/index.ctp:47
-#: View/OrderStatuses/view.ctp:38
+#: app\View\CustomerInvoices\add.ctp:29
+#: app\View\CustomerInvoices\edit.ctp:31
+#: app\View\CustomerOrderLines\add.ctp:27
+#: app\View\CustomerOrderLines\edit.ctp:31
+#: app\View\CustomerOrderLines\view.ctp:96
+#: app\View\CustomerOrders\edit.ctp:27
+#: app\View\OrderStatuses\add.ctp:17
+#: app\View\OrderStatuses\edit.ctp:19
+#: app\View\OrderStatuses\index.ctp:47
+#: app\View\OrderStatuses\view.ctp:38
 msgid "List Customer Order Lines"
 msgstr ""
 
-#: View/CustomerInvoices/add.ctp:30
-#: View/CustomerInvoices/edit.ctp:32
-#: View/CustomerInvoices/index.ctp:70
-#: View/CustomerInvoices/view.ctp:67;178
-#: View/CustomerOrderLines/index.ctp:78
-#: View/CustomerOrderLines/view.ctp:97
-#: View/CustomerOrders/edit.ctp:28
-#: View/OrderStatuses/add.ctp:18
-#: View/OrderStatuses/edit.ctp:20
-#: View/OrderStatuses/index.ctp:48
-#: View/OrderStatuses/view.ctp:39;101
+#: app\View\CustomerInvoices\add.ctp:30
+#: app\View\CustomerInvoices\edit.ctp:32
+#: app\View\CustomerInvoices\index.ctp:55
+#: app\View\CustomerOrderLines\index.ctp:78
+#: app\View\CustomerOrderLines\view.ctp:97
+#: app\View\CustomerOrders\edit.ctp:28
+#: app\View\OrderStatuses\add.ctp:18
+#: app\View\OrderStatuses\edit.ctp:20
+#: app\View\OrderStatuses\index.ctp:48
+#: app\View\OrderStatuses\view.ctp:39;101
 msgid "New Customer Order Line"
 msgstr ""
 
-#: View/CustomerInvoices/edit.ctp:4
-#: View/CustomerInvoices/invoice.ctp:4
-#: View/CustomerInvoices/view.ctp:54
+#: app\View\CustomerInvoices\edit.ctp:4
+#: app\View\CustomerInvoices\view.ctp:49
 msgid "Edit Customer Invoice"
 msgstr ""
 
-#: View/CustomerInvoices/index.ctp:2
+#: app\View\CustomerInvoices\index.ctp:2
 msgid "Customer Invoices"
 msgstr ""
 
-#: View/CustomerInvoices/invoice.ctp:17
-msgid "Abort"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:9
-#: View/CustomerOrders/printer.ctp:15
-#: View/CustomerOrders/view.ctp:18
-#: View/CustomerPayments/view.ctp:9
-#: View/Customers/view.ctp:11
-msgid "Customer"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:14
-#: View/Customers/view.ctp:133
-msgid "Customer Invoice Date"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:19
-#: View/InvoiceGroups/view.ctp:2
-msgid "Invoice Group"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:24
-#: View/Customers/view.ctp:132
-msgid "Customer Invoice Number"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:29
-msgid "Invoice Status"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:34
-#: View/Customers/view.ctp:138
-msgid "Customer Invoice Comments"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:55
-msgid "Delete Customer Invoice"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:71
-msgid "Related Customer Invoice Lines"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:76;136
-#: View/CustomerOrders/view.ctp:98
-#: View/OrderStatuses/view.ctp:61
-msgid "Customer Invoice Id"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:78;127
-#: View/OrderStatuses/view.ctp:50
-msgid "Customer Order Id"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:81;130
-#: View/OrderStatuses/view.ctp:54
-msgid "Stock Id"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:122
-#: View/CustomerOrders/view.ctp:88
-#: View/OrderStatuses/view.ctp:45
-msgid "Related Customer Order Lines"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:129
-#: View/CustomerOrderLines/view.ctp:24
-#: View/CustomerOrderLines/view_service.ctp:19
-#: View/CustomerOrders/view.ctp:93
-#: View/OrderStatuses/view.ctp:53
-msgid "Order Line Type"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:131
-#: View/CustomerOrderLines/view.ctp:34
-#: View/CustomerOrderLines/view_service.ctp:29
-#: View/OrderStatuses/view.ctp:55
-msgid "Order Line Description"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:132
-#: View/CustomerOrderLines/view.ctp:44
-#: View/CustomerOrderLines/view_service.ctp:34
-#: View/CustomerOrders/view.ctp:95
-#: View/OrderStatuses/view.ctp:57
-msgid "Order Line Left Article Description"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:133
-#: View/CustomerOrderLines/view.ctp:49
-#: View/CustomerOrderLines/view_service.ctp:39
-#: View/CustomerOrders/view.ctp:96
-#: View/OrderStatuses/view.ctp:58
-msgid "Order Line Due Date"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:138
-#: View/CustomerOrderLines/view_service.ctp:49
-#: View/CustomerOrders/view.ctp:99
-msgid "Order Line Amount"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:139
-#: View/CustomerOrderLines/view.ctp:79
-#: View/CustomerOrderLines/view_sale.ctp:29
-#: View/CustomerOrderLines/view_service.ctp:54
-#: View/CustomerOrders/view.ctp:100
-#: View/OrderStatuses/view.ctp:64
-msgid "Order Line Vat"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:140
-#: View/CustomerOrderLines/view.ctp:84
-#: View/CustomerOrderLines/view_sale.ctp:34
-#: View/CustomerOrderLines/view_service.ctp:59
-#: View/OrderStatuses/view.ctp:65
-msgid "Order Line Comments"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:141
-#: View/CustomerOrderLines/view_service.ctp:44
-#: View/CustomerOrders/view.ctp:97
-msgid "Order Line Ready"
-msgstr ""
-
-#: View/CustomerInvoices/view.ctp:142
-msgid "Service Type Id"
-msgstr ""
-
-#: View/CustomerOrderLines/add.ctp:4
-msgid "Add Customer Order Line"
-msgstr ""
-
-#: View/CustomerOrderLines/add_sale.ctp:8
-#: View/CustomerOrderLines/edit_sale.ctp:8
-msgid "Add Customer Order Line (Sale)"
-msgstr ""
-
-#: View/CustomerOrderLines/add_sale.ctp:31
-#: View/CustomerOrderLines/add_service.ctp:22
-#: View/CustomerOrderLines/edit_sale.ctp:32
-#: View/CustomerOrderLines/edit_service.ctp:23
-msgid "Back to Customer Order"
-msgstr ""
-
-#: View/CustomerOrderLines/add_service.ctp:4
-#: View/CustomerOrderLines/edit_service.ctp:4
-msgid "Add Customer Order Line (Service)"
-msgstr ""
-
-#: View/CustomerOrderLines/add_service.ctp:13
-#: View/CustomerOrderLines/edit_service.ctp:14
-msgid "Total line amount (taxes included)"
-msgstr ""
-
-#: View/CustomerOrderLines/edit.ctp:4
-#: View/CustomerOrderLines/view.ctp:94
-msgid "Edit Customer Order Line"
-msgstr ""
-
-#: View/CustomerOrderLines/edit.ctp:34
-#: View/CustomerOrderLines/index.ctp:81
-#: View/CustomerOrderLines/view.ctp:100
-#: View/CustomerOrders/edit.ctp:23
-#: View/OrderStatuses/add.ctp:16
-#: View/OrderStatuses/edit.ctp:18
-#: View/OrderStatuses/view.ctp:36
-msgid "List Order Statuses"
-msgstr ""
-
-#: View/CustomerOrderLines/edit.ctp:35
-#: View/CustomerOrderLines/index.ctp:82
-#: View/CustomerOrderLines/view.ctp:101
-#: View/CustomerOrders/edit.ctp:24
-#: View/OrderStatuses/index.ctp:46
-#: View/OrderStatuses/view.ctp:37
-msgid "New Order Status"
-msgstr ""
-
-#: View/CustomerOrderLines/index.ctp:2
-msgid "Customer Order Lines"
-msgstr ""
-
-#: View/CustomerOrderLines/view.ctp:2
-msgid "Customer Order Line"
-msgstr ""
-
-#: View/CustomerOrderLines/view.ctp:19
-#: View/CustomerOrders/printer.ctp:22
-#: View/CustomerOrders/view.ctp:23
-#: View/Customers/view.ctp:87
-#: View/OrderStatuses/view.ctp:2
-msgid "Order Status"
-msgstr ""
-
-#: View/CustomerOrderLines/view.ctp:39
-#: View/OrderStatuses/view.ctp:56
-msgid "Order Line Is Left Article"
-msgstr ""
-
-#: View/CustomerOrderLines/view.ctp:74
-#: View/CustomerOrderLines/view_sale.ctp:24
-#: View/OrderStatuses/view.ctp:63
-msgid "Order Line Amout"
-msgstr ""
-
-#: View/CustomerOrderLines/view.ctp:95
-msgid "Delete Customer Order Line"
-msgstr ""
-
-#: View/CustomerOrderLines/view_sale.ctp:2
-msgid "Customer Order Line (Sale)"
-msgstr ""
-
-#: View/CustomerOrderLines/view_service.ctp:2
-msgid "Customer Order Line (Service)"
-msgstr ""
-
-#: View/CustomerOrderLines/view_service.ctp:24
-#: View/ServiceTypes/view.ctp:2
-msgid "Service Type"
-msgstr ""
-
-#: View/CustomerOrders/add.ctp:5
-msgid "Add Customer Order Header"
-msgstr ""
-
-#: View/CustomerOrders/edit.ctp:4
-#: View/CustomerOrders/view.ctp:78
-msgid "Edit Customer Order"
-msgstr ""
-
-#: View/CustomerOrders/edit.ctp:29
-#: View/CustomerPayments/add.ctp:20
-#: View/CustomerPayments/edit.ctp:22
-#: View/CustomerPayments/view.ctp:56
-msgid "List Customer Payments"
-msgstr ""
-
-#: View/CustomerOrders/edit.ctp:30
-#: View/CustomerOrders/view.ctp:82;172
-#: View/CustomerPayments/index.ctp:58
-#: View/CustomerPayments/view.ctp:57
-msgid "New Customer Payment"
-msgstr ""
-
-#: View/CustomerOrders/index.ctp:9
-msgid "Customer Orders"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:30
-#: View/CustomerOrders/view.ctp:28
-#: View/Customers/view.ctp:88
-#: View/OrderStatuses/view.ctp:113
-msgid "Order Date"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:38
-#: View/CustomerOrders/view.ctp:58
-#: View/Customers/view.ctp:93
-#: View/OrderStatuses/view.ctp:114
-msgid "Order Comments"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:52
-msgid "#"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:53
-msgid "Type"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:55
-msgid "Due Date"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:56
-#: View/Suppliers/view.ctp:139
-msgid "Amount"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:79
-msgid "Left article"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:97
-#: View/CustomerOrders/view.ctp:43
-#: View/Customers/view.ctp:89
-#: View/Suppliers/view.ctp:142
-msgid "Total Amount"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:101
-msgid "Total VAT"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:105
-msgid "Total"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:119
-#: View/Layouts/default.ctp:67
-msgid "Payments"
-msgstr ""
-
-#: View/CustomerOrders/printer.ctp:135
-msgid "Total Due Amount"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:33
-msgid "Sum Amount"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:38
-msgid "Sum VAT"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:48
-msgid "Sum Payments"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:53
-msgid "Due amount"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:79
-msgid "Print Customer Order"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:80
-#: View/Customers/view.ctp:112
-msgid "Invoice"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:81
-msgid "Delete Customer Order"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:83;133
-msgid "New Services Line"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:84;134
-msgid "New Sales Line"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:94
-msgid "Order Line Text"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:140
-msgid "Related Customer Payments"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:145
-#: View/CustomerPayments/view.ctp:14
-msgid "Payment Date"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:146
-#: View/CustomerPayments/view.ctp:19
-msgid "Payment Amount"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:147
-#: View/CustomerPayments/view.ctp:24
-msgid "Payment Comments"
-msgstr ""
-
-#: View/CustomerOrders/view.ctp:148
-#: View/CustomerPayments/view.ctp:29
-msgid "Payment Is Down Payment"
-msgstr ""
-
-#: View/CustomerPayments/add.ctp:4
-msgid "Add Customer Payment"
-msgstr ""
-
-#: View/CustomerPayments/edit.ctp:4
-#: View/CustomerPayments/view.ctp:54
-msgid "Edit Customer Payment"
-msgstr ""
-
-#: View/CustomerPayments/index.ctp:2
-msgid "Customer Payments"
-msgstr ""
-
-#: View/CustomerPayments/view.ctp:2
-msgid "Customer Payment"
-msgstr ""
-
-#: View/CustomerPayments/view.ctp:55
-msgid "Delete Customer Payment"
-msgstr ""
-
-#: View/Customers/add.ctp:4
-msgid "Add Customer"
-msgstr ""
-
-#: View/Customers/edit.ctp:4
-#: View/Customers/view.ctp:73
-msgid "Edit Customer"
-msgstr ""
-
-#: View/Customers/index.ctp:2
-#: View/Layouts/default.ctp:58
-msgid "Customers"
-msgstr ""
-
-#: View/Customers/index.ctp:6
-msgid "Filter"
-msgstr ""
-
-#: View/Customers/index.ctp:8
-msgid "Search"
-msgstr ""
-
-#: View/Customers/view.ctp:18
-msgid "Customer Name"
-msgstr ""
-
-#: View/Customers/view.ctp:23
-msgid "Customer Address"
-msgstr ""
-
-#: View/Customers/view.ctp:28
-#: View/Suppliers/view.ctp:38
-msgid "Town"
-msgstr ""
-
-#: View/Customers/view.ctp:33
-#: View/Suppliers/view.ctp:33
-msgid "Zip"
-msgstr ""
-
-#: View/Customers/view.ctp:38
-msgid "Customer Vat Number"
-msgstr ""
-
-#: View/Customers/view.ctp:43
-msgid "Customer Phone1"
-msgstr ""
-
-#: View/Customers/view.ctp:48
-msgid "Customer Phone2"
-msgstr ""
-
-#: View/Customers/view.ctp:53
-msgid "Customer Email"
-msgstr ""
-
-#: View/Customers/view.ctp:74
-msgid "Delete Customer"
-msgstr ""
-
-#: View/Customers/view.ctp:77
-msgid "New Sale"
-msgstr ""
-
-#: View/Customers/view.ctp:78
-msgid "New Service"
-msgstr ""
-
-#: View/Customers/view.ctp:82
-#: View/OrderStatuses/view.ctp:106
-msgid "Related Customer Orders"
-msgstr ""
-
-#: View/Customers/view.ctp:90
-msgid "Due Amount"
-msgstr ""
-
-#: View/Customers/view.ctp:91
-msgid "Left Articles"
-msgstr ""
-
-#: View/Customers/view.ctp:92
-#: View/Suppliers/view.ctp:143
-msgid "Lines"
-msgstr ""
-
-#: View/Customers/view.ctp:111;155
+#: app\View\CustomerInvoices\index.ctp:30
+#: app\View\Customers\view.ctp:111;155
 msgid "Print"
 msgstr ""
 
-#: View/Customers/view.ctp:128
+#: app\View\CustomerInvoices\invoice.ctp:26
+msgid "Back to order"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:19
+#: app\View\CustomerInvoices\view.ctp:14
+#: app\View\CustomerOrders\printer.ctp:19
+#: app\View\CustomerOrders\view.ctp:18
+#: app\View\CustomerPayments\view.ctp:9
+#: app\View\Customers\view.ctp:11
+msgid "Customer"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:20
+#: app\View\CustomerInvoices\view.ctp:24
+msgid "Invoice Status"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:21
+msgid "Invoice Date"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:22
+msgid "Invoice Comments"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:31
+#: app\View\CustomerOrders\printer.ctp:31
+msgid "#"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:32
+#: app\View\CustomerOrders\printer.ctp:32
+msgid "Type"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:34
+#: app\View\CustomerOrders\printer.ctp:35;82
+#: app\View\Suppliers\view.ctp:139
+msgid "Amount"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:54
+#: app\View\CustomerOrders\printer.ctp:62
+#: app\View\CustomerOrders\view.ctp:43
+#: app\View\Customers\view.ctp:89
+#: app\View\Suppliers\view.ctp:142
+msgid "Total Amount"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:58
+#: app\View\CustomerOrders\printer.ctp:66
+msgid "Total VAT"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:62
+#: app\View\CustomerOrderLines\add_service.ctp:23
+#: app\View\CustomerOrderLines\edit_service.ctp:24
+#: app\View\CustomerOrders\printer.ctp:70
+msgid "Total"
+msgstr ""
+
+#: app\View\CustomerInvoices\printer.ctp:95
+#: app\View\Customers\view.ctp:112
+msgid "Invoice"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:4
+#: app\View\Customers\view.ctp:132
+msgid "Customer Invoice Number"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:9
+msgid "Id Intern"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:19
+#: app\View\Customers\view.ctp:133
+msgid "Customer Invoice Date"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:29
+#: app\View\Customers\view.ctp:138
+msgid "Customer Invoice Comments"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:50
+msgid "Print Customer Invoice"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:51
+msgid "Delete Customer Invoice"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:55
+msgid "Related Customer Invoice Lines"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:60
+#: app\View\OrderStatuses\view.ctp:50
+msgid "Customer Order Id"
+msgstr ""
+
+#: app\View\CustomerInvoices\view.ctp:63
+#: app\View\OrderStatuses\view.ctp:54
+msgid "Stock Id"
+msgstr ""
+
+#: app\View\CustomerOrderLines\add.ctp:4
+msgid "Add Customer Order Line"
+msgstr ""
+
+#: app\View\CustomerOrderLines\add_sale.ctp:8
+#: app\View\CustomerOrderLines\edit_sale.ctp:8
+msgid "Add Customer Order Line (Sale)"
+msgstr ""
+
+#: app\View\CustomerOrderLines\add_sale.ctp:31
+#: app\View\CustomerOrderLines\add_service.ctp:34
+#: app\View\CustomerOrderLines\edit_sale.ctp:32
+#: app\View\CustomerOrderLines\edit_service.ctp:35
+msgid "Back to Customer Order"
+msgstr ""
+
+#: app\View\CustomerOrderLines\add_service.ctp:8
+#: app\View\CustomerOrderLines\edit_service.ctp:8
+msgid "Add Customer Order Line (Service)"
+msgstr ""
+
+#: app\View\CustomerOrderLines\edit.ctp:4
+#: app\View\CustomerOrderLines\view.ctp:94
+msgid "Edit Customer Order Line"
+msgstr ""
+
+#: app\View\CustomerOrderLines\edit.ctp:34
+#: app\View\CustomerOrderLines\index.ctp:81
+#: app\View\CustomerOrderLines\view.ctp:100
+#: app\View\CustomerOrders\edit.ctp:23
+#: app\View\OrderStatuses\add.ctp:16
+#: app\View\OrderStatuses\edit.ctp:18
+#: app\View\OrderStatuses\view.ctp:36
+msgid "List Order Statuses"
+msgstr ""
+
+#: app\View\CustomerOrderLines\edit.ctp:35
+#: app\View\CustomerOrderLines\index.ctp:82
+#: app\View\CustomerOrderLines\view.ctp:101
+#: app\View\CustomerOrders\edit.ctp:24
+#: app\View\OrderStatuses\index.ctp:46
+#: app\View\OrderStatuses\view.ctp:37
+msgid "New Order Status"
+msgstr ""
+
+#: app\View\CustomerOrderLines\index.ctp:2
+msgid "Customer Order Lines"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:2
+msgid "Customer Order Line"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:19
+#: app\View\CustomerOrders\printer.ctp:20
+#: app\View\CustomerOrders\view.ctp:23
+#: app\View\Customers\view.ctp:87
+#: app\View\OrderStatuses\view.ctp:2
+msgid "Order Status"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:24
+#: app\View\CustomerOrderLines\view_service.ctp:19
+#: app\View\CustomerOrders\view.ctp:93
+#: app\View\OrderStatuses\view.ctp:53
+msgid "Order Line Type"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:34
+#: app\View\CustomerOrderLines\view_service.ctp:29
+#: app\View\OrderStatuses\view.ctp:55
+msgid "Order Line Description"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:39
+#: app\View\OrderStatuses\view.ctp:56
+msgid "Order Line Is Left Article"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:44
+#: app\View\CustomerOrderLines\view_service.ctp:34
+#: app\View\CustomerOrders\view.ctp:95
+#: app\View\OrderStatuses\view.ctp:57
+msgid "Order Line Left Article Description"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:49
+#: app\View\CustomerOrderLines\view_service.ctp:39
+#: app\View\CustomerOrders\view.ctp:96
+#: app\View\OrderStatuses\view.ctp:58
+msgid "Order Line Due Date"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:74
+#: app\View\CustomerOrderLines\view_sale.ctp:24
+#: app\View\OrderStatuses\view.ctp:63
+msgid "Order Line Amout"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:79
+#: app\View\CustomerOrderLines\view_sale.ctp:29
+#: app\View\CustomerOrderLines\view_service.ctp:54
+#: app\View\CustomerOrders\view.ctp:100
+#: app\View\OrderStatuses\view.ctp:64
+msgid "Order Line Vat"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:84
+#: app\View\CustomerOrderLines\view_sale.ctp:34
+#: app\View\CustomerOrderLines\view_service.ctp:59
+#: app\View\OrderStatuses\view.ctp:65
+msgid "Order Line Comments"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view.ctp:95
+msgid "Delete Customer Order Line"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view_sale.ctp:2
+msgid "Customer Order Line (Sale)"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view_service.ctp:2
+msgid "Customer Order Line (Service)"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view_service.ctp:24
+#: app\View\ServiceTypes\view.ctp:2
+msgid "Service Type"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view_service.ctp:44
+#: app\View\CustomerOrders\view.ctp:97
+msgid "Order Line Ready"
+msgstr ""
+
+#: app\View\CustomerOrderLines\view_service.ctp:49
+#: app\View\CustomerOrders\view.ctp:99
+msgid "Order Line Amount"
+msgstr ""
+
+#: app\View\CustomerOrders\add.ctp:5
+msgid "Add Customer Order Header"
+msgstr ""
+
+#: app\View\CustomerOrders\edit.ctp:4
+#: app\View\CustomerOrders\view.ctp:78
+msgid "Edit Customer Order"
+msgstr ""
+
+#: app\View\CustomerOrders\edit.ctp:29
+#: app\View\CustomerPayments\add.ctp:20
+#: app\View\CustomerPayments\edit.ctp:22
+#: app\View\CustomerPayments\view.ctp:56
+msgid "List Customer Payments"
+msgstr ""
+
+#: app\View\CustomerOrders\edit.ctp:30
+#: app\View\CustomerOrders\view.ctp:82;172
+#: app\View\CustomerPayments\index.ctp:58
+#: app\View\CustomerPayments\view.ctp:57
+msgid "New Customer Payment"
+msgstr ""
+
+#: app\View\CustomerOrders\index.ctp:9
+msgid "Customer Orders"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:21
+#: app\View\CustomerOrders\view.ctp:28
+#: app\View\Customers\view.ctp:88
+#: app\View\OrderStatuses\view.ctp:113
+msgid "Order Date"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:22
+#: app\View\CustomerOrders\view.ctp:58
+#: app\View\Customers\view.ctp:93
+#: app\View\OrderStatuses\view.ctp:114
+msgid "Order Comments"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:34
+msgid "Due Date"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:51
+msgid "Left article"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:78
+#: app\View\Layouts\default.ctp:67
+msgid "Payments"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:81
+#: app\View\CustomerOrders\view.ctp:145
+#: app\View\CustomerPayments\view.ctp:14
+msgid "Payment Date"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:92
+msgid "Total Payed Amount"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:96
+msgid "Total Due Amount"
+msgstr ""
+
+#: app\View\CustomerOrders\printer.ctp:103
+msgid "Order"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:33
+msgid "Sum Amount"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:38
+msgid "Sum VAT"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:48
+msgid "Sum Payments"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:53
+msgid "Due amount"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:79
+msgid "Print Customer Order"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:80
+msgid "Generate Invoice"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:81
+msgid "Delete Customer Order"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:83;133
+msgid "New Services Line"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:84;134
+msgid "New Sales Line"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:88
+#: app\View\OrderStatuses\view.ctp:45
+msgid "Related Customer Order Lines"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:94
+msgid "Order Line Text"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:98
+#: app\View\OrderStatuses\view.ctp:61
+msgid "Customer Invoice Id"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:140
+msgid "Related Customer Payments"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:146
+#: app\View\CustomerPayments\view.ctp:19
+msgid "Payment Amount"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:147
+#: app\View\CustomerPayments\view.ctp:24
+msgid "Payment Comments"
+msgstr ""
+
+#: app\View\CustomerOrders\view.ctp:148
+#: app\View\CustomerPayments\view.ctp:29
+msgid "Payment Is Down Payment"
+msgstr ""
+
+#: app\View\CustomerPayments\add.ctp:4
+msgid "Add Customer Payment"
+msgstr ""
+
+#: app\View\CustomerPayments\edit.ctp:4
+#: app\View\CustomerPayments\view.ctp:54
+msgid "Edit Customer Payment"
+msgstr ""
+
+#: app\View\CustomerPayments\index.ctp:2
+msgid "Customer Payments"
+msgstr ""
+
+#: app\View\CustomerPayments\view.ctp:2
+msgid "Customer Payment"
+msgstr ""
+
+#: app\View\CustomerPayments\view.ctp:55
+msgid "Delete Customer Payment"
+msgstr ""
+
+#: app\View\Customers\add.ctp:4
+msgid "Add Customer"
+msgstr ""
+
+#: app\View\Customers\edit.ctp:4
+#: app\View\Customers\view.ctp:73
+msgid "Edit Customer"
+msgstr ""
+
+#: app\View\Customers\index.ctp:2
+#: app\View\Layouts\default.ctp:58
+msgid "Customers"
+msgstr ""
+
+#: app\View\Customers\index.ctp:6
+msgid "Filter"
+msgstr ""
+
+#: app\View\Customers\index.ctp:8
+msgid "Search"
+msgstr ""
+
+#: app\View\Customers\view.ctp:18
+msgid "Customer Name"
+msgstr ""
+
+#: app\View\Customers\view.ctp:23
+msgid "Customer Address"
+msgstr ""
+
+#: app\View\Customers\view.ctp:28
+#: app\View\Suppliers\view.ctp:38
+msgid "Town"
+msgstr ""
+
+#: app\View\Customers\view.ctp:33
+#: app\View\Suppliers\view.ctp:33
+msgid "Zip"
+msgstr ""
+
+#: app\View\Customers\view.ctp:38
+msgid "Customer Vat Number"
+msgstr ""
+
+#: app\View\Customers\view.ctp:43
+msgid "Customer Phone1"
+msgstr ""
+
+#: app\View\Customers\view.ctp:48
+msgid "Customer Phone2"
+msgstr ""
+
+#: app\View\Customers\view.ctp:53
+msgid "Customer Email"
+msgstr ""
+
+#: app\View\Customers\view.ctp:74
+msgid "Delete Customer"
+msgstr ""
+
+#: app\View\Customers\view.ctp:77
+msgid "New Sale"
+msgstr ""
+
+#: app\View\Customers\view.ctp:78
+msgid "New Service"
+msgstr ""
+
+#: app\View\Customers\view.ctp:82
+#: app\View\OrderStatuses\view.ctp:106
+msgid "Related Customer Orders"
+msgstr ""
+
+#: app\View\Customers\view.ctp:90
+msgid "Due Amount"
+msgstr ""
+
+#: app\View\Customers\view.ctp:91
+msgid "Left Articles"
+msgstr ""
+
+#: app\View\Customers\view.ctp:92
+#: app\View\Suppliers\view.ctp:143
+msgid "Lines"
+msgstr ""
+
+#: app\View\Customers\view.ctp:128
 msgid "Related Customer Invoices"
 msgstr ""
 
-#: View/Customers/view.ctp:135
+#: app\View\Customers\view.ctp:135
 msgid "Customer Invoice Amount"
 msgstr ""
 
-#: View/Customers/view.ctp:136
+#: app\View\Customers\view.ctp:136
 msgid "Customer Invoice Vat"
 msgstr ""
 
-#: View/Customers/view.ctp:137
+#: app\View\Customers\view.ctp:137
 msgid "Customer Invoice Totals"
 msgstr ""
 
-#: View/InvoiceGroups/add.ctp:4
+#: app\View\InvoiceGroups\add.ctp:4
 msgid "Add Invoice Group"
 msgstr ""
 
-#: View/InvoiceGroups/edit.ctp:4
-#: View/InvoiceGroups/view.ctp:39
+#: app\View\InvoiceGroups\edit.ctp:4
+#: app\View\InvoiceGroups\view.ctp:39
 msgid "Edit Invoice Group"
 msgstr ""
 
-#: View/InvoiceGroups/index.ctp:2
+#: app\View\InvoiceGroups\index.ctp:2
 msgid "Invoice Groups"
 msgstr ""
 
-#: View/InvoiceGroups/view.ctp:9
+#: app\View\InvoiceGroups\view.ctp:2
+msgid "Invoice Group"
+msgstr ""
+
+#: app\View\InvoiceGroups\view.ctp:9
 msgid "Code"
 msgstr ""
 
-#: View/InvoiceGroups/view.ctp:14
-#: View/ServiceTypes/view.ctp:9
+#: app\View\InvoiceGroups\view.ctp:14
+#: app\View\ServiceTypes\view.ctp:9
 msgid "Description"
 msgstr ""
 
-#: View/InvoiceGroups/view.ctp:19
+#: app\View\InvoiceGroups\view.ctp:19
 msgid "Active"
 msgstr ""
 
-#: View/InvoiceGroups/view.ctp:40
+#: app\View\InvoiceGroups\view.ctp:40
 msgid "Delete Invoice Group"
 msgstr ""
 
-#: View/Layouts/default.ctp:52
-#: View/Helper/HtmlHelper.php:731
+#: app\View\Layouts\default.ctp:52
+#: lib\Cake\View\Helper\HtmlHelper.php:731
 msgid "Home"
 msgstr ""
 
-#: View/Layouts/default.ctp:55
+#: app\View\Layouts\default.ctp:55
 msgid "Sales"
 msgstr ""
 
-#: View/Layouts/default.ctp:61
+#: app\View\Layouts\default.ctp:61
 msgid "Orders"
 msgstr ""
 
-#: View/Layouts/default.ctp:64
+#: app\View\Layouts\default.ctp:64
 msgid "Invoices"
 msgstr ""
 
-#: View/Layouts/default.ctp:72
+#: app\View\Layouts\default.ctp:72
 msgid "Purchases"
 msgstr ""
 
-#: View/Layouts/default.ctp:75
-#: View/Suppliers/index.ctp:2
+#: app\View\Layouts\default.ctp:75
+#: app\View\Suppliers\index.ctp:2
 msgid "Suppliers"
 msgstr ""
 
-#: View/Layouts/default.ctp:78
-#: View/SupplierSlips/index.ctp:11
+#: app\View\Layouts\default.ctp:78
+#: app\View\SupplierSlips\index.ctp:11
 msgid "Supplier Slips"
 msgstr ""
 
-#: View/Layouts/default.ctp:81
-#: View/SupplierInvoices/index.ctp:2
+#: app\View\Layouts\default.ctp:81
+#: app\View\SupplierInvoices\index.ctp:2
 msgid "Supplier Invoices"
 msgstr ""
 
-#: View/Layouts/default.ctp:86
+#: app\View\Layouts\default.ctp:86
 msgid "Stocks"
 msgstr ""
 
-#: View/Layouts/default.ctp:92
+#: app\View\Layouts\default.ctp:92
 msgid "Raw materials"
 msgstr ""
 
-#: View/Layouts/default.ctp:100
+#: app\View\Layouts\default.ctp:100
 msgid "Analysis"
 msgstr ""
 
-#: View/Layouts/default.ctp:104
+#: app\View\Layouts\default.ctp:104
 msgid "Administration"
 msgstr ""
 
-#: View/Layouts/default.ctp:107
-#: View/Users/index.ctp:2
+#: app\View\Layouts\default.ctp:107
+#: app\View\Users\index.ctp:2
 msgid "Users"
 msgstr ""
 
-#: View/Layouts/default.ctp:110
+#: app\View\Layouts\default.ctp:110
 msgid "Invoice Series"
 msgstr ""
 
-#: View/Layouts/default.ctp:113
-#: View/ServiceTypes/index.ctp:2
+#: app\View\Layouts\default.ctp:113
+#: app\View\ServiceTypes\index.ctp:2
 msgid "Service Types"
 msgstr ""
 
-#: View/Layouts/default.ctp:117
-#: View/RawMaterialTypes/index.ctp:2
+#: app\View\Layouts\default.ctp:117
+#: app\View\RawMaterialTypes\index.ctp:2
 msgid "Raw Material Types"
 msgstr ""
 
-#: View/Layouts/default.ctp:120
+#: app\View\Layouts\default.ctp:120
 msgid "Customer Order Status"
 msgstr ""
 
-#: View/Layouts/default.ctp:126
-#: View/SupplierInvoiceStatuses/view.ctp:2
-#: View/SupplierInvoices/view.ctp:39
+#: app\View\Layouts\default.ctp:126
+#: app\View\SupplierInvoiceStatuses\view.ctp:2
+#: app\View\SupplierInvoices\view.ctp:39
 msgid "Supplier Invoice Status"
 msgstr ""
 
-#: View/Layouts/default.ctp:129
+#: app\View\Layouts\default.ctp:129
 msgid "Options"
 msgstr ""
 
-#: View/Layouts/default.ctp:134
+#: app\View\Layouts\default.ctp:134
 msgid "Logout"
 msgstr ""
 
-#: View/Layouts/default.ctp:145
+#: app\View\Layouts\default.ctp:145
 msgid "Developed by qibdip"
 msgstr ""
 
-#: View/Options/edit.ctp:4
-#: View/Options/view.ctp:41
+#: app\View\Options\edit.ctp:4
+#: app\View\Options\view.ctp:45
 msgid "Edit Option"
 msgstr ""
 
-#: View/Options/edit.ctp:36
-#: View/Options/view.ctp:42
+#: app\View\Options\edit.ctp:41
+#: app\View\Options\view.ctp:46
 msgid "List Options"
 msgstr ""
 
-#: View/Options/view.ctp:2
+#: app\View\Options\view.ctp:2
 msgid "Option"
 msgstr ""
 
-#: View/Options/view.ctp:4
+#: app\View\Options\view.ctp:4
 msgid "Vat"
 msgstr ""
 
-#: View/Options/view.ctp:9
+#: app\View\Options\view.ctp:9
 msgid "Vat Re"
 msgstr ""
 
-#: View/Options/view.ctp:14
+#: app\View\Options\view.ctp:14
 msgid "Default Order Status"
 msgstr ""
 
-#: View/Options/view.ctp:19
+#: app\View\Options\view.ctp:19
 msgid "Default Order Invoiced Status"
 msgstr ""
 
-#: View/Options/view.ctp:25
+#: app\View\Options\view.ctp:24
+msgid "Default Customer Invoice Group"
+msgstr ""
+
+#: app\View\Options\view.ctp:29
 msgid "Default Customer Invoice Status"
 msgstr ""
 
-#: View/Options/view.ctp:30
+#: app\View\Options\view.ctp:34
 msgid "Default Supplier Invoice Status"
 msgstr ""
 
-#: View/OrderStatuses/add.ctp:4
+#: app\View\OrderStatuses\add.ctp:4
 msgid "Add Order Status"
 msgstr ""
 
-#: View/OrderStatuses/edit.ctp:4
-#: View/OrderStatuses/view.ctp:34
+#: app\View\OrderStatuses\edit.ctp:4
+#: app\View\OrderStatuses\view.ctp:34
 msgid "Edit Order Status"
 msgstr ""
 
-#: View/OrderStatuses/index.ctp:2
+#: app\View\OrderStatuses\index.ctp:2
 msgid "Order Statuses"
 msgstr ""
 
-#: View/OrderStatuses/view.ctp:9
+#: app\View\OrderStatuses\view.ctp:9
 msgid "Order Status Name"
 msgstr ""
 
-#: View/OrderStatuses/view.ctp:14
+#: app\View\OrderStatuses\view.ctp:14
 msgid "Order Status Is Final"
 msgstr ""
 
-#: View/OrderStatuses/view.ctp:35
+#: app\View\OrderStatuses\view.ctp:35
 msgid "Delete Order Status"
 msgstr ""
 
-#: View/OrderStatuses/view.ctp:52;112
+#: app\View\OrderStatuses\view.ctp:52;112
 msgid "Order Status Id"
 msgstr ""
 
-#: View/OrderStatuses/view.ctp:111
+#: app\View\OrderStatuses\view.ctp:111
 msgid "Customer Id"
 msgstr ""
 
-#: View/RawMaterialTypes/add.ctp:4
+#: app\View\RawMaterialTypes\add.ctp:4
 msgid "Add Raw Material Type"
 msgstr ""
 
-#: View/RawMaterialTypes/add.ctp:17
-#: View/RawMaterialTypes/edit.ctp:19
-#: View/RawMaterialTypes/view.ctp:31
-#: View/RawMaterials/add.ctp:37
-#: View/RawMaterials/edit.ctp:39
-#: View/RawMaterials/index.ctp:75
-#: View/RawMaterials/view.ctp:103
+#: app\View\RawMaterialTypes\add.ctp:17
+#: app\View\RawMaterialTypes\edit.ctp:19
+#: app\View\RawMaterialTypes\view.ctp:31
+#: app\View\RawMaterials\add.ctp:37
+#: app\View\RawMaterials\edit.ctp:39
+#: app\View\RawMaterials\index.ctp:75
+#: app\View\RawMaterials\view.ctp:103
 msgid "List Raw Material Types"
 msgstr ""
 
-#: View/RawMaterialTypes/edit.ctp:4
-#: View/RawMaterialTypes/view.ctp:29
+#: app\View\RawMaterialTypes\edit.ctp:4
+#: app\View\RawMaterialTypes\view.ctp:29
 msgid "Edit Raw Material Type"
 msgstr ""
 
-#: View/RawMaterialTypes/index.ctp:44
-#: View/RawMaterialTypes/view.ctp:32
-#: View/RawMaterials/add.ctp:38
-#: View/RawMaterials/edit.ctp:40
-#: View/RawMaterials/index.ctp:76
-#: View/RawMaterials/view.ctp:104
+#: app\View\RawMaterialTypes\index.ctp:44
+#: app\View\RawMaterialTypes\view.ctp:32
+#: app\View\RawMaterials\add.ctp:38
+#: app\View\RawMaterials\edit.ctp:40
+#: app\View\RawMaterials\index.ctp:76
+#: app\View\RawMaterials\view.ctp:104
 msgid "New Raw Material Type"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:2
-#: View/RawMaterials/view.ctp:9
+#: app\View\RawMaterialTypes\view.ctp:2
+#: app\View\RawMaterials\view.ctp:9
 msgid "Raw Material Type"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:9
+#: app\View\RawMaterialTypes\view.ctp:9
 msgid "Raw Mat Type Name"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:14
+#: app\View\RawMaterialTypes\view.ctp:14
 msgid "Raw Mat Type Is Partial Consume"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:19
+#: app\View\RawMaterialTypes\view.ctp:19
 msgid "Raw Mat Measuring Unit"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:30
+#: app\View\RawMaterialTypes\view.ctp:30
 msgid "Delete Raw Material Type"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:40
-#: View/SupplierInvoices/view.ctp:137
-#: View/SupplierSlips/view.ctp:124
+#: app\View\RawMaterialTypes\view.ctp:40
+#: app\View\SupplierInvoices\view.ctp:137
+#: app\View\SupplierSlips\view.ctp:124
 msgid "Related Raw Materials"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:46;113
-#: View/SupplierInvoices/view.ctp:143;210
-#: View/SupplierSlips/view.ctp:129
+#: app\View\RawMaterialTypes\view.ctp:46;113
+#: app\View\SupplierInvoices\view.ctp:143;210
+#: app\View\SupplierSlips\view.ctp:129
 msgid "Raw Material Type Id"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:47;114
-#: View/RawMaterials/view.ctp:14
-#: View/SupplierInvoices/view.ctp:144;211
-#: View/SupplierSlips/view.ctp:130
+#: app\View\RawMaterialTypes\view.ctp:47;114
+#: app\View\RawMaterials\view.ctp:14
+#: app\View\SupplierInvoices\view.ctp:144;211
+#: app\View\SupplierSlips\view.ctp:130
 msgid "Raw Mat Units"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:48;115
-#: View/SupplierInvoices/view.ctp:145;212
+#: app\View\RawMaterialTypes\view.ctp:48;115
+#: app\View\SupplierInvoices\view.ctp:145;212
 msgid "Raw Mat Userfield01"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:49;116
-#: View/RawMaterials/view.ctp:24
-#: View/SupplierInvoices/view.ctp:146;213
-#: View/SupplierSlips/view.ctp:132
+#: app\View\RawMaterialTypes\view.ctp:49;116
+#: app\View\RawMaterials\view.ctp:24
+#: app\View\SupplierInvoices\view.ctp:146;213
+#: app\View\SupplierSlips\view.ctp:132
 msgid "Raw Mat Unit Price"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:51;118
-#: View/SupplierInvoices/view.ctp:85;148;215
-#: View/SupplierSlips/view.ctp:134
+#: app\View\RawMaterialTypes\view.ctp:51;118
+#: app\View\SupplierInvoices\view.ctp:85;148;215
+#: app\View\SupplierSlips\view.ctp:134
 msgid "Stock Userfield01"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:52;119
-#: View/SupplierInvoices/view.ctp:86;149;216
-#: View/SupplierSlips/view.ctp:135
+#: app\View\RawMaterialTypes\view.ctp:52;119
+#: app\View\SupplierInvoices\view.ctp:86;149;216
+#: app\View\SupplierSlips\view.ctp:135
 msgid "Stock Userfield02"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:53;120
-#: View/SupplierInvoices/view.ctp:87;150;217
-#: View/SupplierSlips/view.ctp:136
+#: app\View\RawMaterialTypes\view.ctp:53;120
+#: app\View\SupplierInvoices\view.ctp:87;150;217
+#: app\View\SupplierSlips\view.ctp:136
 msgid "Stock Userfield03"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:60;127
-#: View/SupplierInvoices/view.ctp:94;157;224
+#: app\View\RawMaterialTypes\view.ctp:60;127
+#: app\View\SupplierInvoices\view.ctp:94;157;224
 msgid "Supplier Slip Id"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:62;129
-#: View/SupplierInvoices/view.ctp:96;159;226
-#: View/SupplierSlips/view.ctp:86;141
+#: app\View\RawMaterialTypes\view.ctp:62;129
+#: app\View\SupplierInvoices\view.ctp:96;159;226
+#: app\View\SupplierSlips\view.ctp:86;141
 msgid "Supplier Invoice Id"
 msgstr ""
 
-#: View/RawMaterialTypes/view.ctp:105
-#: View/SupplierInvoices/view.ctp:202
+#: app\View\RawMaterialTypes\view.ctp:105
+#: app\View\SupplierInvoices\view.ctp:202
 msgid "Related Stocks"
 msgstr ""
 
-#: View/RawMaterials/add.ctp:8
+#: app\View\RawMaterials\add.ctp:8
 msgid "Add Raw Material"
 msgstr ""
 
-#: View/RawMaterials/edit.ctp:8
-#: View/RawMaterials/view.ctp:99
+#: app\View\RawMaterials\edit.ctp:8
+#: app\View\RawMaterials\view.ctp:99
 msgid "Edit Raw Material"
 msgstr ""
 
-#: View/RawMaterials/index.ctp:2
+#: app\View\RawMaterials\index.ctp:2
 msgid "Raw Materials"
 msgstr ""
 
-#: View/RawMaterials/view.ctp:100
+#: app\View\RawMaterials\view.ctp:100
 msgid "Delete Raw Material"
 msgstr ""
 
-#: View/ServiceTypes/add.ctp:4
+#: app\View\ServiceTypes\add.ctp:4
 msgid "Add Service Type"
 msgstr ""
 
-#: View/ServiceTypes/add.ctp:15
-#: View/ServiceTypes/edit.ctp:17
-#: View/ServiceTypes/view.ctp:21
+#: app\View\ServiceTypes\add.ctp:15
+#: app\View\ServiceTypes\edit.ctp:17
+#: app\View\ServiceTypes\view.ctp:21
 msgid "List Service Types"
 msgstr ""
 
-#: View/ServiceTypes/edit.ctp:4
-#: View/ServiceTypes/view.ctp:19
+#: app\View\ServiceTypes\edit.ctp:4
+#: app\View\ServiceTypes\view.ctp:19
 msgid "Edit Service Type"
 msgstr ""
 
-#: View/ServiceTypes/index.ctp:40
-#: View/ServiceTypes/view.ctp:22
+#: app\View\ServiceTypes\index.ctp:40
+#: app\View\ServiceTypes\view.ctp:22
 msgid "New Service Type"
 msgstr ""
 
-#: View/ServiceTypes/view.ctp:20
+#: app\View\ServiceTypes\view.ctp:20
 msgid "Delete Service Type"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/add.ctp:4
+#: app\View\SupplierInvoiceStatuses\add.ctp:4
 msgid "Add Supplier Invoice Status"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/add.ctp:16
-#: View/SupplierInvoiceStatuses/edit.ctp:18
-#: View/SupplierInvoiceStatuses/view.ctp:36
-#: View/SupplierInvoices/add.ctp:24
-#: View/SupplierInvoices/edit.ctp:26
-#: View/SupplierInvoices/index.ctp:63
-#: View/SupplierInvoices/view.ctp:65
+#: app\View\SupplierInvoiceStatuses\add.ctp:16
+#: app\View\SupplierInvoiceStatuses\edit.ctp:18
+#: app\View\SupplierInvoiceStatuses\view.ctp:36
+#: app\View\SupplierInvoices\add.ctp:24
+#: app\View\SupplierInvoices\edit.ctp:26
+#: app\View\SupplierInvoices\index.ctp:63
+#: app\View\SupplierInvoices\view.ctp:65
 msgid "List Supplier Invoice Statuses"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/edit.ctp:4
-#: View/SupplierInvoiceStatuses/view.ctp:34
+#: app\View\SupplierInvoiceStatuses\edit.ctp:4
+#: app\View\SupplierInvoiceStatuses\view.ctp:34
 msgid "Edit Supplier Invoice Status"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/index.ctp:2
+#: app\View\SupplierInvoiceStatuses\index.ctp:2
 msgid "Supplier Invoice Statuses"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/index.ctp:46
-#: View/SupplierInvoiceStatuses/view.ctp:37
-#: View/SupplierInvoices/add.ctp:25
-#: View/SupplierInvoices/edit.ctp:27
-#: View/SupplierInvoices/index.ctp:64
-#: View/SupplierInvoices/view.ctp:66
+#: app\View\SupplierInvoiceStatuses\index.ctp:46
+#: app\View\SupplierInvoiceStatuses\view.ctp:37
+#: app\View\SupplierInvoices\add.ctp:25
+#: app\View\SupplierInvoices\edit.ctp:27
+#: app\View\SupplierInvoices\index.ctp:64
+#: app\View\SupplierInvoices\view.ctp:66
 msgid "New Supplier Invoice Status"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:9
+#: app\View\SupplierInvoiceStatuses\view.ctp:9
 msgid "Sup Inv Status Name"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:14
+#: app\View\SupplierInvoiceStatuses\view.ctp:14
 msgid "Sup Inv Is Final Status"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:35
+#: app\View\SupplierInvoiceStatuses\view.ctp:35
 msgid "Delete Supplier Invoice Status"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:43
-#: View/Suppliers/view.ctp:84
+#: app\View\SupplierInvoiceStatuses\view.ctp:43
+#: app\View\Suppliers\view.ctp:84
 msgid "Related Supplier Invoices"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:48
-#: View/SupplierInvoices/view.ctp:9
-#: View/Suppliers/view.ctp:89
+#: app\View\SupplierInvoiceStatuses\view.ctp:48
+#: app\View\SupplierInvoices\view.ctp:9
+#: app\View\Suppliers\view.ctp:89
 msgid "Supplier Invoice Number"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:49
-#: View/Suppliers/view.ctp:90
+#: app\View\SupplierInvoiceStatuses\view.ctp:49
+#: app\View\Suppliers\view.ctp:90
 msgid "Supplier Id"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:50
-#: View/SupplierInvoices/view.ctp:19
-#: View/Suppliers/view.ctp:91
+#: app\View\SupplierInvoiceStatuses\view.ctp:50
+#: app\View\SupplierInvoices\view.ctp:19
+#: app\View\Suppliers\view.ctp:91
 msgid "Supplier Invoice Date"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:51
-#: View/SupplierInvoices/view.ctp:24
-#: View/Suppliers/view.ctp:92
+#: app\View\SupplierInvoiceStatuses\view.ctp:51
+#: app\View\SupplierInvoices\view.ctp:24
+#: app\View\Suppliers\view.ctp:92
 msgid "Supplier Invoice Amount"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:52
-#: View/SupplierInvoices/view.ctp:29
-#: View/Suppliers/view.ctp:93
+#: app\View\SupplierInvoiceStatuses\view.ctp:52
+#: app\View\SupplierInvoices\view.ctp:29
+#: app\View\Suppliers\view.ctp:93
 msgid "Supplier Invoice Vat"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:53
-#: View/SupplierInvoices/view.ctp:34
-#: View/Suppliers/view.ctp:94
+#: app\View\SupplierInvoiceStatuses\view.ctp:53
+#: app\View\SupplierInvoices\view.ctp:34
+#: app\View\Suppliers\view.ctp:94
 msgid "Supplier Invoice Vat Re"
 msgstr ""
 
-#: View/SupplierInvoiceStatuses/view.ctp:54
-#: View/Suppliers/view.ctp:95
+#: app\View\SupplierInvoiceStatuses\view.ctp:54
+#: app\View\Suppliers\view.ctp:95
 msgid "Supplier Invoice Status Id"
 msgstr ""
 
-#: View/SupplierInvoices/add.ctp:4
+#: app\View\SupplierInvoices\add.ctp:4
 msgid "Add Supplier Invoice"
 msgstr ""
 
-#: View/SupplierInvoices/add.ctp:22
-#: View/SupplierInvoices/edit.ctp:24
-#: View/SupplierInvoices/index.ctp:61
-#: View/SupplierInvoices/view.ctp:63
-#: View/SupplierSlips/add.ctp:18
-#: View/SupplierSlips/edit.ctp:20
-#: View/SupplierSlips/index.ctp:67
-#: View/SupplierSlips/view.ctp:63
-#: View/Suppliers/add.ctp:22
-#: View/Suppliers/edit.ctp:24
-#: View/Suppliers/view.ctp:75
+#: app\View\SupplierInvoices\add.ctp:22
+#: app\View\SupplierInvoices\edit.ctp:24
+#: app\View\SupplierInvoices\index.ctp:61
+#: app\View\SupplierInvoices\view.ctp:63
+#: app\View\SupplierSlips\add.ctp:18
+#: app\View\SupplierSlips\edit.ctp:20
+#: app\View\SupplierSlips\index.ctp:67
+#: app\View\SupplierSlips\view.ctp:63
+#: app\View\Suppliers\add.ctp:22
+#: app\View\Suppliers\edit.ctp:24
+#: app\View\Suppliers\view.ctp:75
 msgid "List Suppliers"
 msgstr ""
 
-#: View/SupplierInvoices/add.ctp:23
-#: View/SupplierInvoices/edit.ctp:25
-#: View/SupplierInvoices/index.ctp:62
-#: View/SupplierInvoices/view.ctp:64
-#: View/SupplierSlips/add.ctp:19
-#: View/SupplierSlips/edit.ctp:21
-#: View/SupplierSlips/index.ctp:68
-#: View/Suppliers/index.ctp:54
-#: View/Suppliers/view.ctp:76
+#: app\View\SupplierInvoices\add.ctp:23
+#: app\View\SupplierInvoices\edit.ctp:25
+#: app\View\SupplierInvoices\index.ctp:62
+#: app\View\SupplierInvoices\view.ctp:64
+#: app\View\SupplierSlips\add.ctp:19
+#: app\View\SupplierSlips\edit.ctp:21
+#: app\View\SupplierSlips\index.ctp:68
+#: app\View\Suppliers\index.ctp:54
+#: app\View\Suppliers\view.ctp:76
 msgid "New Supplier"
 msgstr ""
 
-#: View/SupplierInvoices/edit.ctp:4
-#: View/SupplierInvoices/view.ctp:59
+#: app\View\SupplierInvoices\edit.ctp:4
+#: app\View\SupplierInvoices\view.ctp:59
 msgid "Edit Supplier Invoice"
 msgstr ""
 
-#: View/SupplierInvoices/view.ctp:14
-#: View/SupplierSlips/view.ctp:14
-#: View/Suppliers/view.ctp:11
+#: app\View\SupplierInvoices\view.ctp:14
+#: app\View\SupplierSlips\view.ctp:14
+#: app\View\Suppliers\view.ctp:11
 msgid "Supplier"
 msgstr ""
 
-#: View/SupplierInvoices/view.ctp:60
+#: app\View\SupplierInvoices\view.ctp:60
 msgid "Delete Supplier Invoice"
 msgstr ""
 
-#: View/SupplierInvoices/view.ctp:76
-#: View/SupplierSlips/view.ctp:70
+#: app\View\SupplierInvoices\view.ctp:76
+#: app\View\SupplierSlips\view.ctp:70
 msgid "Related Articles"
 msgstr ""
 
-#: View/SupplierSlips/add.ctp:4
+#: app\View\SupplierSlips\add.ctp:4
 msgid "Add Supplier Slip"
 msgstr ""
 
-#: View/SupplierSlips/edit.ctp:4
-#: View/SupplierSlips/view.ctp:59
+#: app\View\SupplierSlips\edit.ctp:4
+#: app\View\SupplierSlips\view.ctp:59
 msgid "Edit Supplier Slip"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:9
-#: View/Suppliers/view.ctp:137
+#: app\View\SupplierSlips\view.ctp:9
+#: app\View\Suppliers\view.ctp:137
 msgid "Supplier Slip Num"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:19
-#: View/Suppliers/view.ctp:138
+#: app\View\SupplierSlips\view.ctp:19
+#: app\View\Suppliers\view.ctp:138
 msgid "Supplier Slip Date"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:24
+#: app\View\SupplierSlips\view.ctp:24
 msgid "Supplier Slip Amount"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:29
+#: app\View\SupplierSlips\view.ctp:29
 msgid "Supplier Slip VAT"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:34
+#: app\View\SupplierSlips\view.ctp:34
 msgid "Supplier Slip VAT RE"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:39
+#: app\View\SupplierSlips\view.ctp:39
 msgid "Suplier Slip Total Amount"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:44
+#: app\View\SupplierSlips\view.ctp:44
 msgid "Supplier Slip Lines"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:49
+#: app\View\SupplierSlips\view.ctp:49
 msgid "Suplier Slip Pending Lines"
 msgstr ""
 
-#: View/SupplierSlips/view.ctp:60
+#: app\View\SupplierSlips\view.ctp:60
 msgid "Delete Supplier Slip"
 msgstr ""
 
-#: View/Suppliers/add.ctp:4
+#: app\View\Suppliers\add.ctp:4
 msgid "Add Supplier"
 msgstr ""
 
-#: View/Suppliers/add.ctp:7
-#: View/Suppliers/edit.ctp:8
-#: View/Suppliers/view.ctp:23
+#: app\View\Suppliers\add.ctp:7
+#: app\View\Suppliers\edit.ctp:8
+#: app\View\Suppliers\view.ctp:23
 msgid "Supplier Abreviated"
 msgstr ""
 
-#: View/Suppliers/edit.ctp:4
-#: View/Suppliers/view.ctp:73
+#: app\View\Suppliers\edit.ctp:4
+#: app\View\Suppliers\view.ctp:73
 msgid "Edit Supplier"
 msgstr ""
 
-#: View/Suppliers/view.ctp:18
+#: app\View\Suppliers\view.ctp:18
 msgid "Supplier Name"
 msgstr ""
 
-#: View/Suppliers/view.ctp:28
+#: app\View\Suppliers\view.ctp:28
 msgid "Supplier Address"
 msgstr ""
 
-#: View/Suppliers/view.ctp:43
+#: app\View\Suppliers\view.ctp:43
 msgid "Supplier Vat Number"
 msgstr ""
 
-#: View/Suppliers/view.ctp:48
+#: app\View\Suppliers\view.ctp:48
 msgid "Supplier Phone1"
 msgstr ""
 
-#: View/Suppliers/view.ctp:53
+#: app\View\Suppliers\view.ctp:53
 msgid "Supplier Phone2"
 msgstr ""
 
-#: View/Suppliers/view.ctp:74
+#: app\View\Suppliers\view.ctp:74
 msgid "Delete Supplier"
 msgstr ""
 
-#: View/Suppliers/view.ctp:132
+#: app\View\Suppliers\view.ctp:132
 msgid "Related Supplier Slips"
 msgstr ""
 
-#: View/Suppliers/view.ctp:140
+#: app\View\Suppliers\view.ctp:140
 msgid "VAT"
 msgstr ""
 
-#: View/Suppliers/view.ctp:141
+#: app\View\Suppliers\view.ctp:141
 msgid "VAT RE"
 msgstr ""
 
-#: View/Suppliers/view.ctp:144
+#: app\View\Suppliers\view.ctp:144
 msgid "Not Invoiced Lines"
 msgstr ""
 
-#: View/Users/add.ctp:4
+#: app\View\Users\add.ctp:4
+#: lib\Cake\Test\test_app\View\Posts\cache_form.ctp:5
 msgid "Add User"
 msgstr ""
 
-#: View/Users/add.ctp:17
-#: View/Users/edit.ctp:19
-#: View/Users/view.ctp:41
+#: app\View\Users\add.ctp:17
+#: app\View\Users\edit.ctp:19
+#: app\View\Users\view.ctp:41
 msgid "List Users"
 msgstr ""
 
-#: View/Users/edit.ctp:4
-#: View/Users/view.ctp:39
+#: app\View\Users\edit.ctp:4
+#: app\View\Users\view.ctp:39
 msgid "Edit User"
 msgstr ""
 
-#: View/Users/index.ctp:48
-#: View/Users/view.ctp:42
+#: app\View\Users\index.ctp:48
+#: app\View\Users\view.ctp:42
 msgid "New User"
 msgstr ""
 
-#: View/Users/login.ctp:5
+#: app\View\Users\login.ctp:5
 msgid "Please enter your username and password"
 msgstr ""
 
-#: View/Users/login.ctp:11
+#: app\View\Users\login.ctp:11
 msgid "Login"
 msgstr ""
 
-#: View/Users/view.ctp:2
+#: app\View\Users\view.ctp:2
 msgid "User"
 msgstr ""
 
-#: View/Users/view.ctp:9
+#: app\View\Users\view.ctp:9
 msgid "Username"
 msgstr ""
 
-#: View/Users/view.ctp:14
+#: app\View\Users\view.ctp:14
 msgid "Password"
 msgstr ""
 
-#: View/Users/view.ctp:19
+#: app\View\Users\view.ctp:19
 msgid "Role"
 msgstr ""
 
-#: View/Users/view.ctp:40
+#: app\View\Users\view.ctp:40
 msgid "Delete User"
 msgstr ""
 
-#: View/Helper/FormHelper.php:1323
+#: lib\Cake\Console\Templates\skel\View\Layouts\default.ctp:24
+#: lib\Cake\Console\Templates\skel\View\Layouts\error.ctp:24
+msgid "CakePHP: the rapid development php framework:"
+msgstr ""
+
+#: lib\Cake\Console\Templates\skel\View\Layouts\default.ctp:40;50
+#: lib\Cake\Console\Templates\skel\View\Layouts\error.ctp:40;50
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:356;430;500;529
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1913;1903
+msgid "Plural Rule 1"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:360;504;533
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1936
+msgid "Plural Rule 1 (from core)"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:364;508
+msgid "Some string with %s"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:368;372;512;516
+msgid "Some string with %s %s"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:376;380
+msgid "Testing %2$s %1$s"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:384
+msgid "Testing %.2f number"
+msgstr ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:397;401;463;475;566
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1738;1742;1746;1925
+msgid "%d = 1"
+msgid_plural "%d = 0 or > 1"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:405;570
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1948
+msgid "%d = 1 (from core)"
+msgid_plural "%d = 0 or > 1 (from core)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:409
+msgid "%d item."
+msgid_plural "%d items."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\Case\BasicsTest.php:413;417
+msgid "%d item for id %s"
+msgid_plural "%d items for id %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1715
+msgid "No Translation needed"
+msgstr ""
+
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1727
+msgid "this is a \"quoted string\""
+msgstr ""
+
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1799;1819
+msgid "d_fmt"
+msgstr ""
+
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1803;1825
+msgid "am_pm"
+msgstr ""
+
+#: lib\Cake\Test\Case\I18n\I18nTest.php:1807;1829
+msgid "abmon"
+msgstr ""
+
+#: lib\Cake\Test\Case\View\Helper\FormHelperTest.php:3574
+#: lib\Cake\View\Helper\FormHelper.php:1323
 msgid "empty"
+msgstr ""
+
+#: lib\Cake\Test\test_app\Plugin\TestPlugin\View\Elements\translate.ctp:1
+msgid "This is a translatable string"
+msgstr ""
+
+#: lib\Cake\Test\test_app\View\Pages\extract.ctp:14
+msgid "Editing this Page"
+msgstr ""
+
+#: lib\Cake\Test\test_app\View\Pages\extract.ctp:15;6
+msgid "You have %d new message."
+msgid_plural "You have %d new messages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\test_app\View\Pages\extract.ctp:18
+msgid "Hot features!\n - No Configuration: Set-up the database and let the magic begin\n - Extremely Simple: Just look at the name...It's Cake\n - Active, Friendly Community: Join us #cakephp on IRC. We'd love to help you get started"
+msgstr ""
+
+#: lib\Cake\Test\test_app\View\Pages\extract.ctp:7
+msgid "You deleted %d message."
+msgid_plural "You deleted %d messages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib\Cake\Test\test_app\View\Pages\home.ctp:93
+msgid "PCRE has not been compiled with Unicode support."
+msgstr ""
+
+#: lib\Cake\Test\test_app\View\Pages\home.ctp:95
+msgid "Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring"
 msgstr ""
 

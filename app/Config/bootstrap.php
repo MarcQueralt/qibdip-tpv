@@ -188,4 +188,4 @@ if(file_exists(dirname(__FILE__).DS.'local-config.php')):
     include dirname(__FILE__).DS.'local-config.php';
 endif;
 
-require_once(APP.'Vendor'.DS.'qibdipTPV.php'); 
+require_once(APP.'Vendor'.DS.'qibdipTPV.php');

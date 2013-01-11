@@ -63,9 +63,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'dmst_test',
-		'password' => 'Novembre2011!',
-		'database' => 'dmst_test_tpv',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'test_tpv',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
